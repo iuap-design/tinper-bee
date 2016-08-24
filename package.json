@@ -1,71 +1,71 @@
 {
- "name": "neoui-react",
- "version": "0.3.5",
- "description": "React Components living for enterprise-class pc backend application",
- "main": "build/neoui-react.js",
- "scripts": {
-  "test": "gulp test"
- },
- "repository": {
-  "type": "git",
-  "url": "git+https://github.com/iuap-design/neoui-react.git"
- },
- "keywords": [
-  "react",
-  "react-component",
-  "component",
-  "components",
-  "ui",
-  "framework",
-  "frontend",
-  "iuap-design",
-  "neoui-react"
- ],
- "author": "iuap",
- "license": "MIT",
- "bugs": {
-  "url": "https://github.com/iuap-design/neoui-react/issues"
- },
- "homepage": "https://github.com/iuap-design/neoui-react#readme",
- "devDependencies": {
-  "colors": "~1.1.2",
-  "console-polyfill": "^0.2.2",
-  "cross-spawn": "~4.0.0",
-  "es5-shim": "^4.5.9",
-  "eslint": "^2.13.1",
-  "eslint-config-airbnb": "~9.0.1",
-  "eslint-plugin-import": "^1.9.2",
-  "eslint-plugin-jsx-a11y": "^1.5.3",
-  "eslint-plugin-react": "^5.2.2",
-  "expect.js": "^0.3.1",
-  "git-rev": "~0.2.1",
-  "gulp": "^3.9.1",
-  "gulp-clean": "~0.3.2",
-  "gulp-clean-css": "~2.0.9",
-  "gulp-cleancss": "~0.2.2",
-  "gulp-concat": "~2.6.0",
-  "gulp-less": "~3.1.0",
-  "gulp-rename": "~1.2.2",
-  "gulp-uglify": "~1.5.3",
-  "html-wiring": "^1.2.0",
-  "inquirer": "~1.0.3",
-  "karma": "^1.1.2",
-  "karma-chrome-launcher": "~1.0.1",
-  "karma-mocha": "^1.0.1",
-  "karma-mocha-reporter": "^2.0.3",
-  "karma-phantomjs-launcher": "~1.0.0",
-  "less-plugin-autoprefix": "~1.5.1",
-  "less-plugin-inline-urls": "~1.1.0",
-  "lodash": "^4.13.1",
-  "mocha": "^2.5.3",
-  "object-assign": "^4.1.0",
-  "promise": "~7.1.1",
-  "react": "^0.14.8",
-  "react-dom": "^0.14.8",
-  "rimraf": "~2.5.2",
-  "webpack": "~1.13.1"
- },
- "dependencies": {
-  "neouiReact-button": "^1.0.6"
- }
+  "name": "neoui-react",
+  "version": "0.3.6",
+  "description": "React Components living for enterprise-class pc backend application",
+  "main": "build/neoui-react.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iuap-design/neoui-react.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "component",
+    "components",
+    "ui",
+    "framework",
+    "frontend",
+    "iuap-design",
+    "neoui-react"
+  ],
+  "author": "iuap",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iuap-design/neoui-react/issues"
+  },
+  "homepage": "https://github.com/iuap-design/neoui-react#readme",
+  "devDependencies": {
+    "colors": "~1.1.2",
+    "console-polyfill": "^0.2.2",
+    "cross-spawn": "~4.0.0",
+    "es5-shim": "^4.5.9",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "~9.0.1",
+    "eslint-plugin-import": "^1.9.2",
+    "eslint-plugin-jsx-a11y": "^1.5.3",
+    "eslint-plugin-react": "^5.2.2",
+    "expect.js": "^0.3.1",
+    "git-rev": "~0.2.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "~0.3.2",
+    "gulp-clean-css": "~2.0.9",
+    "gulp-cleancss": "~0.2.2",
+    "gulp-concat": "~2.6.0",
+    "gulp-less": "~3.1.0",
+    "gulp-rename": "~1.2.2",
+    "gulp-uglify": "~1.5.3",
+    "html-wiring": "^1.2.0",
+    "inquirer": "~1.0.3",
+    "karma": "^1.1.2",
+    "karma-chrome-launcher": "~1.0.1",
+    "karma-mocha": "^1.0.1",
+    "karma-mocha-reporter": "^2.0.3",
+    "karma-phantomjs-launcher": "~1.0.0",
+    "less-plugin-autoprefix": "~1.5.1",
+    "less-plugin-inline-urls": "~1.1.0",
+    "lodash": "^4.13.1",
+    "mocha": "^2.5.3",
+    "object-assign": "^4.1.0",
+    "promise": "~7.1.1",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "rimraf": "~2.5.2",
+    "webpack": "~1.13.1"
+  },
+  "dependencies": {
+    "neoui-react-button": "0.0.2"
+  }
 }

@@ -30,18 +30,7 @@ var cleancssOption = {
   debug: true,
 };
 
-var runCmd = function (cmd, args, fn) {
-  var options = args || [];
-  var runner = childProcess.spawn(cmd, options, {
-    // keep color
-    stdio: 'inherit',
-  });
-  runner.on('close', (code) => {
-    if (fn) {-
-      fn(code);
-    }
-  });
-};
+
 
 var webpackCfg = require('./webpack.conf.js');
 var pkg = JSON.parse(file.readFileAsString('package.json'));
@@ -105,9 +94,9 @@ function getQuestions() {
   });
 }
 
-colors.setTheme({
-  info: ['bold', 'green'],
-});
+// colors.setTheme({
+//   info: ['bold', 'green'],
+// });
 
 gulp.task('js_build', ['js_clean'], function (done) {
   webpack(webpackCfg, function (err, stats) {
@@ -126,11 +115,11 @@ gulp.task('js_build', ['js_clean'], function (done) {
 
 
 gulp.task('js_uglify', ['js_build'], function (done) {
-  gulp.src('./build/uxcore.js')
+  gulp.src('./build/neoui-react.js')
       .pipe(uglify({
         mangle: false,
       }))
-      .pipe(rename('uxcore.min.js'))
+      .pipe(rename('neoui-react.min.js'))
       .pipe(gulp.dest('./build'))
       .on('end', function () {
         done();
@@ -138,7 +127,7 @@ gulp.task('js_uglify', ['js_build'], function (done) {
 });
 
 gulp.task('theme', ['theme_clean'], function (done) {
-  gulp.src(['./style/theme/**/*.less'])
+  gulp.src(['./style/*.less'])
       .pipe(less({
         plugins: [autoprefix, LessPluginInlineUrls],
       }))
@@ -149,46 +138,7 @@ gulp.task('theme', ['theme_clean'], function (done) {
 });
 
 
-gulp.task('theme_transport', ['theme'], function () {
-  var themes = ['blue', 'orange'];
-  themes.forEach(function (theme) {
-    gulp.src(['./assets/' + theme + '/kuma.css'])
-        .pipe(concat(theme + '.css'))
-        .pipe(gulp.dest('./assets'))
-        .pipe(cleancss(cleancssOption))
-        .pipe(rename({
-          suffix: '.min',
-        }))
-        .pipe(gulp.dest('./assets'));
-  });
-  themes.forEach(function (theme) {
-    gulp.src(['./assets/' + theme + '/compatible.css'])
-        .pipe(rename({
-          prefix: theme + '-',
-        }))
-        .pipe(gulp.dest('./assets'))
-        .pipe(cleancss(cleancssOption))
-        .pipe(rename({
-          suffix: '.min',
-        }))
-        .pipe(gulp.dest('./assets'));
-  });
-  themes.forEach(function (theme) {
-    gulp.src(['./assets/' + theme + '/'])
-        .pipe(clean({
-          read: false,
-        }));
-  });
-});
 
-//gulp.task('iconfont', ['theme_clean'], function (done) {
-//  gulp.src(['./iconfont.css'])
-//      .pipe(cleancss({ compatibility: 'ie8' }))
-//      .pipe(gulp.dest('./assets'))
-//      .on('end', function () {
-//        done();
-//      });
-//});
 
 gulp.task('js_clean', function (done) {
   rimraf('./build', {}, function () {
@@ -217,11 +167,6 @@ gulp.task('pub', ['js_uglify', 'theme_transport'], function () {
   }).catch(function (err) { console.log(err); });
 });
 
-gulp.task('test', function (done) {
-  var karmaBin = require.resolve('karma/bin/karma');
-  var karmaConfig = path.join(__dirname, './karma.phantomjs.conf.js');
-  var args = [karmaBin, 'start', karmaConfig];
-  runCmd('node', args, done);
-});
 
-gulp.task('default', ['js_uglify', 'theme_transport']);
+
+gulp.task('default', ['js_uglify', 'theme']);

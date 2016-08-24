@@ -1,0 +1,70 @@
+.neoui-button-sm {
+  padding: 0 12px;
+  height: 26px;
+  line-height: 24px;
+  font-size: 12px;
+}
+.neoui-button {
+  padding: 0 15px;
+  height: 32px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+.neoui-button-lg {
+  padding: 0 20px;
+  height: 36px;
+  line-height: 34px;
+}
+.neoui-button-primary {
+  background-color: #f37327;
+  border-color: #f37327;
+  color: #fff;
+}
+.neoui-button-outline {
+  background-color: #fff;
+  border-color: #f37327;
+  color: #f37327;
+}
+.neoui-button-outline:hover {
+  background-color: #fff9f5;
+  border-color: #fa7e37;
+  color: #f37327;
+}
+.neoui-button-disabled {
+  background-color: #e8e8e8;
+  border-color: #dbdbdb;
+  color: #ccc;
+  cursor: not-allowed;
+}
+.neoui-button-primary:hover {
+  background-color: #fa7e37;
+  border-color: #fa7e37;
+  color: #fff;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button,
+select {
+  text-transform: none;
+}
+button {
+  overflow: visible;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}

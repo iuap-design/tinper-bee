@@ -1,100 +1,131 @@
-# [neoui-react](http://uxco.re/)
-
-[![npm version](https://img.shields.io/npm/v/uxcore.svg?style=flat-square)](https://www.npmjs.com/package/uxcore) [![Dependency Status](https://img.shields.io/david/uxcore/uxcore.svg?label=deps&style=flat-square)](https://david-dm.org/uxcore/uxcore) [![devDependency Status](https://img.shields.io/david/dev/uxcore/uxcore.svg?label=devDeps&style=flat-square)](https://david-dm.org/uxcore/uxcore#info=devDependencies)
-
-UXCore is a set of [React](http://facebook.github.io/react/) Components that is designed for enterprise-class pc backend application.
-
-* **Rich library:** more than 35 React Components available with high quality design.
-
-* **Focus on backend App:** Powerful but easy-to-use Form and Table.
-
-* **Customizable theme:** theme can be customized easily.
+# neoui-react
 
 
-Check out our [documentation site](http://uxco.re/) for live examples. 
+[![npm version](https://img.shields.io/npm/v/iuap-design.svg)](https://www.npmjs.com/package/iuap-design)
+[![Build Status](https://img.shields.io/travis/iuap-design/neoui-react/master.svg)](https://travis-ci.org/iuap-design/neoui)
+[![devDependency Status](https://img.shields.io/david/dev/iuap-design/neoui-react.svg)](https://david-dm.org/iuap-design/neoui-react#info=devDependencies)
 
-[Learn how to use Uxcore in your project.](http://uxco.re/start/base/)
+[neoui-react](http://design.yyuap.com/) 是基于 `UI` 设计语言 `iUAP Design` 和 `React` 实现的组件库，开放自由、易学易用、美观大气，为开发者提供从产品界面设计到前端开发的完整生态。
 
-Before posting an issue, please read the [CHANGELOG](https://github.com/uxcore/uxcore/releases) and the README and the documentation to check the recently updated.
+## 核心能力
 
+### 丰富的组件
 
-## Installation
+neoui-react 包含丰富的react组件
 
-The fastest way to get started is to serve JavaScript from the CDN
-
-```html
-<link rel="stylesheet" type="text/css" href="//g.alicdn.com/??platform/common/s/1.1/global/global.css,uxcore/uxcore-kuma/2.0.7/orange.min.css">
-<script src="//g.alicdn.com/uxcore/uxcore/0.1.5/uxcore.min.js">
+## 开始使用
 ```
+import { Button } from 'neoui-react';
 
-if you'd like to use [npm](npmjs.com)
-
-```sh
-npm install uxcore
-```
-
-## Usage
-
-### For cdn
-
-```jsx
-const {Button} = Uxcore;
 ReactDOM.render(<Button />, mountNode);
-```
 
-### For npm
-```jsx
-import {Button} from 'uxcore';
-// or
-import Button from 'uxcore/lib/Button';
-ReactDOM.render(<Button />, mountNode);
-```
-
-And import style mannally
-
-```css
-import 'uxcore/assets/iconfont.css';
-import 'uxcore/assets/orange.css';
-```
-
-### import component as required
-
-Install the component
-
-```sh
-npm install uxcore-button kuma-base
-```
-
-```jsx
-import Button from 'uxcore-button';
-```
-
-And import style in your less file
-
-```less
-import 'kuma-base/theme/blue.less'; // or orange.less global variables which components need
-import 'kuma-base/core.less'; // base element style and reset
-import 'uxcore-button/src/Button.less'; // component style
 ```
 
 
-## Browser Support
+### 获取neoui
 
-Mainstream browsers and Internet Explorer 8+. For IE 8, see [react-ie8](https://github.com/xcatliu/react-ie8) to get support.  
+- 直接从github获取我们的源码
+```
+git clone git@github.com:iuap-design/neoui-react.git
+```
 
-## Customization
+- 使用CDN
+```
+```
+- 使用npm安装
 
-We have implemented two default themes(orange/blue) to render UXCore Components. Theme customization is simple using our online [design tools](http://uxco.re/theme/builder).
-
-## Contribute
-
-Yes please! See the [CONTRIBUTING](https://github.com/uxcore/uxcore/blob/master/CONTRIBUTING.md) for details.
-
-## License
-
-This project is licensed under the terms of the [MIT license](This project is licensed under the terms of the MIT license)
-
-
+```
+npm install neoui-react
+```
 
 
+### 版本说明
 
+当前neoui-react框架的版本为0.3.6。
+
+
+### 目录及文件说明
+
+提供的资源目录结构
+```
+/
+│
+├─assets
+│      base.css
+│      component.css
+│
+├─build
+│      neoui-react.js
+│      neoui-react.min.js
+│
+└─
+
+
+```
+
+### 开发文档
+
+开发文档详见[这里](https://github.com/iuap-design/neoui-react/docs)。
+
+如果你的项目要兼容ie8，见 [这里](https://github.com/iuap-design/neoui-react/docs/react-ie8.md)。
+
+更多内容请移步我们的[官网](http://design.yyuap.com/)
+
+### 6.参与讨论和开发
+
+如在使用过程中遇到任何问题，可以在[这里](https://github.com/iuap-design/neoui-react/issues)提交issue反馈；
+
+或者直接fork代码到你的github仓库，提交pull request给我们。
+
+有紧急问题可以直接邮件给我（Email：guoyff@yonyou.com）
+
+
+## 开发及构建
+
+开发者可以一起参与为 neoui-react 贡献代码，同时也可以基于 neoui-react 进行二次开发或封装插件。
+
+### 目录结构
+
+```
+bower.json
+CHANGELOG.md
+CONTRIBUTING.md
+build/
+assets/
+docs/
+gulpfile.js
+package.json
+README.md
+style/
+tests/
+webpack.conf.js
+```
+
+### 构建工具
+
+neoui-react 使用 [gulp.js](http://gulpjs.com/) 和 [webpack](https://webpack.github.io/)  构建项目。
+
+克隆项目文件:
+
+```
+$ git clone git@github.com:iuap-design/neoui-react.git
+```
+
+然后进入目录安装依赖：
+
+```
+$ npm install
+```
+
+接下来，执行 `gulp`：
+
+```
+$ gulp
+```
+
+
+## 反馈
+
+[Bug 反馈及需求提交](CONTRIBUTING.md)
+
+## 版本号
