@@ -1,11 +1,7 @@
 # neoui-react
 
 
-[![npm version](https://img.shields.io/npm/v/iuap-design.svg)](https://www.npmjs.com/package/iuap-design)
-[![Build Status](https://img.shields.io/travis/iuap-design/neoui-react/master.svg)](https://travis-ci.org/iuap-design/neoui)
-[![devDependency Status](https://img.shields.io/david/dev/iuap-design/neoui-react.svg)](https://david-dm.org/iuap-design/neoui-react#info=devDependencies)
-
-[neoui-react](http://design.yyuap.com/) 是基于 `UI` 设计语言 `iUAP Design` 和 `React` 实现的组件库，开放自由、易学易用、美观大气，为开发者提供从产品界面设计到前端开发的完整生态。
+[neoui-react](http://design.yyuap.com/) 是基于 `UI` 设计语言 `iUAP Design` 和 `React` 实现的组件库，为开发者提供从产品界面设计到前端开发的完整生态。
 
 ## 核心能力
 
@@ -41,7 +37,7 @@ npm install neoui-react
 
 ### 版本说明
 
-当前neoui-react框架的版本为0.3.6。
+当前neoui-react框架的版本为0.0.1。
 
 
 ### 目录及文件说明
