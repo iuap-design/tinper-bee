@@ -63,7 +63,7 @@ npm install neoui-react
 
 开发文档详见[这里](https://github.com/iuap-design/neoui-react/docs)。
 
-如果你的项目要兼容ie8，见 [这里](https://github.com/iuap-design/neoui-react/docs/react-ie8.md)。
+如果你的项目要兼容ie8，见 [这里](https://github.com/iuap-design/neoui-react/blob/master/docs/react-ie8.md)。
 
 更多内容请移步我们的[官网](http://design.yyuap.com/)
 
