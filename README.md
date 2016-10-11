@@ -1,28 +1,28 @@
-# neoui-react
+# tinper-bee
 
 
-[neoui-react](http://design.yyuap.com/) 是基于 `UI` 设计语言 `iUAP Design` 和 `React` 实现的组件库，为开发者提供从产品界面设计到前端开发的完整生态。
+[tinper-bee](http://bee.tinper.org/) 是基于 `UI` 设计语言 `iUAP Design` 和 `React` 实现的组件库，为开发者提供从产品界面设计到前端开发的完整生态。
 
 ## 核心能力
 
 ### 丰富的组件
 
-neoui-react 包含丰富的react组件
+tinper-bee 包含丰富的react组件
 
 ## 开始使用
 ```
-import { Button } from 'neoui-react';
+import { Button } from 'tinper-bee';
 
 ReactDOM.render(<Button />, mountNode);
 
 ```
 
 
-### 获取neoui
+### 获取tinper-bee
 
 - 直接从github获取我们的源码
 ```
-git clone git@github.com:iuap-design/neoui-react.git
+git clone git@github.com:iuap-design/tinper-bee.git
 ```
 
 - 使用CDN
@@ -31,13 +31,13 @@ git clone git@github.com:iuap-design/neoui-react.git
 - 使用npm安装
 
 ```
-npm install neoui-react
+npm install --save tinper-bee
 ```
 
 
 ### 版本说明
 
-当前neoui-react框架的版本为0.0.1。
+当前tinper-bee框架的版本为0.0.1。
 
 
 ### 目录及文件说明
@@ -51,8 +51,8 @@ npm install neoui-react
 │      component.css
 │
 ├─build
-│      neoui-react.js
-│      neoui-react.min.js
+│      tinper-bee.js
+│      tinper-bee.min.js
 │
 └─
 
@@ -61,15 +61,15 @@ npm install neoui-react
 
 ### 开发文档
 
-开发文档详见[这里](https://github.com/iuap-design/neoui-react/docs)。
+开发文档详见[这里](https://github.com/iuap-design/tinper-bee/docs)。
 
 如果你的项目要兼容ie8，见 [这里](https://github.com/iuap-design/neoui-react/blob/master/docs/react-ie8.md)。
 
-更多内容请移步我们的[官网](http://design.yyuap.com/)
+更多内容请移步我们的[官网](http://bee.tinper.org/)
 
 ### 6.参与讨论和开发
 
-如在使用过程中遇到任何问题，可以在[这里](https://github.com/iuap-design/neoui-react/issues)提交issue反馈；
+如在使用过程中遇到任何问题，可以在[这里](https://github.com/iuap-design/tinper-bee/issues)提交issue反馈；
 
 或者直接fork代码到你的github仓库，提交pull request给我们。
 
@@ -78,7 +78,9 @@ npm install neoui-react
 
 ## 开发及构建
 
-开发者可以一起参与为 neoui-react 贡献代码，同时也可以基于 neoui-react 进行二次开发或封装插件。
+开发者可以一起参与为 tinper-bee 贡献代码，同时也可以基于 tinper-bee 进行二次开发或封装插件。
+
+[tinper-bee](https://github.com/tinper-bee)
 
 ### 目录结构
 
@@ -99,12 +101,12 @@ webpack.conf.js
 
 ### 构建工具
 
-neoui-react 使用 [gulp.js](http://gulpjs.com/) 和 [webpack](https://webpack.github.io/)  构建项目。
+tinper-bee 使用 [gulp.js](http://gulpjs.com/) 和 [webpack](https://webpack.github.io/)  构建项目。
 
 克隆项目文件:
 
 ```
-$ git clone git@github.com:iuap-design/neoui-react.git
+$ git clone git@github.com:iuap-design/tinper-bee.git
 ```
 
 然后进入目录安装依赖：

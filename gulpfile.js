@@ -1,12 +1,12 @@
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
-var less = require('gulp-less');
+var sass = require('gulp-sass');
 var clean = require('gulp-clean');
 var cleancss = require('gulp-cleancss');
 var concat = require('gulp-concat');
-var LessPluginAutoPrefix = require('less-plugin-autoprefix');
-var LessPluginInlineUrls = require('less-plugin-inline-urls');
+// var sassPluginAutoPrefix = require('less-plugin-autoprefix');
+// var sassPluginInlineUrls = require('less-plugin-inline-urls');
 var webpack = require('webpack');
 var Promise = require('promise');
 var git = require('git-rev');
@@ -18,9 +18,9 @@ var rimraf = require('rimraf');
 var childProcess = require('child_process');
 var path = require('path');
 
-var autoprefix = new LessPluginAutoPrefix({
-  browsers: ['last 2 versions', 'not ie < 8'],
-});
+// var autoprefix = new LessPluginAutoPrefix({
+//   browsers: ['last 2 versions', 'not ie < 8'],
+// });
 
 var cleancssOption = {
   advanced: false,
@@ -115,11 +115,11 @@ gulp.task('js_build', ['js_clean'], function (done) {
 
 
 gulp.task('js_uglify', ['js_build'], function (done) {
-  gulp.src('./build/neoui-react.js')
+  gulp.src('./build/tinper-bee.js')
       .pipe(uglify({
         mangle: false,
       }))
-      .pipe(rename('neoui-react.min.js'))
+      .pipe(rename('tinper-bee.min.js'))
       .pipe(gulp.dest('./build'))
       .on('end', function () {
         done();
@@ -127,10 +127,8 @@ gulp.task('js_uglify', ['js_build'], function (done) {
 });
 
 gulp.task('theme', ['theme_clean'], function (done) {
-  gulp.src(['./style/*.less'])
-      .pipe(less({
-        plugins: [autoprefix, LessPluginInlineUrls],
-      }))
+  gulp.src(['./style/*.scss'])
+      .pipe(sass())
       .pipe(gulp.dest('./assets'))
       .on('end', function () {
         done();

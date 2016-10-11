@@ -8,8 +8,8 @@ module.exports = {
   },
   output: {
     path: path.join(process.cwd(), './build'),
-    filename: 'neoui-react.js',
-    library: 'Neoui-react',
+    filename: 'tinper-bee.js',
+    library: 'tinper-bee',
     libraryTarget: 'umd',
   },
   module: {},

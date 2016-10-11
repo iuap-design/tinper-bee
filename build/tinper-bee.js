@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define(["react", "react-dom"], factory);
 	else if(typeof exports === 'object')
-		exports["Neoui-react"] = factory(require("react"), require("react-dom"));
+		exports["tinper-bee"] = factory(require("react"), require("react-dom"));
 	else
-		root["Neoui-react"] = factory(root["React"], root["ReactDOM"]);
+		root["tinper-bee"] = factory(root["React"], root["ReactDOM"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_4__, __WEBPACK_EXTERNAL_MODULE_5__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -76,7 +76,16 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 
-	module.exports = __webpack_require__(3);
+	exports.__esModule = true;
+	exports.Button = undefined;
+
+	var _Button2 = __webpack_require__(3);
+
+	var _Button3 = _interopRequireDefault(_Button2);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	exports.Button = _Button3["default"];
 
 /***/ },
 /* 3 */
@@ -84,7 +93,23 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 
+	exports.__esModule = true;
+
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(5);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _classnames = __webpack_require__(6);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
@@ -94,20 +119,76 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var React = __webpack_require__(4);
-	var ReactDOM = __webpack_require__(5);
-	var classnames = __webpack_require__(6);
+	var propTypes = {
+	    /**
+	     * @title 尺寸
+	     */
+	    size: _react.PropTypes.oneOf(['sm', 'xg', 'lg', '']),
+	    /**
+	     * @title 样式
+	     */
+	    style: _react.PropTypes.object,
+	    /**
+	     * @title 形状
+	     */
+	    shape: _react.PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', '']),
+	    /**
+	    * @title 类型
+	    */
+	    type: _react.PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', '']),
+	    /**
+	     * @title 是否禁用
+	     * @veIgnore
+	     */
+	    disabled: _react.PropTypes.bool,
+	    /**
+	     * @title 类名
+	     * @veIgnore
+	     */
+	    className: _react.PropTypes.string,
+	    /**
+	     * @title 内容
+	     */
+	    children: _react.PropTypes.oneOfType([_react2["default"].PropTypes.element, _react2["default"].PropTypes.string]),
+	    /**
+	     * @title <button> 的 type
+	     * @veIgnore
+	     */
+	    htmlType: _react.PropTypes.oneOf(['submit', 'button', 'reset'])
+	};
+
+	var defaultProps = {
+	    size: '',
+	    type: '',
+	    shape: '',
+	    disabled: false,
+	    className: '',
+	    children: '',
+	    htmlType: 'button'
+	};
+
 	var sizeMap = {
-	    small: 'sm',
-	    medium: '',
-	    large: 'lg'
+	    sm: 'sm',
+	    xg: 'xg',
+	    lg: 'lg'
 	},
 	    typeMap = {
 	    primary: 'primary',
-	    outline: 'outline',
-	    disabled: 'disabled'
+	    accent: 'accent',
+	    success: 'success',
+	    info: 'info',
+	    warning: 'warning',
+	    danger: 'danger'
 	},
-	    clsPrefix = 'neoui-button';
+	    shapeMap = {
+	    block: 'block',
+	    round: 'round',
+	    squared: 'squared',
+	    floating: 'floating',
+	    pillRight: 'pill-right',
+	    pillLeft: 'pill-left'
+	},
+	    clsPrefix = 'u-button';
 
 	var Button = function (_React$Component) {
 	    _inherits(Button, _React$Component);
@@ -119,17 +200,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    Button.prototype.render = function render() {
-	        var props = this.props;
-	        var type = props.type;
-	        var disabled = props.disabled;
-	        var className = props.className;
-	        var size = props.size;
-	        var children = props.children;
-	        var htmlType = props.htmlType;
+	        var _props = this.props;
+	        var type = _props.type;
+	        var shape = _props.shape;
+	        var disabled = _props.disabled;
+	        var className = _props.className;
+	        var size = _props.size;
+	        var children = _props.children;
+	        var htmlType = _props.htmlType;
 
-	        var others = _objectWithoutProperties(props, ['type', 'disabled', 'className', 'size', 'children', 'htmlType']);
+	        var others = _objectWithoutProperties(_props, ['type', 'shape', 'disabled', 'className', 'size', 'children', 'htmlType']);
 
-	        type = disabled ? 'disabled' : type;
 	        var clsObj = {};
 	        if (className) {
 	            clsObj[className] = true;
@@ -137,65 +218,32 @@ return /******/ (function(modules) { // webpackBootstrap
 	        if (sizeMap[size]) {
 	            clsObj[clsPrefix + '-' + sizeMap[size]] = true;
 	        }
-	        var classNames = classnames(clsPrefix, clsPrefix + '-' + typeMap[type], clsObj);
-	        return React.createElement(
+	        if (shapeMap[shape]) {
+	            clsObj[clsPrefix + '-' + shapeMap[shape]] = true;
+	        }
+	        if (typeMap[type]) {
+	            clsObj[clsPrefix + '-' + typeMap[type]] = true;
+	        }
+	        var classNames = (0, _classnames2["default"])(clsPrefix, clsObj);
+	        return _react2["default"].createElement(
 	            'button',
 	            _extends({
 	                type: htmlType,
 	                className: classNames,
 	                disabled: disabled
 	            }, others),
-	            props.children
+	            this.props.children
 	        );
 	    };
 
 	    return Button;
-	}(React.Component);
+	}(_react2["default"].Component);
 
-	Button.displayName = 'neoui-react-button';
-	Button.propTypes = {
-	    /**
-	     * @title 尺寸
-	     */
-	    size: React.PropTypes.oneOf(['small', 'medium', 'large']),
-	    /**
-	     * @title 样式
-	     */
-	    style: React.PropTypes.object,
-	    /**
-	    * @title 类型
-	    */
-	    type: React.PropTypes.oneOf(['primary', 'secondary', 'outline', 'disabled']),
-	    /**
-	     * @title 是否禁用
-	     * @veIgnore
-	     */
-	    disabled: React.PropTypes.bool,
-	    /**
-	     * @title 类名
-	     * @veIgnore
-	     */
-	    className: React.PropTypes.string,
-	    /**
-	     * @title 内容
-	     */
-	    children: React.PropTypes.oneOfType([React.PropTypes.element, React.PropTypes.string]),
-	    /**
-	     * @title <button> 的 type
-	     * @veIgnore
-	     */
-	    htmlType: React.PropTypes.oneOf(['submit', 'button', 'reset'])
-	};
-	Button.defaultProps = {
-	    size: 'medium',
-	    type: 'primary',
-	    disabled: false,
-	    className: '',
-	    children: 'Button',
-	    htmlType: 'button'
-	};
+	Button.propTypes = propTypes;
+	Button.defaultProps = defaultProps;
 
-	module.exports = Button;
+	exports["default"] = Button;
+	module.exports = exports['default'];
 
 /***/ },
 /* 4 */

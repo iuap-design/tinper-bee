@@ -1,15 +1,15 @@
 {
-  "name": "neoui-react",
-  "version": "0.3.6",
+  "name": "tinper-bee",
+  "version": "0.0.1",
   "description": "React Components living for enterprise-class pc backend application",
-  "main": "build/neoui-react.js",
+  "main": "build/tinper-bee.js",
   "scripts": {
-      "dev": "gulp",
-      "pub": "gulp pub"
+    "dev": "gulp",
+    "pub": "gulp pub"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iuap-design/neoui-react.git"
+    "url": "git+https://github.com/iuap-design/tinper-bee.git"
   },
   "keywords": [
     "react",
@@ -19,15 +19,16 @@
     "ui",
     "framework",
     "frontend",
-    "iuap-design",
-    "neoui-react"
+    "tinper",
+    "tinper-bee",
+    "bee"
   ],
   "author": "iuap",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iuap-design/neoui-react/issues"
+    "url": "https://github.com/iuap-design/tinper-bee/issues"
   },
-  "homepage": "https://github.com/iuap-design/neoui-react#readme",
+  "homepage": "https://github.com/iuap-design/tinper-bee#readme",
   "devDependencies": {
     "colors": "~1.1.2",
     "console-polyfill": "^0.2.2",
@@ -45,7 +46,7 @@
     "gulp-clean-css": "~2.0.9",
     "gulp-cleancss": "~0.2.2",
     "gulp-concat": "~2.6.0",
-    "gulp-less": "~3.1.0",
+    "gulp-sass": "~2.3.2",
     "gulp-rename": "~1.2.2",
     "gulp-uglify": "~1.5.3",
     "html-wiring": "^1.2.0",
@@ -62,6 +63,7 @@
     "webpack": "~1.13.1"
   },
   "dependencies": {
-    "neoui-react-button": "0.0.2"
+    "bee-button": "^0.0.4",
+    "tinper-bee-core": "*"
   }
 }
