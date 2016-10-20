@@ -42,6 +42,7 @@
     "expect.js": "^0.3.1",
     "git-rev": "~0.2.1",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-clean": "~0.3.2",
     "gulp-clean-css": "~2.0.9",
     "gulp-cleancss": "~0.2.2",

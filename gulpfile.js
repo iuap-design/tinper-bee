@@ -5,8 +5,7 @@ var sass = require('gulp-sass');
 var clean = require('gulp-clean');
 var cleancss = require('gulp-cleancss');
 var concat = require('gulp-concat');
-// var sassPluginAutoPrefix = require('less-plugin-autoprefix');
-// var sassPluginInlineUrls = require('less-plugin-inline-urls');
+var autoprefix = require('gulp-autoprefixer');
 var webpack = require('webpack');
 var Promise = require('promise');
 var git = require('git-rev');
@@ -18,9 +17,6 @@ var rimraf = require('rimraf');
 var childProcess = require('child_process');
 var path = require('path');
 
-// var autoprefix = new LessPluginAutoPrefix({
-//   browsers: ['last 2 versions', 'not ie < 8'],
-// });
 
 var cleancssOption = {
   advanced: false,
@@ -129,12 +125,16 @@ gulp.task('js_uglify', ['js_build'], function (done) {
 gulp.task('theme', ['theme_clean'], function (done) {
   gulp.src(['./style/*.scss'])
       .pipe(sass())
-      .pipe(gulp.dest('./assets'))
+      .pipe(concat('tinper-bee.css'))
+      .pipe(autoprefix({
+          browsers: ['last 2 versions', 'not ie < 8'],
+          cascade: false
+      }))
+      .pipe(gulp.dest('./assets/css'))
       .on('end', function () {
         done();
       });
 });
-
 
 
 
