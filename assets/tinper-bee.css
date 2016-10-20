@@ -3961,6 +3961,9 @@ main {
 *[hidden] {
   display: none !important; }
 
+*, :after, :before {
+  box-sizing: border-box; }
+
 @font-face {
   font-family: "uf";
   src: url("../node_modules/tinper-bee-core/scss/iconfont.eot?t=1472092777");

@@ -65,14 +65,15 @@
     "webpack": "~1.13.1"
   },
   "dependencies": {
+    "bee-badge": "0.0.3",
+    "bee-button": "^0.0.4",
+    "bee-button-group": "0.0.1",
     "bee-control-label": "0.0.2",
     "bee-form-control": "0.0.4",
     "bee-form-group": "1.0.0",
     "bee-input-group": "0.0.2",
     "bee-input-group-addon": "0.0.4",
     "bee-input-group-button": "0.0.4",
-    "bee-badge": "0.0.3",
-    "bee-button": "^0.0.4",
     "bee-loading-state": "0.0.2",
     "tinper-bee-core": "*"
   }
