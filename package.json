@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
@@ -71,6 +71,7 @@
     "bee-control-label": "0.0.2",
     "bee-form-control": "0.0.4",
     "bee-form-group": "1.0.0",
+    "bee-grid": "0.0.1",
     "bee-input-group": "0.0.2",
     "bee-input-group-addon": "0.0.4",
     "bee-input-group-button": "0.0.4",
