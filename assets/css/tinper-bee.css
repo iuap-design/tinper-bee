@@ -4607,9 +4607,9 @@ main {
 
 @font-face {
   font-family: "uf";
-  src: url("../node_modules/tinper-bee-core/scss/iconfont.eot?t=1472092777");
+  src: url("../font/iconfont.eot");
   /* IE9*/
-  src: url("../node_modules/tinper-bee-core/scss/iconfont.eot?t=1472092777#iefix") format("embedded-opentype"), url("../node_modules/tinper-bee-core/scss/iconfont.woff?t=1472092777") format("woff"), url("../node_modules/tinper-bee-core/scss/iconfont.ttf?t=1472092777") format("truetype"), url("../node_modules/tinper-bee-core/scss/iconfont.svg?t=1472092777#uf") format("svg");
+  src: url("../font/iconfont.eot") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg") format("svg");
   /* iOS 4.1- */ }
 
 .uf {
