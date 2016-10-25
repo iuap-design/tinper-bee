@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
@@ -42,6 +42,7 @@
     "expect.js": "^0.3.1",
     "git-rev": "~0.2.1",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-clean": "~0.3.2",
     "gulp-clean-css": "~2.0.9",
     "gulp-cleancss": "~0.2.2",
@@ -64,14 +65,16 @@
     "webpack": "~1.13.1"
   },
   "dependencies": {
+    "bee-badge": "0.0.3",
+    "bee-button": "^0.0.4",
+    "bee-button-group": "0.0.1",
     "bee-control-label": "0.0.2",
     "bee-form-control": "0.0.4",
     "bee-form-group": "1.0.0",
+    "bee-grid": "0.0.2",
     "bee-input-group": "0.0.2",
     "bee-input-group-addon": "0.0.4",
     "bee-input-group-button": "0.0.4",
-    "bee-badge": "0.0.3",
-    "bee-button": "^0.0.4",
     "bee-loading-state": "0.0.2",
     "tinper-bee-core": "*"
   }
