@@ -1,3 +1,20 @@
-@import "../node_modules/tinper-bee-core/scss/index.scss";
+@import "./utils/minxin-colors";
+@import "./utils/minxin-themeColors";
+@import "./utils/minxin-variables";
+@import "./utils/minxin-mixins";
+@import "./utils/minxin-palette";
+
+// 全局设置类文件
+@import "./utils/set-normalize";
+@import "./utils/set-global";
+@import "./utils/set-resets";
+
+
+// 工具类文件
+@import "./utils/util-iconfont";
+@import "./utils/util-ripple";
+@import "./utils/util-tool";
+@import "./utils/util-utilities";
+@import "./utils/util-shadow";
 
 @import "./component.scss";

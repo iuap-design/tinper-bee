@@ -66,8 +66,6 @@ $color-accent: $palette-pink-A200 !default;
     border: 0; }
   .u-button:hover {
     background-color: #F7F7F7; }
-  .u-button:focus:not(:active) {
-    background-color: rgba(0,0,0, 0.12); }
   .u-button:active {
     background-color: rgba(158,158,158, 0.40); }
   .u-button.colored {
@@ -1158,6 +1156,222 @@ $color-accent: $palette-pink-A200 !default;
 
 .input-group-btn > button:active, .input-group-btn > .btn:focus, .input-group-btn > button:hover {
   z-index: 2; }
+
+/*  IMAGES  */
+/* 默认颜色 */
+/* 主题颜色放入 minxin-themeColors.scss
+$color-primary: $palette-indigo-500 !default;
+$color-primary-dark: $palette-indigo-700 !default;
+$color-accent: $palette-pink-A200 !default;
+*/
+/* 客户化 */
+/* 波纹效果 */
+/* 动画 */
+/* 阴影 */
+/* ==========  字体  ========== */
+/* 控件 */
+/* UButton */
+/* UText */
+/*  Navlayout  */
+/* gridlayout */
+/* menu */
+/* CHECKBOX */
+/*  Radio  */
+/* Switch  */
+/* loading */
+/* datetimepicker */
+/* message */
+/* DATA TABLE */
+/* tooltip*/
+/* 进度条 */
+/* ==========  Content Tabs  ========== */
+/* CARD */
+/* Card dimensions */
+/* Cover image */
+/* ==========  Card  ========== */
+/* ============ Forms ============*/
+/* BADGE */
+/* Typography */
+/* Shadows */
+/* Animations */
+.bee-switch, .bee-switch-small {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 44px;
+  height: 22px;
+  line-height: 20px;
+  vertical-align: middle;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  cursor: pointer;
+  outline: 0;
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .bee-switch:active:after, .bee-switch-small:active:after {
+    width: 24px; }
+  .bee-switch:after, .bee-switch-small:after {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 1px;
+    left: 2px;
+    border-radius: 18px;
+    background-color: #fff;
+    content: " ";
+    cursor: pointer;
+    transition: left 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86), width 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86); }
+  .bee-switch-small {
+    height: 14px;
+    line-height: 12px;
+    width: 28px; }
+    .bee-switch-small:after {
+      width: 12px;
+      height: 12px;
+      top: 0;
+      left: 0; }
+    .bee-switch-small:active:after {
+      width: 16px; }
+
+.bee-switch-inner {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 22px; }
+
+.bee-switch-small-inner {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 12px; }
+
+.changePostion {
+  left: 6px !important; }
+  .changePostion-small {
+    left: 2px !important; }
+
+.bee-switch-checked, .bee-switch-checked-small {
+  border-color: #2db7f5;
+  background-color: #2db7f5; }
+  .bee-switch-checked:after, .bee-switch-checked-small:after {
+    left: 22px; }
+  .bee-switch-checked:active:after, .bee-switch-checked-small:active:after {
+    left: 16px; }
+  .bee-switch-checked-small:after {
+    left: 12px; }
+  .bee-switch-checked-small:active:after {
+    left: 10px; }
+
+/*  IMAGES  */
+/* 默认颜色 */
+/* 主题颜色放入 minxin-themeColors.scss
+$color-primary: $palette-indigo-500 !default;
+$color-primary-dark: $palette-indigo-700 !default;
+$color-accent: $palette-pink-A200 !default;
+*/
+/* 客户化 */
+/* 波纹效果 */
+/* 动画 */
+/* 阴影 */
+/* ==========  字体  ========== */
+/* 控件 */
+/* UButton */
+/* UText */
+/*  Navlayout  */
+/* gridlayout */
+/* menu */
+/* CHECKBOX */
+/*  Radio  */
+/* Switch  */
+/* loading */
+/* datetimepicker */
+/* message */
+/* DATA TABLE */
+/* tooltip*/
+/* 进度条 */
+/* ==========  Content Tabs  ========== */
+/* CARD */
+/* Card dimensions */
+/* Cover image */
+/* ==========  Card  ========== */
+/* ============ Forms ============*/
+/* BADGE */
+/* Typography */
+/* Shadows */
+/* Animations */
+.u-alert-dismissable, .alert-dismissible {
+  padding-right: 35px; }
+
+.u-alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+  .u-alert.u-alert-danger {
+    color: #f44336;
+    background-color: rgba(255, 205, 210, 0.8);
+    border-color: #ffcdd2; }
+  .u-alert.u-alert-warning {
+    color: #ff9436;
+    background-color: rgba(255, 224, 178, 0.8);
+    border-color: rgba(255, 224, 178, 0.8); }
+  .u-alert.u-alert-info {
+    color: #00bcd4;
+    background-color: rgba(178, 235, 242, 0.8);
+    border-color: #b2ebf2; }
+  .u-alert.u-alert-news {
+    color: #3f51b5;
+    background-color: rgba(197, 202, 233, 0.8);
+    border-color: #c5cae9; }
+  .u-alert.u-alert-success {
+    color: #4caf50;
+    background-color: rgba(200, 230, 201, 0.8);
+    border-color: #c8e6c9; }
+  .u-alert.dark.u-alert-warning {
+    color: #fff;
+    background-color: #ff9800;
+    border-color: #ff9800; }
+  .u-alert.dark.u-alert-danger {
+    color: #fff;
+    background-color: #ed4047;
+    border-color: #ed4047; }
+  .u-alert.dark.u-alert-info {
+    color: #fff;
+    background-color: #00bcd4;
+    border-color: #00bcd4; }
+  .u-alert.dark.u-alert-news {
+    color: #fff;
+    background-color: #3f51b5;
+    border-color: #3f51b5; }
+  .u-alert.dark.u-alert-success {
+    color: #fff;
+    background-color: #4caf50;
+    border-color: #4caf50; }
+  .u-alert button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none; }
+  .u-alert .close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+    filter: alpha(opacity=20); }
+
+.u-alert-dismissable .close, .u-alert-dismissible .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit; }
 
 /*  IMAGES  */
 /* 默认颜色 */
@@ -4607,9 +4821,9 @@ main {
 
 @font-face {
   font-family: "uf";
-  src: url("../font/iconfont.eot");
+  src: url("../style/utils/iconfont.eot");
   /* IE9*/
-  src: url("../font/iconfont.eot") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg") format("svg");
+  src: url("../style/utils/iconfont.eot") format("embedded-opentype"), url("../style/utils/iconfont.woff") format("woff"), url("../style/utils/iconfont.ttf") format("truetype"), url("../style/utils/iconfont.svg") format("svg");
   /* iOS 4.1- */ }
 
 .uf {
@@ -7747,8 +7961,6 @@ $color-accent: $palette-pink-A200 !default;
     border: 0; }
   .u-button:hover {
     background-color: #F7F7F7; }
-  .u-button:focus:not(:active) {
-    background-color: rgba(0,0,0, 0.12); }
   .u-button:active {
     background-color: rgba(158,158,158, 0.40); }
   .u-button.colored {
@@ -8839,6 +9051,222 @@ $color-accent: $palette-pink-A200 !default;
 
 .input-group-btn > button:active, .input-group-btn > .btn:focus, .input-group-btn > button:hover {
   z-index: 2; }
+
+/*  IMAGES  */
+/* 默认颜色 */
+/* 主题颜色放入 minxin-themeColors.scss
+$color-primary: $palette-indigo-500 !default;
+$color-primary-dark: $palette-indigo-700 !default;
+$color-accent: $palette-pink-A200 !default;
+*/
+/* 客户化 */
+/* 波纹效果 */
+/* 动画 */
+/* 阴影 */
+/* ==========  字体  ========== */
+/* 控件 */
+/* UButton */
+/* UText */
+/*  Navlayout  */
+/* gridlayout */
+/* menu */
+/* CHECKBOX */
+/*  Radio  */
+/* Switch  */
+/* loading */
+/* datetimepicker */
+/* message */
+/* DATA TABLE */
+/* tooltip*/
+/* 进度条 */
+/* ==========  Content Tabs  ========== */
+/* CARD */
+/* Card dimensions */
+/* Cover image */
+/* ==========  Card  ========== */
+/* ============ Forms ============*/
+/* BADGE */
+/* Typography */
+/* Shadows */
+/* Animations */
+.bee-switch, .bee-switch-small {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 44px;
+  height: 22px;
+  line-height: 20px;
+  vertical-align: middle;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  cursor: pointer;
+  outline: 0;
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .bee-switch:active:after, .bee-switch-small:active:after {
+    width: 24px; }
+  .bee-switch:after, .bee-switch-small:after {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 1px;
+    left: 2px;
+    border-radius: 18px;
+    background-color: #fff;
+    content: " ";
+    cursor: pointer;
+    transition: left 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86), width 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86); }
+  .bee-switch-small {
+    height: 14px;
+    line-height: 12px;
+    width: 28px; }
+    .bee-switch-small:after {
+      width: 12px;
+      height: 12px;
+      top: 0;
+      left: 0; }
+    .bee-switch-small:active:after {
+      width: 16px; }
+
+.bee-switch-inner {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 22px; }
+
+.bee-switch-small-inner {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 12px; }
+
+.changePostion {
+  left: 6px !important; }
+  .changePostion-small {
+    left: 2px !important; }
+
+.bee-switch-checked, .bee-switch-checked-small {
+  border-color: #2db7f5;
+  background-color: #2db7f5; }
+  .bee-switch-checked:after, .bee-switch-checked-small:after {
+    left: 22px; }
+  .bee-switch-checked:active:after, .bee-switch-checked-small:active:after {
+    left: 16px; }
+  .bee-switch-checked-small:after {
+    left: 12px; }
+  .bee-switch-checked-small:active:after {
+    left: 10px; }
+
+/*  IMAGES  */
+/* 默认颜色 */
+/* 主题颜色放入 minxin-themeColors.scss
+$color-primary: $palette-indigo-500 !default;
+$color-primary-dark: $palette-indigo-700 !default;
+$color-accent: $palette-pink-A200 !default;
+*/
+/* 客户化 */
+/* 波纹效果 */
+/* 动画 */
+/* 阴影 */
+/* ==========  字体  ========== */
+/* 控件 */
+/* UButton */
+/* UText */
+/*  Navlayout  */
+/* gridlayout */
+/* menu */
+/* CHECKBOX */
+/*  Radio  */
+/* Switch  */
+/* loading */
+/* datetimepicker */
+/* message */
+/* DATA TABLE */
+/* tooltip*/
+/* 进度条 */
+/* ==========  Content Tabs  ========== */
+/* CARD */
+/* Card dimensions */
+/* Cover image */
+/* ==========  Card  ========== */
+/* ============ Forms ============*/
+/* BADGE */
+/* Typography */
+/* Shadows */
+/* Animations */
+.u-alert-dismissable, .alert-dismissible {
+  padding-right: 35px; }
+
+.u-alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+  .u-alert.u-alert-danger {
+    color: #f44336;
+    background-color: rgba(255, 205, 210, 0.8);
+    border-color: #ffcdd2; }
+  .u-alert.u-alert-warning {
+    color: #ff9436;
+    background-color: rgba(255, 224, 178, 0.8);
+    border-color: rgba(255, 224, 178, 0.8); }
+  .u-alert.u-alert-info {
+    color: #00bcd4;
+    background-color: rgba(178, 235, 242, 0.8);
+    border-color: #b2ebf2; }
+  .u-alert.u-alert-news {
+    color: #3f51b5;
+    background-color: rgba(197, 202, 233, 0.8);
+    border-color: #c5cae9; }
+  .u-alert.u-alert-success {
+    color: #4caf50;
+    background-color: rgba(200, 230, 201, 0.8);
+    border-color: #c8e6c9; }
+  .u-alert.dark.u-alert-warning {
+    color: #fff;
+    background-color: #ff9800;
+    border-color: #ff9800; }
+  .u-alert.dark.u-alert-danger {
+    color: #fff;
+    background-color: #ed4047;
+    border-color: #ed4047; }
+  .u-alert.dark.u-alert-info {
+    color: #fff;
+    background-color: #00bcd4;
+    border-color: #00bcd4; }
+  .u-alert.dark.u-alert-news {
+    color: #fff;
+    background-color: #3f51b5;
+    border-color: #3f51b5; }
+  .u-alert.dark.u-alert-success {
+    color: #fff;
+    background-color: #4caf50;
+    border-color: #4caf50; }
+  .u-alert button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none; }
+  .u-alert .close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+    filter: alpha(opacity=20); }
+
+.u-alert-dismissable .close, .u-alert-dismissible .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit; }
 
 /*  IMAGES  */
 /* 默认颜色 */
