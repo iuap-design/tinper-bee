@@ -65,6 +65,7 @@
     "webpack": "~1.13.1"
   },
   "dependencies": {
+    "bee-alert": "0.0.2",
     "bee-badge": "0.0.3",
     "bee-button": "^0.0.4",
     "bee-button-group": "0.0.1",
