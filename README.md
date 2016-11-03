@@ -1,7 +1,15 @@
 # tinper-bee
 
 
-[tinper-bee](http://bee.tinper.org/) 是基于 `UI` 设计语言 `iUAP Design` 和 `React` 实现的组件库，为开发者提供从产品界面设计到前端开发的完整生态。
+tinper-bee（[官网链接](http://bee.tinper.org/) ）是基于 `UI` 设计语言 `iUAP Design` 和 `React` 实现的组件库，为开发者提供从产品界面设计到前端开发的完整生态。
+
+## 关键特性
+
+- 组件支持可插拔使用
+- 提供丰富基础组件
+- 文档齐全，使用简单
+- 丰富的企业级特性应用组件
+- 支持组件的扩展和自定义
 
 ## 核心能力
 
