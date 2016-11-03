@@ -65,12 +65,12 @@
     "webpack": "~1.13.1"
   },
   "dependencies": {
-    "bee-alert": "0.0.2",
+    "bee-alert": "0.0.3",
     "bee-badge": "0.0.3",
     "bee-button": "^0.0.4",
     "bee-button-group": "0.0.1",
     "bee-control-label": "0.0.2",
-    "bee-form-control": "0.0.4",
+    "bee-form-control": "0.0.7",
     "bee-form-group": "1.0.0",
     "bee-grid": "0.0.2",
     "bee-input-group": "0.0.2",
