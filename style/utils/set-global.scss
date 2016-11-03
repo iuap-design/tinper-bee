@@ -1,0 +1,66 @@
+
+@import "minxin-colors";
+
+//主要颜色,次要颜色值与ui中保持一致
+@import "minxin-themeColors";
+
+
+body{
+  font-family:'Open Sans','Helvetica Neue',Arial,'Hiragino Sans GB','Microsoft YaHei',sans-serif;
+  font-color:#333333;
+}
+
+
+//图标 左右内间距为5px;
+i.uf,i.fa{
+  padding: 0 5px;
+}
+
+.u-visible{
+  display: block;
+}
+
+.u-not-visible{
+  display: none;
+}
+
+// 边框
+.u-border-top{
+  border-top:1px solid unquote("rgb(#{$palette-u-gray-100})");
+}
+
+.u-border-left{
+  border-left:1px solid unquote("rgb(#{$palette-u-gray-100})");
+}
+
+.u-border-right{
+  border-right:1px solid unquote("rgb(#{$palette-u-gray-100})");
+}
+
+.u-border-bottom{
+  border-bottom:1px solid unquote("rgb(#{$palette-u-gray-100})");
+}
+
+//居右
+.u-right{
+  float:right;
+}
+//居左
+.u-left{
+  float:left;
+}
+
+
+
+@media (max-width: $screen-xs-min) {
+  .u-hidden-xs{
+    display: none;
+  }
+}
+
+@media (max-width: $screen-sm-min) {
+  .u-hidden-sm{
+    display: none;
+  }
+}
+

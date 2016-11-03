@@ -50,7 +50,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/
-/******/ ([
+/******/ ((function(modules) {
+	// Check all modules for deduplicated modules
+	for(var i in modules) {
+		if(Object.prototype.hasOwnProperty.call(modules, i)) {
+			switch(typeof modules[i]) {
+			case "function": break;
+			case "object":
+				// Module can be created from a template
+				modules[i] = (function(_m) {
+					var args = _m.slice(1), fn = modules[_m[0]];
+					return function (a,b,c) {
+						fn.apply(this, [a,b,c].concat(args));
+					};
+				}(modules[i]));
+				break;
+			default:
+				// Module is a copy of another module
+				modules[i] = modules[modules[i]];
+				break;
+			}
+		}
+	}
+	return modules;
+}([
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -90,28 +113,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 2 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	exports.__esModule = true;
-	exports.Button = undefined;
-
-	var _Button2 = __webpack_require__(3);
-
-	var _Button3 = _interopRequireDefault(_Button2);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-	exports.Button = _Button3["default"];
-
-/***/ },
+[35, 3],
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	exports.__esModule = true;
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -129,13 +139,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 
 	var propTypes = {
 	    /**
@@ -177,7 +189,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var defaultProps = {
 	    size: '',
-	    type: '',
+	    type: 'primary',
 	    shape: '',
 	    disabled: false,
 	    className: '',
@@ -1492,7 +1504,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 33 */
-/***/ function(module, exports, __webpack_require__) {
+[35, 34],
+/* 34 */
+3,
+/* 35 */
+/***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
 
@@ -1500,7 +1516,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 
-	var _Button = __webpack_require__(34);
+	var _Button = __webpack_require__(__webpack_module_template_argument_0__);
 
 	var _Button2 = _interopRequireDefault(_Button);
 
@@ -1509,169 +1525,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports["default"] = _Button2["default"];
 	module.exports = exports['default'];
 
-/***/ },
-/* 34 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _react = __webpack_require__(4);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(5);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	var _classnames = __webpack_require__(6);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
-
-	var propTypes = {
-	    /**
-	     * @title 尺寸
-	     */
-	    size: _react.PropTypes.oneOf(['sm', 'xg', 'lg', '']),
-	    /**
-	     * @title 样式
-	     */
-	    style: _react.PropTypes.object,
-	    /**
-	     * @title 形状
-	     */
-	    shape: _react.PropTypes.oneOf(['block', 'round', 'squared', 'floating', 'pillRight', 'pillLeft', '']),
-	    /**
-	    * @title 类型
-	    */
-	    type: _react.PropTypes.oneOf(['primary', 'accent', 'success', 'info', 'warning', 'danger', '']),
-	    /**
-	     * @title 是否禁用
-	     * @veIgnore
-	     */
-	    disabled: _react.PropTypes.bool,
-	    /**
-	     * @title 类名
-	     * @veIgnore
-	     */
-	    className: _react.PropTypes.string,
-	    /**
-	     * @title 内容
-	     */
-	    children: _react.PropTypes.oneOfType([_react2["default"].PropTypes.element, _react2["default"].PropTypes.string]),
-	    /**
-	     * @title <button> 的 type
-	     * @veIgnore
-	     */
-	    htmlType: _react.PropTypes.oneOf(['submit', 'button', 'reset'])
-	};
-
-	var defaultProps = {
-	    size: '',
-	    type: 'primary',
-	    shape: '',
-	    disabled: false,
-	    className: '',
-	    children: '',
-	    htmlType: 'button'
-	};
-
-	var sizeMap = {
-	    sm: 'sm',
-	    xg: 'xg',
-	    lg: 'lg'
-	},
-	    typeMap = {
-	    primary: 'primary',
-	    accent: 'accent',
-	    success: 'success',
-	    info: 'info',
-	    warning: 'warning',
-	    danger: 'danger'
-	},
-	    shapeMap = {
-	    block: 'block',
-	    round: 'round',
-	    squared: 'squared',
-	    floating: 'floating',
-	    pillRight: 'pill-right',
-	    pillLeft: 'pill-left'
-	},
-	    clsPrefix = 'u-button';
-
-	var Button = function (_React$Component) {
-	    _inherits(Button, _React$Component);
-
-	    function Button(props) {
-	        _classCallCheck(this, Button);
-
-	        return _possibleConstructorReturn(this, _React$Component.call(this, props));
-	    }
-
-	    Button.prototype.render = function render() {
-	        var _props = this.props;
-	        var type = _props.type;
-	        var shape = _props.shape;
-	        var disabled = _props.disabled;
-	        var className = _props.className;
-	        var size = _props.size;
-	        var children = _props.children;
-	        var htmlType = _props.htmlType;
-
-	        var others = _objectWithoutProperties(_props, ['type', 'shape', 'disabled', 'className', 'size', 'children', 'htmlType']);
-
-	        var clsObj = {};
-	        if (className) {
-	            clsObj[className] = true;
-	        }
-	        if (sizeMap[size]) {
-	            clsObj[clsPrefix + '-' + sizeMap[size]] = true;
-	        }
-	        if (shapeMap[shape]) {
-	            clsObj[clsPrefix + '-' + shapeMap[shape]] = true;
-	        }
-	        if (typeMap[type]) {
-	            clsObj[clsPrefix + '-' + typeMap[type]] = true;
-	        }
-	        var classNames = (0, _classnames2["default"])(clsPrefix, clsObj);
-	        return _react2["default"].createElement(
-	            'button',
-	            _extends({
-	                type: htmlType,
-	                className: classNames,
-	                disabled: disabled
-	            }, others),
-	            this.props.children
-	        );
-	    };
-
-	    return Button;
-	}(_react2["default"].Component);
-
-	Button.propTypes = propTypes;
-	Button.defaultProps = defaultProps;
-
-	exports["default"] = Button;
-	module.exports = exports['default'];
-
 /***/ }
-/******/ ])
+/******/ ])))
 });
 ;

@@ -1,0 +1,44 @@
+@import "minxin-variables";
+
+.u-ripple {
+  background       : $ripple-bg-color;
+  border-radius    : 50%;
+  height           : 50px;
+  left             : 0;
+  filter: alpha(opacity=0);
+  opacity          : 0;
+  filter: alpha(opacity=0) \9;
+  display:none \9;
+  pointer-events   : none;
+  position         : absolute;
+  top              : 0;
+  transform        : translate(-50%, -50%);
+  width            : 50px;
+  overflow         : hidden;
+
+  &.is-animating {
+    transition: transform 0.8s $animation-curve-linear-out-slow-in,
+    width 0.8s $animation-curve-linear-out-slow-in,
+    height 0.8s $animation-curve-linear-out-slow-in,
+    opacity 0.8s $animation-curve-linear-out-slow-in;
+  }
+
+  &.is-visible {
+    opacity: 0.3;
+  }
+
+  &.oldIE{
+    background:none;
+  }
+}
+
+.u-ripple-container {
+	display: block;
+  height: 100%;
+  left: 0rem;
+  position: absolute;
+  top: 0rem;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+}

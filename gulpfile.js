@@ -130,7 +130,7 @@ gulp.task('theme', ['theme_clean'], function (done) {
           browsers: ['last 2 versions', 'not ie < 8'],
           cascade: false
       }))
-      .pipe(gulp.dest('./assets/css'))
+      .pipe(gulp.dest('./assets'))
       .on('end', function () {
         done();
       });
