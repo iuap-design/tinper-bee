@@ -65,19 +65,19 @@
     "webpack": "~1.13.1"
   },
   "dependencies": {
-    "bee-alert": "0.0.3",
-    "bee-badge": "0.0.3",
-    "bee-button": "0.0.6",
-    "bee-button-group": "0.0.1",
-    "bee-control-label": "0.0.2",
-    "bee-form-control": "0.0.7",
-    "bee-form-group": "1.0.0",
-    "bee-grid": "0.0.2",
-    "bee-input-group": "0.0.2",
-    "bee-input-group-addon": "0.0.4",
-    "bee-input-group-button": "0.0.4",
-    "bee-loading-state": "0.0.2",
-    "bee-switch": "0.0.4",
+    "bee-alert": "latest",
+    "bee-badge": "latest",
+    "bee-button": "latest",
+    "bee-button-group": "latest",
+    "bee-control-label": "latest",
+    "bee-form-control": "latest",
+    "bee-form-group": "latest",
+    "bee-grid": "latest",
+    "bee-input-group": "latest",
+    "bee-input-group-addon": "latest",
+    "bee-input-group-button": "latest",
+    "bee-loading-state": "latest",
+    "bee-switch": "latest",
     "tinper-bee-core": "*"
   }
 }
