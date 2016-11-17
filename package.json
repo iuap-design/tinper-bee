@@ -65,6 +65,10 @@
     "webpack": "~1.13.1"
   },
   "dependencies": {
+    "bee-checkbox":"latest",
+    "bee-pagination":"latest",
+    "bee-progress-bar":"latest",
+    "bee-radio-group":"latest",
     "bee-alert": "latest",
     "bee-badge": "latest",
     "bee-button": "latest",
