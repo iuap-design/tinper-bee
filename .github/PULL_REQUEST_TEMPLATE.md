@@ -1,14 +1,14 @@
-#### PR checklist
+#### PR 选择列表
 
-- [ ] Addresses an existing issue: #0000
-- [ ] New feature, bugfix, or enhancement
-  - [ ] Includes tests
-- [ ] Documentation update
+- [ ] 解决现有问题: #0000
+- [ ] 新功能，修正或增强
+  - [ ] 包括测试
+- [ ] 文档更新
 
-#### What changes did you make?
+#### 你做了哪些更改?
 
-(give an overview)
+(描述一下)
 
-#### Is there anything you'd like reviewers to focus on?
+#### 有什么你想要审阅者关注?
 
-(optional)
+(可选)

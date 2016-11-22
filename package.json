@@ -78,6 +78,6 @@
     "bee-input-group-button": "latest",
     "bee-loading-state": "latest",
     "bee-switch": "latest",
-    "tinper-bee-core": "*"
+    "tinper-bee-core": "latest"
   }
 }
