@@ -352,23 +352,20 @@ input.u-button[type="submit"] {
 
 /*  IMAGES  */
 /* 默认颜色 */
-/* 主题颜色放入 minxin-themeColors.scss
-$color-primary: $palette-indigo-500 !default;
-$color-primary-dark: $palette-indigo-700 !default;
-$color-accent: $palette-pink-A200 !default;
-*/
 /* 客户化 */
 /* 波纹效果 */
-/* 动画 */
+/*贝塞尔曲线动画 */
 /* 阴影 */
-/* ==========  字体  ========== */
+/* ==========  文本字体  ========== */
 /* 控件 */
+/* 不同背景下对应的文字颜色 */
 /* UButton */
 /* UText */
 /*  Navlayout  */
 /* gridlayout */
 /* menu */
-/* CHECKBOX */
+/* Alert */
+/* Checkbox */
 /*  Radio  */
 /* Switch  */
 /* loading */
@@ -437,23 +434,20 @@ $color-accent: $palette-pink-A200 !default;
 
 /*  IMAGES  */
 /* 默认颜色 */
-/* 主题颜色放入 minxin-themeColors.scss
-$color-primary: $palette-indigo-500 !default;
-$color-primary-dark: $palette-indigo-700 !default;
-$color-accent: $palette-pink-A200 !default;
-*/
 /* 客户化 */
 /* 波纹效果 */
-/* 动画 */
+/*贝塞尔曲线动画 */
 /* 阴影 */
-/* ==========  字体  ========== */
+/* ==========  文本字体  ========== */
 /* 控件 */
+/* 不同背景下对应的文字颜色 */
 /* UButton */
 /* UText */
 /*  Navlayout  */
 /* gridlayout */
 /* menu */
-/* CHECKBOX */
+/* Alert */
+/* Checkbox */
 /*  Radio  */
 /* Switch  */
 /* loading */
@@ -485,7 +479,6 @@ $color-accent: $palette-pink-A200 !default;
   font-family: "Open Sans", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 0.8125rem;
   font-weight: 500;
-  text-transform: uppercase;
   line-height: 1;
   letter-spacing: 0;
   overflow: hidden;
@@ -528,40 +521,8 @@ input.u-button[type="submit"] {
   width: 2.375rem;
   width: 38px \9;
   padding: 0;
-  overflow: hidden;
-  background: rgb(63,81,181);
-  background: rgb(255,255,255) \9;
-  position: relative;
   line-height: normal;
   border: 1px solid rgb(224,224,224); }
-  .u-button-floating .fa, .u-button-floating .uf {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -0.4375rem);
-    line-height: 0.875rem;
-    width: auto;
-    width: auto \9;
-    position: relative \9;
-    top: 0px \9;
-    left: 0px \9;
-    padding: 0px; }
-  .u-button-floating.mini {
-    height: 1.875rem;
-    min-width: 1.875rem;
-    width: 1.875rem; }
-  .u-button-floating.flat {
-    background: transparent;
-    border: none;
-    box-shadow: none; }
-  .u-button-floating .u-button-container {
-    border-radius: 50%;
-    -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
-  .u-button-floating:active {
-    background-color: rgba(158,158,158, 0.40); }
-  .u-button-floating:focus:not(:active) {
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.18), 0 0.5rem 1rem rgba(0, 0, 0, 0.36);
-    background-color: rgba(158,158,158, 0.40); }
   .u-button-floating.colored {
     background: rgb(67,160,71);
     color: rgb(255,255,255);
@@ -573,158 +534,124 @@ input.u-button[type="submit"] {
     .u-button-floating.colored:active {
       background-color: rgb(67,160,71); }
 
-.u-button-container {
-  display: block;
-  height: 100%;
-  left: 0rem;
-  position: absolute;
-  top: 0rem;
-  width: 100%;
-  z-index: 0;
-  overflow: hidden; }
-  .u-button-container .u-button[disabled],
-  .u-button-container .u-button.disabled {
-    background-color: transparent; }
+.u-button.disabled, .u-button[disabled] {
+  cursor: not-allowed;
+  opacity: .65;
+  filter: alpha(opacity=65);
+  box-shadow: none; }
 
-.u-button-primary {
-  color: rgb(255,255,255);
-  background-color: rgb(63,81,181);
-  border: 1px rgb(63,81,181) solid; }
-  .u-button-primary:hover {
-    background-color: rgb(92,107,192);
-    border-color: rgb(92,107,192); }
+.u-button-default {
+  color: #333;
+  background-color: #fff;
+  border-color: 1px #ccc solid; }
+  .u-button-default:hover, .u-button-default:focus, .u-button-default:active {
+    background-color: #e6e6e6;
+    border-color: #adadad; }
 
 .u-button-accent {
   color: rgb(255,255,255);
   background-color: rgb(67,160,71);
   border: 1px rgb(67,160,71) solid; }
-  .u-button-accent:hover {
+  .u-button-accent.active, .u-button-accent:hover, .u-button-accent:active, .u-button-accent:focus {
     background-color: rgb(76,175,80);
     border-color: rgb(76,175,80); }
 
-.u-button .uf, .u-button .fa {
-  vertical-align: middle; }
-
-.u-button-icon {
-  border-radius: 50%;
-  font-size: 0.875rem;
-  height: 2rem;
-  margin-left: 0;
-  margin-right: 0;
-  min-width: 2rem;
-  width: 2rem;
-  padding: 0;
-  overflow: hidden;
-  color: inherit;
-  line-height: normal; }
-  .u-button-icon.u-button-mini-icon {
-    height: 0.8125rem;
-    min-width: 0.8125rem;
-    width: 0.8125rem; }
-    .u-button-icon.u-button-mini-icon .fa {
-      top: -0.03125rem;
-      left: -0.03125rem; }
-  .u-button-icon .u-button-ripple-container {
-    border-radius: 50%;
-    -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
-
-.u-button-success {
-  color: #fff;
-  background-color: #4caf50;
-  border: 1px  #4caf50 solid; }
-
-.u-button-success.focus, .u-button-success:focus, .u-button-success:hover {
-  background-color: #66bb6a;
-  border-color: #66bb6a; }
-
-.u-button-success.active, .u-button-success:active, .open > .dropdown-toggle.u-button-success {
-  background-color: #43a047;
-  border-color: #43a047; }
-
-.u-button.active, .u-button:active {
-  box-shadow: none; }
-
-.u-button.active:focus, .u-button:active:focus, .u-button:focus {
-  outline: 0; }
-
-.u-button-info {
-  color: #fff;
-  background-color: #00bcd4;
-  border: 1px  #00bcd4 solid; }
-
-.u-button-info.focus, .u-button-info:focus, .u-button-info:hover {
-  background-color: #26c6da;
-  border-color: #26c6da; }
-
-.u-button-info.active, .u-button-info:active, .open > .dropdown-toggle.u-button-info {
-  background-color: #00acc1;
-  border-color: #00acc1; }
-
-.u-button-warning {
-  color: #fff;
-  background-color: #ff9800;
-  border: 1px  #ff9800 solid; }
-
-.u-button-warning.focus, .u-button-warning:focus, .u-button-warning:hover {
-  background-color: #ffa726;
-  border-color: #ffa726; }
-
-.u-button-warning.active, .u-button-warning:active, .open > .dropdown-toggle.u-button-warning {
-  background-color: #fb8c00;
-  border-color: #fb8c00; }
+.u-button-primary {
+  color: rgb(255,255,255);
+  background-color: rgb(63,81,181);
+  border: 1px rgb(63,81,181) solid; }
+  .u-button-primary.active, .u-button-primary:hover, .u-button-primary:active, .u-button-primary:focus {
+    background-color: rgb(92,107,192);
+    border-color: rgb(92,107,192); }
 
 .u-button-danger {
-  color: #fff;
-  background-color: #f44336;
-  border: 1px  #f44336 solid; }
+  color: rgb(255,255,255);
+  background-color: rgb(244,67,54);
+  border: 1px rgb(244,67,54) solid; }
+  .u-button-danger.active, .u-button-danger:hover, .u-button-danger:active, .u-button-danger:focus {
+    background-color: rgb(239,83,80);
+    border-color: rgb(239,83,80); }
 
-.u-button-danger.focus, .u-button-danger:focus, .u-button-danger:hover {
-  background-color: #ef5350;
-  border-color: #ef5350; }
+.u-button-info {
+  color: rgb(255,255,255);
+  background-color: rgb(0,188,212);
+  border: 1px rgb(0,188,212) solid; }
+  .u-button-info.active, .u-button-info:hover, .u-button-info:active, .u-button-info:focus {
+    background-color: rgb(38,198,218);
+    border-color: rgb(38,198,218); }
 
-.u-button-danger.active, .u-button-danger:active, .open > .dropdown-toggle.u-button-danger {
-  background-color: #e53935;
-  border-color: #e53935; }
+.u-button-warning {
+  color: rgb(255,255,255);
+  background-color: rgb(255,152,0);
+  border: 1px rgb(255,152,0) solid; }
+  .u-button-warning.active, .u-button-warning:hover, .u-button-warning:active, .u-button-warning:focus {
+    background-color: rgb(255,167,38);
+    border-color: rgb(255,167,38); }
+
+.u-button-success {
+  color: rgb(255,255,255);
+  background-color: rgb(76,175,80);
+  border: 1px rgb(76,175,80) solid; }
+  .u-button-success.active, .u-button-success:hover, .u-button-success:active, .u-button-success:focus {
+    background-color: rgb(102,187,106);
+    border-color: rgb(102,187,106); }
+
+.u-button-border.u-button-accent {
+  color: rgb(67,160,71);
+  border: 1px rgb(67,160,71) solid; }
+  .u-button-border.u-button-accent.active, .u-button-border.u-button-accent:hover, .u-button-border.u-button-accent:active, .u-button-border.u-button-accent:focus {
+    color: #fff;
+    background-color: rgb(67,160,71);
+    border-color: rgb(67,160,71); }
+
+.u-button-border.u-button-success {
+  color: rgb(76,175,80);
+  border: 1px rgb(76,175,80) solid; }
+  .u-button-border.u-button-success.active, .u-button-border.u-button-success:hover, .u-button-border.u-button-success:active, .u-button-border.u-button-success:focus {
+    color: #fff;
+    background-color: rgb(102,187,106);
+    border-color: rgb(102,187,106); }
+
+.u-button-border.u-button-warning {
+  color: rgb(255,152,0);
+  border: 1px rgb(255,152,0) solid; }
+  .u-button-border.u-button-warning.active, .u-button-border.u-button-warning:hover, .u-button-border.u-button-warning:active, .u-button-border.u-button-warning:focus {
+    color: #fff;
+    background-color: rgb(255,167,38);
+    border-color: rgb(255,167,38); }
+
+.u-button-border.u-button-danger {
+  color: rgb(244,67,54);
+  border: 1px rgb(244,67,54) solid; }
+  .u-button-border.u-button-danger.active, .u-button-border.u-button-danger:hover, .u-button-border.u-button-danger:active, .u-button-border.u-button-danger:focus {
+    color: #fff;
+    background-color: rgb(239,83,80);
+    border-color: rgb(239,83,80); }
+
+.u-button-border.u-button-info {
+  color: rgb(0,188,212);
+  border: 1px rgb(0,188,212) solid; }
+  .u-button-border.u-button-info.active, .u-button-border.u-button-info:hover, .u-button-border.u-button-info:active, .u-button-border.u-button-info:focus {
+    color: #fff;
+    background-color: rgb(38,198,218);
+    border-color: rgb(38,198,218); }
+
+.u-button-border.u-button-primary {
+  color: rgb(63,81,181);
+  border: 1px rgb(63,81,181) solid; }
+  .u-button-border.u-button-primary.active, .u-button-border.u-button-primary:hover, .u-button-border.u-button-primary:active, .u-button-border.u-button-primary:focus {
+    color: #fff;
+    background-color: rgb(92,107,192);
+    border-color: rgb(92,107,192); }
 
 .u-button-border {
-  color: #3f51b5;
-  border: 1px solid #3f51b5; }
+  color: rgb(63,81,181);
+  border: 1px solid rgb(63,81,181);
+  background-color: #fff; }
 
 .u-button-border:hover {
   color: white;
-  background: #3f51b5; }
-
-.u-button-border.success {
-  color: #4caf50;
-  border: 1px solid #4caf50; }
-
-.u-button-border.success:hover {
-  color: white;
-  background: #4caf50; }
-
-.u-button-border.info {
-  color: #00bcd4;
-  border: 1px solid #00bcd4; }
-
-.u-button-border.info:hover {
-  color: white;
-  background: #00bcd4; }
-
-.u-button-border.danger {
-  color: #f44336;
-  border: 1px solid #f44336; }
-
-.u-button-border.danger:hover {
-  color: white;
-  background: #f44336; }
-
-.u-button-border.warning {
-  color: #ff9800;
-  border: 1px solid #ff9800; }
-
-.u-button-border.warning:hover {
-  color: white;
-  background: #ff9800; }
+  background: #F7F7F7; }
 
 .u-button-lg {
   padding: 6px 15px;
@@ -973,131 +900,6 @@ $color-accent: $palette-pink-A200 !default;
       border-top-left-radius: 0; }
     .u-input-group .u-form-control:not(:first-child):not(:last-child) {
       border-radius: 0; }
-
-/*  IMAGES  */
-/* 默认颜色 */
-/* 主题颜色放入 minxin-themeColors.scss
-$color-primary: $palette-indigo-500 !default;
-$color-primary-dark: $palette-indigo-700 !default;
-$color-accent: $palette-pink-A200 !default;
-*/
-/* 客户化 */
-/* 波纹效果 */
-/* 动画 */
-/* 阴影 */
-/* ==========  字体  ========== */
-/* 控件 */
-/* UButton */
-/* UText */
-/*  Navlayout  */
-/* gridlayout */
-/* menu */
-/* CHECKBOX */
-/*  Radio  */
-/* Switch  */
-/* loading */
-/* datetimepicker */
-/* message */
-/* DATA TABLE */
-/* tooltip*/
-/* 进度条 */
-/* ==========  Content Tabs  ========== */
-/* CARD */
-/* Card dimensions */
-/* Cover image */
-/* ==========  Card  ========== */
-/* ============ Forms ============*/
-/* BADGE */
-/* Typography */
-/* Shadows */
-/* Animations */
-.input-group-addon {
-  padding: 6px 12px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-  color: #555;
-  text-align: center;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 1%;
-  white-space: nowrap;
-  vertical-align: middle;
-  display: table-cell; }
-  .input-group-addon:last-child {
-    border-left: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0; }
-  .input-group-addon:first-child {
-    border-right: 0;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0; }
-
-/*  IMAGES  */
-/* 默认颜色 */
-/* 主题颜色放入 minxin-themeColors.scss
-$color-primary: $palette-indigo-500 !default;
-$color-primary-dark: $palette-indigo-700 !default;
-$color-accent: $palette-pink-A200 !default;
-*/
-/* 客户化 */
-/* 波纹效果 */
-/* 动画 */
-/* 阴影 */
-/* ==========  字体  ========== */
-/* 控件 */
-/* UButton */
-/* UText */
-/*  Navlayout  */
-/* gridlayout */
-/* menu */
-/* CHECKBOX */
-/*  Radio  */
-/* Switch  */
-/* loading */
-/* datetimepicker */
-/* message */
-/* DATA TABLE */
-/* tooltip*/
-/* 进度条 */
-/* ==========  Content Tabs  ========== */
-/* CARD */
-/* Card dimensions */
-/* Cover image */
-/* ==========  Card  ========== */
-/* ============ Forms ============*/
-/* BADGE */
-/* Typography */
-/* Shadows */
-/* Animations */
-.input-group-btn {
-  font-size: 0;
-  white-space: nowrap;
-  position: relative;
-  width: 1%;
-  vertical-align: middle;
-  display: table-cell; }
-  .input-group-btn .u-button {
-    position: relative; }
-
-.input-group-btn:first-child > button, .input-group-btn:first-child > .btn-group > button, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn-group:not(:last-child) > button, .input-group-btn:last-child > button:not(:last-child):not(.dropdown-toggle) {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0; }
-
-.input-group-btn:first-child > .btn-group:not(:first-child) > button, .input-group-btn:first-child > button:not(:first-child), .input-group-btn:last-child > button, .input-group-btn:last-child > .btn-group > button, .input-group-btn:last-child > .dropdown-toggle {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0; }
-
-.input-group-btn:last-child > button, .input-group-btn:last-child > .btn-group {
-  z-index: 2;
-  margin-left: -1px; }
-
-.input-group-btn:first-child > button, .input-group-btn:first-child > .btn-group {
-  margin-right: -1px; }
-
-.input-group-btn > button:active, .input-group-btn > .btn:focus, .input-group-btn > button:hover {
-  z-index: 2; }
 
 /*  IMAGES  */
 /* 默认颜色 */
@@ -8375,23 +8177,20 @@ input.u-button[type="submit"] {
 
 /*  IMAGES  */
 /* 默认颜色 */
-/* 主题颜色放入 minxin-themeColors.scss
-$color-primary: $palette-indigo-500 !default;
-$color-primary-dark: $palette-indigo-700 !default;
-$color-accent: $palette-pink-A200 !default;
-*/
 /* 客户化 */
 /* 波纹效果 */
-/* 动画 */
+/*贝塞尔曲线动画 */
 /* 阴影 */
-/* ==========  字体  ========== */
+/* ==========  文本字体  ========== */
 /* 控件 */
+/* 不同背景下对应的文字颜色 */
 /* UButton */
 /* UText */
 /*  Navlayout  */
 /* gridlayout */
 /* menu */
-/* CHECKBOX */
+/* Alert */
+/* Checkbox */
 /*  Radio  */
 /* Switch  */
 /* loading */
@@ -8460,23 +8259,20 @@ $color-accent: $palette-pink-A200 !default;
 
 /*  IMAGES  */
 /* 默认颜色 */
-/* 主题颜色放入 minxin-themeColors.scss
-$color-primary: $palette-indigo-500 !default;
-$color-primary-dark: $palette-indigo-700 !default;
-$color-accent: $palette-pink-A200 !default;
-*/
 /* 客户化 */
 /* 波纹效果 */
-/* 动画 */
+/*贝塞尔曲线动画 */
 /* 阴影 */
-/* ==========  字体  ========== */
+/* ==========  文本字体  ========== */
 /* 控件 */
+/* 不同背景下对应的文字颜色 */
 /* UButton */
 /* UText */
 /*  Navlayout  */
 /* gridlayout */
 /* menu */
-/* CHECKBOX */
+/* Alert */
+/* Checkbox */
 /*  Radio  */
 /* Switch  */
 /* loading */
@@ -8508,7 +8304,6 @@ $color-accent: $palette-pink-A200 !default;
   font-family: "Open Sans", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 0.8125rem;
   font-weight: 500;
-  text-transform: uppercase;
   line-height: 1;
   letter-spacing: 0;
   overflow: hidden;
@@ -8551,40 +8346,8 @@ input.u-button[type="submit"] {
   width: 2.375rem;
   width: 38px \9;
   padding: 0;
-  overflow: hidden;
-  background: rgb(63,81,181);
-  background: rgb(255,255,255) \9;
-  position: relative;
   line-height: normal;
   border: 1px solid rgb(224,224,224); }
-  .u-button-floating .fa, .u-button-floating .uf {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -0.4375rem);
-    line-height: 0.875rem;
-    width: auto;
-    width: auto \9;
-    position: relative \9;
-    top: 0px \9;
-    left: 0px \9;
-    padding: 0px; }
-  .u-button-floating.mini {
-    height: 1.875rem;
-    min-width: 1.875rem;
-    width: 1.875rem; }
-  .u-button-floating.flat {
-    background: transparent;
-    border: none;
-    box-shadow: none; }
-  .u-button-floating .u-button-container {
-    border-radius: 50%;
-    -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
-  .u-button-floating:active {
-    background-color: rgba(158,158,158, 0.40); }
-  .u-button-floating:focus:not(:active) {
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.18), 0 0.5rem 1rem rgba(0, 0, 0, 0.36);
-    background-color: rgba(158,158,158, 0.40); }
   .u-button-floating.colored {
     background: rgb(67,160,71);
     color: rgb(255,255,255);
@@ -8596,158 +8359,124 @@ input.u-button[type="submit"] {
     .u-button-floating.colored:active {
       background-color: rgb(67,160,71); }
 
-.u-button-container {
-  display: block;
-  height: 100%;
-  left: 0rem;
-  position: absolute;
-  top: 0rem;
-  width: 100%;
-  z-index: 0;
-  overflow: hidden; }
-  .u-button-container .u-button[disabled],
-  .u-button-container .u-button.disabled {
-    background-color: transparent; }
+.u-button.disabled, .u-button[disabled] {
+  cursor: not-allowed;
+  opacity: .65;
+  filter: alpha(opacity=65);
+  box-shadow: none; }
 
-.u-button-primary {
-  color: rgb(255,255,255);
-  background-color: rgb(63,81,181);
-  border: 1px rgb(63,81,181) solid; }
-  .u-button-primary:hover {
-    background-color: rgb(92,107,192);
-    border-color: rgb(92,107,192); }
+.u-button-default {
+  color: #333;
+  background-color: #fff;
+  border-color: 1px #ccc solid; }
+  .u-button-default:hover, .u-button-default:focus, .u-button-default:active {
+    background-color: #e6e6e6;
+    border-color: #adadad; }
 
 .u-button-accent {
   color: rgb(255,255,255);
   background-color: rgb(67,160,71);
   border: 1px rgb(67,160,71) solid; }
-  .u-button-accent:hover {
+  .u-button-accent.active, .u-button-accent:hover, .u-button-accent:active, .u-button-accent:focus {
     background-color: rgb(76,175,80);
     border-color: rgb(76,175,80); }
 
-.u-button .uf, .u-button .fa {
-  vertical-align: middle; }
-
-.u-button-icon {
-  border-radius: 50%;
-  font-size: 0.875rem;
-  height: 2rem;
-  margin-left: 0;
-  margin-right: 0;
-  min-width: 2rem;
-  width: 2rem;
-  padding: 0;
-  overflow: hidden;
-  color: inherit;
-  line-height: normal; }
-  .u-button-icon.u-button-mini-icon {
-    height: 0.8125rem;
-    min-width: 0.8125rem;
-    width: 0.8125rem; }
-    .u-button-icon.u-button-mini-icon .fa {
-      top: -0.03125rem;
-      left: -0.03125rem; }
-  .u-button-icon .u-button-ripple-container {
-    border-radius: 50%;
-    -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
-
-.u-button-success {
-  color: #fff;
-  background-color: #4caf50;
-  border: 1px  #4caf50 solid; }
-
-.u-button-success.focus, .u-button-success:focus, .u-button-success:hover {
-  background-color: #66bb6a;
-  border-color: #66bb6a; }
-
-.u-button-success.active, .u-button-success:active, .open > .dropdown-toggle.u-button-success {
-  background-color: #43a047;
-  border-color: #43a047; }
-
-.u-button.active, .u-button:active {
-  box-shadow: none; }
-
-.u-button.active:focus, .u-button:active:focus, .u-button:focus {
-  outline: 0; }
-
-.u-button-info {
-  color: #fff;
-  background-color: #00bcd4;
-  border: 1px  #00bcd4 solid; }
-
-.u-button-info.focus, .u-button-info:focus, .u-button-info:hover {
-  background-color: #26c6da;
-  border-color: #26c6da; }
-
-.u-button-info.active, .u-button-info:active, .open > .dropdown-toggle.u-button-info {
-  background-color: #00acc1;
-  border-color: #00acc1; }
-
-.u-button-warning {
-  color: #fff;
-  background-color: #ff9800;
-  border: 1px  #ff9800 solid; }
-
-.u-button-warning.focus, .u-button-warning:focus, .u-button-warning:hover {
-  background-color: #ffa726;
-  border-color: #ffa726; }
-
-.u-button-warning.active, .u-button-warning:active, .open > .dropdown-toggle.u-button-warning {
-  background-color: #fb8c00;
-  border-color: #fb8c00; }
+.u-button-primary {
+  color: rgb(255,255,255);
+  background-color: rgb(63,81,181);
+  border: 1px rgb(63,81,181) solid; }
+  .u-button-primary.active, .u-button-primary:hover, .u-button-primary:active, .u-button-primary:focus {
+    background-color: rgb(92,107,192);
+    border-color: rgb(92,107,192); }
 
 .u-button-danger {
-  color: #fff;
-  background-color: #f44336;
-  border: 1px  #f44336 solid; }
+  color: rgb(255,255,255);
+  background-color: rgb(244,67,54);
+  border: 1px rgb(244,67,54) solid; }
+  .u-button-danger.active, .u-button-danger:hover, .u-button-danger:active, .u-button-danger:focus {
+    background-color: rgb(239,83,80);
+    border-color: rgb(239,83,80); }
 
-.u-button-danger.focus, .u-button-danger:focus, .u-button-danger:hover {
-  background-color: #ef5350;
-  border-color: #ef5350; }
+.u-button-info {
+  color: rgb(255,255,255);
+  background-color: rgb(0,188,212);
+  border: 1px rgb(0,188,212) solid; }
+  .u-button-info.active, .u-button-info:hover, .u-button-info:active, .u-button-info:focus {
+    background-color: rgb(38,198,218);
+    border-color: rgb(38,198,218); }
 
-.u-button-danger.active, .u-button-danger:active, .open > .dropdown-toggle.u-button-danger {
-  background-color: #e53935;
-  border-color: #e53935; }
+.u-button-warning {
+  color: rgb(255,255,255);
+  background-color: rgb(255,152,0);
+  border: 1px rgb(255,152,0) solid; }
+  .u-button-warning.active, .u-button-warning:hover, .u-button-warning:active, .u-button-warning:focus {
+    background-color: rgb(255,167,38);
+    border-color: rgb(255,167,38); }
+
+.u-button-success {
+  color: rgb(255,255,255);
+  background-color: rgb(76,175,80);
+  border: 1px rgb(76,175,80) solid; }
+  .u-button-success.active, .u-button-success:hover, .u-button-success:active, .u-button-success:focus {
+    background-color: rgb(102,187,106);
+    border-color: rgb(102,187,106); }
+
+.u-button-border.u-button-accent {
+  color: rgb(67,160,71);
+  border: 1px rgb(67,160,71) solid; }
+  .u-button-border.u-button-accent.active, .u-button-border.u-button-accent:hover, .u-button-border.u-button-accent:active, .u-button-border.u-button-accent:focus {
+    color: #fff;
+    background-color: rgb(67,160,71);
+    border-color: rgb(67,160,71); }
+
+.u-button-border.u-button-success {
+  color: rgb(76,175,80);
+  border: 1px rgb(76,175,80) solid; }
+  .u-button-border.u-button-success.active, .u-button-border.u-button-success:hover, .u-button-border.u-button-success:active, .u-button-border.u-button-success:focus {
+    color: #fff;
+    background-color: rgb(102,187,106);
+    border-color: rgb(102,187,106); }
+
+.u-button-border.u-button-warning {
+  color: rgb(255,152,0);
+  border: 1px rgb(255,152,0) solid; }
+  .u-button-border.u-button-warning.active, .u-button-border.u-button-warning:hover, .u-button-border.u-button-warning:active, .u-button-border.u-button-warning:focus {
+    color: #fff;
+    background-color: rgb(255,167,38);
+    border-color: rgb(255,167,38); }
+
+.u-button-border.u-button-danger {
+  color: rgb(244,67,54);
+  border: 1px rgb(244,67,54) solid; }
+  .u-button-border.u-button-danger.active, .u-button-border.u-button-danger:hover, .u-button-border.u-button-danger:active, .u-button-border.u-button-danger:focus {
+    color: #fff;
+    background-color: rgb(239,83,80);
+    border-color: rgb(239,83,80); }
+
+.u-button-border.u-button-info {
+  color: rgb(0,188,212);
+  border: 1px rgb(0,188,212) solid; }
+  .u-button-border.u-button-info.active, .u-button-border.u-button-info:hover, .u-button-border.u-button-info:active, .u-button-border.u-button-info:focus {
+    color: #fff;
+    background-color: rgb(38,198,218);
+    border-color: rgb(38,198,218); }
+
+.u-button-border.u-button-primary {
+  color: rgb(63,81,181);
+  border: 1px rgb(63,81,181) solid; }
+  .u-button-border.u-button-primary.active, .u-button-border.u-button-primary:hover, .u-button-border.u-button-primary:active, .u-button-border.u-button-primary:focus {
+    color: #fff;
+    background-color: rgb(92,107,192);
+    border-color: rgb(92,107,192); }
 
 .u-button-border {
-  color: #3f51b5;
-  border: 1px solid #3f51b5; }
+  color: rgb(63,81,181);
+  border: 1px solid rgb(63,81,181);
+  background-color: #fff; }
 
 .u-button-border:hover {
   color: white;
-  background: #3f51b5; }
-
-.u-button-border.success {
-  color: #4caf50;
-  border: 1px solid #4caf50; }
-
-.u-button-border.success:hover {
-  color: white;
-  background: #4caf50; }
-
-.u-button-border.info {
-  color: #00bcd4;
-  border: 1px solid #00bcd4; }
-
-.u-button-border.info:hover {
-  color: white;
-  background: #00bcd4; }
-
-.u-button-border.danger {
-  color: #f44336;
-  border: 1px solid #f44336; }
-
-.u-button-border.danger:hover {
-  color: white;
-  background: #f44336; }
-
-.u-button-border.warning {
-  color: #ff9800;
-  border: 1px solid #ff9800; }
-
-.u-button-border.warning:hover {
-  color: white;
-  background: #ff9800; }
+  background: #F7F7F7; }
 
 .u-button-lg {
   padding: 6px 15px;
@@ -8996,131 +8725,6 @@ $color-accent: $palette-pink-A200 !default;
       border-top-left-radius: 0; }
     .u-input-group .u-form-control:not(:first-child):not(:last-child) {
       border-radius: 0; }
-
-/*  IMAGES  */
-/* 默认颜色 */
-/* 主题颜色放入 minxin-themeColors.scss
-$color-primary: $palette-indigo-500 !default;
-$color-primary-dark: $palette-indigo-700 !default;
-$color-accent: $palette-pink-A200 !default;
-*/
-/* 客户化 */
-/* 波纹效果 */
-/* 动画 */
-/* 阴影 */
-/* ==========  字体  ========== */
-/* 控件 */
-/* UButton */
-/* UText */
-/*  Navlayout  */
-/* gridlayout */
-/* menu */
-/* CHECKBOX */
-/*  Radio  */
-/* Switch  */
-/* loading */
-/* datetimepicker */
-/* message */
-/* DATA TABLE */
-/* tooltip*/
-/* 进度条 */
-/* ==========  Content Tabs  ========== */
-/* CARD */
-/* Card dimensions */
-/* Cover image */
-/* ==========  Card  ========== */
-/* ============ Forms ============*/
-/* BADGE */
-/* Typography */
-/* Shadows */
-/* Animations */
-.input-group-addon {
-  padding: 6px 12px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-  color: #555;
-  text-align: center;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 1%;
-  white-space: nowrap;
-  vertical-align: middle;
-  display: table-cell; }
-  .input-group-addon:last-child {
-    border-left: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0; }
-  .input-group-addon:first-child {
-    border-right: 0;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0; }
-
-/*  IMAGES  */
-/* 默认颜色 */
-/* 主题颜色放入 minxin-themeColors.scss
-$color-primary: $palette-indigo-500 !default;
-$color-primary-dark: $palette-indigo-700 !default;
-$color-accent: $palette-pink-A200 !default;
-*/
-/* 客户化 */
-/* 波纹效果 */
-/* 动画 */
-/* 阴影 */
-/* ==========  字体  ========== */
-/* 控件 */
-/* UButton */
-/* UText */
-/*  Navlayout  */
-/* gridlayout */
-/* menu */
-/* CHECKBOX */
-/*  Radio  */
-/* Switch  */
-/* loading */
-/* datetimepicker */
-/* message */
-/* DATA TABLE */
-/* tooltip*/
-/* 进度条 */
-/* ==========  Content Tabs  ========== */
-/* CARD */
-/* Card dimensions */
-/* Cover image */
-/* ==========  Card  ========== */
-/* ============ Forms ============*/
-/* BADGE */
-/* Typography */
-/* Shadows */
-/* Animations */
-.input-group-btn {
-  font-size: 0;
-  white-space: nowrap;
-  position: relative;
-  width: 1%;
-  vertical-align: middle;
-  display: table-cell; }
-  .input-group-btn .u-button {
-    position: relative; }
-
-.input-group-btn:first-child > button, .input-group-btn:first-child > .btn-group > button, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn-group:not(:last-child) > button, .input-group-btn:last-child > button:not(:last-child):not(.dropdown-toggle) {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0; }
-
-.input-group-btn:first-child > .btn-group:not(:first-child) > button, .input-group-btn:first-child > button:not(:first-child), .input-group-btn:last-child > button, .input-group-btn:last-child > .btn-group > button, .input-group-btn:last-child > .dropdown-toggle {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0; }
-
-.input-group-btn:last-child > button, .input-group-btn:last-child > .btn-group {
-  z-index: 2;
-  margin-left: -1px; }
-
-.input-group-btn:first-child > button, .input-group-btn:first-child > .btn-group {
-  margin-right: -1px; }
-
-.input-group-btn > button:active, .input-group-btn > .btn:focus, .input-group-btn > button:hover {
-  z-index: 2; }
 
 /*  IMAGES  */
 /* 默认颜色 */

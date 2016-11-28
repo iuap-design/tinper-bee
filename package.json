@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
@@ -66,7 +66,7 @@
   },
   "dependencies": {
     "bee-alert": "latest",
-    "bee-badge": "latest",
+    "bee-badge": "^0.1.4",
     "bee-button": "latest",
     "bee-button-group": "latest",
     "bee-checkbox": "latest",
@@ -74,10 +74,8 @@
     "bee-form-control": "latest",
     "bee-form-group": "latest",
     "bee-grid": "latest",
-    "bee-input-group": "latest",
-    "bee-input-group-addon": "latest",
-    "bee-input-group-button": "latest",
-    "bee-loading-state": "latest",
+    "bee-input-group": "^0.1.6",
+    "bee-loading-state": "^0.1.1",
     "bee-pagination": "latest",
     "bee-progress-bar": "latest",
     "bee-radio-group": "latest",
