@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
@@ -65,15 +65,11 @@
     "webpack": "~1.13.1"
   },
   "dependencies": {
-    "bee-tooltip":"latest",
-    "bee-checkbox":"latest",
-    "bee-pagination":"latest",
-    "bee-progress-bar":"latest",
-    "bee-radio-group":"latest",
     "bee-alert": "latest",
     "bee-badge": "latest",
     "bee-button": "latest",
     "bee-button-group": "latest",
+    "bee-checkbox": "latest",
     "bee-control-label": "latest",
     "bee-form-control": "latest",
     "bee-form-group": "latest",
@@ -82,7 +78,11 @@
     "bee-input-group-addon": "latest",
     "bee-input-group-button": "latest",
     "bee-loading-state": "latest",
+    "bee-pagination": "latest",
+    "bee-progress-bar": "latest",
+    "bee-radio-group": "latest",
     "bee-switch": "latest",
+    "bee-tooltip": "latest",
     "tinper-bee-core": "latest"
   }
 }

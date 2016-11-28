@@ -922,23 +922,20 @@ $color-accent: $palette-pink-A200 !default;
 
 /*  IMAGES  */
 /* 默认颜色 */
-/* 主题颜色放入 minxin-themeColors.scss
-$color-primary: $palette-indigo-500 !default;
-$color-primary-dark: $palette-indigo-700 !default;
-$color-accent: $palette-pink-A200 !default;
-*/
 /* 客户化 */
 /* 波纹效果 */
-/* 动画 */
+/*贝塞尔曲线动画 */
 /* 阴影 */
-/* ==========  字体  ========== */
+/* ==========  文本字体  ========== */
 /* 控件 */
+/* 不同背景下对应的文字颜色 */
 /* UButton */
 /* UText */
 /*  Navlayout  */
 /* gridlayout */
 /* menu */
-/* CHECKBOX */
+/* Alert */
+/* Checkbox */
 /*  Radio  */
 /* Switch  */
 /* loading */
@@ -957,24 +954,24 @@ $color-accent: $palette-pink-A200 !default;
 /* Typography */
 /* Shadows */
 /* Animations */
-.input-group {
+.u-input-group {
   position: relative;
   display: table;
   border-collapse: separate; }
-  .input-group .form-control {
+  .u-input-group .u-form-control {
     position: relative;
     z-index: 2;
     float: left;
     width: 100%;
     margin-bottom: 0;
     display: table-cell; }
-    .input-group .form-control:first-child {
+    .u-input-group .u-form-control:first-child {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0; }
-    .input-group .form-control:last-child {
+    .u-input-group .u-form-control:last-child {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0; }
-    .input-group .form-control:not(:first-child):not(:last-child) {
+    .u-input-group .u-form-control:not(:first-child):not(:last-child) {
       border-radius: 0; }
 
 /*  IMAGES  */
@@ -8948,23 +8945,20 @@ $color-accent: $palette-pink-A200 !default;
 
 /*  IMAGES  */
 /* 默认颜色 */
-/* 主题颜色放入 minxin-themeColors.scss
-$color-primary: $palette-indigo-500 !default;
-$color-primary-dark: $palette-indigo-700 !default;
-$color-accent: $palette-pink-A200 !default;
-*/
 /* 客户化 */
 /* 波纹效果 */
-/* 动画 */
+/*贝塞尔曲线动画 */
 /* 阴影 */
-/* ==========  字体  ========== */
+/* ==========  文本字体  ========== */
 /* 控件 */
+/* 不同背景下对应的文字颜色 */
 /* UButton */
 /* UText */
 /*  Navlayout  */
 /* gridlayout */
 /* menu */
-/* CHECKBOX */
+/* Alert */
+/* Checkbox */
 /*  Radio  */
 /* Switch  */
 /* loading */
@@ -8983,24 +8977,24 @@ $color-accent: $palette-pink-A200 !default;
 /* Typography */
 /* Shadows */
 /* Animations */
-.input-group {
+.u-input-group {
   position: relative;
   display: table;
   border-collapse: separate; }
-  .input-group .form-control {
+  .u-input-group .u-form-control {
     position: relative;
     z-index: 2;
     float: left;
     width: 100%;
     margin-bottom: 0;
     display: table-cell; }
-    .input-group .form-control:first-child {
+    .u-input-group .u-form-control:first-child {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0; }
-    .input-group .form-control:last-child {
+    .u-input-group .u-form-control:last-child {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0; }
-    .input-group .form-control:not(:first-child):not(:last-child) {
+    .u-input-group .u-form-control:not(:first-child):not(:last-child) {
       border-radius: 0; }
 
 /*  IMAGES  */
