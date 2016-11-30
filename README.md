@@ -1,4 +1,4 @@
-# c
+# tinper-bee
 
 [![npm version](https://img.shields.io/npm/v/bee-button.svg)](https://www.npmjs.com/package/bee-button)
 [![Build Status](https://img.shields.io/travis/tinper-bee/bee-button/master.svg)](https://travis-ci.org/tinper-bee/bee-button)
