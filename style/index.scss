@@ -1,20 +1,18 @@
-@import "tinper-bee-core/scss/minxin-colors";
-@import "tinper-bee-core/scss/minxin-themeColors";
-@import "tinper-bee-core/scsss/minxin-variables";
-@import "tinper-bee-core/scss/minxin-mixins";
-@import "tinper-bee-core/scss/minxin-palette";
+@import "../node_modules/tinper-bee-core/scss/minxin-colors";
+@import "../node_modules/tinper-bee-core/scss/minxin-themeColors";
+@import "../node_modules/tinper-bee-core/scss/minxin-variables";
+@import "../node_modules/tinper-bee-core/scss/minxin-mixins";
+@import "../node_modules/tinper-bee-core/scss/minxin-palette";
 
 // 全局设置类文件
-@import "tinper-bee-core/scss/set-normalize";
-@import "tinper-bee-core/scss/set-global";
-@import "tinper-bee-core/scss/set-resets";
+@import "../node_modules/tinper-bee-core/scss/set-normalize";
+@import "../node_modules/tinper-bee-core/scss/set-global";
+
 
 
 // 工具类文件
 @import "./utils/util-iconfont";
-@import "tinper-bee-core/scsss/util-ripple";
-@import "tinper-bee-core/scss/util-tool";
-@import "tinper-bee-core/scss/util-utilities";
-@import "tinper-bee-core/scss/util-shadow";
+@import "../node_modules/tinper-bee-core/scss/util-utilities";
+@import "../node_modules/tinper-bee-core/scss/util-shadow";
 
 @import "./component.scss";
