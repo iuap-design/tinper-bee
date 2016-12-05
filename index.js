@@ -16,6 +16,8 @@ var RadioGroup = require('./lib/RadioGroup');
 var Switch = require('./lib/Switch');
 var Tooltip = require('./lib/Tooltip');
 var Dropdown = require('./lib/Dropdown');
+var Panel = require('./lib/Panel');
+var Transition = require('./lib/Transition');
 
 
 
@@ -38,5 +40,7 @@ module.exports = {
   Con: Layout.Con,
   Row: Layout.Row,
   Col: Layout.Col,
-  Dropdown: Dropdown
+  Dropdown: Dropdown,
+  Panel: Panel,
+  Transition: Transition
 };

@@ -1,7 +1,8 @@
 {% extends 'layout/layout.swig' %}
 
 {% block css %}
-    <link href="//tinper.org/node_modules/tinper-bee/assets/tinper-bee.css" type="text/css" rel="stylesheet" />
+
+
     <link href="/{{docId}}/dist/demo.css" type="text/css" rel="stylesheet" />
 {% endblock%}
 

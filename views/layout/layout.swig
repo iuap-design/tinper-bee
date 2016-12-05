@@ -11,6 +11,7 @@
         <link href="//design.yyuap.com/static/uui/latest/css/u.css" type="text/css" rel="stylesheet" />
         <link href="//cdn.jsdelivr.net/highlight.js/9.8.0/styles/default.min.css" type="text/css" rel="stylesheet" />
         <link href="/css/atom-one-dark.css" type="text/css" rel="stylesheet" />
+        <link href="/css/tinper-bee.css" type="text/css" rel="stylesheet" />
         <link href="/css/md.css" type="text/css" rel="stylesheet" />
     {% endblock%}
     {% block css %}{% endblock%}
