@@ -31,17 +31,17 @@ router.get('/', function*(next) {
 router.get('/docs/:id', function*(next) {
     var docId = this.params.id;
 
-    var data = fs.readFileSync(path.join(__dirname,'../node_modules/'+docId+'/README.md'),'utf-8');
+    var data = fs.readFileSync(path.join(__dirname,'../node_modules/'+docId+'/docs/api.md'),'utf-8');
     //data = markdown.toHTML(data);
     data = marked(data);
 
-    //var demo = require('./node_modules/'+docId+'/dist/demo.js');
+    var demo = '<div id="tinperBeeDemo"></div>';
 
     try{
-        var demo = fs.readFileSync(path.join(__dirname,'../node_modules/'+docId+'/demo/index.html'),'utf-8');
+        //var demo = fs.readFileSync(path.join(__dirname,'../node_modules/'+docId+'/demo/index.html'),'utf-8');
     }
     catch(err) {
-        var demo = err;
+        //var demo = err;
     }
     yield this.render('docs',{
         sidebar:package.dependencies,
