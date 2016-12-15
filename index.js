@@ -23,7 +23,7 @@ var Animate = require('./lib/Animate');
 var Select = require('./lib/Select');
 var Tile = require('./lib/Tile');
 var Icon = require('./lib/Icon');
-var Menu = require('./lib/Menu');
+var Menus = require('./lib/Menus');
 var Upload = require('./lib/Upload');
 var Breadcrumb = require('./lib/Breadcrumb');
 
@@ -54,7 +54,7 @@ module.exports = {
   Select: Select,
   Animate: Animate,
   Icon: Icon,
-  Menu: Menu,
+  Menus: Menus,
   Breadcrumb: Breadcrumb,
   Upload: Upload,
   Tile: Tile,
