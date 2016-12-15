@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
 {% include "../common/header.swig"%}
 {% include "../common/nav.swig"%}
 {% block content %}{% endblock %}

@@ -16,12 +16,11 @@
 {% endblock %}
 
 {% block content %}
-<div class="page-container u-container-fluid example">
+<div class="page-container u-container example">
     <div class="u-row">
         {% include "common/sidebar.swig"%}
         <div class="u-col-xs-12 u-col-md-9">
             {% autoescape false %}
-                <h3>示例</h3>
                 <div class="demo-block">
                     {{ demo| }}
                 </div>

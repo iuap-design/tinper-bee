@@ -19,8 +19,8 @@ app.use(router.routes()).use(router.allowedMethods());
 app.use(logger());
 
 //初始化静态服务器资源
-app.use(serve(path.join(__dirname, '../static'),{maxAge:3600000000}));
-app.use(serve(path.join(__dirname, '../node_modules'),{maxAge:3600000000}));
+app.use(serve(path.join(__dirname, '../static')));
+app.use(serve(path.join(__dirname, '../node_modules')));
 
 app.context.render = render({
     root: path.join(__dirname, '../views'),
