@@ -20,6 +20,7 @@ app.use(logger());
 
 //初始化静态服务器资源
 app.use(serve(path.join(__dirname, '../static'),{maxAge:3600000000}));
+app.use(serve(path.join(__dirname, '../assets'),{maxAge:3600000000}));
 app.use(serve(path.join(__dirname, '../node_modules'),{maxAge:3600000000}));
 
 app.context.render = render({

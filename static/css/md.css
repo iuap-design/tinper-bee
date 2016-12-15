@@ -16,10 +16,8 @@
     color:#20a0ff;
 }
 .demo-block {
-    border: 1px solid #eaeefb;
     border-radius: 4px;
     transition: .2s;
-    padding:24px;
 }
 .demo-block:after {
     display:block;
@@ -309,7 +307,6 @@ pre {
     margin: 0 0 18px;
     line-height: 16px;
     font-size: 11px;
-    border: 1px solid #d9d9d9;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
