@@ -21,29 +21,29 @@
         <div class="u-collapse u-navbar-collapse u-navbar-collapse-group" id="example-default-collapse">
             <ul class="nav-list u-navbar-toolbar u-navbar-right u-navbar-toolbar-right">
                 <li class="dropdown">
-                    <a class="nav-par" href="/">首页</a>
+                    <a class="nav-par" href="//tinper.org">首页</a>
                 </li>
                 <li class="dropdown">
                     <a class="nav-par" href="#">产品</a>
                     <ul>
-                        <li><a href="/dist/uba/index.html" target="_blank">前端集成开发工具uba</a></li>
+                        <li><a href="//tinper.org/dist/uba/index.html" target="_blank">前端集成开发工具uba</a></li>
 
-                        <li><a href="/dist/neoui/index.html" target="_blank">UI框架neoui</a></li>
+                        <li><a href="//tinper.org/dist/neoui/index.html" target="_blank">UI框架neoui</a></li>
 
-                        <li><a href="/dist/react/index.html" target="_blank">React组件库bee</a></li>
+                        <li><a href="//tinper.org/dist/react/index.html" target="_blank">React组件库bee</a></li>
 
-                        <li><a href="/dist/grid/index.html" target="_blank">表格控件grid</a></li>
+                        <li><a href="//tinper.org/dist/grid/index.html" target="_blank">表格控件grid</a></li>
 
-                        <li><a href="/dist/kero/index.html" target="_blank">UI数据模型kero</a></li>
+                        <li><a href="//tinper.org/dist/kero/index.html" target="_blank">UI数据模型kero</a></li>
 
-                        <li><a href="/dist/sparrow/index.html" target="_blank">前端基础库sparrow</a></li>
+                        <li><a href="//tinper.org/dist/sparrow/index.html" target="_blank">前端基础库sparrow</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a class="nav-par" href="/dist/webIDE/index.html">样式板</a>
+                    <a class="nav-par" href="//tinper.org/dist/webIDE/index.html">样式板</a>
                 </li>
                 <li class="dropdown">
-                    <a class="nav-par" href="/dist/package/index.html">下载</a>
+                    <a class="nav-par" href="//tinper.org/dist/package/index.html">下载</a>
                 </li>
 
                 <li class="dropdown">

@@ -19,8 +19,11 @@ app.use(router.routes()).use(router.allowedMethods());
 app.use(logger());
 
 //初始化静态服务器资源
+
 app.use(serve(path.join(__dirname, '../static')));
+app.use(serve(path.join(__dirname, '../assets')));
 app.use(serve(path.join(__dirname, '../node_modules')));
+
 
 app.context.render = render({
     root: path.join(__dirname, '../views'),
@@ -38,7 +41,7 @@ app.use(function *(next) {
 
 
 
-app.listen(8090);
+app.listen(9090);
 
 
-console.log('listening on port 8090');
+console.log('listening on port 9090');

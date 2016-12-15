@@ -1,8 +1,8 @@
 {% extends 'layout/layout.swig' %}
 
 {% block css %}
-
-
+    <link href="//tinper.org/node_modules/tinper-bee/assets/tinper-bee.css" type="text/css" rel="stylesheet" />
+    <link href="/css/tinper-bee.css" type="text/css" rel="stylesheet" />
     <link href="/{{docId}}/dist/demo.css" type="text/css" rel="stylesheet" />
 {% endblock%}
 
@@ -20,11 +20,6 @@
     <div class="u-row">
         {% include "common/sidebar.swig"%}
         <div class="u-col-xs-12 u-col-md-9">
-            {% autoescape false %}
-                <div class="demo-block">
-                    {{ demo| }}
-                </div>
-            {% endautoescape %}
             {% autoescape false %}
                 {{ doc| }}
             {% endautoescape %}
