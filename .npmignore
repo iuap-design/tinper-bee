@@ -25,4 +25,10 @@ _site
 sea-modules
 spm_modules
 .cache
+
 dist
+view
+server
+static
+docs
+.github
