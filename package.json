@@ -81,6 +81,14 @@
     "bee-radio-group": "latest",
     "bee-switch": "latest",
     "bee-tooltip": "latest",
+    "bee-select": "latest",
+    "bee-upload": "latest",
+    "bee-navbars": "latest",
+    "bee-tile": "latest",
+    "bee-menus": "latest",
+    "bee-animate": "latest",
+    "bee-icon": "latest",
+    "bee-breadcrumb": "latest",
     "tinper-bee-core": "latest"
   }
 }
