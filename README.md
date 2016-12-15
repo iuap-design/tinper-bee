@@ -3,13 +3,16 @@
 [![npm version](https://img.shields.io/npm/v/bee-button.svg)](https://www.npmjs.com/package/bee-button)
 [![Build Status](https://img.shields.io/travis/tinper-bee/bee-button/master.svg)](https://travis-ci.org/tinper-bee/bee-button)
 [![Coverage Status](https://coveralls.io/repos/github/tinper-bee/bee-button/badge.svg?branch=master)](https://coveralls.io/github/tinper-bee/bee-button?branch=master)
+[![NPM downloads](http://img.shields.io/npm/dm/tinper-bee.svg?style=flat)](https://npmjs.org/package/tinper-bee)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/iuap-design/tinper-bee.svg)](http://isitmaintained.com/project/iuap-design/tinper-bee "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/iuap-design/tinper-bee.svg)](http://isitmaintained.com/project/iuap-design/tinper-bee "Percentage of issues still open")
 
-[![npm download][download-image]][download-url]
+
 ## Browser Support
 
 |![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png)|
 | --- | --- | --- | --- | --- |
-| IE 8+ ✔ | Chrome 31.0+ ✔ | Firefox 31.0+ ✔ | Opera 30.0+ ✔ | Safari 7.0+ ✔ |
+| IE 9+ ✔ | Chrome 31.0+ ✔ | Firefox 31.0+ ✔ | Opera 30.0+ ✔ | Safari 7.0+ ✔ |
 
 tinper-bee（[官网链接](http://bee.tinper.org/) ）是基于 `UI` 设计语言 `iUAP Design` 和 `React` 实现的组件库，为开发者提供从产品界面设计到前端开发的完整生态。
 

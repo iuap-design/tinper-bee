@@ -6,7 +6,7 @@ var ButtonGroup = require('./lib/ButtonGroup');
 var ControlLabel = require('./lib/ControlLabel');
 var FormControl = require('./lib/FormControl');
 var FormGroup = require('./lib/FormGroup');
-//var Grid = require('./lib/Grid');
+var Layout = require('./lib/Layout');
 var InputGroup = require('./lib/InputGroup');
 var Loadingstate = require('./lib/Loadingstate');
 var Checkbox = require('./lib/Checkbox');
@@ -15,6 +15,9 @@ var ProgressBar = require('./lib/ProgressBar');
 var RadioGroup = require('./lib/RadioGroup');
 var Switch = require('./lib/Switch');
 var Tooltip = require('./lib/Tooltip');
+var Dropdown = require('./lib/Dropdown');
+var Panel = require('./lib/Panel');
+var Transition = require('./lib/Transition');
 
 
 
@@ -33,5 +36,11 @@ module.exports = {
   ProgressBar: ProgressBar,
   RadioGroup: RadioGroup,
   Switch: Switch,
-  Tooltip: Tooltip
+  Tooltip: Tooltip,
+  Con: Layout.Con,
+  Row: Layout.Row,
+  Col: Layout.Col,
+  Dropdown: Dropdown,
+  Panel: Panel,
+  Transition: Transition
 };
