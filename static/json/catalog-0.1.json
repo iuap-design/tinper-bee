@@ -1,8 +1,14 @@
 {
     "基础组件": {
-        "按钮 Button": "0.1.3",
-        "栅格组件 Layout": ""
+        "按钮 Button": {
+            "version":"0.1.3",
+            "component":"bee-button"
         },
+        "栅格组件 Layout": {
+            "version":"0.1.3",
+            "component":"bee-layout"
+        }
+    },
     "视图组件": {
         "徽标 Badge": "0.1.3",
         "进度条 ProgressBar": "",
