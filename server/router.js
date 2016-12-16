@@ -5,7 +5,7 @@
 var router = require('koa-router')();
 var fs = require('fs');
 var path = require('path');
-var package = require("../package.json");
+var cate = require("../static/json/catalog-0.1.json");
 var markdown = require( "markdown" ).markdown;
 var marked = require('marked');
 
@@ -26,7 +26,7 @@ marked.setOptions({
 //首页路由
 router.get('/', function*(next) {
     yield this.render('index',{
-        sidebar:package.dependencies
+        sidebar:cate
     });
 });
 
@@ -123,7 +123,7 @@ router.get('/docs/:id', function*(next) {
         //var demo = err;
     }
     yield this.render('docs',{
-        sidebar:package.dependencies,
+        sidebar:cate,
         docId:docId,
         doc:data
     });

@@ -18,6 +18,14 @@ var Tooltip = require('./lib/Tooltip');
 var Dropdown = require('./lib/Dropdown');
 var Panel = require('./lib/Panel');
 var Transition = require('./lib/Transition');
+var Navbar = require('./lib/Navbar');
+var Animate = require('./lib/Animate');
+var Select = require('./lib/Select');
+var Tile = require('./lib/Tile');
+var Icon = require('./lib/Icon');
+var Menus = require('./lib/Menus');
+var Upload = require('./lib/Upload');
+var Breadcrumb = require('./lib/Breadcrumb');
 
 
 
@@ -42,5 +50,13 @@ module.exports = {
   Col: Layout.Col,
   Dropdown: Dropdown,
   Panel: Panel,
-  Transition: Transition
+  Transition: Transition,
+  Select: Select,
+  Animate: Animate,
+  Icon: Icon,
+  Menus: Menus,
+  Breadcrumb: Breadcrumb,
+  Upload: Upload,
+  Tile: Tile,
+  Navbar: Navbar
 };

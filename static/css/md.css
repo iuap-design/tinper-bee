@@ -338,3 +338,27 @@ sup {
         page-break-inside: avoid;
     }
 }
+.menu-item {
+    padding: 0  16px 0 28px;
+    font-size: 12px;
+    line-height: 42px;
+    height: 42px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.menu-item a {
+    font-size:14px;
+}
+.menu-item a span {
+    font-size: 12px;
+    margin-left: 6px;
+    font-weight: normal;
+    opacity: .67;
+}
+.menu-component li {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 8px 16px;
+    list-style: none;
+}
