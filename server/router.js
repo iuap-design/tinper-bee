@@ -30,6 +30,15 @@ router.get('/', function*(next) {
     });
 });
 
+router.get('/docs', function*(next) {
+    var data = fs.readFileSync(path.join(__dirname,'../docs/quickStart.md'),'utf-8');
+    data = marked(data);
+    yield this.render('docs',{
+        sidebar:cate,
+        doc:data
+    });
+});
+
 //读取md文档，生成html
 router.get('/docs/:id', function*(next) {
     var docId = this.params.id;
