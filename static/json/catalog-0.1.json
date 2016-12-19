@@ -20,7 +20,7 @@
         },
         "进度条 ProgressBar": {
             "version":"0.1.3",
-            "component":"bee-progressBar"
+            "component":"bee-progress-bar"
         },
         "状态按钮 LoadingState": {
             "version":"0.1.3",
