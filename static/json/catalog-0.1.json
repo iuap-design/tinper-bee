@@ -62,7 +62,7 @@
         },
         "导航栏 Navbar": {
             "version":"0.1.3",
-            "component":"bee-navbar"
+            "component":"bee-navbars"
         }
     },
     "反馈组件": {
