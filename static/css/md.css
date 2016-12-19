@@ -362,3 +362,6 @@ sup {
     padding: 8px 16px;
     list-style: none;
 }
+#tinperBeeDemo .u-col-md-offset-1 {
+    margin:0;
+}
