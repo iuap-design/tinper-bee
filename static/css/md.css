@@ -410,3 +410,7 @@ table td:first-child {
     z-index: 10;
     background: #fff;
 }
+.menu-component {
+    margin:0;
+    padding: 30px 0;
+}
