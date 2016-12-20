@@ -96,8 +96,10 @@
         }
     },
     "表单组件 Form": {
-        "version": "",
-        "component": "bee-form"
+        "表单 Form": {
+            "version":"0.1.3",
+            "component":"bee-form"
+        }
     }
 
 }
