@@ -29,7 +29,7 @@
 /*头部*/
 
 .u-navbar {
-    z-index: 10;
+    z-index: 10000000000;
     position: fixed;
     width: 100%;
     margin-bottom: 0;
