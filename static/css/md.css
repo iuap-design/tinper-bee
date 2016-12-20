@@ -1,3 +1,4 @@
+
 .page-container {
     padding-top:50px;
 }
@@ -36,6 +37,7 @@
     box-sizing: border-box;
     top:0;
     left:0;
+    min-height: 50px;
 }
 
 
