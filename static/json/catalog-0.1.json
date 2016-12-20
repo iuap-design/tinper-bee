@@ -44,7 +44,7 @@
         }
     },
     "导航组件": {
-        "面包屑导航 Breadcrumb": {
+        "面包屑 Breadcrumb": {
             "version":"0.1.3",
             "component":"bee-breadcrumb"
         },
