@@ -9,7 +9,7 @@
     line-height:25px;
     cursor: pointer;
 }
-.sidebar a:hover {
+.sidebar a:hover,.sidebar a.selected {
     color:#20a0ff;
 }
 .sidebar .selected a {
