@@ -59,6 +59,10 @@
         "导航栏 Navbar": {
             "version":"0.1.3",
             "component":"bee-navbars"
+        },
+        "级联菜单":{
+            "version":"0.1.3",
+            "component":"bee-cascader"
         }
     },
     "反馈组件": {
