@@ -1,5 +1,5 @@
 {
-    "基础组件": {
+    "基础": {
         "按钮 Button": {
             "version":"0.1.3",
             "component":"bee-button"
@@ -9,7 +9,7 @@
             "component":"bee-layout"
         }
     },
-    "视图组件": {
+    "视图": {
         "徽标 Badge": {
             "version":"0.1.3",
             "component":"bee-badge"
@@ -43,7 +43,7 @@
             "component":"bee-panel"
         }
     },
-    "导航组件": {
+    "导航": {
         "面包屑 Breadcrumb": {
             "version":"0.1.3",
             "component":"bee-breadcrumb"
@@ -65,7 +65,7 @@
             "component":"bee-cascader"
         }
     },
-    "反馈组件": {
+    "反馈": {
         "模态框 Modal": {
             "version":"0.1.3",
             "component":"bee-modal"
@@ -95,7 +95,7 @@
             "component":"bee-loading"
         }
     },
-    "表单组件 Form": {
+    "表单": {
         "表单 Form": {
             "version":"0.1.3",
             "component":"bee-form"
