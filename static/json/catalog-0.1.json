@@ -48,10 +48,6 @@
             "version":"0.1.3",
             "component":"bee-breadcrumb"
         },
-        "菜单 Menu": {
-            "version":"0.1.3",
-            "component":"bee-menus"
-        },
         "分页 Pagination": {
             "version":"0.1.3",
             "component":"bee-pagination"
