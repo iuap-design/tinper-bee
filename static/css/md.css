@@ -1,3 +1,4 @@
+
 .page-container {
     padding-top:50px;
 }
@@ -9,7 +10,7 @@
     line-height:25px;
     cursor: pointer;
 }
-.sidebar a:hover {
+.sidebar a:hover,.sidebar a.selected {
     color:#20a0ff;
 }
 .sidebar .selected a {
@@ -29,13 +30,14 @@
 /*头部*/
 
 .u-navbar {
-    z-index: 10;
+    z-index: 10000000000;
     position: fixed;
     width: 100%;
     margin-bottom: 0;
     box-sizing: border-box;
     top:0;
     left:0;
+    min-height: 50px;
 }
 
 
@@ -337,4 +339,84 @@ sup {
     table, pre {
         page-break-inside: avoid;
     }
+}
+.menu-item {
+    padding: 0  16px 0 28px;
+    font-size: 12px;
+    line-height: 42px;
+    height: 42px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.menu-item a {
+    font-size:14px;
+}
+.menu-item a span {
+    font-size: 12px;
+    margin-left: 3px;
+    font-weight: normal;
+    opacity: .67;
+}
+.menu-component li {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 8px 16px;
+    list-style: none;
+}
+#tinperBeeDemo .u-col-md-offset-1 {
+    margin:0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    empty-cells: show;
+    border: 1px solid #e9e9e9;
+    width: 100%;
+    margin: 16px 0;
+    font-size: 13px;
+}
+table th,table td {
+    border: 1px solid #e9e9e9;
+    padding: 8px 16px;
+    text-align: left;
+}
+table th {
+    background: #F7F7F7;
+    white-space: nowrap;
+    color: #5C6B77;
+    font-weight: 600;
+}
+table td:first-child {
+    background: #fcfcfc;
+    font-weight: 500;
+    width: 20%;
+    font-family: "Lucida Console", Consolas, Menlo, Courier, monospace;
+}
+#tinperBeeDemo .u-panel {
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin: 0 0 16px 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    box-shadow:none;
+}
+#tinperBeeDemo .u-panel:hover {
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    border-color: transparent;
+    position: relative;
+    z-index: 10;
+    background: #fff;
+}
+.menu-component {
+    margin:0;
+    padding: 30px 0;
+}
+#tinperBeeDemo .u-button:active {
+    background:none;
 }

@@ -5,7 +5,7 @@
 var router = require('koa-router')();
 var fs = require('fs');
 var path = require('path');
-var package = require("../package.json");
+var cate = require("../static/json/catalog-0.1.json");
 var markdown = require( "markdown" ).markdown;
 var marked = require('marked');
 
@@ -26,7 +26,16 @@ marked.setOptions({
 //首页路由
 router.get('/', function*(next) {
     yield this.render('index',{
-        sidebar:package.dependencies
+        sidebar:cate
+    });
+});
+
+router.get('/docs', function*(next) {
+    var data = fs.readFileSync(path.join(__dirname,'../docs/quickStart.md'),'utf-8');
+    data = marked(data);
+    yield this.render('docs',{
+        sidebar:cate,
+        doc:data
     });
 });
 
@@ -35,10 +44,17 @@ router.get('/docs/:id', function*(next) {
     var docId = this.params.id;
 
 
+    try{
+        var data = fs.readFileSync(path.join(__dirname,'../node_modules/'+docId+'/docs/api.md'),'utf-8');
+    }
+    catch (e){
+        data = '## 文档建设中...';
+    }
 
-    var data = fs.readFileSync(path.join(__dirname,'../node_modules/'+docId+'/docs/api.md'),'utf-8');
     //var data = fs.readFileSync(path.join(__dirname,'../node_modules/'+docId+'/README.md'),'utf-8');
     //data = markdown.toHTML(data);
+
+
 
     var demo = '<div id="tinperBeeDemo"></div>';
     data = data.replace(/##.*代码演示/,'## 代码演示\n'+demo);
@@ -123,7 +139,7 @@ router.get('/docs/:id', function*(next) {
         //var demo = err;
     }
     yield this.render('docs',{
-        sidebar:package.dependencies,
+        sidebar:cate,
         docId:docId,
         doc:data
     });
