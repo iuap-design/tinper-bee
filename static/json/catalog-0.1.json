@@ -4,11 +4,11 @@
             "version":"0.1.3",
             "component":"install"
         },
-        "参与": {
+        "参与贡献": {
             "version":"0.1.3",
             "component":"participation"
         },
-        "概述": {
+        "整体概览": {
             "version":"0.1.3",
             "component":"summarize"
         }
@@ -18,7 +18,7 @@
             "version":"0.1.3",
             "component":"bee-button"
         },
-        "栅格组件 Layout": {
+        "栅格布局 Layout": {
             "version":"0.1.3",
             "component":"bee-layout"
         }
