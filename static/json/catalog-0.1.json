@@ -1,10 +1,30 @@
 {
+    "Bee of React": {
+        "安装": {
+            "version":"0.1.3",
+            "component":"install"
+        },
+        "参与贡献": {
+            "version":"0.1.3",
+            "component":"participation"
+        },
+        "整体概览": {
+            "version":"0.1.3",
+            "component":"summarize"
+        }
+    },
     "基础 General": {
         "按钮 Button": {
             "version":"0.1.3",
             "component":"bee-button"
         },
-        "栅格组件 Layout": {
+        "图标 Icon":{
+            "version":"0.1.3",
+            "component":""
+        }
+    },
+    "布局 Layout": {
+        "栅格布局 Layout": {
             "version":"0.1.3",
             "component":"bee-layout"
         }
@@ -26,18 +46,6 @@
             "version":"0.1.3",
             "component":"bee-loading-state"
         },
-        "开关 Switch": {
-            "version":"0.1.3",
-            "component":"bee-switch"
-        },
-        "下拉按钮 Dropdown": {
-            "version":"0.1.3",
-            "component":"bee-dropdown"
-        },
-        "级联选择 Select": {
-            "version":"0.1.3",
-            "component":"bee-select"
-        },
         "展示板 Panel": {
             "version":"0.1.3",
             "component":"bee-panel"
@@ -56,13 +64,29 @@
             "version":"0.1.3",
             "component":"bee-tabs"
         },
+        "下拉按钮 Dropdown": {
+            "version":"0.1.3",
+            "component":"bee-dropdown"
+        },
         "导航栏 Navbar": {
             "version":"0.1.3",
             "component":"bee-navbars"
         },
-        "级联菜单 Cascader":{
+        "锚点 Anchor":{
             "version":"0.1.3",
-            "component":"bee-cascader"
+            "component":""
+        },
+        "步骤条 Steps":{
+            "version":"0.1.3",
+            "component":""
+        },
+        "固钉 Affix":{
+            "version":"0.1.3",
+            "component":""
+        },
+        "回到顶部 BackTop":{
+            "version":"0.1.3",
+            "component":""
         }
     },
     "反馈 Feedback": {
@@ -115,6 +139,54 @@
         "输入框组 InputGroup": {
             "version": "0.1.3",
             "component": "bee-input-group"
+        },
+        "表单容器 FormGroup": {
+            "version": "0.1.3",
+            "component": "bee-form-group"
+        },
+        "开关 Switch": {
+            "version":"0.1.3",
+            "component":"bee-switch"
+        },
+        "选择器 Select": {
+            "version":"0.1.3",
+            "component":"bee-select"
+        },
+        "级联菜单 Cascader":{
+            "version":"0.1.3",
+            "component":"bee-cascader"
+        },
+        "上传 Upload":{
+            "version":"0.1.3",
+            "component":"bee-upload"
+        },
+        "滑块 Slider":{
+            "version":"0.1.3",
+            "component":""
+        },
+        "穿梭框 Transfer":{
+            "version":"0.1.3",
+            "component":""
+        },
+        "数字框 InputNumber":{
+            "version":"0.1.3",
+            "component":""
+        },
+        "时间 TimePicker":{
+            "version":"0.1.3",
+            "component":""
+        },
+        "日期 DatePicker":{
+            "version":"0.1.3",
+            "component":""
+        },
+        "日期时间 DateTime":{
+            "version":"0.1.3",
+            "component":""
+        },
+        "评分 Rate":{
+            "version":"0.1.3",
+            "component":""
         }
     }
 

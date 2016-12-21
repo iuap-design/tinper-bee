@@ -24,6 +24,22 @@ marked.setOptions({
 
 
 //首页路由
+//router.get('/docs/bee/:id', function*(next) {
+//    var docId = this.params.id;
+//    try {
+//        var data = fs.readFileSync(path.join(__dirname,'../docs/'+id+'.md'),'utf-8');
+//    }catch (e) {
+//        data = e;
+//        return ;
+//    }
+//    data = marked(data);
+//    yield this.render('docs',{
+//        sidebar:cate,
+//        doc:data
+//    });
+//});
+
+//首页路由
 router.get('/', function*(next) {
     yield this.render('index',{
         sidebar:cate
@@ -42,22 +58,29 @@ router.get('/docs', function*(next) {
 //读取md文档，生成html
 router.get('/docs/:id', function*(next) {
     var docId = this.params.id;
+    var isComponent = 1;
 
-
-    try{
-        var data = fs.readFileSync(path.join(__dirname,'../node_modules/'+docId+'/docs/api.md'),'utf-8');
+    if(docId.search('bee-')==-1){
+        try{
+            var data = fs.readFileSync(path.join(__dirname,'../docs/'+docId+'.md'),'utf-8');
+        }
+        catch (e){
+            data = '## 文档建设中...';
+        }
+        isComponent = 0;
     }
-    catch (e){
-        data = '## 文档建设中...';
+    else {
+        try{
+            var data = fs.readFileSync(path.join(__dirname,'../node_modules/'+docId+'/docs/api.md'),'utf-8');
+        }
+        catch (e){
+            data = '## 文档建设中...';
+        }
+
+        var demo = '<div id="tinperBeeDemo"></div>';
+        data = data.replace(/##.*代码演示/,'## 代码演示\n'+demo);
     }
 
-    //var data = fs.readFileSync(path.join(__dirname,'../node_modules/'+docId+'/README.md'),'utf-8');
-    //data = markdown.toHTML(data);
-
-
-
-    var demo = '<div id="tinperBeeDemo"></div>';
-    data = data.replace(/##.*代码演示/,'## 代码演示\n'+demo);
 
     data = marked(data);
 
@@ -132,19 +155,11 @@ router.get('/docs/:id', function*(next) {
     //console.log(ReactApp);
 
 
-
-
-
-    try{
-        //var demo = fs.readFileSync(path.join(__dirname,'../node_modules/'+docId+'/demo/index.html'),'utf-8');
-    }
-    catch(err) {
-        //var demo = err;
-    }
     yield this.render('docs',{
         sidebar:cate,
         docId:docId,
-        doc:data
+        doc:data,
+        isComponent:isComponent
     });
 });
 
