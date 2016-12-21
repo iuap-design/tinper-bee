@@ -7,6 +7,7 @@ var render = require('koa-swig');
 var path = require('path');
 var logger = require('koa-logger');
 var serve = require('koa-static');
+var staticCache = require('koa-static-cache');
 var app = koa();
 
 //加载路由
@@ -19,8 +20,11 @@ app.use(router.routes()).use(router.allowedMethods());
 app.use(logger());
 
 //初始化静态服务器资源
-app.use(serve(path.join(__dirname, '../static'),{maxAge:3600000000}));
-app.use(serve(path.join(__dirname, '../node_modules'),{maxAge:3600000000}));
+
+app.use(staticCache(path.join(__dirname, '../static')),{  maxAge: 365 * 24 * 60 * 60});
+app.use(staticCache(path.join(__dirname, '../assets')),{  maxAge: 365 * 24 * 60 * 60});
+app.use(staticCache(path.join(__dirname, '../node_modules')),{  maxAge: 365 * 24 * 60 * 60});
+
 
 app.context.render = render({
     root: path.join(__dirname, '../views'),
@@ -38,7 +42,7 @@ app.use(function *(next) {
 
 
 
-app.listen(8090);
+app.listen(9090);
 
 
-console.log('listening on port 8090');
+console.log('listening on port 9090');

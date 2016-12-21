@@ -8,16 +8,17 @@
     <meta name="description" content="Destiny Multipurpose Landing Page Template">
     <meta name="keywords" content="iuapdesign, iuap, 企业框架,前端框架,前端解决方案">
     {% block head%}
-        <link href="//design.yyuap.com/static/uui/latest/css/u.css" type="text/css" rel="stylesheet" />
+        {#<link href="//design.yyuap.com/static/uui/latest/css/u.css" type="text/css" rel="stylesheet" />#}
         <link href="//cdn.jsdelivr.net/highlight.js/9.8.0/styles/default.min.css" type="text/css" rel="stylesheet" />
         <link href="/css/atom-one-dark.css" type="text/css" rel="stylesheet" />
-        <link href="/css/tinper-bee.css" type="text/css" rel="stylesheet" />
+        {#<link href="/css/tinper-bee.css" type="text/css" rel="stylesheet" />#}
         <link href="/css/md.css" type="text/css" rel="stylesheet" />
     {% endblock%}
     {% block css %}{% endblock%}
 </head>
 
 <body>
+
 {% include "../common/header.swig"%}
 {% include "../common/nav.swig"%}
 {% block content %}{% endblock %}
