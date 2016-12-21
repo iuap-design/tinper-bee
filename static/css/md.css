@@ -421,7 +421,7 @@ table td:first-child {
     background:none;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px){
+@media screen and (max-width: 768px) {
     /*!*iPhone < 5 Portrait*!*/
     .u-navbar-header {
         float:left;
@@ -462,5 +462,6 @@ table td:first-child {
         border: 3px solid #fff;
         background-color: rgba(0, 0, 0, .3);
     }
+
     /* 小屏幕表格滚动 end */
 }
