@@ -13,8 +13,8 @@
     <script src="/console-polyfill/index.js"></script>
     <script src="/es5-shim/es5-shim.min.js"></script>
     <script src="/es5-shim/es5-sham.min.js"></script>
-    <script src="/react/dist/react-with-addons.js"></script>
-    <script src="/react-dom/dist/react-dom.js"></script>
+    <script src="/react/dist/react.min.js"></script>
+    <script src="/react-dom/dist/react-dom.min.js"></script>
     {% if docId && isComponent==1 %}
         <script src="/{{docId}}/dist/demo.js"></script>
     {% endif %}
