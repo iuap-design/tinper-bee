@@ -99,6 +99,22 @@
         "表单 Form": {
             "version":"0.1.3",
             "component":"bee-form"
+        },
+        "单选 Radio": {
+            "version":"0.1.3",
+            "component":"bee-radio"
+        },
+        "多选 Checkbox": {
+            "version":"0.1.3",
+            "component":"bee-checkbox"
+        },
+        "输入框 Input": {
+            "version":"0.1.3",
+            "component":"bee-form-control"
+        },
+        "输入框组 InputGroup": {
+            "version": "0.1.3",
+            "component": "bee-input-group"
         }
     }
 
