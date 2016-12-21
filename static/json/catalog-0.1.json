@@ -136,7 +136,7 @@
             "version":"0.1.3",
             "component":"bee-form-control"
         },
-        "输入框容器 InputGroup": {
+        "输入框组 InputGroup": {
             "version": "0.1.3",
             "component": "bee-input-group"
         },
