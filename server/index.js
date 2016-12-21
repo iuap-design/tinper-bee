@@ -20,9 +20,9 @@ app.use(logger());
 
 //初始化静态服务器资源
 
-app.use(serve(path.join(__dirname, '../static')));
-app.use(serve(path.join(__dirname, '../assets')));
-app.use(serve(path.join(__dirname, '../node_modules')));
+app.use(serve(path.join(__dirname, '../static')),{ maxage: 60000});
+app.use(serve(path.join(__dirname, '../assets')),{ maxage: 60000});
+app.use(serve(path.join(__dirname, '../node_modules')),{ maxage: 60000});
 
 
 app.context.render = render({
