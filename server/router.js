@@ -58,6 +58,7 @@ router.get('/docs', function*(next) {
 //读取md文档，生成html
 router.get('/docs/:id', function*(next) {
     var docId = this.params.id;
+    var isComponent = 1;
 
     if(docId.search('bee-')==-1){
         try{
@@ -66,6 +67,7 @@ router.get('/docs/:id', function*(next) {
         catch (e){
             data = '## 文档建设中...';
         }
+        isComponent = 0;
     }
     else {
         try{
@@ -78,7 +80,7 @@ router.get('/docs/:id', function*(next) {
         var demo = '<div id="tinperBeeDemo"></div>';
         data = data.replace(/##.*代码演示/,'## 代码演示\n'+demo);
     }
-    
+
 
     data = marked(data);
 
@@ -156,7 +158,8 @@ router.get('/docs/:id', function*(next) {
     yield this.render('docs',{
         sidebar:cate,
         docId:docId,
-        doc:data
+        doc:data,
+        isComponent:isComponent
     });
 });
 
