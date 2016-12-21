@@ -420,3 +420,47 @@ table td:first-child {
 #tinperBeeDemo .u-button:active {
     background:none;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    /*!*iPhone < 5 Portrait*!*/
+    .u-navbar-header {
+        float:left;
+    }
+    .u-navbar-brand  img{
+        width:80%;
+    }
+    .u-navbar-toolbar {
+        display:inline-block;
+        float:right;
+    }
+    .u-navbar-toolbar li {
+        display:inline-block;
+        float:left;
+    }
+    .u-navbar-toolbar a {
+        font-size:12px;
+    }
+
+    /* 小屏幕表格滚动 start */
+
+    .table-container {
+        width: 100%;
+        overflow-y: auto;
+        _overflow: auto;
+        margin: 0 0 1em;
+    }
+    table{border:0; border-collapse:collapse;}
+    table td,table th{border:1px solid #999; padding:.5em 1em}
+
+    .table-container::-webkit-scrollbar {
+          -webkit-appearance: none;
+          width: 14px;
+          height: 14px;
+    }
+    .table-container::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        border: 3px solid #fff;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    /* 小屏幕表格滚动 end */
+}

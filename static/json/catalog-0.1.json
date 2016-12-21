@@ -10,7 +10,7 @@
         }
     },
     "视图 View": {
-        "徽标 Badge": {
+        "标记 Badge": {
             "version":"0.1.3",
             "component":"bee-badge"
         },

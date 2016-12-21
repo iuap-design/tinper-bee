@@ -62,6 +62,9 @@ router.get('/docs/:id', function*(next) {
     data = marked(data);
 
 
+    data = data.replace(/\<table/ig,'\<div class="table-container">\n\<table').replace(/<\/table>/ig,'<\/table>\n<\/div>\n');
+
+
 
     //var p = path.join(__dirname,'../node_modules/'+docId+'/demo/demoButton');
     //
