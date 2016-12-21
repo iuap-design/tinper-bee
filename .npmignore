@@ -27,7 +27,7 @@ spm_modules
 .cache
 
 dist
-view
+views
 server
 static
 docs

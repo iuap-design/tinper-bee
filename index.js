@@ -27,6 +27,14 @@ var Menus = require('./lib/Menus');
 var Upload = require('./lib/Upload');
 var Breadcrumb = require('./lib/Breadcrumb');
 
+var Message = require('./lib/Message');
+var Notification = require('./lib/Notification');
+var Popconfirm = require('./lib/Popconfirm');
+var Modal = require('./lib/Modal');
+var Tabs = require('./lib/Tabs');
+var Cascader = require('./lib/Cascader');
+var Loading = require('./lib/Loading');
+
 
 
 module.exports = {
@@ -58,5 +66,12 @@ module.exports = {
   Breadcrumb: Breadcrumb,
   Upload: Upload,
   Tile: Tile,
-  Navbar: Navbar
+  Navbar: Navbar,
+  Message: Message,
+  Notification: Notification,
+  Popconfirm: Popconfirm,
+  Modal: Modal,
+  Tabs: Tabs,
+  Cascader: Cascader,
+  Loading: Loading
 };
