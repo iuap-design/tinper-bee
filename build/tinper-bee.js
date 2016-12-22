@@ -136,7 +136,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Row: Layout.Row,
 	  Col: Layout.Col,
 	  Dropdown: Dropdown,
-	  Panel: Panel,
+	  Panel: Panel.Panel,
+	  PanelGroup: Panel.PanelGroup,
 	  Transition: Transition,
 	  Select: Select,
 	  Animate: Animate,
@@ -150,7 +151,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Notification: Notification,
 	  Popconfirm: Popconfirm,
 	  Modal: Modal,
-	  Tabs: Tabs,
+	  Tabs: Tabs.Tabs,
+	  TabPanel: Tabs.TabPanel,
 	  Cascader: Cascader,
 	  Loading: Loading
 	};
