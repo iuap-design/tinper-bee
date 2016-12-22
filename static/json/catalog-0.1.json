@@ -1,16 +1,24 @@
 {
-    "Bee of React": {
+    "": {
         "安装": {
             "version":"0.1.3",
             "component":"install"
+        },
+        "快速开始": {
+            "version":"0.1.3",
+            "component":"quickStart"
+        },
+        "整体概览": {
+            "version":"0.1.3",
+            "component":"summarize"
         },
         "参与贡献": {
             "version":"0.1.3",
             "component":"participation"
         },
-        "整体概览": {
+        "更新日志": {
             "version":"0.1.3",
-            "component":"summarize"
+            "component":""
         }
     },
     "基础 General": {
