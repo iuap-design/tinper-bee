@@ -78,7 +78,7 @@
   "dependencies": {
     "bee-alert": "latest",
     "bee-animate": "latest",
-    "bee-badge": "latest",
+    "bee-badge": "^0.1.8",
     "bee-breadcrumb": "latest",
     "bee-button": "latest",
     "bee-button-group": "latest",
