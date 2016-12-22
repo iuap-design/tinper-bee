@@ -364,12 +364,22 @@ sup {
 .menu-item label span {
     font-size:12px;
 }
+.menu-item .icon {
+    color:#5e6d82;
+    cursor: pointer;
+}
+.menu-item a:hover .icon {
+    color:#20a0ff;
+}
 .menu-component li {
     color: #999;
     font-size: 12px;
     line-height: 1.5;
     padding: 8px 16px;
     list-style: none;
+}
+.menu-component li:first-child .menu-item {
+    padding:0;
 }
 #tinperBeeDemo .u-col-md-offset-1 {
     margin:0;
