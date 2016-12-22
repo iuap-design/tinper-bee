@@ -13,7 +13,7 @@
                 <a class="nav-par" href="//tinper.org">首页</a>
             </li>
             <li>
-                <a class="nav-par" href="/docs">快速开始</a>
+                <a class="nav-par" href="/docs/quickStart">快速开始</a>
             </li>
         </ul>
 
