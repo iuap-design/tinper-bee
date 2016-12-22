@@ -57,7 +57,8 @@ module.exports = {
   Row: Layout.Row,
   Col: Layout.Col,
   Dropdown: Dropdown,
-  Panel: Panel,
+  Panel: Panel.Panel,
+  PanelGroup: Panel.PanelGroup,
   Transition: Transition,
   Select: Select,
   Animate: Animate,
@@ -71,7 +72,8 @@ module.exports = {
   Notification: Notification,
   Popconfirm: Popconfirm,
   Modal: Modal,
-  Tabs: Tabs,
+  Tabs: Tabs.Tabs,
+  TabPanel: Tabs.TabPanel,
   Cascader: Cascader,
   Loading: Loading
 };

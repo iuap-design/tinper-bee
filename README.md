@@ -1,8 +1,8 @@
 # tinper-bee
 
-[![npm version](https://img.shields.io/npm/v/bee-button.svg)](https://www.npmjs.com/package/bee-button)
-[![Build Status](https://img.shields.io/travis/tinper-bee/bee-button/master.svg)](https://travis-ci.org/tinper-bee/bee-button)
-[![Coverage Status](https://coveralls.io/repos/github/tinper-bee/bee-button/badge.svg?branch=master)](https://coveralls.io/github/tinper-bee/bee-button?branch=master)
+[![npm version](https://img.shields.io/npm/v/tinper-bee.svg)](https://www.npmjs.com/package/tinper-bee)
+[![Build Status](https://img.shields.io/travis/iuap-design/tinper-bee/master.svg)](https://travis-ci.org/iuap-design/tinper-bee)
+[![Coverage Status](https://coveralls.io/repos/github/iuap-design/tinper-bee/badge.svg?branch=master)](https://coveralls.io/github/iuap-design/tinper-bee?branch=master)
 [![NPM downloads](http://img.shields.io/npm/dm/tinper-bee.svg?style=flat)](https://npmjs.org/package/tinper-bee)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/iuap-design/tinper-bee.svg)](http://isitmaintained.com/project/iuap-design/tinper-bee "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/iuap-design/tinper-bee.svg)](http://isitmaintained.com/project/iuap-design/tinper-bee "Percentage of issues still open")
