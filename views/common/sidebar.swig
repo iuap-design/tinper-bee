@@ -6,7 +6,7 @@
                 {% for item in key -%}
                     <div class="menu-item">
                         {% if item.component!='' %}
-                            <a href="/docs/{{item.component}}" {% if item.component==docId  %}class="selected"{% endif %}>
+                            <a href="/{{item.component}}" {% if item.component==docId  %}class="selected"{% endif %}>
                                 {% autoescape false %}
                                     {{ loop.key|replace('([A-Za-z]+)','<span>$1</span>') }}
                                 {% endautoescape %}
