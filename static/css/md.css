@@ -62,7 +62,6 @@
 
 .u-navbar {
     z-index: 10000000000;
-    position: fixed;
     width: 100%;
     margin-bottom: 0;
     box-sizing: border-box;
