@@ -176,7 +176,7 @@
         },
         "单选 Radio": {
             "version":"0.1.3",
-            "component":"bee-radio"
+            "component":"bee-radio-group"
         },
         "多选 Checkbox": {
             "version":"0.1.3",
