@@ -7,6 +7,7 @@
         <link href="/{{docId}}/dist/demo.css" type="text/css" rel="stylesheet" />
     {% endif %}
     <link href="/css/navbar.css" type="text/css" rel="stylesheet" />
+    <link href="/css/md.css" type="text/css" rel="stylesheet" />
 {% endblock%}
 
 {% block script %}
