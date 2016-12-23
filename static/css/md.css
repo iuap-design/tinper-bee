@@ -482,3 +482,6 @@ table td:first-child {
 
     /* 小屏幕表格滚动 end */
 }
+.u-panel-bordered .u-panel-heading {
+    border-bottom:none;
+}
