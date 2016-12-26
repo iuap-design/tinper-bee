@@ -113,6 +113,7 @@
 .u-navbar-default .u-navbar-toolbar > li a {
     cursor: pointer;
     color: rgb(117, 117, 117);
+    font-size:16px;
 }
 
 .nav-list .dropdown {
