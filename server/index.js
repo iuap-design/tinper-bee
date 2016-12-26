@@ -37,7 +37,7 @@ app.use(function *(next) {
 
     if (this.body || !this.idempotent) return;
 
-    yield this.render('index');
+    this.redirect('/');
 });
 
 

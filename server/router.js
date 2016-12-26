@@ -41,22 +41,28 @@ marked.setOptions({
 
 //首页路由
 router.get('/', function*(next) {
-    yield this.render('index',{
-        sidebar:cate
-    });
-});
-
-router.get('/docs', function*(next) {
-    var data = fs.readFileSync(path.join(__dirname,'../docs/quickStart.md'),'utf-8');
+    var data = fs.readFileSync(path.join(__dirname,'../docs/summarize.md'),'utf-8');
     data = marked(data);
+    var docId = "summarize";
     yield this.render('docs',{
         sidebar:cate,
-        doc:data
+        data:data,
+        doc:data,
+        docId:docId
     });
 });
 
+//router.get('/docs', function*(next) {
+//    var data = fs.readFileSync(path.join(__dirname,'../docs/quickStart.md'),'utf-8');
+//    data = marked(data);
+//    yield this.render('docs',{
+//        sidebar:cate,
+//        doc:data
+//    });
+//});
+
 //读取md文档，生成html
-router.get('/docs/:id', function*(next) {
+router.get('/:id', function*(next) {
     var docId = this.params.id;
     var isComponent = 1;
 

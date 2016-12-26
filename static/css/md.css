@@ -1,3 +1,34 @@
+*, :after, :before {
+    box-sizing:border-box;
+}
+
+@media (min-width: 768px) {
+    .u-container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .u-container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .u-container {
+        width: 970px;
+    }
+}
+@media (min-width: 1680px) {
+    .u-container {
+        width: 1280px;
+    }
+}
+@media (min-width: 1920px) {
+    .u-container {
+        width: 1540px;
+    }
+}
 
 .page-container {
     padding-top:50px;
@@ -31,7 +62,6 @@
 
 .u-navbar {
     z-index: 10000000000;
-    position: fixed;
     width: 100%;
     margin-bottom: 0;
     box-sizing: border-box;
@@ -326,12 +356,7 @@ sup {
 * {
     -webkit-print-color-adjust: exact;
 }
-@media screen and (min-width: 914px) {
-    body {
-        width: 854px;
-        margin:10px auto;
-    }
-}
+
 @media print {
     body,code,pre code,h1,h2,h3,h4,h5,h6 {
         color: black;
@@ -364,12 +389,22 @@ sup {
 .menu-item label span {
     font-size:12px;
 }
+.menu-item .icon {
+    color:#5e6d82;
+    cursor: pointer;
+}
+.menu-item a:hover .icon {
+    color:#20a0ff;
+}
 .menu-component li {
     color: #999;
     font-size: 12px;
     line-height: 1.5;
     padding: 8px 16px;
     list-style: none;
+}
+.menu-component li:first-child .menu-item {
+    padding:0;
 }
 #tinperBeeDemo .u-col-md-offset-1 {
     margin:0;
@@ -471,4 +506,7 @@ table td:first-child {
     }
 
     /* 小屏幕表格滚动 end */
+}
+.u-panel-bordered .u-panel-heading {
+    border-bottom:none;
 }
