@@ -19,7 +19,7 @@ uba init bee-boilerplate-light your-projectname
 cd your-projectname && npm install
 npm run start
 ```
-这样就启动了开发工程。
+这样就启动了开发工程，自动打开网页。
 
 #### 脚手架目录说明
 
@@ -50,9 +50,7 @@ npm run start
 
 
 
-#### 开始使用
-
-以`button`为例子
+### 开始使用
 
 #### 样式引用
 为了满足多样的需求，我们对样式进行了单独打包，请引用单独的样式文件。
@@ -65,18 +63,62 @@ npm run start
 ```
 路径更换为你的路径。
 
-- 在组件内引入
+- 在app/index.js内引入样式
 ```
 import 'tinper-bee/assets/tinper-bee.css';
 ```
 
-#### 组件引用
+#### 组件编写
+
+在app/components/下新建一个文件夹，名字是你的组件的名字，首字母大写，写入index.jsx和index.css。
+
+在index.jsx内写下组件相关代码，如：
 
 ```
 
-import { Button } from 'tinper-bee';
+import { Row, Col, Button } from 'tinper-bee';
 
-ReactDOM.render(<Button />, mountNode);
+import React, { Component } from 'react';
 
+import './index.css';
+
+class Example extends Component {
+  render() {
+    return (
+     <Row>
+        <Col>
+            <Button colors="primary">点我点我！</Button>
+        </Col>
+     </Row>
+    );
+  }
+}
+
+export default Example;
 
 ```
+在app/components/index.js下进行导出
+
+```
+export Example from './Example/index.jsx';
+```
+
+最后在你需要引用的容器组件内，如在app内引用
+
+```
+import { Example } from '../../components';
+
+<div>
+    <Header />
+    <Con>
+        <Example />
+    </Con>
+</div>
+
+```
+如果已经启动了工程，直接就可以在页面上，看到效果了。
+如果没有，就运行
+```
+npm run dev
+```
+查看效果。
