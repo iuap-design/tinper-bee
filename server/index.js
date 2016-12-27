@@ -37,7 +37,9 @@ app.use(function *(next) {
 
     if (this.body || !this.idempotent) return;
 
-    this.redirect('/');
+    if (this.status == 404) {
+        this.redirect('/');
+    }
 });
 
 
