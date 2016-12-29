@@ -14,17 +14,23 @@
 | --- | --- | --- | --- | --- |
 | IE 9+ ✔ | Chrome 31.0+ ✔ | Firefox 31.0+ ✔ | Opera 30.0+ ✔ | Safari 7.0+ ✔ |
 
-[tinper-bee](http://bee.tinper.org/)is a component library based on the `UI` design language` iUAP Design` and `React`, providing developers with a complete ecosystem from product interface design to front-end development.
+tinper-bee（[官网链接](http://bee.tinper.org/) ）是基于 `UI` 设计语言 `iUAP Design` 和 `React` 实现的组件库，为开发者提供从产品界面设计到前端开发的完整生态。
 
-## Features
+## 关键特性
 
-- It is a set of high quality UI components and based on IUAP DESIGN.
-- Document complete and easy to use.
-- A rich set of enterprise-class features
-- Support for component extensions and customizations.
+- 组件支持可插拔使用
+- 提供丰富基础组件
+- 文档齐全，使用简单
+- 丰富的企业级特性应用组件
+- 支持组件的扩展和自定义
 
+## 核心能力
 
-## Start
+### 丰富的组件
+
+tinper-bee 包含丰富的react组件
+
+## 开始使用
 ```
 import { Button } from 'tinper-bee';
 
@@ -33,30 +39,31 @@ ReactDOM.render(<Button />, mountNode);
 ```
 
 
-### Get tinper-bee
+### 获取tinper-bee
 
-- From github
+- 直接从github获取我们的源码
 ```
 git clone git@github.com:iuap-design/tinper-bee.git
 ```
 
-- CDN
+- 使用CDN
 ```
 ```
-- npm
+- 使用npm安装
 
 ```
 npm install --save tinper-bee
 ```
 
 
-### Version
+### 版本说明
 
-0.1.7。
+当前tinper-bee框架的版本为0.0.1。
 
 
-### Directory Description
+### 目录及文件说明
 
+提供的资源目录结构
 ```
 /
 │
@@ -73,30 +80,30 @@ npm install --save tinper-bee
 
 ```
 
-### Document
+### 开发文档
 
-[Develop documentation](https://github.com/iuap-design/tinper-bee/docs)。
+开发文档详见[这里](https://github.com/iuap-design/tinper-bee/docs)。
 
-[Compatible ie8](https://github.com/iuap-design/neoui-react/blob/master/docs/react-ie8.md)。
+如果你的项目要兼容ie8，见 [这里](https://github.com/iuap-design/neoui-react/blob/master/docs/react-ie8.md)。
 
-[website](http://bee.tinper.org/)
+更多内容请移步我们的[官网](http://bee.tinper.org/)
 
-### Participate
+### 6.参与讨论和开发
 
-Such as in the course of any problems encountered，submit [issues](https://github.com/iuap-design/tinper-bee/issues),
+如在使用过程中遇到任何问题，可以在[这里](https://github.com/iuap-design/tinper-bee/issues)提交issue反馈；
 
-or pull request。
+或者直接fork代码到你的github仓库，提交pull request给我们。
 
-There are urgent problems can be directly mail to me（Email：guoyff@yonyou.com）
+有紧急问题可以直接邮件给我（Email：guoyff@yonyou.com）
 
 
-## Develop
+## 开发及构建
 
-Developers can participate in contributing code for the tinper-bee, but also can be based on tinper-bee secondary development or packaging plug-ins.
+开发者可以一起参与为 tinper-bee 贡献代码，同时也可以基于 tinper-bee 进行二次开发或封装插件。
 
 [tinper-bee](https://github.com/tinper-bee)
 
-### Directory Structure
+### 目录结构
 
 ```
 bower.json
@@ -113,29 +120,31 @@ tests/
 webpack.conf.js
 ```
 
-### Tools
+### 构建工具
 
-tinper-bee use [gulp.js](http://gulpjs.com/) and [webpack](https://webpack.github.io/) build the project.
+tinper-bee 使用 [gulp.js](http://gulpjs.com/) 和 [webpack](https://webpack.github.io/)  构建项目。
 
-clone:
+克隆项目文件:
 
 ```
 $ git clone git@github.com:iuap-design/tinper-bee.git
 ```
 
-install：
+然后进入目录安装依赖：
 
 ```
-$ cd tinpert-bee && npm install
+$ npm install
 ```
 
-build：
+接下来，执行 `gulp`：
 
 ```
 $ gulp
 ```
 
 
-## Feedback
+## 反馈
 
-[Bug Feedback and Request Submission](CONTRIBUTING.md)
+[Bug 反馈及需求提交](CONTRIBUTING.md)
+
+## 版本号
