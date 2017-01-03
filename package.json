@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "gulp",
     "pub": "gulp pub",
-    "server": "node server/index.js"
+    "server": "node server/index.js",
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -69,12 +70,17 @@
     "object-assign": "^4.1.0",
     "path": "^0.12.7",
     "promise": "~7.1.1",
-    "react": "^0.14.8",
-    "react-dom": "^0.14.8",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
     "rimraf": "~2.5.2",
     "sass": "^0.5.0",
     "swig": "^1.4.2",
-    "webpack": "~1.13.1"
+    "webpack": "~1.13.1",
+      "karma": "^1.1.2",
+      "karma-chrome-launcher": "~1.0.1",
+      "karma-mocha": "^1.0.1",
+      "karma-mocha-reporter": "^2.0.3",
+      "karma-phantomjs-launcher": "~1.0.0"
   },
   "dependencies": {
     "bee-alert": "latest",
