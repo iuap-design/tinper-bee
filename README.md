@@ -14,7 +14,11 @@
 | --- | --- | --- | --- | --- |
 | IE 9+ ✔ | Chrome 31.0+ ✔ | Firefox 31.0+ ✔ | Opera 30.0+ ✔ | Safari 7.0+ ✔ |
 
+## Introduction
+
 [tinper-bee](http://bee.tinper.org/)is a component library based on the `UI` design language` iUAP Design` and `React`, providing developers with a complete ecosystem from product interface design to front-end development.
+
+[中文](README_CN.md)
 
 ## Features
 
@@ -24,16 +28,16 @@
 - Support for component extensions and customizations.
 
 
-## Start
+## Quickstart
+
+
+### Install
+
+- npm
+
 ```
-import { Button } from 'tinper-bee';
-
-ReactDOM.render(<Button />, mountNode);
-
+npm install --save tinper-bee
 ```
-
-
-### Get tinper-bee
 
 - From github
 ```
@@ -43,10 +47,14 @@ git clone git@github.com:iuap-design/tinper-bee.git
 - CDN
 ```
 ```
-- npm
+
+### use
 
 ```
-npm install --save tinper-bee
+import { Button } from 'tinper-bee';
+
+ReactDOM.render(<Button />, mountNode);
+
 ```
 
 
@@ -75,11 +83,13 @@ npm install --save tinper-bee
 
 ### Document
 
+[website](http://bee.tinper.org/)
+
 [Develop documentation](https://github.com/iuap-design/tinper-bee/docs)。
 
 [Compatible ie8](https://github.com/iuap-design/neoui-react/blob/master/docs/react-ie8.md)。
 
-[website](http://bee.tinper.org/)
+
 
 ### Participate
 
@@ -139,3 +149,7 @@ $ gulp
 ## Feedback
 
 [Bug Feedback and Request Submission](CONTRIBUTING.md)
+
+## Licence
+
+MIT.
