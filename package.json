@@ -8,7 +8,7 @@
     "pub": "gulp pub",
     "server": "node server/index.js",
     "test": "mocha tests/index.js",
-    "coveralls": "istanbul cover _mocha -- -R spec"
+    "coveralls": "istanbul cover _mocha tests/index.js -- -R spec"
   },
   "repository": {
     "type": "git",
