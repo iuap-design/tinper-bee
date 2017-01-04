@@ -1,6 +1,6 @@
-# tinper-bee
-
 <img src="http://tinper.org/assets/images/bee.png" width="120" />
+
+# tinper-bee
 
 
 [![npm version](https://img.shields.io/npm/v/tinper-bee.svg)](https://www.npmjs.com/package/tinper-bee)
