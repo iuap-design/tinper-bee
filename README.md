@@ -1,5 +1,6 @@
 # tinper-bee
 
+<img src="http://tinper.org/assets/images/bee.png" width="120" />
 [![npm version](https://img.shields.io/npm/v/tinper-bee.svg)](https://www.npmjs.com/package/tinper-bee)
 [![Build Status](https://img.shields.io/travis/iuap-design/tinper-bee/master.svg)](https://travis-ci.org/iuap-design/tinper-bee)
 [![Coverage Status](https://coveralls.io/repos/github/iuap-design/tinper-bee/badge.svg?branch=master)](https://coveralls.io/github/iuap-design/tinper-bee?branch=master)
@@ -7,12 +8,6 @@
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/iuap-design/tinper-bee.svg)](http://isitmaintained.com/project/iuap-design/tinper-bee "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/iuap-design/tinper-bee.svg)](http://isitmaintained.com/project/iuap-design/tinper-bee "Percentage of issues still open")
 
-
-## Browser Support
-
-|![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png)|
-| --- | --- | --- | --- | --- |
-| IE 9+ ✔ | Chrome 31.0+ ✔ | Firefox 31.0+ ✔ | Opera 30.0+ ✔ | Safari 7.0+ ✔ |
 
 ## Introduction
 

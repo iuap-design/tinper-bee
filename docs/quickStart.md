@@ -15,7 +15,7 @@ Iuap Design React 致力于提供给程序员愉悦快速的开发体验
 
 ```
 npm install -g uba
-uba init bee-boilerplate-light your-projectname
+uba init uba-boilerplate-bee-light your-projectname
 cd your-projectname && npm install
 npm run start
 ```
