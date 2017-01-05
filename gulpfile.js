@@ -26,6 +26,18 @@ var cleancssOption = {
   debug: true,
 };
 
+var runCmd = function (cmd, args, fn) {
+  var options = args || [];
+  var runner = childProcess.spawn(cmd, options, {
+    // keep color
+    stdio: 'inherit',
+  });
+  runner.on('close', (code) => {
+    if (fn) {
+      fn(code);
+    }
+  });
+};
 
 
 var webpackCfg = require('./webpack.conf.js');
@@ -165,6 +177,12 @@ gulp.task('pub', ['js_uglify', 'theme_transport'], function () {
   }).catch(function (err) { console.log(err); });
 });
 
+gulp.task('test', function (done) {
+  var karmaBin = require.resolve('karma/bin/karma');
+  var karmaConfig = path.join(__dirname, './karma.phantomjs.conf.js');
+  var args = [karmaBin, 'start', karmaConfig];
+  runCmd('node', args, done);
+});
 
 
 gulp.task('default', ['js_uglify', 'theme']);
