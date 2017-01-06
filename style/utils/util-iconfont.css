@@ -1,10 +1,10 @@
 
 @font-face {font-family: "uf";
-  src: url('iconfont.eot?t=1482291692022'); /* IE9*/
-  src: url('iconfont.eot?t=1482291692022#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1482291692022') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1482291692022') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1482291692022#uf') format('svg'); /* iOS 4.1- */
+  src: url('../style/utils/iconfont.eot'); /* IE9*/
+  src: url('../style/utils/iconfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../style/utils/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../style/utils/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../style/utils/iconfont.svg') format('svg'); /* iOS 4.1- */
 }
 
 .uf {
@@ -71,7 +71,7 @@
 
 .uf-pass-3:before { content: "\e649"; }
 
-.uf-treeline:before { content: "\e608"; }
+.uf-treearrow-down:before { content: "\e608"; }
 
 .uf-training:before { content: "\e617"; }
 
@@ -165,7 +165,7 @@
 
 .uf-listsearch:before { content: "\e67c"; }
 
-.uf-mi:before { content: "\e636"; }
+.uf-gridcaretarrowup:before { content: "\e636"; }
 
 .uf-eye-c-o:before { content: "\e67e"; }
 
@@ -218,6 +218,8 @@
 .uf-file-s:before { content: "\e642"; }
 
 .uf-2arrow-up:before { content: "\e607"; }
+
+.uf-notification:before { content: "\e9cc"; }
 
 .uf-piechart:before { content: "\e6f0"; }
 
@@ -275,7 +277,7 @@
 
 .uf-bullseye:before { content: "\e632"; }
 
-.uf-camera-2:before { content: "\e637"; }
+.uf-gridcaretdown:before { content: "\e637"; }
 
 .uf-triangle-up:before { content: "\e638"; }
 
@@ -531,6 +533,8 @@
 
 .uf-9dot:before { content: "\e6f7"; }
 
+.uf-loadingstate:before { content: "\e600"; }
+
 .uf-gateway:before { content: "\e6d3"; }
 
 .uf-ticket-s-o:before { content: "\e6d6"; }
@@ -609,9 +613,14 @@
 
 .uf-exc-c:before { content: "\e61d"; }
 
+.uf-code:before { content: "\e656"; }
+
 .uf-plug-o:before { content: "\e60d"; }
 
 .uf-search-s:before { content: "\e991"; }
 
 .uf-treeadd:before { content: "\e992"; }
 
+.uf-mi:before { content: "\e993"; }
+
+.uf-treeline-copy:before { content: "\e994"; }
