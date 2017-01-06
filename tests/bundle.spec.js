@@ -21,6 +21,7 @@ describe('bundle', function () {
     components.forEach(function check(item) {
       var component= _.camelCase(item.split('-').slice(1).join('-'));
       var componentName = component.charAt(0).toUpperCase() + component.slice(1);
+      console.log(componentName);
       pass = (typeof tinperBee[componentName] === 'object' || typeof tinperBee[componentName] === 'function');
     });
     expect(pass).to.be(true);
