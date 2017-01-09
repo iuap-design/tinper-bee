@@ -51,3 +51,7 @@ npm install -g uba
 
 uba init bee-boilerplate-light your-projectname
 ```
+
+#### CDN
+
+后续会提供cdn服务。

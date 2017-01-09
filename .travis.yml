@@ -1,0 +1,20 @@
+sudo: false
+
+language: node_js
+
+node_js:
+  - "6"
+
+service_name: travis-ci
+repo_token: EJAyWNo37mWJ7xPzoskvnnzYPAmWnFmli
+
+env:
+  global:
+    - NODE_ENV=travisci
+    - NPM_CONFIG_PROGRESS="false"
+
+
+script: npm test
+
+after_script:
+    - npm run coveralls
