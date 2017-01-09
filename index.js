@@ -3,7 +3,7 @@ var Button = require('./lib/Button');
 var Badge = require('./lib/Badge');
 var Alert = require('./lib/Alert');
 var ButtonGroup = require('./lib/ButtonGroup');
-var ControlLabel = require('./lib/ControlLabel');
+var Label = require('./lib/Label');
 var FormControl = require('./lib/FormControl');
 var FormGroup = require('./lib/FormGroup');
 var Layout = require('./lib/Layout');
@@ -12,7 +12,7 @@ var Loadingstate = require('./lib/Loadingstate');
 var Checkbox = require('./lib/Checkbox');
 var Pagination = require('./lib/Pagination');
 var ProgressBar = require('./lib/ProgressBar');
-var RadioGroup = require('./lib/RadioGroup');
+var Radio = require('./lib/Radio');
 var Switch = require('./lib/Switch');
 var Tooltip = require('./lib/Tooltip');
 var Dropdown = require('./lib/Dropdown');
@@ -42,7 +42,7 @@ module.exports = {
   Badge: Badge,
   Alert: Alert,
   ButtonGroup: ButtonGroup,
-  ControlLabel: ControlLabel,
+  Label: Label,
   FormControl: FormControl,
   FormGroup: FormGroup,
   InputGroup: InputGroup,
@@ -50,7 +50,7 @@ module.exports = {
   Checkbox: Checkbox,
   Pagination: Pagination,
   ProgressBar: ProgressBar,
-  RadioGroup: RadioGroup,
+  Radio: Radio,
   Switch: Switch,
   Tooltip: Tooltip,
   Con: Layout.Con,

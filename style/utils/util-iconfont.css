@@ -1,10 +1,10 @@
 
 @font-face {font-family: "uf";
-  src: url('iconfont.eot?t=1482291692022'); /* IE9*/
-  src: url('iconfont.eot?t=1482291692022#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1482291692022') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1482291692022') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1482291692022#uf') format('svg'); /* iOS 4.1- */
+  src: url('../style/utils/iconfont.eot?t=1482291692022'); /* IE9*/
+  src: url('../style/utils/iconfont.eot?t=1482291692022#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../style/utils/iconfont.woff?t=1482291692022') format('woff'), /* chrome, firefox */
+  url('../style/utils/iconfont.ttf?t=1482291692022') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../style/utils/iconfont.svg?t=1482291692022#uf') format('svg'); /* iOS 4.1- */
 }
 
 .uf {
@@ -530,6 +530,8 @@
 .uf-reject:before { content: "\e6d1"; }
 
 .uf-9dot:before { content: "\e6f7"; }
+
+.uf-loadingstate:before { content: "\e600"; }
 
 .uf-gateway:before { content: "\e6d3"; }
 
