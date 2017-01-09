@@ -14247,6 +14247,7 @@ button.u-close {
 /*  Navlayout  */
 /* gridlayout */
 /* menu */
+/* Tile */
 /* Alert */
 /* Checkbox */
 /*  Radio  */
@@ -14264,11 +14265,21 @@ button.u-close {
 /* ==========  Card  ========== */
 /* ============ Forms ============*/
 /* BADGE */
+/*两种加载的尺寸 width height*/
+/*居中位置top left*/
+/*color*/
+/* border-radius of different state switch   */
+/* width height line-height  of the three switches */
+/* style of u-switch-inner  */
+/* style of u-switch:active:after  */
+/* style of u-switch:after  */
+/* style of u-switch.is-checked */
 /* Typography */
 /* Shadows */
 /* Animations */
+/* keyframes 定义 */
 
-@keyframes antSlideUpIn {
+@keyframes uSlideUpIn {
   0% {
     opacity: 0;
     transform-origin: 0% 0%;
@@ -14278,7 +14289,7 @@ button.u-close {
     transform-origin: 0% 0%;
     transform: scaleY(1); } }
 
-@keyframes antSlideUpOut {
+@keyframes uSlideUpOut {
   0% {
     opacity: 1;
     transform-origin: 0% 0%;
@@ -14288,7 +14299,7 @@ button.u-close {
     transform-origin: 0% 0%;
     transform: scaleY(0.8); } }
 
-@keyframes antSlideDownIn {
+@keyframes uSlideDownIn {
   0% {
     opacity: 0;
     transform-origin: 100% 100%;
@@ -14298,7 +14309,7 @@ button.u-close {
     transform-origin: 100% 100%;
     transform: scaleY(1); } }
 
-@keyframes antSlideDownOut {
+@keyframes uSlideDownOut {
   0% {
     opacity: 1;
     transform-origin: 100% 100%;
@@ -14308,7 +14319,7 @@ button.u-close {
     transform-origin: 100% 100%;
     transform: scaleY(0.8); } }
 
-@keyframes antSlideLeftIn {
+@keyframes uSlideLeftIn {
   0% {
     opacity: 0;
     transform-origin: 0% 0%;
@@ -14318,7 +14329,7 @@ button.u-close {
     transform-origin: 0% 0%;
     transform: scaleX(1); } }
 
-@keyframes antSlideLeftOut {
+@keyframes uSlideLeftOut {
   0% {
     opacity: 1;
     transform-origin: 0% 0%;
@@ -14328,7 +14339,7 @@ button.u-close {
     transform-origin: 0% 0%;
     transform: scaleX(0.8); } }
 
-@keyframes antSlideRightIn {
+@keyframes uSlideRightIn {
   0% {
     opacity: 0;
     transform-origin: 100% 0%;
@@ -14338,7 +14349,7 @@ button.u-close {
     transform-origin: 100% 0%;
     transform: scaleX(1); } }
 
-@keyframes antSlideRightOut {
+@keyframes uSlideRightOut {
   0% {
     opacity: 1;
     transform-origin: 100% 0%;
@@ -14348,7 +14359,7 @@ button.u-close {
     transform-origin: 100% 0%;
     transform: scaleX(0.8); } }
 
-@keyframes antSwingIn {
+@keyframes uSwingIn {
   0%,
   100% {
     transform: translateX(0px); }
@@ -14361,7 +14372,7 @@ button.u-close {
   80% {
     transform: translateX(5px); } }
 
-@keyframes antZoomIn {
+@keyframes uZoomIn {
   0% {
     opacity: 0;
     transform: scale(0.2); }
@@ -14369,28 +14380,28 @@ button.u-close {
     opacity: 1;
     transform: scale(1); } }
 
-@keyframes antZoomOut {
+@keyframes uZoomOut {
   0% {
     transform: scale(1); }
   100% {
     opacity: 0;
     transform: scale(0.2); } }
 
-@keyframes antZoomBigIn {
+@keyframes uZoomBigIn {
   0% {
     opacity: 0;
     transform: scale(0.8); }
   100% {
     transform: scale(1); } }
 
-@keyframes antZoomBigOut {
+@keyframes uZoomBigOut {
   0% {
     transform: scale(1); }
   100% {
     opacity: 0;
     transform: scale(0.8); } }
 
-@keyframes antZoomUpIn {
+@keyframes uZoomUpIn {
   0% {
     opacity: 0;
     transform-origin: 50% 0%;
@@ -14399,7 +14410,7 @@ button.u-close {
     transform-origin: 50% 0%;
     transform: scale(1); } }
 
-@keyframes antZoomUpOut {
+@keyframes uZoomUpOut {
   0% {
     transform-origin: 50% 0%;
     transform: scale(1); }
@@ -14408,7 +14419,7 @@ button.u-close {
     transform-origin: 50% 0%;
     transform: scale(0.8); } }
 
-@keyframes antZoomLeftIn {
+@keyframes uZoomLeftIn {
   0% {
     opacity: 0;
     transform-origin: 0% 50%;
@@ -14417,7 +14428,7 @@ button.u-close {
     transform-origin: 0% 50%;
     transform: scale(1); } }
 
-@keyframes antZoomLeftOut {
+@keyframes uZoomLeftOut {
   0% {
     transform-origin: 0% 50%;
     transform: scale(1); }
@@ -14426,7 +14437,7 @@ button.u-close {
     transform-origin: 0% 50%;
     transform: scale(0.8); } }
 
-@keyframes antZoomRightIn {
+@keyframes uZoomRightIn {
   0% {
     opacity: 0;
     transform-origin: 100% 50%;
@@ -14435,7 +14446,7 @@ button.u-close {
     transform-origin: 100% 50%;
     transform: scale(1); } }
 
-@keyframes antZoomRightOut {
+@keyframes uZoomRightOut {
   0% {
     transform-origin: 100% 50%;
     transform: scale(1); }
@@ -14444,7 +14455,7 @@ button.u-close {
     transform-origin: 100% 50%;
     transform: scale(0.8); } }
 
-@keyframes antZoomDownIn {
+@keyframes uZoomDownIn {
   0% {
     opacity: 0;
     transform-origin: 50% 100%;
@@ -14453,7 +14464,7 @@ button.u-close {
     transform-origin: 50% 100%;
     transform: scale(1); } }
 
-@keyframes antZoomDownOut {
+@keyframes uZoomDownOut {
   0% {
     transform-origin: 50% 100%;
     transform: scale(1); }
@@ -36324,6 +36335,7 @@ button.u-close {
 /*  Navlayout  */
 /* gridlayout */
 /* menu */
+/* Tile */
 /* Alert */
 /* Checkbox */
 /*  Radio  */
@@ -36341,11 +36353,21 @@ button.u-close {
 /* ==========  Card  ========== */
 /* ============ Forms ============*/
 /* BADGE */
+/*两种加载的尺寸 width height*/
+/*居中位置top left*/
+/*color*/
+/* border-radius of different state switch   */
+/* width height line-height  of the three switches */
+/* style of u-switch-inner  */
+/* style of u-switch:active:after  */
+/* style of u-switch:after  */
+/* style of u-switch.is-checked */
 /* Typography */
 /* Shadows */
 /* Animations */
+/* keyframes 定义 */
 
-@keyframes antSlideUpIn {
+@keyframes uSlideUpIn {
   0% {
     opacity: 0;
     transform-origin: 0% 0%;
@@ -36355,7 +36377,7 @@ button.u-close {
     transform-origin: 0% 0%;
     transform: scaleY(1); } }
 
-@keyframes antSlideUpOut {
+@keyframes uSlideUpOut {
   0% {
     opacity: 1;
     transform-origin: 0% 0%;
@@ -36365,7 +36387,7 @@ button.u-close {
     transform-origin: 0% 0%;
     transform: scaleY(0.8); } }
 
-@keyframes antSlideDownIn {
+@keyframes uSlideDownIn {
   0% {
     opacity: 0;
     transform-origin: 100% 100%;
@@ -36375,7 +36397,7 @@ button.u-close {
     transform-origin: 100% 100%;
     transform: scaleY(1); } }
 
-@keyframes antSlideDownOut {
+@keyframes uSlideDownOut {
   0% {
     opacity: 1;
     transform-origin: 100% 100%;
@@ -36385,7 +36407,7 @@ button.u-close {
     transform-origin: 100% 100%;
     transform: scaleY(0.8); } }
 
-@keyframes antSlideLeftIn {
+@keyframes uSlideLeftIn {
   0% {
     opacity: 0;
     transform-origin: 0% 0%;
@@ -36395,7 +36417,7 @@ button.u-close {
     transform-origin: 0% 0%;
     transform: scaleX(1); } }
 
-@keyframes antSlideLeftOut {
+@keyframes uSlideLeftOut {
   0% {
     opacity: 1;
     transform-origin: 0% 0%;
@@ -36405,7 +36427,7 @@ button.u-close {
     transform-origin: 0% 0%;
     transform: scaleX(0.8); } }
 
-@keyframes antSlideRightIn {
+@keyframes uSlideRightIn {
   0% {
     opacity: 0;
     transform-origin: 100% 0%;
@@ -36415,7 +36437,7 @@ button.u-close {
     transform-origin: 100% 0%;
     transform: scaleX(1); } }
 
-@keyframes antSlideRightOut {
+@keyframes uSlideRightOut {
   0% {
     opacity: 1;
     transform-origin: 100% 0%;
@@ -36425,7 +36447,7 @@ button.u-close {
     transform-origin: 100% 0%;
     transform: scaleX(0.8); } }
 
-@keyframes antSwingIn {
+@keyframes uSwingIn {
   0%,
   100% {
     transform: translateX(0px); }
@@ -36438,7 +36460,7 @@ button.u-close {
   80% {
     transform: translateX(5px); } }
 
-@keyframes antZoomIn {
+@keyframes uZoomIn {
   0% {
     opacity: 0;
     transform: scale(0.2); }
@@ -36446,28 +36468,28 @@ button.u-close {
     opacity: 1;
     transform: scale(1); } }
 
-@keyframes antZoomOut {
+@keyframes uZoomOut {
   0% {
     transform: scale(1); }
   100% {
     opacity: 0;
     transform: scale(0.2); } }
 
-@keyframes antZoomBigIn {
+@keyframes uZoomBigIn {
   0% {
     opacity: 0;
     transform: scale(0.8); }
   100% {
     transform: scale(1); } }
 
-@keyframes antZoomBigOut {
+@keyframes uZoomBigOut {
   0% {
     transform: scale(1); }
   100% {
     opacity: 0;
     transform: scale(0.8); } }
 
-@keyframes antZoomUpIn {
+@keyframes uZoomUpIn {
   0% {
     opacity: 0;
     transform-origin: 50% 0%;
@@ -36476,7 +36498,7 @@ button.u-close {
     transform-origin: 50% 0%;
     transform: scale(1); } }
 
-@keyframes antZoomUpOut {
+@keyframes uZoomUpOut {
   0% {
     transform-origin: 50% 0%;
     transform: scale(1); }
@@ -36485,7 +36507,7 @@ button.u-close {
     transform-origin: 50% 0%;
     transform: scale(0.8); } }
 
-@keyframes antZoomLeftIn {
+@keyframes uZoomLeftIn {
   0% {
     opacity: 0;
     transform-origin: 0% 50%;
@@ -36494,7 +36516,7 @@ button.u-close {
     transform-origin: 0% 50%;
     transform: scale(1); } }
 
-@keyframes antZoomLeftOut {
+@keyframes uZoomLeftOut {
   0% {
     transform-origin: 0% 50%;
     transform: scale(1); }
@@ -36503,7 +36525,7 @@ button.u-close {
     transform-origin: 0% 50%;
     transform: scale(0.8); } }
 
-@keyframes antZoomRightIn {
+@keyframes uZoomRightIn {
   0% {
     opacity: 0;
     transform-origin: 100% 50%;
@@ -36512,7 +36534,7 @@ button.u-close {
     transform-origin: 100% 50%;
     transform: scale(1); } }
 
-@keyframes antZoomRightOut {
+@keyframes uZoomRightOut {
   0% {
     transform-origin: 100% 50%;
     transform: scale(1); }
@@ -36521,7 +36543,7 @@ button.u-close {
     transform-origin: 100% 50%;
     transform: scale(0.8); } }
 
-@keyframes antZoomDownIn {
+@keyframes uZoomDownIn {
   0% {
     opacity: 0;
     transform-origin: 50% 100%;
@@ -36530,7 +36552,7 @@ button.u-close {
     transform-origin: 50% 100%;
     transform: scale(1); } }
 
-@keyframes antZoomDownOut {
+@keyframes uZoomDownOut {
   0% {
     transform-origin: 50% 100%;
     transform: scale(1); }
