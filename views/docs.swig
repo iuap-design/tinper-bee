@@ -1,7 +1,7 @@
 {% extends 'layout/layout.swig' %}
 
 {% block css %}
-    {#<link href="/tinper-bee.css" type="text/css" rel="stylesheet" />#}
+    <link href="/tinper-bee.css" type="text/css" rel="stylesheet" />
     {% if docId && isComponent==1 %}
         <link href="/{{docId}}/dist/demo.css" type="text/css" rel="stylesheet" />
     {% endif %}

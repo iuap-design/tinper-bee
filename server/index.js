@@ -23,6 +23,7 @@ app.use(logger());
 
 app.use(staticCache(path.join(__dirname, '../static')),{  maxAge: 365 * 24 * 60 * 60});
 app.use(staticCache(path.join(__dirname, '../assets')),{  maxAge: 365 * 24 * 60 * 60});
+app.use(staticCache(path.join(__dirname, '../style')),{  maxAge: 365 * 24 * 60 * 60});
 app.use(staticCache(path.join(__dirname, '../node_modules')),{  maxAge: 365 * 24 * 60 * 60});
 
 

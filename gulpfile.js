@@ -6,6 +6,7 @@ var clean = require('gulp-clean');
 var cleancss = require('gulp-cleancss');
 var concat = require('gulp-concat');
 var autoprefix = require('gulp-autoprefixer');
+var minifyCss = require('gulp-minify-css');
 var webpack = require('webpack');
 var Promise = require('promise');
 var git = require('git-rev');
@@ -135,13 +136,16 @@ gulp.task('js_uglify', ['js_build'], function (done) {
 });
 
 gulp.task('theme', ['theme_clean'], function (done) {
-  gulp.src(['./style/*.scss'])
+  gulp.src(['./style/index.scss'])
       .pipe(sass())
       .pipe(concat('tinper-bee.css'))
       .pipe(autoprefix({
           browsers: ['last 2 versions', 'not ie < 8'],
           cascade: false
       }))
+      .pipe(gulp.dest('./assets'))
+      .pipe(minifyCss())
+      .pipe(concat('tinper-bee.min.css'))
       .pipe(gulp.dest('./assets'))
       .on('end', function () {
         done();
