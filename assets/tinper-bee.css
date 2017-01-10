@@ -5970,7 +5970,7 @@ button.u-close {
 
 /* FormGroup */
 /*  Navlayout  */
-.u-control-label {
+.u-label {
   padding-right: 5px;
   font-size: 14px; }
 
@@ -6692,17 +6692,73 @@ button.u-close {
 
 /* FormGroup */
 /*  Navlayout  */
+.u-radio-button {
+  margin: 0;
+  height: 28px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.65);
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  border-left: 0;
+  background: #fff;
+  padding: 0 16px; }
+  .u-radio-button:first-child {
+    border-radius: 4px 0 0 4px;
+    border-left: 1px solid #d9d9d9; }
+  .u-radio-button:last-child {
+    border-radius: 0 4px 4px 0; }
+  .u-radio-button.u-radio-button-lg {
+    height: 32px;
+    line-height: 30px; }
+  .u-radio-button.u-radio-button-sm {
+    height: 22px;
+    line-height: 20px;
+    padding: 0 12px; }
+  .u-radio-button.sm:first-child {
+    border-radius: 2px 0 0 2px; }
+  .u-radio-button.is-checked {
+    background: #fff;
+    border-color: #108ee9;
+    color: #108ee9;
+    box-shadow: -1px 0 0 0 #108ee9; }
+  .u-radio-button.is-checked:hover {
+    border-color: #108ee9;
+    box-shadow: -1px 0 0 0 #108ee9;
+    color: #108ee9; }
+  .u-radio-button.is-checked:first-child {
+    border-color: #108ee9;
+    box-shadow: none !important; }
+  .u-radio-button.disabled {
+    border-color: #d9d9d9;
+    background-color: #f7f7f7;
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.25); }
+    .u-radio-button.disabled span, .u-radio-button.disabled label {
+      cursor: not-allowed; }
+  .u-radio-button.disabled:hover {
+    background-color: #f7f7f7;
+    color: rgba(0, 0, 0, 0.25);
+    box-shadow: none; }
+  .u-radio-button:hover, .u-radio-button:focus {
+    color: #108ee9;
+    position: relative; }
+  .u-radio-button input {
+    display: none; }
+
 .u-radio {
   line-height: 22px; }
   .u-radio.disabled .u-radio-label {
     cursor: not-allowed;
-    opacity: 0.5; }
+    opacity: 0.5;
+    color: rgba(0, 0, 0, 0.25); }
   .u-radio input[type='radio'] {
     display: none;
     cursor: pointer; }
   .u-radio.is-checked .u-radio-label:before {
-    box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.65);
-    border-color: rgba(0, 0, 0, 0.65); }
+    box-shadow: inset 0 0 0 10px #108ee9;
+    border-color: #108ee9; }
   .u-radio.is-checked .u-radio-label:after {
     position: absolute;
     top: 9px;
