@@ -22470,6 +22470,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactDom = __webpack_require__(5);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
 	var _warning = __webpack_require__(22);
 
 	var _warning2 = _interopRequireDefault(_warning);
@@ -22577,7 +22581,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 
 	  Popconfirm.prototype.componentWillUnmount = function componentWillUnmount() {
-	    ReactDOM.unmountComponentAtNode(this._mountNode);
+	    _reactDom2["default"].unmountComponentAtNode(this._mountNode);
 	    this._mountNode = null;
 	  };
 
@@ -22627,7 +22631,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 
 	  Popconfirm.prototype.renderOverlay = function renderOverlay() {
-	    ReactDOM.unstable_renderSubtreeIntoContainer(this, this._overlay, this._mountNode);
+	    _reactDom2["default"].unstable_renderSubtreeIntoContainer(this, this._overlay, this._mountNode);
 	  };
 
 	  Popconfirm.prototype.render = function render() {
