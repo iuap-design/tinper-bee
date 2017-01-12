@@ -34,7 +34,8 @@ var Modal = require('./lib/Modal');
 var Tabs = require('./lib/Tabs');
 var Cascader = require('./lib/Cascader');
 var Loading = require('./lib/Loading');
-
+var Table = require('./lib/Table');
+var Tree = require('./lib/Tree');
 
 
 module.exports = {
@@ -75,5 +76,7 @@ module.exports = {
   Tabs: Tabs.Tabs,
   TabPanel: Tabs.TabPanel,
   Cascader: Cascader,
-  Loading: Loading
+  Loading: Loading,
+  Table: Table,
+  Tree: Tree
 };

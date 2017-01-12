@@ -86,6 +86,7 @@ ReactDOM.render(<Button />, mountNode);
 
 [Compatible ie8](https://github.com/iuap-design/neoui-react/blob/master/docs/react-ie8.md)。
 
+[tinper-bee components organization](https://github.com/tinper-bee)
 
 
 ### Participate
@@ -101,7 +102,7 @@ There are urgent problems can be directly mail to me（Email：guoyff@yonyou.com
 
 Developers can participate in contributing code for the tinper-bee, but also can be based on tinper-bee secondary development or packaging plug-ins.
 
-[tinper-bee](https://github.com/tinper-bee)
+[tinper-bee components organization](https://github.com/tinper-bee)
 
 ### Directory Structure
 
