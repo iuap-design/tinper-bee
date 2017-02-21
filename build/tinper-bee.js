@@ -11287,10 +11287,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      _extends({}, others, {
 	        role: 'progressbar',
 	        className: (0, _classnames2["default"])(className, classNames),
-	        style: _extends({ width: getPercentage(now, min, max) + '%' }, style),
-	        'u-valuenow': now,
-	        'u-valuemin': min,
-	        'u-valuemax': max
+	        style: _extends({ width: getPercentage(now, min, max) + '%' }, style)
 	      }),
 	      _react2["default"].createElement(
 	        'span',

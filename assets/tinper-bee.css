@@ -6685,16 +6685,17 @@ button.u-close {
 
 .u-progress.sm {
   height: 10px; }
-  .u-progress.sm .u-progress-label {
-    position: absolute;
-    font-size: 10px;
+  .u-progress.sm .u-progress-bar {
     line-height: 10px; }
+  .u-progress.sm .u-progress-label {
+    font-size: 10px; }
 
 .u-progress.xs {
   height: 5px;
-  width: 170px; }
+  width: 170px;
+  margin-left: 10px; }
   .u-progress.xs .u-progress-label {
-    margin-left: 140px;
+    left: 0;
     color: #000;
     position: absolute;
     font-size: 10px;
@@ -7938,16 +7939,17 @@ ul {
 
 .u-progress.sm {
   height: 10px; }
-  .u-progress.sm .u-progress-label {
-    position: absolute;
-    font-size: 10px;
+  .u-progress.sm .u-progress-bar {
     line-height: 10px; }
+  .u-progress.sm .u-progress-label {
+    font-size: 10px; }
 
 .u-progress.xs {
   height: 5px;
-  width: 170px; }
+  width: 170px;
+  margin-left: 10px; }
   .u-progress.xs .u-progress-label {
-    margin-left: 140px;
+    left: 0;
     color: #000;
     position: absolute;
     font-size: 10px;
