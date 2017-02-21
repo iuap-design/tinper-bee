@@ -6,8 +6,10 @@ var ButtonGroup = require('./lib/ButtonGroup');
 var Label = require('./lib/Label');
 var FormControl = require('./lib/FormControl');
 var FormGroup = require('./lib/FormGroup');
+var Form = require('./lib/Form');
 var Layout = require('./lib/Layout');
 var InputGroup = require('./lib/InputGroup');
+var InputNumber = require('./lib/InputNumber');
 var LoadingState = require('./lib/Loadingstate');
 var Checkbox = require('./lib/Checkbox');
 var Pagination = require('./lib/Pagination');
@@ -36,7 +38,7 @@ var Cascader = require('./lib/Cascader');
 var Loading = require('./lib/Loading');
 var Table = require('./lib/Table');
 var Tree = require('./lib/Tree');
-
+var Popover = require('./lib/Popover');
 
 module.exports = {
   Button: Button,
@@ -46,7 +48,9 @@ module.exports = {
   Label: Label,
   FormControl: FormControl,
   FormGroup: FormGroup,
+  Form: Form,
   InputGroup: InputGroup,
+  InputNumber: InputNumber,
   LoadingState: LoadingState,
   Checkbox: Checkbox,
   Pagination: Pagination,
@@ -78,5 +82,6 @@ module.exports = {
   Cascader: Cascader,
   Loading: Loading,
   Table: Table,
+  Popover: Popover,
   Tree: Tree
 };
