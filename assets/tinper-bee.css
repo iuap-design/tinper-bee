@@ -5778,7 +5778,7 @@ button.u-close {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1600;
+  z-index: 1504;
   background-color: #000; }
 
 .u-modal-backdrop.fade {
@@ -6176,12 +6176,8 @@ button.u-close {
 
 /* FormGroup */
 /*  Navlayout  */
-.u-input-number {
-  display: -ms-flexbox;
-  display: flex; }
-
-.u-input-number .u-form-control {
-  width: 50px;
+.u-input-number.u-input-group .u-form-control {
+  width: 70px;
   text-align: center; }
 
 .u-input-number .u-input-group-addon {
@@ -6198,6 +6194,64 @@ button.u-close {
   cursor: not-allowed;
   background: #ffe;
   color: #ccc; }
+
+.u-input-number.u-input-group.simple .u-input-group-btn {
+  position: relative;
+  top: 0;
+  z-index: 2;
+  right: 0; }
+
+.u-input-number-auto .u-form-control {
+  width: 100%; }
+
+.u-input-number.u-input-group.simple .u-form-control {
+  text-align: left;
+  width: 70px; }
+
+.u-input-number.u-input-group.simple.u-input-number-auto .u-form-control {
+  width: 100%; }
+
+.u-input-number.u-input-group.simple .u-input-group-btn .icon-group {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  border-left: 1px solid #d9d9d9;
+  width: 22px;
+  height: 28px;
+  background: #fff;
+  border-radius: 0 4px 4px 0;
+  transition: opacity .24s linear .1s; }
+  .u-input-number.u-input-group.simple .u-input-group-btn .icon-group .plus {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+    height: 50%;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.43);
+    transition: all .1s linear;
+    cursor: pointer;
+    font-weight: 700; }
+  .u-input-number.u-input-group.simple .u-input-group-btn .icon-group .reduce {
+    position: relative;
+    top: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #d9d9d9;
+    line-height: 0;
+    height: 50%;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.43);
+    transition: all .1s linear;
+    cursor: pointer;
+    font-weight: 700; }
+  .u-input-number.u-input-group.simple .u-input-group-btn .icon-group .uf {
+    font-size: 12px;
+    line-height: 12px; }
+    .u-input-number.u-input-group.simple .u-input-group-btn .icon-group .uf:hover {
+      color: blue; }
 
 /* FormGroup */
 /*  Navlayout  */
@@ -11032,7 +11086,7 @@ button.u-close {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1600;
+  z-index: 1504;
   background-color: #000; }
 
 .u-modal-backdrop.fade {

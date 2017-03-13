@@ -2216,6 +2216,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    value: true
 	});
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	var _react = __webpack_require__(4);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -2240,6 +2242,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
 
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2252,12 +2256,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	    max: _react.PropTypes.number,
 	    min: _react.PropTypes.number,
 	    step: _react.PropTypes.number,
-	    value: _react.PropTypes.number
+	    value: _react.PropTypes.number,
+	    autoWidth: _react.PropTypes.bool
 	};
 	var defaultProps = {
 	    value: 0,
 	    step: 1,
-	    clsPrefix: 'u-input-number'
+	    clsPrefix: 'u-input-number',
+	    iconStyle: 'double',
+	    autoWidth: false
 	};
 
 	var InputNumber = function (_Component) {
@@ -2309,10 +2316,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    InputNumber.prototype.minus = function minus(e) {
-	        var _props = this.props,
-	            min = _props.min,
-	            step = _props.step,
-	            onChange = _props.onChange;
+	        var _props = this.props;
+	        var min = _props.min;
+	        var step = _props.step;
+	        var onChange = _props.onChange;
 
 	        if (!min) {
 	            this.setState({ value: this.state.value - step });
@@ -2334,10 +2341,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    InputNumber.prototype.plus = function plus() {
-	        var _props2 = this.props,
-	            max = _props2.max,
-	            step = _props2.step,
-	            onChange = _props2.onChange;
+	        var _props2 = this.props;
+	        var max = _props2.max;
+	        var step = _props2.step;
+	        var onChange = _props2.onChange;
 
 	        if (!max) {
 	            this.setState({ value: this.state.value + step });
@@ -2360,27 +2367,60 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    InputNumber.prototype.render = function render() {
-	        var _props3 = this.props,
-	            max = _props3.max,
-	            min = _props3.min,
-	            step = _props3.step,
-	            clsPrefix = _props3.clsPrefix,
-	            className = _props3.className,
-	            others = _objectWithoutProperties(_props3, ['max', 'min', 'step', 'clsPrefix', 'className']);
+	        var _classes;
+
+	        var _props3 = this.props;
+	        var max = _props3.max;
+	        var min = _props3.min;
+	        var step = _props3.step;
+	        var clsPrefix = _props3.clsPrefix;
+	        var className = _props3.className;
+	        var iconStyle = _props3.iconStyle;
+	        var autoWidth = _props3.autoWidth;
+
+	        var others = _objectWithoutProperties(_props3, ['max', 'min', 'step', 'clsPrefix', 'className', 'iconStyle', 'autoWidth']);
+
+	        var classes = (_classes = {}, _defineProperty(_classes, clsPrefix + '-auto', autoWidth), _defineProperty(_classes, '' + clsPrefix, true), _classes);
 
 	        return _react2["default"].createElement(
-	            _beeInputGroup2["default"],
-	            { className: (0, _classnames2["default"])(className, clsPrefix) },
-	            _react2["default"].createElement(
-	                _beeInputGroup2["default"].Addon,
-	                { className: this.state.minusDisabled && 'disabled', onClick: this.minus },
-	                '-'
-	            ),
-	            _react2["default"].createElement(_beeFormControl2["default"], { value: this.state.value, onChange: this.handleChange }),
-	            _react2["default"].createElement(
-	                _beeInputGroup2["default"].Addon,
-	                { className: this.state.plusDisabled && 'disabled', onClick: this.plus },
-	                '+'
+	            'div',
+	            null,
+	            iconStyle == 'double' ? _react2["default"].createElement(
+	                _beeInputGroup2["default"],
+	                _extends({ className: (0, _classnames2["default"])(className, classes) }, others),
+	                _react2["default"].createElement(
+	                    _beeInputGroup2["default"].Addon,
+	                    { className: this.state.minusDisabled && 'disabled', onClick: this.minus },
+	                    '-'
+	                ),
+	                _react2["default"].createElement(_beeFormControl2["default"], { value: this.state.value, onChange: this.handleChange }),
+	                _react2["default"].createElement(
+	                    _beeInputGroup2["default"].Addon,
+	                    { className: this.state.plusDisabled && 'disabled', onClick: this.plus },
+	                    '+'
+	                )
+	            ) : _react2["default"].createElement(
+	                _beeInputGroup2["default"],
+	                _extends({ className: (0, _classnames2["default"])(className, classes), simple: true }, others),
+	                _react2["default"].createElement(_beeFormControl2["default"], { value: this.state.value, onChange: this.handleChange }),
+	                _react2["default"].createElement(
+	                    _beeInputGroup2["default"].Button,
+	                    null,
+	                    _react2["default"].createElement(
+	                        'div',
+	                        { className: 'icon-group' },
+	                        _react2["default"].createElement(
+	                            'span',
+	                            { onClick: this.plus, className: 'plus' },
+	                            _react2["default"].createElement('span', { className: 'uf uf-arrow-up' })
+	                        ),
+	                        _react2["default"].createElement(
+	                            'span',
+	                            { onClick: this.minus, className: 'reduce' },
+	                            _react2["default"].createElement('span', { className: ' uf uf-arrow-down' })
+	                        )
+	                    )
+	                )
 	            )
 	        );
 	    };
