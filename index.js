@@ -39,6 +39,7 @@ var Loading = require('./lib/Loading');
 var Table = require('./lib/Table');
 var Tree = require('./lib/Tree');
 var Popover = require('./lib/Popover');
+var Clipboard = require('./lib/Clipboard');
 
 module.exports = {
   Button: Button,
@@ -83,5 +84,6 @@ module.exports = {
   Loading: Loading,
   Table: Table,
   Popover: Popover,
-  Tree: Tree
+  Tree: Tree,
+  Clipboard: Clipboard
 };

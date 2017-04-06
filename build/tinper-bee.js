@@ -118,6 +118,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var Table = __webpack_require__(338);
 	var Tree = __webpack_require__(356);
 	var Popover = __webpack_require__(362);
+	var Clipboard = __webpack_require__(365);
 
 	module.exports = {
 	  Button: Button,
@@ -162,7 +163,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Loading: Loading,
 	  Table: Table,
 	  Popover: Popover,
-	  Tree: Tree
+	  Tree: Tree,
+	  Clipboard: Clipboard
 	};
 
 
@@ -2637,7 +2639,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 48 */
-[365, 49],
+[383, 49],
 /* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -2818,9 +2820,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 50 */
-[366, 51, 53, 54, 55, 56, 57, 93, 94, 95, 96, 101, 105, 106],
+[384, 51, 53, 54, 55, 56, 57, 93, 94, 95, 96, 101, 105, 106],
 /* 51 */
-[367, 52],
+[385, 52],
 /* 52 */
 /***/ function(module, exports) {
 
@@ -2867,7 +2869,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 53 */
-[368, 52],
+[386, 52],
 /* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -2915,7 +2917,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 55 */
-[369, 52],
+[387, 52],
 /* 56 */
 /***/ function(module, exports) {
 
@@ -4552,7 +4554,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 101 */
-[370, 102],
+[388, 102],
 /* 102 */
 /***/ function(module, exports) {
 
@@ -4876,7 +4878,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 106 */
-[371, 96],
+[389, 96],
 /* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -6522,7 +6524,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 121 */
-[372, 120],
+[390, 120],
 /* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -6683,7 +6685,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 127 */
-[373, 120],
+[391, 120],
 /* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -7644,9 +7646,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 134 */
-[374, 135, 137, 139, 140, 141, 143],
+[392, 135, 137, 139, 140, 141, 143],
 /* 135 */
-[375, 136],
+[393, 136],
 /* 136 */
 /***/ function(module, exports) {
 
@@ -7667,7 +7669,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 137 */
-[376, 138],
+[394, 138],
 /* 138 */
 /***/ function(module, exports) {
 
@@ -7687,7 +7689,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 139 */
-[377, 135],
+[395, 135],
 /* 140 */
 /***/ function(module, exports) {
 
@@ -7915,7 +7917,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 148 */
-[373, 142],
+[391, 142],
 /* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -8100,7 +8102,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 154 */
-[372, 142],
+[390, 142],
 /* 155 */
 /***/ function(module, exports) {
 
@@ -8909,17 +8911,17 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 162 */
-[374, 163, 165, 167, 168, 160, 169],
+[392, 163, 165, 167, 168, 160, 169],
 /* 163 */
-[375, 164],
+[393, 164],
 /* 164 */
 136,
 /* 165 */
-[376, 166],
+[394, 166],
 /* 166 */
 138,
 /* 167 */
-[377, 163],
+[395, 163],
 /* 168 */
 140,
 /* 169 */
@@ -8940,7 +8942,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 171 */
-[378, 159],
+[396, 159],
 /* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -13770,17 +13772,17 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 221 */
-[366, 222, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 235, 236],
+[384, 222, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 235, 236],
 /* 222 */
-[367, 223],
+[385, 223],
 /* 223 */
 52,
 /* 224 */
-[368, 223],
+[386, 223],
 /* 225 */
 54,
 /* 226 */
-[369, 223],
+[387, 223],
 /* 227 */
 56,
 /* 228 */
@@ -13826,13 +13828,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 232 */
 96,
 /* 233 */
-[370, 234],
+[388, 234],
 /* 234 */
 102,
 /* 235 */
 105,
 /* 236 */
-[371, 232],
+[389, 232],
 /* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -16739,7 +16741,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 253 */
-[379, 221],
+[397, 221],
 /* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -22482,244 +22484,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 301 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _react = __webpack_require__(4);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _Portal = __webpack_require__(302);
-
-	var _Portal2 = _interopRequireDefault(_Portal);
-
-	var _Position = __webpack_require__(313);
-
-	var _Position2 = _interopRequireDefault(_Position);
-
-	var _RootCloseWrapper = __webpack_require__(320);
-
-	var _RootCloseWrapper2 = _interopRequireDefault(_RootCloseWrapper);
-
-	var _tinperBeeCore = __webpack_require__(305);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
-
-	var propTypes = _extends({}, _Portal2["default"].propTypes, _Position2["default"].propTypes, {
-
-	  /**
-	   * 是否显示
-	   */
-	  show: _react.PropTypes.bool,
-
-	  /**
-	   * 点击其他地方，是否隐藏overlay
-	   */
-	  rootClose: _react.PropTypes.bool,
-
-	  /**
-	   * 当rootClose为true的时候，触发的隐藏方法
-	   * @type func
-	   */
-	  onHide: function onHide(props) {
-	    var propType = _react.PropTypes.func;
-	    if (props.rootClose) {
-	      propType = propType.isRequired;
-	    }
-
-	    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-	      args[_key - 1] = arguments[_key];
-	    }
-
-	    return propType.apply(undefined, [props].concat(args));
-	  },
-
-
-	  /**
-	   * 过渡动画组件
-	   */
-	  transition: _react.PropTypes.oneOfType([_tinperBeeCore.elementType, _react.PropTypes.func]),
-
-	  /**
-	   * overlay添加动画前的钩子函数
-	   */
-	  onEnter: _react.PropTypes.func,
-
-	  /**
-	   * 开始动画的钩子函数
-	   */
-	  onEntering: _react.PropTypes.func,
-
-	  /**
-	   * 渲染之后的钩子函数
-	   */
-	  onEntered: _react.PropTypes.func,
-
-	  /**
-	   * 关闭开始时的钩子函数
-	   */
-	  onExit: _react.PropTypes.func,
-
-	  /**
-	   * 关闭时的钩子函数
-	   */
-	  onExiting: _react.PropTypes.func,
-
-	  /**
-	   * 关闭后的钩子函数
-	   */
-	  onExited: _react.PropTypes.func
-	});
-
-	function noop() {}
-
-	var defaultProps = {
-	  show: false,
-	  rootClose: true
-	};
-
-	/**
-	 * 悬浮组件
-	 */
-
-	var BaseOverlay = function (_Component) {
-	  _inherits(BaseOverlay, _Component);
-
-	  function BaseOverlay(props, context) {
-	    _classCallCheck(this, BaseOverlay);
-
-	    var _this = _possibleConstructorReturn(this, _Component.call(this, props, context));
-
-	    _this.state = { exited: !props.show };
-	    _this.onHiddenListener = _this.handleHidden.bind(_this);
-	    return _this;
-	  }
-
-	  BaseOverlay.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-	    if (nextProps.show) {
-	      this.setState({ exited: false });
-	    } else if (!nextProps.transition) {
-	      // Otherwise let handleHidden take care of marking exited.
-	      this.setState({ exited: true });
-	    }
-	  };
-
-	  BaseOverlay.prototype.handleHidden = function handleHidden() {
-	    this.setState({ exited: true });
-
-	    if (this.props.onExited) {
-	      var _props;
-
-	      (_props = this.props).onExited.apply(_props, arguments);
-	    }
-	  };
-
-	  BaseOverlay.prototype.render = function render() {
-	    var _props2 = this.props;
-	    var container = _props2.container;
-	    var containerPadding = _props2.containerPadding;
-	    var target = _props2.target;
-	    var placement = _props2.placement;
-	    var shouldUpdatePosition = _props2.shouldUpdatePosition;
-	    var rootClose = _props2.rootClose;
-	    var children = _props2.children;
-	    var Transition = _props2.transition;
-
-	    var props = _objectWithoutProperties(_props2, ['container', 'containerPadding', 'target', 'placement', 'shouldUpdatePosition', 'rootClose', 'children', 'transition']);
-
-	    // Don't un-render the overlay while it's transitioning out.
-
-
-	    var mountOverlay = props.show || Transition && !this.state.exited;
-	    if (!mountOverlay) {
-	      // Don't bother showing anything if we don't have to.
-	      return null;
-	    }
-
-	    var child = children;
-
-	    // Position is be inner-most because it adds inline styles into the child,
-	    // which the other wrappers don't forward correctly.
-	    child = _react2["default"].createElement(
-	      _Position2["default"],
-	      {
-	        container: container,
-	        containerPadding: containerPadding,
-	        target: target,
-	        placement: placement,
-	        shouldUpdatePosition: shouldUpdatePosition },
-	      child
-	    );
-
-	    if (Transition) {
-	      var onExit = props.onExit;
-	      var onExiting = props.onExiting;
-	      var onEnter = props.onEnter;
-	      var onEntering = props.onEntering;
-	      var onEntered = props.onEntered;
-
-	      // This animates the child node by injecting props, so it must precede
-	      // anything that adds a wrapping div.
-
-	      child = _react2["default"].createElement(
-	        Transition,
-	        {
-	          'in': props.show,
-	          transitionAppear: true,
-	          onExit: onExit,
-	          onExiting: onExiting,
-	          onExited: this.onHiddenListener,
-	          onEnter: onEnter,
-	          onEntering: onEntering,
-	          onEntered: onEntered
-	        },
-	        child
-	      );
-	    }
-
-	    // This goes after everything else because it adds a wrapping div.
-	    if (rootClose) {
-	      child = _react2["default"].createElement(
-	        _RootCloseWrapper2["default"],
-	        { onRootClose: props.onHide },
-	        child
-	      );
-	    }
-
-	    return _react2["default"].createElement(
-	      _Portal2["default"],
-	      { container: container },
-	      child
-	    );
-	  };
-
-	  return BaseOverlay;
-	}(_react.Component);
-
-	BaseOverlay.propTypes = propTypes;
-	BaseOverlay.defaultProps = defaultProps;
-
-	exports["default"] = BaseOverlay;
-	module.exports = exports['default'];
-
-/***/ },
+[398, 302, 313, 320, 305],
 /* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -22943,368 +22708,23 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 306 */
-[367, 307],
+[385, 307],
 /* 307 */
 52,
 /* 308 */
-[368, 307],
+[386, 307],
 /* 309 */
 54,
 /* 310 */
-[369, 307],
+[387, 307],
 /* 311 */
 56,
 /* 312 */
 228,
 /* 313 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _classnames = __webpack_require__(6);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	var _react = __webpack_require__(4);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(5);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	var _tinperBeeCore = __webpack_require__(305);
-
-	var _calculatePosition = __webpack_require__(314);
-
-	var _calculatePosition2 = _interopRequireDefault(_calculatePosition);
-
-	var _getContainer = __webpack_require__(304);
-
-	var _getContainer2 = _interopRequireDefault(_getContainer);
-
-	var _ownerDocument = __webpack_require__(303);
-
-	var _ownerDocument2 = _interopRequireDefault(_ownerDocument);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
-
-	var propTypes = {
-	  /**
-	   * 要设置定位的元素
-	   */
-	  target: _react.PropTypes.oneOfType([_tinperBeeCore.componentOrElement, _react.PropTypes.func]),
-
-	  /**
-	   * 存放的容器元素
-	   */
-	  container: _react.PropTypes.oneOfType([_tinperBeeCore.componentOrElement, _react.PropTypes.func]),
-	  /**
-	   * 容器padding值
-	   */
-	  containerPadding: _react.PropTypes.number,
-	  /**
-	   * 位置设置
-	   */
-	  placement: _react.PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
-	  /**
-	   * 是否需要更新位置
-	   */
-	  shouldUpdatePosition: _react.PropTypes.bool
-	};
-
-	var defaultProps = {
-	  containerPadding: 0,
-	  placement: 'right',
-	  shouldUpdatePosition: false
-	};
-
-	/**
-	 * 计算子组件的位置的组件
-	 */
-
-	var Position = function (_Component) {
-	  _inherits(Position, _Component);
-
-	  function Position(props, context) {
-	    _classCallCheck(this, Position);
-
-	    var _this = _possibleConstructorReturn(this, _Component.call(this, props, context));
-
-	    _this.state = {
-	      positionLeft: 0,
-	      positionTop: 0,
-	      arrowOffsetLeft: null,
-	      arrowOffsetTop: null
-	    };
-
-	    _this.needsFlush = false;
-	    _this.lastTarget = null;
-
-	    _this.getTarget = _this.getTarget.bind(_this);
-	    _this.maybeUpdatePosition = _this.maybeUpdatePosition.bind(_this);
-	    _this.updatePosition = _this.updatePosition.bind(_this);
-	    return _this;
-	  }
-
-	  Position.prototype.componentDidMount = function componentDidMount() {
-	    this.updatePosition(this.getTarget());
-	  };
-
-	  Position.prototype.componentWillReceiveProps = function componentWillReceiveProps() {
-	    this.needsFlush = true;
-	  };
-
-	  Position.prototype.componentDidUpdate = function componentDidUpdate(prevProps) {
-	    if (this.needsFlush) {
-	      this.needsFlush = false;
-	      this.maybeUpdatePosition(this.props.placement !== prevProps.placement);
-	    }
-	  };
-	  /**
-	   * 获取要设置位置的子元素
-	   */
-
-
-	  Position.prototype.getTarget = function getTarget() {
-	    var target = this.props.target;
-
-	    var targetElement = typeof target === 'function' ? target() : target;
-	    return targetElement && _reactDom2["default"].findDOMNode(targetElement) || null;
-	  };
-
-	  /**
-	   * 验证是否需要更新位置
-	   */
-
-
-	  Position.prototype.maybeUpdatePosition = function maybeUpdatePosition(placementChanged) {
-	    var target = this.getTarget();
-
-	    if (!this.props.shouldUpdatePosition && target === this.lastTarget && !placementChanged) {
-	      return;
-	    }
-
-	    this.updatePosition(target);
-	  };
-	  /**
-	   * 更新位置
-	   */
-
-	  Position.prototype.updatePosition = function updatePosition(target) {
-	    this.lastTarget = target;
-
-	    if (!target) {
-	      this.setState({
-	        positionLeft: 0,
-	        positionTop: 0,
-	        arrowOffsetLeft: null,
-	        arrowOffsetTop: null
-	      });
-
-	      return;
-	    }
-
-	    var overlay = _reactDom2["default"].findDOMNode(this);
-	    var container = (0, _getContainer2["default"])(this.props.container, (0, _ownerDocument2["default"])(this).body);
-
-	    this.setState((0, _calculatePosition2["default"])(this.props.placement, overlay, target, container, this.props.containerPadding));
-	  };
-
-	  Position.prototype.render = function render() {
-	    var _props = this.props;
-	    var children = _props.children;
-	    var className = _props.className;
-
-	    var props = _objectWithoutProperties(_props, ['children', 'className']);
-
-	    var _state = this.state;
-	    var positionLeft = _state.positionLeft;
-	    var positionTop = _state.positionTop;
-
-	    var arrowPosition = _objectWithoutProperties(_state, ['positionLeft', 'positionTop']);
-
-	    // These should not be forwarded to the child.
-
-
-	    delete props.target;
-	    delete props.container;
-	    delete props.containerPadding;
-	    delete props.shouldUpdatePosition;
-
-	    var child = _react2["default"].Children.only(children);
-	    return (0, _react.cloneElement)(child, _extends({}, props, arrowPosition, {
-	      // FIXME:不要使用props来转发下面两个参数
-	      positionLeft: positionLeft,
-	      positionTop: positionTop,
-	      className: (0, _classnames2["default"])(className, child.props.className),
-	      style: _extends({}, child.props.style, {
-	        left: positionLeft,
-	        top: positionTop
-	      })
-	    }));
-	  };
-
-	  return Position;
-	}(_react.Component);
-
-	Position.propTypes = propTypes;
-	Position.defaultProps = defaultProps;
-
-	exports["default"] = Position;
-	module.exports = exports['default'];
-
-/***/ },
+[399, 305, 314, 304, 303],
 /* 314 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports["default"] = calculatePosition;
-
-	var _offset = __webpack_require__(315);
-
-	var _offset2 = _interopRequireDefault(_offset);
-
-	var _position = __webpack_require__(316);
-
-	var _position2 = _interopRequireDefault(_position);
-
-	var _scrollTop = __webpack_require__(318);
-
-	var _scrollTop2 = _interopRequireDefault(_scrollTop);
-
-	var _ownerDocument = __webpack_require__(303);
-
-	var _ownerDocument2 = _interopRequireDefault(_ownerDocument);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-	function getContainerDimensions(containerNode) {
-	  var width = void 0,
-	      height = void 0,
-	      scroll = void 0;
-
-	  if (containerNode.tagName === 'BODY') {
-	    width = window.innerWidth;
-	    height = window.innerHeight;
-
-	    scroll = (0, _scrollTop2["default"])((0, _ownerDocument2["default"])(containerNode).documentElement) || (0, _scrollTop2["default"])(containerNode);
-	  } else {
-	    var _getOffset = (0, _offset2["default"])(containerNode);
-
-	    width = _getOffset.width;
-	    height = _getOffset.height;
-
-	    scroll = (0, _scrollTop2["default"])(containerNode);
-	  }
-
-	  return { width: width, height: height, scroll: scroll };
-	}
-
-	function getTopDelta(top, overlayHeight, container, padding) {
-	  var containerDimensions = getContainerDimensions(container);
-	  var containerScroll = containerDimensions.scroll;
-	  var containerHeight = containerDimensions.height;
-
-	  var topEdgeOffset = top - padding - containerScroll;
-	  var bottomEdgeOffset = top + padding - containerScroll + overlayHeight;
-
-	  if (topEdgeOffset < 0) {
-	    return -topEdgeOffset;
-	  } else if (bottomEdgeOffset > containerHeight) {
-	    return containerHeight - bottomEdgeOffset;
-	  } else {
-	    return 0;
-	  }
-	}
-
-	function getLeftDelta(left, overlayWidth, container, padding) {
-	  var containerDimensions = getContainerDimensions(container);
-	  var containerWidth = containerDimensions.width;
-
-	  var leftEdgeOffset = left - padding;
-	  var rightEdgeOffset = left + padding + overlayWidth;
-
-	  if (leftEdgeOffset < 0) {
-	    return -leftEdgeOffset;
-	  } else if (rightEdgeOffset > containerWidth) {
-	    return containerWidth - rightEdgeOffset;
-	  }
-
-	  return 0;
-	}
-
-	function calculatePosition(placement, overlayNode, target, container, padding) {
-	  var childOffset = container.tagName === 'BODY' ? (0, _offset2["default"])(target) : (0, _position2["default"])(target, container);
-
-	  var _getOffset2 = (0, _offset2["default"])(overlayNode);
-
-	  var overlayHeight = _getOffset2.height;
-	  var overlayWidth = _getOffset2.width;
-
-
-	  var positionLeft = void 0,
-	      positionTop = void 0,
-	      arrowOffsetLeft = void 0,
-	      arrowOffsetTop = void 0;
-
-	  if (placement === 'left' || placement === 'right') {
-	    positionTop = childOffset.top + (childOffset.height - overlayHeight) / 2;
-
-	    if (placement === 'left') {
-	      positionLeft = childOffset.left - overlayWidth;
-	    } else {
-	      positionLeft = childOffset.left + childOffset.width;
-	    }
-
-	    var topDelta = getTopDelta(positionTop, overlayHeight, container, padding);
-
-	    positionTop += topDelta;
-	    arrowOffsetTop = 50 * (1 - 2 * topDelta / overlayHeight) + '%';
-	    arrowOffsetLeft = void 0;
-	  } else if (placement === 'top' || placement === 'bottom') {
-	    positionLeft = childOffset.left + (childOffset.width - overlayWidth) / 2;
-
-	    if (placement === 'top') {
-	      positionTop = childOffset.top - overlayHeight;
-	    } else {
-	      positionTop = childOffset.top + childOffset.height;
-	    }
-
-	    var leftDelta = getLeftDelta(positionLeft, overlayWidth, container, padding);
-
-	    positionLeft += leftDelta;
-	    arrowOffsetLeft = 50 * (1 - 2 * leftDelta / overlayWidth) + '%';
-	    arrowOffsetTop = void 0;
-	  } else {
-	    throw new Error('calcOverlayPosition(): No such placement of "' + placement + '" found.');
-	  }
-
-	  return { positionLeft: positionLeft, positionTop: positionTop, arrowOffsetLeft: arrowOffsetLeft, arrowOffsetTop: arrowOffsetTop };
-	}
-	module.exports = exports['default'];
-
-/***/ },
+[400, 303],
 /* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -23511,167 +22931,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 320 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _contains = __webpack_require__(157);
-
-	var _contains2 = _interopRequireDefault(_contains);
-
-	var _react = __webpack_require__(4);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(5);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	var _addEventListener = __webpack_require__(321);
-
-	var _addEventListener2 = _interopRequireDefault(_addEventListener);
-
-	var _ownerDocument = __webpack_require__(303);
-
-	var _ownerDocument2 = _interopRequireDefault(_ownerDocument);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
-
-	var propTypes = {
-	  onRootClose: _react.PropTypes.func,
-	  children: _react.PropTypes.element,
-	  /**
-	   * 是否禁用
-	   */
-	  disabled: _react.PropTypes.bool,
-	  /**
-	   * 触发事件选择
-	   */
-	  event: _react.PropTypes.oneOf(['click', 'mousedown'])
-	};
-
-	var defaultProps = {
-	  event: 'click'
-	};
-
-	function isLeftClickEvent(event) {
-	  return event.button === 0;
-	}
-
-	function isModifiedEvent(event) {
-	  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
-	}
-
-	var RootCloseWrapper = function (_Component) {
-	  _inherits(RootCloseWrapper, _Component);
-
-	  function RootCloseWrapper(props, context) {
-	    _classCallCheck(this, RootCloseWrapper);
-
-	    var _this = _possibleConstructorReturn(this, _Component.call(this, props, context));
-
-	    _this.handleMouseCapture = function (e) {
-	      _this.preventMouseRootClose = isModifiedEvent(e) || !isLeftClickEvent(e) || (0, _contains2["default"])(_reactDom2["default"].findDOMNode(_this), e.target);
-	    };
-
-	    _this.handleMouse = function () {
-	      if (!_this.preventMouseRootClose && _this.props.onRootClose) {
-	        _this.props.onRootClose();
-	      }
-	    };
-
-	    _this.handleKeyUp = function (e) {
-	      if (e.keyCode === 27 && _this.props.onRootClose) {
-	        _this.props.onRootClose();
-	      }
-	    };
-
-	    _this.preventMouseRootClose = false;
-
-	    _this.addEventListeners = _this.addEventListeners.bind(_this);
-	    _this.removeEventListeners = _this.removeEventListeners.bind(_this);
-
-	    return _this;
-	  }
-
-	  RootCloseWrapper.prototype.componentDidMount = function componentDidMount() {
-	    if (!this.props.disabled) {
-	      this.addEventListeners();
-	    }
-	  };
-
-	  RootCloseWrapper.prototype.componentDidUpdate = function componentDidUpdate(prevProps) {
-	    if (!this.props.disabled && prevProps.disabled) {
-	      this.addEventListeners();
-	    } else if (this.props.disabled && !prevProps.disabled) {
-	      this.removeEventListeners();
-	    }
-	  };
-
-	  RootCloseWrapper.prototype.componentWillUnmount = function componentWillUnmount() {
-	    if (!this.props.disabled) {
-	      this.removeEventListeners();
-	    }
-	  };
-
-	  RootCloseWrapper.prototype.addEventListeners = function addEventListeners() {
-	    var event = this.props.event;
-
-	    var doc = (0, _ownerDocument2["default"])(this);
-
-	    // 避免react的监听事件触发引起判断的不准确
-	    this.documentMouseCaptureListener = (0, _addEventListener2["default"])(doc, event, this.handleMouseCapture, true);
-
-	    this.documentMouseListener = (0, _addEventListener2["default"])(doc, event, this.handleMouse);
-
-	    this.documentKeyupListener = (0, _addEventListener2["default"])(doc, 'keyup', this.handleKeyUp);
-	  };
-
-	  RootCloseWrapper.prototype.removeEventListeners = function removeEventListeners() {
-	    if (this.documentMouseCaptureListener) {
-	      this.documentMouseCaptureListener.remove();
-	    }
-
-	    if (this.documentMouseListener) {
-	      this.documentMouseListener.remove();
-	    }
-
-	    if (this.documentKeyupListener) {
-	      this.documentKeyupListener.remove();
-	    }
-	  };
-
-	  RootCloseWrapper.prototype.render = function render() {
-	    return this.props.children;
-	  };
-
-	  return RootCloseWrapper;
-	}(_react.Component);
-
-	RootCloseWrapper.propTypes = propTypes;
-
-	RootCloseWrapper.defaultProps = defaultProps;
-
-	exports["default"] = RootCloseWrapper;
-	module.exports = exports['default'];
-
-/***/ },
+[401, 321, 303],
 /* 321 */
 152,
 /* 322 */
-[378, 323],
+[396, 323],
 /* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -24761,7 +24025,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 336 */
-[365, 337],
+[383, 337],
 /* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -29510,7 +28774,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 361 */
-[379, 50],
+[397, 50],
 /* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -29688,6 +28952,1596 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 365 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(366);
+
+
+/***/ },
+/* 366 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _Clipboard = __webpack_require__(367);
+
+	var _Clipboard2 = _interopRequireDefault(_Clipboard);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	exports["default"] = _Clipboard2["default"];
+	module.exports = exports['default'];
+
+/***/ },
+/* 367 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _clipboard = __webpack_require__(368);
+
+	var _clipboard2 = _interopRequireDefault(_clipboard);
+
+	var _classnames = __webpack_require__(6);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _beeIcon = __webpack_require__(273);
+
+	var _beeIcon2 = _interopRequireDefault(_beeIcon);
+
+	var _beeModal = __webpack_require__(116);
+
+	var _beeModal2 = _interopRequireDefault(_beeModal);
+
+	var _beeButton = __webpack_require__(2);
+
+	var _beeButton2 = _interopRequireDefault(_beeButton);
+
+	var _reactDom = __webpack_require__(5);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _beeFormControl = __webpack_require__(20);
+
+	var _beeFormControl2 = _interopRequireDefault(_beeFormControl);
+
+	var _beeTooltip = __webpack_require__(196);
+
+	var _beeTooltip2 = _interopRequireDefault(_beeTooltip);
+
+	var _OverlayTrigger = __webpack_require__(376);
+
+	var _OverlayTrigger2 = _interopRequireDefault(_OverlayTrigger);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
+
+	//text和target都写的时候，target无效。 text的cut改为copy。
+	// target可以传css3选择器
+	var propTypes = {
+	    action: _react.PropTypes.oneOf(['copy', 'cut']),
+	    text: _react.PropTypes.string,
+	    success: _react.PropTypes.func,
+	    error: _react.PropTypes.func
+	};
+	var defaultProps = {
+	    action: 'copy',
+	    text: '',
+	    target: '',
+	    success: function success() {},
+	    error: function error() {}
+	};
+
+	var Clipboard = function (_Component) {
+	    _inherits(Clipboard, _Component);
+
+	    function Clipboard(props) {
+	        _classCallCheck(this, Clipboard);
+
+	        var _this = _possibleConstructorReturn(this, _Component.call(this, props));
+
+	        _this.state = {
+	            currect: false,
+	            actionTitle: '复制',
+	            modalShow: false,
+	            html: '',
+	            tootipContent: '复制',
+	            id: 'id' + Math.round(Math.random() * 1000 + 1) + new Date().getTime()
+	        };
+	        _this.close = _this.close.bind(_this);
+	        _this.blur = _this.blur.bind(_this);
+	        return _this;
+	    }
+
+	    Clipboard.prototype.close = function close() {
+	        this.setState({
+	            modalShow: false
+	        });
+	    };
+
+	    Clipboard.prototype.componentWillMount = function componentWillMount() {
+	        var self = this;
+	        var _props = this.props,
+	            action = _props.action,
+	            success = _props.success,
+	            error = _props.error;
+
+	        var title = action === 'copy' ? '复制' : '剪切';
+	        self.setState({
+	            actionTitle: title
+	        });
+	        var id = this.state.id;
+	        var cb = new _clipboard2["default"]('#' + id);
+	        cb.on('success', function (e) {
+	            self.setState({
+	                currect: true,
+	                tootipContent: '已复制'
+	            });
+	            e.clearSelection();
+	            if (success instanceof Function) success();
+	        });
+	        cb.on('error', function (e) {
+	            self.setState({
+	                html: e.text,
+	                modalShow: true
+	            });
+	            _reactDom2["default"].findDOMNode(self.refs.text).select();
+	            if (error instanceof Function) error();
+	        });
+	    };
+
+	    Clipboard.prototype.blur = function blur() {
+	        this.setState({
+	            currect: false,
+	            tootipContent: '复制'
+	        });
+	    };
+
+	    Clipboard.prototype.render = function render() {
+	        var seft = this;
+	        var _props2 = this.props,
+	            action = _props2.action,
+	            text = _props2.text,
+	            target = _props2.target;
+
+	        if (text) action = 'copy';
+	        var tooltip = function tooltip() {
+	            return _react2["default"].createElement(
+	                _beeTooltip2["default"],
+	                { positionTop: '20px' },
+	                seft.state.tootipContent,
+	                ' '
+	            );
+	        };
+	        return _react2["default"].createElement(
+	            _OverlayTrigger2["default"],
+	            { overlay: tooltip(), placement: 'top' },
+	            _react2["default"].createElement(
+	                'span',
+	                { onMouseOut: this.blur, className: 'u-clipboard', id: this.state.id, 'data-clipboard-action': action,
+	                    'data-clipboard-target': target, 'data-clipboard-text': text,
+	                    title: this.state.actionTitle },
+	                this.props.children ? this.props.children : _react2["default"].createElement(
+	                    _beeIcon2["default"],
+	                    { className: (0, _classnames2["default"])({
+	                            'uf-correct': this.state.currect,
+	                            'uf-copy': !this.state.currect
+	                        }) },
+	                    ' '
+	                ),
+	                _react2["default"].createElement(
+	                    _beeModal2["default"],
+	                    { show: this.state.modalShow, onHide: this.close },
+	                    _react2["default"].createElement(
+	                        _beeModal2["default"].Header,
+	                        { closeButton: true },
+	                        _react2["default"].createElement(
+	                            _beeModal2["default"].Title,
+	                            null,
+	                            ' Ctrl+C \u590D\u5236\u5230\u526A\u5207\u677F '
+	                        )
+	                    ),
+	                    _react2["default"].createElement(
+	                        _beeModal2["default"].Body,
+	                        null,
+	                        _react2["default"].createElement(_beeFormControl2["default"], { ref: 'text', type: 'text', readOnly: true, value: this.state.html })
+	                    ),
+	                    _react2["default"].createElement(
+	                        _beeModal2["default"].Footer,
+	                        null,
+	                        _react2["default"].createElement(
+	                            _beeButton2["default"],
+	                            { onClick: this.close },
+	                            ' \u5173\u95ED '
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    };
+
+	    return Clipboard;
+	}(_react.Component);
+
+	;
+	Clipboard.propTypes = propTypes;
+	Clipboard.defaultProps = defaultProps;
+	exports["default"] = Clipboard;
+	module.exports = exports['default'];
+
+/***/ },
+/* 368 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+	    if (true) {
+	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, __webpack_require__(369), __webpack_require__(371), __webpack_require__(372)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	    } else if (typeof exports !== "undefined") {
+	        factory(module, require('./clipboard-action'), require('tiny-emitter'), require('good-listener'));
+	    } else {
+	        var mod = {
+	            exports: {}
+	        };
+	        factory(mod, global.clipboardAction, global.tinyEmitter, global.goodListener);
+	        global.clipboard = mod.exports;
+	    }
+	})(this, function (module, _clipboardAction, _tinyEmitter, _goodListener) {
+	    'use strict';
+
+	    var _clipboardAction2 = _interopRequireDefault(_clipboardAction);
+
+	    var _tinyEmitter2 = _interopRequireDefault(_tinyEmitter);
+
+	    var _goodListener2 = _interopRequireDefault(_goodListener);
+
+	    function _interopRequireDefault(obj) {
+	        return obj && obj.__esModule ? obj : {
+	            default: obj
+	        };
+	    }
+
+	    function _classCallCheck(instance, Constructor) {
+	        if (!(instance instanceof Constructor)) {
+	            throw new TypeError("Cannot call a class as a function");
+	        }
+	    }
+
+	    var _createClass = function () {
+	        function defineProperties(target, props) {
+	            for (var i = 0; i < props.length; i++) {
+	                var descriptor = props[i];
+	                descriptor.enumerable = descriptor.enumerable || false;
+	                descriptor.configurable = true;
+	                if ("value" in descriptor) descriptor.writable = true;
+	                Object.defineProperty(target, descriptor.key, descriptor);
+	            }
+	        }
+
+	        return function (Constructor, protoProps, staticProps) {
+	            if (protoProps) defineProperties(Constructor.prototype, protoProps);
+	            if (staticProps) defineProperties(Constructor, staticProps);
+	            return Constructor;
+	        };
+	    }();
+
+	    function _possibleConstructorReturn(self, call) {
+	        if (!self) {
+	            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	        }
+
+	        return call && (typeof call === "object" || typeof call === "function") ? call : self;
+	    }
+
+	    function _inherits(subClass, superClass) {
+	        if (typeof superClass !== "function" && superClass !== null) {
+	            throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+	        }
+
+	        subClass.prototype = Object.create(superClass && superClass.prototype, {
+	            constructor: {
+	                value: subClass,
+	                enumerable: false,
+	                writable: true,
+	                configurable: true
+	            }
+	        });
+	        if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	    }
+
+	    var Clipboard = function (_Emitter) {
+	        _inherits(Clipboard, _Emitter);
+
+	        /**
+	         * @param {String|HTMLElement|HTMLCollection|NodeList} trigger
+	         * @param {Object} options
+	         */
+	        function Clipboard(trigger, options) {
+	            _classCallCheck(this, Clipboard);
+
+	            var _this = _possibleConstructorReturn(this, (Clipboard.__proto__ || Object.getPrototypeOf(Clipboard)).call(this));
+
+	            _this.resolveOptions(options);
+	            _this.listenClick(trigger);
+	            return _this;
+	        }
+
+	        /**
+	         * Defines if attributes would be resolved using internal setter functions
+	         * or custom functions that were passed in the constructor.
+	         * @param {Object} options
+	         */
+
+
+	        _createClass(Clipboard, [{
+	            key: 'resolveOptions',
+	            value: function resolveOptions() {
+	                var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+	                this.action = typeof options.action === 'function' ? options.action : this.defaultAction;
+	                this.target = typeof options.target === 'function' ? options.target : this.defaultTarget;
+	                this.text = typeof options.text === 'function' ? options.text : this.defaultText;
+	            }
+	        }, {
+	            key: 'listenClick',
+	            value: function listenClick(trigger) {
+	                var _this2 = this;
+
+	                this.listener = (0, _goodListener2.default)(trigger, 'click', function (e) {
+	                    return _this2.onClick(e);
+	                });
+	            }
+	        }, {
+	            key: 'onClick',
+	            value: function onClick(e) {
+	                var trigger = e.delegateTarget || e.currentTarget;
+
+	                if (this.clipboardAction) {
+	                    this.clipboardAction = null;
+	                }
+
+	                this.clipboardAction = new _clipboardAction2.default({
+	                    action: this.action(trigger),
+	                    target: this.target(trigger),
+	                    text: this.text(trigger),
+	                    trigger: trigger,
+	                    emitter: this
+	                });
+	            }
+	        }, {
+	            key: 'defaultAction',
+	            value: function defaultAction(trigger) {
+	                return getAttributeValue('action', trigger);
+	            }
+	        }, {
+	            key: 'defaultTarget',
+	            value: function defaultTarget(trigger) {
+	                var selector = getAttributeValue('target', trigger);
+
+	                if (selector) {
+	                    return document.querySelector(selector);
+	                }
+	            }
+	        }, {
+	            key: 'defaultText',
+	            value: function defaultText(trigger) {
+	                return getAttributeValue('text', trigger);
+	            }
+	        }, {
+	            key: 'destroy',
+	            value: function destroy() {
+	                this.listener.destroy();
+
+	                if (this.clipboardAction) {
+	                    this.clipboardAction.destroy();
+	                    this.clipboardAction = null;
+	                }
+	            }
+	        }], [{
+	            key: 'isSupported',
+	            value: function isSupported() {
+	                var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ['copy', 'cut'];
+
+	                var actions = typeof action === 'string' ? [action] : action;
+	                var support = !!document.queryCommandSupported;
+
+	                actions.forEach(function (action) {
+	                    support = support && !!document.queryCommandSupported(action);
+	                });
+
+	                return support;
+	            }
+	        }]);
+
+	        return Clipboard;
+	    }(_tinyEmitter2.default);
+
+	    /**
+	     * Helper function to retrieve attribute value.
+	     * @param {String} suffix
+	     * @param {Element} element
+	     */
+	    function getAttributeValue(suffix, element) {
+	        var attribute = 'data-clipboard-' + suffix;
+
+	        if (!element.hasAttribute(attribute)) {
+	            return;
+	        }
+
+	        return element.getAttribute(attribute);
+	    }
+
+	    module.exports = Clipboard;
+	});
+
+/***/ },
+/* 369 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+	    if (true) {
+	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, __webpack_require__(370)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	    } else if (typeof exports !== "undefined") {
+	        factory(module, require('select'));
+	    } else {
+	        var mod = {
+	            exports: {}
+	        };
+	        factory(mod, global.select);
+	        global.clipboardAction = mod.exports;
+	    }
+	})(this, function (module, _select) {
+	    'use strict';
+
+	    var _select2 = _interopRequireDefault(_select);
+
+	    function _interopRequireDefault(obj) {
+	        return obj && obj.__esModule ? obj : {
+	            default: obj
+	        };
+	    }
+
+	    var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+	        return typeof obj;
+	    } : function (obj) {
+	        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+	    };
+
+	    function _classCallCheck(instance, Constructor) {
+	        if (!(instance instanceof Constructor)) {
+	            throw new TypeError("Cannot call a class as a function");
+	        }
+	    }
+
+	    var _createClass = function () {
+	        function defineProperties(target, props) {
+	            for (var i = 0; i < props.length; i++) {
+	                var descriptor = props[i];
+	                descriptor.enumerable = descriptor.enumerable || false;
+	                descriptor.configurable = true;
+	                if ("value" in descriptor) descriptor.writable = true;
+	                Object.defineProperty(target, descriptor.key, descriptor);
+	            }
+	        }
+
+	        return function (Constructor, protoProps, staticProps) {
+	            if (protoProps) defineProperties(Constructor.prototype, protoProps);
+	            if (staticProps) defineProperties(Constructor, staticProps);
+	            return Constructor;
+	        };
+	    }();
+
+	    var ClipboardAction = function () {
+	        /**
+	         * @param {Object} options
+	         */
+	        function ClipboardAction(options) {
+	            _classCallCheck(this, ClipboardAction);
+
+	            this.resolveOptions(options);
+	            this.initSelection();
+	        }
+
+	        /**
+	         * Defines base properties passed from constructor.
+	         * @param {Object} options
+	         */
+
+
+	        _createClass(ClipboardAction, [{
+	            key: 'resolveOptions',
+	            value: function resolveOptions() {
+	                var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+	                this.action = options.action;
+	                this.emitter = options.emitter;
+	                this.target = options.target;
+	                this.text = options.text;
+	                this.trigger = options.trigger;
+
+	                this.selectedText = '';
+	            }
+	        }, {
+	            key: 'initSelection',
+	            value: function initSelection() {
+	                if (this.text) {
+	                    this.selectFake();
+	                } else if (this.target) {
+	                    this.selectTarget();
+	                }
+	            }
+	        }, {
+	            key: 'selectFake',
+	            value: function selectFake() {
+	                var _this = this;
+
+	                var isRTL = document.documentElement.getAttribute('dir') == 'rtl';
+
+	                this.removeFake();
+
+	                this.fakeHandlerCallback = function () {
+	                    return _this.removeFake();
+	                };
+	                this.fakeHandler = document.body.addEventListener('click', this.fakeHandlerCallback) || true;
+
+	                this.fakeElem = document.createElement('textarea');
+	                // Prevent zooming on iOS
+	                this.fakeElem.style.fontSize = '12pt';
+	                // Reset box model
+	                this.fakeElem.style.border = '0';
+	                this.fakeElem.style.padding = '0';
+	                this.fakeElem.style.margin = '0';
+	                // Move element out of screen horizontally
+	                this.fakeElem.style.position = 'absolute';
+	                this.fakeElem.style[isRTL ? 'right' : 'left'] = '-9999px';
+	                // Move element to the same position vertically
+	                var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+	                this.fakeElem.style.top = yPosition + 'px';
+
+	                this.fakeElem.setAttribute('readonly', '');
+	                this.fakeElem.value = this.text;
+
+	                document.body.appendChild(this.fakeElem);
+
+	                this.selectedText = (0, _select2.default)(this.fakeElem);
+	                this.copyText();
+	            }
+	        }, {
+	            key: 'removeFake',
+	            value: function removeFake() {
+	                if (this.fakeHandler) {
+	                    document.body.removeEventListener('click', this.fakeHandlerCallback);
+	                    this.fakeHandler = null;
+	                    this.fakeHandlerCallback = null;
+	                }
+
+	                if (this.fakeElem) {
+	                    document.body.removeChild(this.fakeElem);
+	                    this.fakeElem = null;
+	                }
+	            }
+	        }, {
+	            key: 'selectTarget',
+	            value: function selectTarget() {
+	                this.selectedText = (0, _select2.default)(this.target);
+	                this.copyText();
+	            }
+	        }, {
+	            key: 'copyText',
+	            value: function copyText() {
+	                var succeeded = void 0;
+
+	                try {
+	                    succeeded = document.execCommand(this.action);
+	                } catch (err) {
+	                    succeeded = false;
+	                }
+
+	                this.handleResult(succeeded);
+	            }
+	        }, {
+	            key: 'handleResult',
+	            value: function handleResult(succeeded) {
+	                this.emitter.emit(succeeded ? 'success' : 'error', {
+	                    action: this.action,
+	                    text: this.selectedText,
+	                    trigger: this.trigger,
+	                    clearSelection: this.clearSelection.bind(this)
+	                });
+	            }
+	        }, {
+	            key: 'clearSelection',
+	            value: function clearSelection() {
+	                if (this.target) {
+	                    this.target.blur();
+	                }
+
+	                window.getSelection().removeAllRanges();
+	            }
+	        }, {
+	            key: 'destroy',
+	            value: function destroy() {
+	                this.removeFake();
+	            }
+	        }, {
+	            key: 'action',
+	            set: function set() {
+	                var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'copy';
+
+	                this._action = action;
+
+	                if (this._action !== 'copy' && this._action !== 'cut') {
+	                    throw new Error('Invalid "action" value, use either "copy" or "cut"');
+	                }
+	            },
+	            get: function get() {
+	                return this._action;
+	            }
+	        }, {
+	            key: 'target',
+	            set: function set(target) {
+	                if (target !== undefined) {
+	                    if (target && (typeof target === 'undefined' ? 'undefined' : _typeof(target)) === 'object' && target.nodeType === 1) {
+	                        if (this.action === 'copy' && target.hasAttribute('disabled')) {
+	                            throw new Error('Invalid "target" attribute. Please use "readonly" instead of "disabled" attribute');
+	                        }
+
+	                        if (this.action === 'cut' && (target.hasAttribute('readonly') || target.hasAttribute('disabled'))) {
+	                            throw new Error('Invalid "target" attribute. You can\'t cut text from elements with "readonly" or "disabled" attributes');
+	                        }
+
+	                        this._target = target;
+	                    } else {
+	                        throw new Error('Invalid "target" value, use a valid Element');
+	                    }
+	                }
+	            },
+	            get: function get() {
+	                return this._target;
+	            }
+	        }]);
+
+	        return ClipboardAction;
+	    }();
+
+	    module.exports = ClipboardAction;
+	});
+
+/***/ },
+/* 370 */
+/***/ function(module, exports) {
+
+	function select(element) {
+	    var selectedText;
+
+	    if (element.nodeName === 'SELECT') {
+	        element.focus();
+
+	        selectedText = element.value;
+	    }
+	    else if (element.nodeName === 'INPUT' || element.nodeName === 'TEXTAREA') {
+	        var isReadOnly = element.hasAttribute('readonly');
+
+	        if (!isReadOnly) {
+	            element.setAttribute('readonly', '');
+	        }
+
+	        element.select();
+	        element.setSelectionRange(0, element.value.length);
+
+	        if (!isReadOnly) {
+	            element.removeAttribute('readonly');
+	        }
+
+	        selectedText = element.value;
+	    }
+	    else {
+	        if (element.hasAttribute('contenteditable')) {
+	            element.focus();
+	        }
+
+	        var selection = window.getSelection();
+	        var range = document.createRange();
+
+	        range.selectNodeContents(element);
+	        selection.removeAllRanges();
+	        selection.addRange(range);
+
+	        selectedText = selection.toString();
+	    }
+
+	    return selectedText;
+	}
+
+	module.exports = select;
+
+
+/***/ },
+/* 371 */
+/***/ function(module, exports) {
+
+	function E () {
+	  // Keep this empty so it's easier to inherit from
+	  // (via https://github.com/lipsmack from https://github.com/scottcorgan/tiny-emitter/issues/3)
+	}
+
+	E.prototype = {
+	  on: function (name, callback, ctx) {
+	    var e = this.e || (this.e = {});
+
+	    (e[name] || (e[name] = [])).push({
+	      fn: callback,
+	      ctx: ctx
+	    });
+
+	    return this;
+	  },
+
+	  once: function (name, callback, ctx) {
+	    var self = this;
+	    function listener () {
+	      self.off(name, listener);
+	      callback.apply(ctx, arguments);
+	    };
+
+	    listener._ = callback
+	    return this.on(name, listener, ctx);
+	  },
+
+	  emit: function (name) {
+	    var data = [].slice.call(arguments, 1);
+	    var evtArr = ((this.e || (this.e = {}))[name] || []).slice();
+	    var i = 0;
+	    var len = evtArr.length;
+
+	    for (i; i < len; i++) {
+	      evtArr[i].fn.apply(evtArr[i].ctx, data);
+	    }
+
+	    return this;
+	  },
+
+	  off: function (name, callback) {
+	    var e = this.e || (this.e = {});
+	    var evts = e[name];
+	    var liveEvents = [];
+
+	    if (evts && callback) {
+	      for (var i = 0, len = evts.length; i < len; i++) {
+	        if (evts[i].fn !== callback && evts[i].fn._ !== callback)
+	          liveEvents.push(evts[i]);
+	      }
+	    }
+
+	    // Remove event from queue to prevent memory leak
+	    // Suggested by https://github.com/lazd
+	    // Ref: https://github.com/scottcorgan/tiny-emitter/commit/c6ebfaa9bc973b33d110a84a307742b7cf94c953#commitcomment-5024910
+
+	    (liveEvents.length)
+	      ? e[name] = liveEvents
+	      : delete e[name];
+
+	    return this;
+	  }
+	};
+
+	module.exports = E;
+
+
+/***/ },
+/* 372 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var is = __webpack_require__(373);
+	var delegate = __webpack_require__(374);
+
+	/**
+	 * Validates all params and calls the right
+	 * listener function based on its target type.
+	 *
+	 * @param {String|HTMLElement|HTMLCollection|NodeList} target
+	 * @param {String} type
+	 * @param {Function} callback
+	 * @return {Object}
+	 */
+	function listen(target, type, callback) {
+	    if (!target && !type && !callback) {
+	        throw new Error('Missing required arguments');
+	    }
+
+	    if (!is.string(type)) {
+	        throw new TypeError('Second argument must be a String');
+	    }
+
+	    if (!is.fn(callback)) {
+	        throw new TypeError('Third argument must be a Function');
+	    }
+
+	    if (is.node(target)) {
+	        return listenNode(target, type, callback);
+	    }
+	    else if (is.nodeList(target)) {
+	        return listenNodeList(target, type, callback);
+	    }
+	    else if (is.string(target)) {
+	        return listenSelector(target, type, callback);
+	    }
+	    else {
+	        throw new TypeError('First argument must be a String, HTMLElement, HTMLCollection, or NodeList');
+	    }
+	}
+
+	/**
+	 * Adds an event listener to a HTML element
+	 * and returns a remove listener function.
+	 *
+	 * @param {HTMLElement} node
+	 * @param {String} type
+	 * @param {Function} callback
+	 * @return {Object}
+	 */
+	function listenNode(node, type, callback) {
+	    node.addEventListener(type, callback);
+
+	    return {
+	        destroy: function() {
+	            node.removeEventListener(type, callback);
+	        }
+	    }
+	}
+
+	/**
+	 * Add an event listener to a list of HTML elements
+	 * and returns a remove listener function.
+	 *
+	 * @param {NodeList|HTMLCollection} nodeList
+	 * @param {String} type
+	 * @param {Function} callback
+	 * @return {Object}
+	 */
+	function listenNodeList(nodeList, type, callback) {
+	    Array.prototype.forEach.call(nodeList, function(node) {
+	        node.addEventListener(type, callback);
+	    });
+
+	    return {
+	        destroy: function() {
+	            Array.prototype.forEach.call(nodeList, function(node) {
+	                node.removeEventListener(type, callback);
+	            });
+	        }
+	    }
+	}
+
+	/**
+	 * Add an event listener to a selector
+	 * and returns a remove listener function.
+	 *
+	 * @param {String} selector
+	 * @param {String} type
+	 * @param {Function} callback
+	 * @return {Object}
+	 */
+	function listenSelector(selector, type, callback) {
+	    return delegate(document.body, selector, type, callback);
+	}
+
+	module.exports = listen;
+
+
+/***/ },
+/* 373 */
+/***/ function(module, exports) {
+
+	/**
+	 * Check if argument is a HTML element.
+	 *
+	 * @param {Object} value
+	 * @return {Boolean}
+	 */
+	exports.node = function(value) {
+	    return value !== undefined
+	        && value instanceof HTMLElement
+	        && value.nodeType === 1;
+	};
+
+	/**
+	 * Check if argument is a list of HTML elements.
+	 *
+	 * @param {Object} value
+	 * @return {Boolean}
+	 */
+	exports.nodeList = function(value) {
+	    var type = Object.prototype.toString.call(value);
+
+	    return value !== undefined
+	        && (type === '[object NodeList]' || type === '[object HTMLCollection]')
+	        && ('length' in value)
+	        && (value.length === 0 || exports.node(value[0]));
+	};
+
+	/**
+	 * Check if argument is a string.
+	 *
+	 * @param {Object} value
+	 * @return {Boolean}
+	 */
+	exports.string = function(value) {
+	    return typeof value === 'string'
+	        || value instanceof String;
+	};
+
+	/**
+	 * Check if argument is a function.
+	 *
+	 * @param {Object} value
+	 * @return {Boolean}
+	 */
+	exports.fn = function(value) {
+	    var type = Object.prototype.toString.call(value);
+
+	    return type === '[object Function]';
+	};
+
+
+/***/ },
+/* 374 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var closest = __webpack_require__(375);
+
+	/**
+	 * Delegates event to a selector.
+	 *
+	 * @param {Element} element
+	 * @param {String} selector
+	 * @param {String} type
+	 * @param {Function} callback
+	 * @param {Boolean} useCapture
+	 * @return {Object}
+	 */
+	function delegate(element, selector, type, callback, useCapture) {
+	    var listenerFn = listener.apply(this, arguments);
+
+	    element.addEventListener(type, listenerFn, useCapture);
+
+	    return {
+	        destroy: function() {
+	            element.removeEventListener(type, listenerFn, useCapture);
+	        }
+	    }
+	}
+
+	/**
+	 * Finds closest match and invokes callback.
+	 *
+	 * @param {Element} element
+	 * @param {String} selector
+	 * @param {String} type
+	 * @param {Function} callback
+	 * @return {Function}
+	 */
+	function listener(element, selector, type, callback) {
+	    return function(e) {
+	        e.delegateTarget = closest(e.target, selector);
+
+	        if (e.delegateTarget) {
+	            callback.call(element, e);
+	        }
+	    }
+	}
+
+	module.exports = delegate;
+
+
+/***/ },
+/* 375 */
+/***/ function(module, exports) {
+
+	var DOCUMENT_NODE_TYPE = 9;
+
+	/**
+	 * A polyfill for Element.matches()
+	 */
+	if (typeof Element !== 'undefined' && !Element.prototype.matches) {
+	    var proto = Element.prototype;
+
+	    proto.matches = proto.matchesSelector ||
+	                    proto.mozMatchesSelector ||
+	                    proto.msMatchesSelector ||
+	                    proto.oMatchesSelector ||
+	                    proto.webkitMatchesSelector;
+	}
+
+	/**
+	 * Finds the closest parent that matches a selector.
+	 *
+	 * @param {Element} element
+	 * @param {String} selector
+	 * @return {Function}
+	 */
+	function closest (element, selector) {
+	    while (element && element.nodeType !== DOCUMENT_NODE_TYPE) {
+	        if (element.matches(selector)) return element;
+	        element = element.parentNode;
+	    }
+	}
+
+	module.exports = closest;
+
+
+/***/ },
+/* 376 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _contains = __webpack_require__(157);
+
+	var _contains2 = _interopRequireDefault(_contains);
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(5);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _warning = __webpack_require__(22);
+
+	var _warning2 = _interopRequireDefault(_warning);
+
+	var _Overlay = __webpack_require__(377);
+
+	var _Overlay2 = _interopRequireDefault(_Overlay);
+
+	var _createChainedFunction = __webpack_require__(382);
+
+	var _createChainedFunction2 = _interopRequireDefault(_createChainedFunction);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
+
+	/**
+	 * 检查值是属于这个值，还是等于这个值
+	 *
+	 * @param {string} one
+	 * @param {string|array} of
+	 * @returns {boolean}
+	 */
+	function isOneOf(one, of) {
+	  if (Array.isArray(of)) {
+	    return of.indexOf(one) >= 0;
+	  }
+	  return one === of;
+	}
+
+	var triggerType = _react.PropTypes.oneOf(['click', 'hover', 'focus']);
+
+	var propTypes = _extends({}, _Overlay2["default"].propTypes, {
+
+	  /**
+	  * 指定哪些操作或操作触发叠加层可见性
+	  */
+	  trigger: _react.PropTypes.oneOfType([triggerType, _react.PropTypes.arrayOf(triggerType)]),
+
+	  /**
+	   * 显示和隐藏覆盖一旦触发的毫秒延迟量
+	   */
+	  delay: _react.PropTypes.number,
+	  /**
+	   * 触发后显示叠加层之前的延迟毫秒
+	   */
+	  delayShow: _react.PropTypes.number,
+	  /**
+	   * 触发后隐藏叠加层的延迟毫秒
+	   */
+	  delayHide: _react.PropTypes.number,
+
+	  // FIXME: This should be `defaultShow`.
+	  /**
+	   * 覆盖的初始可见性状态。对于更细微的可见性控制，请考虑直接使用覆盖组件。
+	   */
+	  defaultOverlayShown: _react.PropTypes.bool,
+
+	  /**
+	   * 要覆盖在目标旁边的元素或文本。
+	   */
+	  overlay: _react.PropTypes.node.isRequired,
+
+	  /**
+	   * @private
+	   */
+	  onBlur: _react.PropTypes.func,
+	  /**
+	   * @private
+	   */
+	  onClick: _react.PropTypes.func,
+	  /**
+	   * @private
+	   */
+	  onFocus: _react.PropTypes.func,
+	  /**
+	   * @private
+	   */
+	  onMouseOut: _react.PropTypes.func,
+	  /**
+	   * @private
+	   */
+	  onMouseOver: _react.PropTypes.func,
+
+	  // Overridden props from `<Overlay>`.
+	  /**
+	   * @private
+	   */
+	  target: _react.PropTypes.oneOf([null]),
+	  /**
+	  * @private
+	  */
+	  onHide: _react.PropTypes.oneOf([null]),
+	  /**
+	   * @private
+	   */
+	  show: _react.PropTypes.oneOf([null])
+	});
+
+	var defaultProps = {
+	  defaultOverlayShown: false,
+	  trigger: ['hover', 'focus']
+	};
+
+	var OverlayTrigger = function (_Component) {
+	  _inherits(OverlayTrigger, _Component);
+
+	  function OverlayTrigger(props, context) {
+	    _classCallCheck(this, OverlayTrigger);
+
+	    var _this = _possibleConstructorReturn(this, _Component.call(this, props, context));
+
+	    _this.handleToggle = _this.handleToggle.bind(_this);
+	    _this.handleDelayedShow = _this.handleDelayedShow.bind(_this);
+	    _this.handleDelayedHide = _this.handleDelayedHide.bind(_this);
+	    _this.handleHide = _this.handleHide.bind(_this);
+	    _this.makeOverlay = _this.makeOverlay.bind(_this);
+
+	    _this.handleMouseOver = function (e) {
+	      return _this.handleMouseOverOut(_this.handleDelayedShow, e);
+	    };
+	    _this.handleMouseOut = function (e) {
+	      return _this.handleMouseOverOut(_this.handleDelayedHide, e);
+	    };
+
+	    _this._mountNode = null;
+
+	    _this.state = {
+	      show: props.defaultOverlayShown
+	    };
+	    return _this;
+	  }
+
+	  OverlayTrigger.prototype.componentDidMount = function componentDidMount() {
+	    this._mountNode = document.createElement('div');
+	    this.renderOverlay();
+	  };
+
+	  OverlayTrigger.prototype.componentDidUpdate = function componentDidUpdate() {
+	    this.renderOverlay();
+	  };
+
+	  OverlayTrigger.prototype.componentWillUnmount = function componentWillUnmount() {
+	    _reactDom2["default"].unmountComponentAtNode(this._mountNode);
+	    this._mountNode = null;
+
+	    clearTimeout(this._hoverShowDelay);
+	    clearTimeout(this._hoverHideDelay);
+	  };
+
+	  OverlayTrigger.prototype.handleToggle = function handleToggle() {
+	    if (this.state.show) {
+	      this.hide();
+	    } else {
+	      this.show();
+	    }
+	  };
+
+	  OverlayTrigger.prototype.handleDelayedShow = function handleDelayedShow() {
+	    var _this2 = this;
+
+	    if (this._hoverHideDelay != null) {
+	      clearTimeout(this._hoverHideDelay);
+	      this._hoverHideDelay = null;
+	      return;
+	    }
+
+	    if (this.state.show || this._hoverShowDelay != null) {
+	      return;
+	    }
+
+	    var delay = this.props.delayShow != null ? this.props.delayShow : this.props.delay;
+
+	    if (!delay) {
+	      this.show();
+	      return;
+	    }
+
+	    this._hoverShowDelay = setTimeout(function () {
+	      _this2._hoverShowDelay = null;
+	      _this2.show();
+	    }, delay);
+	  };
+
+	  OverlayTrigger.prototype.handleDelayedHide = function handleDelayedHide() {
+	    var _this3 = this;
+
+	    if (this._hoverShowDelay != null) {
+	      clearTimeout(this._hoverShowDelay);
+	      this._hoverShowDelay = null;
+	      return;
+	    }
+
+	    if (!this.state.show || this._hoverHideDelay != null) {
+	      return;
+	    }
+
+	    var delay = this.props.delayHide != null ? this.props.delayHide : this.props.delay;
+
+	    if (!delay) {
+	      this.hide();
+	      return;
+	    }
+
+	    this._hoverHideDelay = setTimeout(function () {
+	      _this3._hoverHideDelay = null;
+	      _this3.hide();
+	    }, delay);
+	  };
+
+	  // 简单实现mouseEnter和mouseLeave。
+	  // React的内置版本是有问题的：https://github.com/facebook/react/issues/4251
+	  //在触发器被禁用的情况下，mouseOut / Over可能导致闪烁
+	  //从一个子元素移动到另一个子元素。
+
+
+	  OverlayTrigger.prototype.handleMouseOverOut = function handleMouseOverOut(handler, e) {
+	    var target = e.currentTarget;
+	    var related = e.relatedTarget || e.nativeEvent.toElement;
+
+	    if (!related || related !== target && !(0, _contains2["default"])(target, related)) {
+	      handler(e);
+	    }
+	  };
+
+	  OverlayTrigger.prototype.handleHide = function handleHide() {
+	    this.hide();
+	  };
+
+	  OverlayTrigger.prototype.show = function show() {
+	    this.setState({ show: true });
+	  };
+
+	  OverlayTrigger.prototype.hide = function hide() {
+	    this.setState({ show: false });
+	  };
+
+	  OverlayTrigger.prototype.makeOverlay = function makeOverlay(overlay, props) {
+	    return _react2["default"].createElement(
+	      _Overlay2["default"],
+	      _extends({}, props, {
+	        show: this.state.show,
+	        onHide: this.handleHide,
+	        target: this
+	      }),
+	      overlay
+	    );
+	  };
+
+	  OverlayTrigger.prototype.renderOverlay = function renderOverlay() {
+	    _reactDom2["default"].unstable_renderSubtreeIntoContainer(this, this._overlay, this._mountNode);
+	  };
+
+	  OverlayTrigger.prototype.render = function render() {
+	    var _props = this.props;
+	    var trigger = _props.trigger;
+	    var overlay = _props.overlay;
+	    var children = _props.children;
+	    var onBlur = _props.onBlur;
+	    var onClick = _props.onClick;
+	    var onFocus = _props.onFocus;
+	    var onMouseOut = _props.onMouseOut;
+	    var onMouseOver = _props.onMouseOver;
+
+	    var props = _objectWithoutProperties(_props, ['trigger', 'overlay', 'children', 'onBlur', 'onClick', 'onFocus', 'onMouseOut', 'onMouseOver']);
+
+	    delete props.delay;
+	    delete props.delayShow;
+	    delete props.delayHide;
+	    delete props.defaultOverlayShown;
+
+	    var child = _react2["default"].Children.only(children);
+	    var childProps = child.props;
+
+	    var triggerProps = {
+	      'aria-describedby': overlay.props.id
+	    };
+
+	    // FIXME: 这里用于传递这个组件上的处理程序的逻辑是不一致的。我们不应该通过任何这些道具。
+
+	    triggerProps.onClick = (0, _createChainedFunction2["default"])(childProps.onClick, onClick);
+
+	    if (isOneOf('click', trigger)) {
+	      triggerProps.onClick = (0, _createChainedFunction2["default"])(triggerProps.onClick, this.handleToggle);
+	    }
+
+	    if (isOneOf('hover', trigger)) {
+	      (0, _warning2["default"])(!(trigger === 'hover'), '[react-bootstrap] Specifying only the `"hover"` trigger limits the ' + 'visibility of the overlay to just mouse users. Consider also ' + 'including the `"focus"` trigger so that touch and keyboard only ' + 'users can see the overlay as well.');
+
+	      triggerProps.onMouseOver = (0, _createChainedFunction2["default"])(childProps.onMouseOver, onMouseOver, this.handleMouseOver);
+	      triggerProps.onMouseOut = (0, _createChainedFunction2["default"])(childProps.onMouseOut, onMouseOut, this.handleMouseOut);
+	    }
+
+	    if (isOneOf('focus', trigger)) {
+	      triggerProps.onFocus = (0, _createChainedFunction2["default"])(childProps.onFocus, onFocus, this.handleDelayedShow);
+	      triggerProps.onBlur = (0, _createChainedFunction2["default"])(childProps.onBlur, onBlur, this.handleDelayedHide);
+	    }
+
+	    this._overlay = this.makeOverlay(overlay, props);
+
+	    return (0, _react.cloneElement)(child, triggerProps);
+	  };
+
+	  return OverlayTrigger;
+	}(_react.Component);
+
+	OverlayTrigger.propTypes = propTypes;
+	OverlayTrigger.defaultProps = defaultProps;
+
+	exports["default"] = OverlayTrigger;
+	module.exports = exports['default'];
+
+/***/ },
+/* 377 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _classnames = __webpack_require__(6);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _BaseOverlay = __webpack_require__(378);
+
+	var _BaseOverlay2 = _interopRequireDefault(_BaseOverlay);
+
+	var _tinperBeeCore = __webpack_require__(50);
+
+	var _Fade = __webpack_require__(171);
+
+	var _Fade2 = _interopRequireDefault(_Fade);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
+
+	var propTypes = _extends({}, _BaseOverlay2["default"].propTypes, {
+
+	  /**
+	   * 是否显示
+	   */
+	  show: _react.PropTypes.bool,
+	  /**
+	   * 是
+	   */
+	  rootClose: _react.PropTypes.bool,
+	  /**
+	   * 当点击rootClose触发close时的回调函数
+	   */
+	  onHide: _react.PropTypes.func,
+
+	  /**
+	   * 使用动画
+	   */
+	  animation: _react2["default"].PropTypes.oneOfType([_tinperBeeCore.elementType, _react.PropTypes.func]),
+
+	  /**
+	   * Callback fired before the Overlay transitions in
+	   */
+	  onEnter: _react2["default"].PropTypes.func,
+
+	  /**
+	   * Callback fired as the Overlay begins to transition in
+	   */
+	  onEntering: _react2["default"].PropTypes.func,
+
+	  /**
+	   * Callback fired after the Overlay finishes transitioning in
+	   */
+	  onEntered: _react2["default"].PropTypes.func,
+
+	  /**
+	   * Callback fired right before the Overlay transitions out
+	   */
+	  onExit: _react2["default"].PropTypes.func,
+
+	  /**
+	   * Callback fired as the Overlay begins to transition out
+	   */
+	  onExiting: _react2["default"].PropTypes.func,
+
+	  /**
+	   * Callback fired after the Overlay finishes transitioning out
+	   */
+	  onExited: _react2["default"].PropTypes.func,
+
+	  /**
+	   * Sets the direction of the Overlay.
+	   */
+	  placement: _react2["default"].PropTypes.oneOf(['top', 'right', 'bottom', 'left'])
+	});
+
+	var defaultProps = {
+	  animation: _Fade2["default"],
+	  rootClose: false,
+	  show: false,
+	  placement: 'right'
+	};
+
+	var Overlay = function (_Component) {
+	  _inherits(Overlay, _Component);
+
+	  function Overlay() {
+	    _classCallCheck(this, Overlay);
+
+	    return _possibleConstructorReturn(this, _Component.apply(this, arguments));
+	  }
+
+	  Overlay.prototype.render = function render() {
+	    var _props = this.props;
+	    var animation = _props.animation;
+	    var children = _props.children;
+
+	    var props = _objectWithoutProperties(_props, ['animation', 'children']);
+
+	    var transition = animation === true ? _Fade2["default"] : animation || null;
+
+	    var child = void 0;
+
+	    if (!transition) {
+	      child = (0, _react.cloneElement)(children, {
+	        className: (0, _classnames2["default"])(children.props.className, 'in')
+	      });
+	    } else {
+	      child = children;
+	    }
+
+	    return _react2["default"].createElement(
+	      _BaseOverlay2["default"],
+	      _extends({}, props, {
+	        transition: transition
+	      }),
+	      child
+	    );
+	  };
+
+	  return Overlay;
+	}(_react.Component);
+
+	Overlay.propTypes = propTypes;
+	Overlay.defaultProps = defaultProps;
+
+	exports["default"] = Overlay;
+	module.exports = exports['default'];
+
+/***/ },
+/* 378 */
+[398, 129, 379, 381, 50],
+/* 379 */
+[399, 50, 380, 132, 130],
+/* 380 */
+[400, 130],
+/* 381 */
+[401, 152, 130],
+/* 382 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	/**
+	 * Safe chained function
+	 *
+	 * Will only create a new function if needed,
+	 * otherwise will pass back existing functions or null.
+	 *
+	 * @param {function} functions to chain
+	 * @returns {function|null}
+	 */
+	function createChainedFunction() {
+	  for (var _len = arguments.length, funcs = Array(_len), _key = 0; _key < _len; _key++) {
+	    funcs[_key] = arguments[_key];
+	  }
+
+	  return funcs.filter(function (f) {
+	    return f != null;
+	  }).reduce(function (acc, f) {
+	    if (typeof f !== 'function') {
+	      throw new Error('Invalid Argument Type, must only provide functions, undefined, or null.');
+	    }
+
+	    if (acc === null) {
+	      return f;
+	    }
+
+	    return function chainedFunction() {
+	      for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+	        args[_key2] = arguments[_key2];
+	      }
+
+	      acc.apply(this, args);
+	      f.apply(this, args);
+	    };
+	  }, null);
+	}
+
+	exports["default"] = createChainedFunction;
+	module.exports = exports['default'];
+
+/***/ },
+/* 383 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -29706,7 +30560,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 366 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__, __webpack_module_template_argument_4__, __webpack_module_template_argument_5__, __webpack_module_template_argument_6__, __webpack_module_template_argument_7__, __webpack_module_template_argument_8__, __webpack_module_template_argument_9__, __webpack_module_template_argument_10__, __webpack_module_template_argument_11__, __webpack_module_template_argument_12__) {
 
 	'use strict';
@@ -29785,7 +30639,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.Align = _Align3.default;
 
 /***/ },
-/* 367 */
+/* 385 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -29829,7 +30683,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 /***/ },
-/* 368 */
+/* 386 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -29866,7 +30720,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = (0, _createChainableTypeChecker2.default)(validate);
 
 /***/ },
-/* 369 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -29903,7 +30757,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = (0, _createChainableTypeChecker2.default)(elementType);
 
 /***/ },
-/* 370 */
+/* 388 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -30095,7 +30949,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = cssAnimation;
 
 /***/ },
-/* 371 */
+/* 389 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -30253,7 +31107,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = Align;
 
 /***/ },
-/* 372 */
+/* 390 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -30283,7 +31137,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 373 */
+/* 391 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -30323,7 +31177,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 374 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__, __webpack_module_template_argument_4__, __webpack_module_template_argument_5__) {
 
 	'use strict';
@@ -30390,7 +31244,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 375 */
+/* 393 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -30417,7 +31271,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 376 */
+/* 394 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -30445,7 +31299,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 377 */
+/* 395 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -30505,7 +31359,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 378 */
+/* 396 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -30622,7 +31476,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 379 */
+/* 397 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	'use strict';
@@ -30667,6 +31521,752 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 	exports["default"] = animation;
+	module.exports = exports['default'];
+
+/***/ },
+/* 398 */
+/***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Portal = __webpack_require__(__webpack_module_template_argument_0__);
+
+	var _Portal2 = _interopRequireDefault(_Portal);
+
+	var _Position = __webpack_require__(__webpack_module_template_argument_1__);
+
+	var _Position2 = _interopRequireDefault(_Position);
+
+	var _RootCloseWrapper = __webpack_require__(__webpack_module_template_argument_2__);
+
+	var _RootCloseWrapper2 = _interopRequireDefault(_RootCloseWrapper);
+
+	var _tinperBeeCore = __webpack_require__(__webpack_module_template_argument_3__);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
+
+	var propTypes = _extends({}, _Portal2["default"].propTypes, _Position2["default"].propTypes, {
+
+	  /**
+	   * 是否显示
+	   */
+	  show: _react.PropTypes.bool,
+
+	  /**
+	   * 点击其他地方，是否隐藏overlay
+	   */
+	  rootClose: _react.PropTypes.bool,
+
+	  /**
+	   * 当rootClose为true的时候，触发的隐藏方法
+	   * @type func
+	   */
+	  onHide: function onHide(props) {
+	    var propType = _react.PropTypes.func;
+	    if (props.rootClose) {
+	      propType = propType.isRequired;
+	    }
+
+	    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+	      args[_key - 1] = arguments[_key];
+	    }
+
+	    return propType.apply(undefined, [props].concat(args));
+	  },
+
+
+	  /**
+	   * 过渡动画组件
+	   */
+	  transition: _react.PropTypes.oneOfType([_tinperBeeCore.elementType, _react.PropTypes.func]),
+
+	  /**
+	   * overlay添加动画前的钩子函数
+	   */
+	  onEnter: _react.PropTypes.func,
+
+	  /**
+	   * 开始动画的钩子函数
+	   */
+	  onEntering: _react.PropTypes.func,
+
+	  /**
+	   * 渲染之后的钩子函数
+	   */
+	  onEntered: _react.PropTypes.func,
+
+	  /**
+	   * 关闭开始时的钩子函数
+	   */
+	  onExit: _react.PropTypes.func,
+
+	  /**
+	   * 关闭时的钩子函数
+	   */
+	  onExiting: _react.PropTypes.func,
+
+	  /**
+	   * 关闭后的钩子函数
+	   */
+	  onExited: _react.PropTypes.func
+	});
+
+	function noop() {}
+
+	var defaultProps = {
+	  show: false,
+	  rootClose: true
+	};
+
+	/**
+	 * 悬浮组件
+	 */
+
+	var BaseOverlay = function (_Component) {
+	  _inherits(BaseOverlay, _Component);
+
+	  function BaseOverlay(props, context) {
+	    _classCallCheck(this, BaseOverlay);
+
+	    var _this = _possibleConstructorReturn(this, _Component.call(this, props, context));
+
+	    _this.state = { exited: !props.show };
+	    _this.onHiddenListener = _this.handleHidden.bind(_this);
+	    return _this;
+	  }
+
+	  BaseOverlay.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+	    if (nextProps.show) {
+	      this.setState({ exited: false });
+	    } else if (!nextProps.transition) {
+	      // Otherwise let handleHidden take care of marking exited.
+	      this.setState({ exited: true });
+	    }
+	  };
+
+	  BaseOverlay.prototype.handleHidden = function handleHidden() {
+	    this.setState({ exited: true });
+
+	    if (this.props.onExited) {
+	      var _props;
+
+	      (_props = this.props).onExited.apply(_props, arguments);
+	    }
+	  };
+
+	  BaseOverlay.prototype.render = function render() {
+	    var _props2 = this.props;
+	    var container = _props2.container;
+	    var containerPadding = _props2.containerPadding;
+	    var target = _props2.target;
+	    var placement = _props2.placement;
+	    var shouldUpdatePosition = _props2.shouldUpdatePosition;
+	    var rootClose = _props2.rootClose;
+	    var children = _props2.children;
+	    var Transition = _props2.transition;
+
+	    var props = _objectWithoutProperties(_props2, ['container', 'containerPadding', 'target', 'placement', 'shouldUpdatePosition', 'rootClose', 'children', 'transition']);
+
+	    // Don't un-render the overlay while it's transitioning out.
+
+
+	    var mountOverlay = props.show || Transition && !this.state.exited;
+	    if (!mountOverlay) {
+	      // Don't bother showing anything if we don't have to.
+	      return null;
+	    }
+
+	    var child = children;
+
+	    // Position is be inner-most because it adds inline styles into the child,
+	    // which the other wrappers don't forward correctly.
+	    child = _react2["default"].createElement(
+	      _Position2["default"],
+	      {
+	        container: container,
+	        containerPadding: containerPadding,
+	        target: target,
+	        placement: placement,
+	        shouldUpdatePosition: shouldUpdatePosition },
+	      child
+	    );
+
+	    if (Transition) {
+	      var onExit = props.onExit;
+	      var onExiting = props.onExiting;
+	      var onEnter = props.onEnter;
+	      var onEntering = props.onEntering;
+	      var onEntered = props.onEntered;
+
+	      // This animates the child node by injecting props, so it must precede
+	      // anything that adds a wrapping div.
+
+	      child = _react2["default"].createElement(
+	        Transition,
+	        {
+	          'in': props.show,
+	          transitionAppear: true,
+	          onExit: onExit,
+	          onExiting: onExiting,
+	          onExited: this.onHiddenListener,
+	          onEnter: onEnter,
+	          onEntering: onEntering,
+	          onEntered: onEntered
+	        },
+	        child
+	      );
+	    }
+
+	    // This goes after everything else because it adds a wrapping div.
+	    if (rootClose) {
+	      child = _react2["default"].createElement(
+	        _RootCloseWrapper2["default"],
+	        { onRootClose: props.onHide },
+	        child
+	      );
+	    }
+
+	    return _react2["default"].createElement(
+	      _Portal2["default"],
+	      { container: container },
+	      child
+	    );
+	  };
+
+	  return BaseOverlay;
+	}(_react.Component);
+
+	BaseOverlay.propTypes = propTypes;
+	BaseOverlay.defaultProps = defaultProps;
+
+	exports["default"] = BaseOverlay;
+	module.exports = exports['default'];
+
+/***/ },
+/* 399 */
+/***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _classnames = __webpack_require__(6);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(5);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _tinperBeeCore = __webpack_require__(__webpack_module_template_argument_0__);
+
+	var _calculatePosition = __webpack_require__(__webpack_module_template_argument_1__);
+
+	var _calculatePosition2 = _interopRequireDefault(_calculatePosition);
+
+	var _getContainer = __webpack_require__(__webpack_module_template_argument_2__);
+
+	var _getContainer2 = _interopRequireDefault(_getContainer);
+
+	var _ownerDocument = __webpack_require__(__webpack_module_template_argument_3__);
+
+	var _ownerDocument2 = _interopRequireDefault(_ownerDocument);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
+
+	var propTypes = {
+	  /**
+	   * 要设置定位的元素
+	   */
+	  target: _react.PropTypes.oneOfType([_tinperBeeCore.componentOrElement, _react.PropTypes.func]),
+
+	  /**
+	   * 存放的容器元素
+	   */
+	  container: _react.PropTypes.oneOfType([_tinperBeeCore.componentOrElement, _react.PropTypes.func]),
+	  /**
+	   * 容器padding值
+	   */
+	  containerPadding: _react.PropTypes.number,
+	  /**
+	   * 位置设置
+	   */
+	  placement: _react.PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
+	  /**
+	   * 是否需要更新位置
+	   */
+	  shouldUpdatePosition: _react.PropTypes.bool
+	};
+
+	var defaultProps = {
+	  containerPadding: 0,
+	  placement: 'right',
+	  shouldUpdatePosition: false
+	};
+
+	/**
+	 * 计算子组件的位置的组件
+	 */
+
+	var Position = function (_Component) {
+	  _inherits(Position, _Component);
+
+	  function Position(props, context) {
+	    _classCallCheck(this, Position);
+
+	    var _this = _possibleConstructorReturn(this, _Component.call(this, props, context));
+
+	    _this.state = {
+	      positionLeft: 0,
+	      positionTop: 0,
+	      arrowOffsetLeft: null,
+	      arrowOffsetTop: null
+	    };
+
+	    _this.needsFlush = false;
+	    _this.lastTarget = null;
+
+	    _this.getTarget = _this.getTarget.bind(_this);
+	    _this.maybeUpdatePosition = _this.maybeUpdatePosition.bind(_this);
+	    _this.updatePosition = _this.updatePosition.bind(_this);
+	    return _this;
+	  }
+
+	  Position.prototype.componentDidMount = function componentDidMount() {
+	    this.updatePosition(this.getTarget());
+	  };
+
+	  Position.prototype.componentWillReceiveProps = function componentWillReceiveProps() {
+	    this.needsFlush = true;
+	  };
+
+	  Position.prototype.componentDidUpdate = function componentDidUpdate(prevProps) {
+	    if (this.needsFlush) {
+	      this.needsFlush = false;
+	      this.maybeUpdatePosition(this.props.placement !== prevProps.placement);
+	    }
+	  };
+	  /**
+	   * 获取要设置位置的子元素
+	   */
+
+
+	  Position.prototype.getTarget = function getTarget() {
+	    var target = this.props.target;
+
+	    var targetElement = typeof target === 'function' ? target() : target;
+	    return targetElement && _reactDom2["default"].findDOMNode(targetElement) || null;
+	  };
+
+	  /**
+	   * 验证是否需要更新位置
+	   */
+
+
+	  Position.prototype.maybeUpdatePosition = function maybeUpdatePosition(placementChanged) {
+	    var target = this.getTarget();
+
+	    if (!this.props.shouldUpdatePosition && target === this.lastTarget && !placementChanged) {
+	      return;
+	    }
+
+	    this.updatePosition(target);
+	  };
+	  /**
+	   * 更新位置
+	   */
+
+	  Position.prototype.updatePosition = function updatePosition(target) {
+	    this.lastTarget = target;
+
+	    if (!target) {
+	      this.setState({
+	        positionLeft: 0,
+	        positionTop: 0,
+	        arrowOffsetLeft: null,
+	        arrowOffsetTop: null
+	      });
+
+	      return;
+	    }
+
+	    var overlay = _reactDom2["default"].findDOMNode(this);
+	    var container = (0, _getContainer2["default"])(this.props.container, (0, _ownerDocument2["default"])(this).body);
+
+	    this.setState((0, _calculatePosition2["default"])(this.props.placement, overlay, target, container, this.props.containerPadding));
+	  };
+
+	  Position.prototype.render = function render() {
+	    var _props = this.props;
+	    var children = _props.children;
+	    var className = _props.className;
+
+	    var props = _objectWithoutProperties(_props, ['children', 'className']);
+
+	    var _state = this.state;
+	    var positionLeft = _state.positionLeft;
+	    var positionTop = _state.positionTop;
+
+	    var arrowPosition = _objectWithoutProperties(_state, ['positionLeft', 'positionTop']);
+
+	    // These should not be forwarded to the child.
+
+
+	    delete props.target;
+	    delete props.container;
+	    delete props.containerPadding;
+	    delete props.shouldUpdatePosition;
+
+	    var child = _react2["default"].Children.only(children);
+	    return (0, _react.cloneElement)(child, _extends({}, props, arrowPosition, {
+	      // FIXME:不要使用props来转发下面两个参数
+	      positionLeft: positionLeft,
+	      positionTop: positionTop,
+	      className: (0, _classnames2["default"])(className, child.props.className),
+	      style: _extends({}, child.props.style, {
+	        left: positionLeft,
+	        top: positionTop
+	      })
+	    }));
+	  };
+
+	  return Position;
+	}(_react.Component);
+
+	Position.propTypes = propTypes;
+	Position.defaultProps = defaultProps;
+
+	exports["default"] = Position;
+	module.exports = exports['default'];
+
+/***/ },
+/* 400 */
+/***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports["default"] = calculatePosition;
+
+	var _offset = __webpack_require__(315);
+
+	var _offset2 = _interopRequireDefault(_offset);
+
+	var _position = __webpack_require__(316);
+
+	var _position2 = _interopRequireDefault(_position);
+
+	var _scrollTop = __webpack_require__(318);
+
+	var _scrollTop2 = _interopRequireDefault(_scrollTop);
+
+	var _ownerDocument = __webpack_require__(__webpack_module_template_argument_0__);
+
+	var _ownerDocument2 = _interopRequireDefault(_ownerDocument);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function getContainerDimensions(containerNode) {
+	  var width = void 0,
+	      height = void 0,
+	      scroll = void 0;
+
+	  if (containerNode.tagName === 'BODY') {
+	    width = window.innerWidth;
+	    height = window.innerHeight;
+
+	    scroll = (0, _scrollTop2["default"])((0, _ownerDocument2["default"])(containerNode).documentElement) || (0, _scrollTop2["default"])(containerNode);
+	  } else {
+	    var _getOffset = (0, _offset2["default"])(containerNode);
+
+	    width = _getOffset.width;
+	    height = _getOffset.height;
+
+	    scroll = (0, _scrollTop2["default"])(containerNode);
+	  }
+
+	  return { width: width, height: height, scroll: scroll };
+	}
+
+	function getTopDelta(top, overlayHeight, container, padding) {
+	  var containerDimensions = getContainerDimensions(container);
+	  var containerScroll = containerDimensions.scroll;
+	  var containerHeight = containerDimensions.height;
+
+	  var topEdgeOffset = top - padding - containerScroll;
+	  var bottomEdgeOffset = top + padding - containerScroll + overlayHeight;
+
+	  if (topEdgeOffset < 0) {
+	    return -topEdgeOffset;
+	  } else if (bottomEdgeOffset > containerHeight) {
+	    return containerHeight - bottomEdgeOffset;
+	  } else {
+	    return 0;
+	  }
+	}
+
+	function getLeftDelta(left, overlayWidth, container, padding) {
+	  var containerDimensions = getContainerDimensions(container);
+	  var containerWidth = containerDimensions.width;
+
+	  var leftEdgeOffset = left - padding;
+	  var rightEdgeOffset = left + padding + overlayWidth;
+
+	  if (leftEdgeOffset < 0) {
+	    return -leftEdgeOffset;
+	  } else if (rightEdgeOffset > containerWidth) {
+	    return containerWidth - rightEdgeOffset;
+	  }
+
+	  return 0;
+	}
+
+	function calculatePosition(placement, overlayNode, target, container, padding) {
+	  var childOffset = container.tagName === 'BODY' ? (0, _offset2["default"])(target) : (0, _position2["default"])(target, container);
+
+	  var _getOffset2 = (0, _offset2["default"])(overlayNode);
+
+	  var overlayHeight = _getOffset2.height;
+	  var overlayWidth = _getOffset2.width;
+
+
+	  var positionLeft = void 0,
+	      positionTop = void 0,
+	      arrowOffsetLeft = void 0,
+	      arrowOffsetTop = void 0;
+
+	  if (placement === 'left' || placement === 'right') {
+	    positionTop = childOffset.top + (childOffset.height - overlayHeight) / 2;
+
+	    if (placement === 'left') {
+	      positionLeft = childOffset.left - overlayWidth;
+	    } else {
+	      positionLeft = childOffset.left + childOffset.width;
+	    }
+
+	    var topDelta = getTopDelta(positionTop, overlayHeight, container, padding);
+
+	    positionTop += topDelta;
+	    arrowOffsetTop = 50 * (1 - 2 * topDelta / overlayHeight) + '%';
+	    arrowOffsetLeft = void 0;
+	  } else if (placement === 'top' || placement === 'bottom') {
+	    positionLeft = childOffset.left + (childOffset.width - overlayWidth) / 2;
+
+	    if (placement === 'top') {
+	      positionTop = childOffset.top - overlayHeight;
+	    } else {
+	      positionTop = childOffset.top + childOffset.height;
+	    }
+
+	    var leftDelta = getLeftDelta(positionLeft, overlayWidth, container, padding);
+
+	    positionLeft += leftDelta;
+	    arrowOffsetLeft = 50 * (1 - 2 * leftDelta / overlayWidth) + '%';
+	    arrowOffsetTop = void 0;
+	  } else {
+	    throw new Error('calcOverlayPosition(): No such placement of "' + placement + '" found.');
+	  }
+
+	  return { positionLeft: positionLeft, positionTop: positionTop, arrowOffsetLeft: arrowOffsetLeft, arrowOffsetTop: arrowOffsetTop };
+	}
+	module.exports = exports['default'];
+
+/***/ },
+/* 401 */
+/***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _contains = __webpack_require__(157);
+
+	var _contains2 = _interopRequireDefault(_contains);
+
+	var _react = __webpack_require__(4);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(5);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _addEventListener = __webpack_require__(__webpack_module_template_argument_0__);
+
+	var _addEventListener2 = _interopRequireDefault(_addEventListener);
+
+	var _ownerDocument = __webpack_require__(__webpack_module_template_argument_1__);
+
+	var _ownerDocument2 = _interopRequireDefault(_ownerDocument);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
+
+	var propTypes = {
+	  onRootClose: _react.PropTypes.func,
+	  children: _react.PropTypes.element,
+	  /**
+	   * 是否禁用
+	   */
+	  disabled: _react.PropTypes.bool,
+	  /**
+	   * 触发事件选择
+	   */
+	  event: _react.PropTypes.oneOf(['click', 'mousedown'])
+	};
+
+	var defaultProps = {
+	  event: 'click'
+	};
+
+	function isLeftClickEvent(event) {
+	  return event.button === 0;
+	}
+
+	function isModifiedEvent(event) {
+	  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
+	}
+
+	var RootCloseWrapper = function (_Component) {
+	  _inherits(RootCloseWrapper, _Component);
+
+	  function RootCloseWrapper(props, context) {
+	    _classCallCheck(this, RootCloseWrapper);
+
+	    var _this = _possibleConstructorReturn(this, _Component.call(this, props, context));
+
+	    _this.handleMouseCapture = function (e) {
+	      _this.preventMouseRootClose = isModifiedEvent(e) || !isLeftClickEvent(e) || (0, _contains2["default"])(_reactDom2["default"].findDOMNode(_this), e.target);
+	    };
+
+	    _this.handleMouse = function () {
+	      if (!_this.preventMouseRootClose && _this.props.onRootClose) {
+	        _this.props.onRootClose();
+	      }
+	    };
+
+	    _this.handleKeyUp = function (e) {
+	      if (e.keyCode === 27 && _this.props.onRootClose) {
+	        _this.props.onRootClose();
+	      }
+	    };
+
+	    _this.preventMouseRootClose = false;
+
+	    _this.addEventListeners = _this.addEventListeners.bind(_this);
+	    _this.removeEventListeners = _this.removeEventListeners.bind(_this);
+
+	    return _this;
+	  }
+
+	  RootCloseWrapper.prototype.componentDidMount = function componentDidMount() {
+	    if (!this.props.disabled) {
+	      this.addEventListeners();
+	    }
+	  };
+
+	  RootCloseWrapper.prototype.componentDidUpdate = function componentDidUpdate(prevProps) {
+	    if (!this.props.disabled && prevProps.disabled) {
+	      this.addEventListeners();
+	    } else if (this.props.disabled && !prevProps.disabled) {
+	      this.removeEventListeners();
+	    }
+	  };
+
+	  RootCloseWrapper.prototype.componentWillUnmount = function componentWillUnmount() {
+	    if (!this.props.disabled) {
+	      this.removeEventListeners();
+	    }
+	  };
+
+	  RootCloseWrapper.prototype.addEventListeners = function addEventListeners() {
+	    var event = this.props.event;
+
+	    var doc = (0, _ownerDocument2["default"])(this);
+
+	    // 避免react的监听事件触发引起判断的不准确
+	    this.documentMouseCaptureListener = (0, _addEventListener2["default"])(doc, event, this.handleMouseCapture, true);
+
+	    this.documentMouseListener = (0, _addEventListener2["default"])(doc, event, this.handleMouse);
+
+	    this.documentKeyupListener = (0, _addEventListener2["default"])(doc, 'keyup', this.handleKeyUp);
+	  };
+
+	  RootCloseWrapper.prototype.removeEventListeners = function removeEventListeners() {
+	    if (this.documentMouseCaptureListener) {
+	      this.documentMouseCaptureListener.remove();
+	    }
+
+	    if (this.documentMouseListener) {
+	      this.documentMouseListener.remove();
+	    }
+
+	    if (this.documentKeyupListener) {
+	      this.documentKeyupListener.remove();
+	    }
+	  };
+
+	  RootCloseWrapper.prototype.render = function render() {
+	    return this.props.children;
+	  };
+
+	  return RootCloseWrapper;
+	}(_react.Component);
+
+	RootCloseWrapper.propTypes = propTypes;
+
+	RootCloseWrapper.defaultProps = defaultProps;
+
+	exports["default"] = RootCloseWrapper;
 	module.exports = exports['default'];
 
 /***/ }
