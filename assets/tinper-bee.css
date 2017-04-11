@@ -5676,27 +5676,6 @@ input.u-button[type="submit"] {
 /*  Navlayout  */
 /* FormGroup */
 /*  Navlayout  */
-.fade {
-  opacity: 0;
-  transition: opacity 0.15s linear; }
-
-.fade.in {
-  opacity: 1; }
-
-.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  transition-property: height, visibility;
-  transition-duration: 0.35s;
-  transition-timing-function: ease; }
-
-.collapse {
-  display: none; }
-
-.collapse.in {
-  display: block; }
-
 .u-modal {
   display: none;
   position: fixed;
@@ -5728,6 +5707,13 @@ input.u-button[type="submit"] {
 .u-modal.fade .u-modal-dialog {
   transform: translateY(-25%);
   transition: transform .3s ease-out; }
+
+.u-modal.fade {
+  opacity: 0;
+  transition: opacity 0.15s linear; }
+
+.u-modal.fade.in {
+  opacity: 1; }
 
 .u-modal-content {
   position: relative;
@@ -8448,27 +8434,6 @@ ul {
 
 /* FormGroup */
 /*  Navlayout  */
-.fade {
-  opacity: 0;
-  transition: opacity 0.15s linear; }
-
-.fade.in {
-  opacity: 1; }
-
-.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  transition-property: height, visibility;
-  transition-duration: 0.35s;
-  transition-timing-function: ease; }
-
-.collapse {
-  display: none; }
-
-.collapse.in {
-  display: block; }
-
 /* FormGroup */
 /*  Navlayout  */
 /* keyframes 定义 */
@@ -9369,6 +9334,9 @@ ul {
     .u-navbar-inverse .u-navbar-nav > li > a:focus {
       color: #fff;
       background-color: transparent; }
+    .u-navbar-inverse .u-navbar-nav > li:hover {
+      color: #9d9d9d;
+      cursor: pointer; }
     .u-navbar-inverse .u-navbar-nav > li > a:hover {
       color: #fff;
       background-color: transparent; }
@@ -11344,13 +11312,6 @@ a.u-tile {
 
 /* FormGroup */
 /*  Navlayout  */
-.fade {
-  opacity: 0;
-  transition: opacity 0.15s linear; }
-
-.fade.in {
-  opacity: 1; }
-
 .collapsing {
   position: relative;
   height: 0;
@@ -11445,13 +11406,6 @@ a.u-tile {
   .u-panel-group .u-panel-heading + .u-panel-collapse > .list-group, .u-panel-group .u-panel-group .u-panel-heading + .u-panel-collapse > .u-panel-body {
     border-top: 1px solid #ddd; }
 
-.fade {
-  opacity: 0;
-  transition: opacity 0.15s linear; }
-
-.fade.in {
-  opacity: 1; }
-
 .collapsing {
   position: relative;
   height: 0;
@@ -11468,27 +11422,6 @@ a.u-tile {
 
 /* FormGroup */
 /*  Navlayout  */
-.fade {
-  opacity: 0;
-  transition: opacity 0.15s linear; }
-
-.fade.in {
-  opacity: 1; }
-
-.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  transition-property: height, visibility;
-  transition-duration: 0.35s;
-  transition-timing-function: ease; }
-
-.collapse {
-  display: none; }
-
-.collapse.in {
-  display: block; }
-
 .u-modal {
   display: none;
   position: fixed;
@@ -11520,6 +11453,13 @@ a.u-tile {
 .u-modal.fade .u-modal-dialog {
   transform: translateY(-25%);
   transition: transform .3s ease-out; }
+
+.u-modal.fade {
+  opacity: 0;
+  transition: opacity 0.15s linear; }
+
+.u-modal.fade.in {
+  opacity: 1; }
 
 .u-modal-content {
   position: relative;
