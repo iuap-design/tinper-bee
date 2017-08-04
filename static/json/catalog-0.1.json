@@ -124,7 +124,11 @@
         },
         "导航栏 Navbar": {
             "version":"0.1.3",
-            "component":"bee-navbars"
+            "component":"bee-navbar"
+        },
+        "菜单 Menus": {
+            "version":"0.1.3",
+            "component":"bee-menus"
         },
         "锚点 Anchor":{
             "version":"0.1.3",

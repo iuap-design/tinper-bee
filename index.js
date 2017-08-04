@@ -24,7 +24,7 @@ var Animate = require('./lib/Animate');
 var Select = require('./lib/Select');
 var Tile = require('./lib/Tile');
 var Icon = require('./lib/Icon');
-var Menu = require('./lib/Menu');
+var Menu = require('./lib/Menus');
 var Upload = require('./lib/Upload');
 var Breadcrumb = require('./lib/Breadcrumb');
 
@@ -37,7 +37,6 @@ var Cascader = require('./lib/Cascader');
 var Loading = require('./lib/Loading');
 var Table = require('./lib/Table');
 var Tree = require('./lib/Tree');
-var Popover = require('./lib/Popover');
 var Clipboard = require('./lib/Clipboard');
 
 var Rate = require('./lib/Rate');
