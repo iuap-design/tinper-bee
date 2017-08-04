@@ -86,7 +86,6 @@ module.exports = {
     Cascader: Cascader,
     Loading: Loading,
     Table: Table,
-    Popover: Popover,
     Tree: Tree,
     Clipboard: Clipboard,
     Rate: Rate,
