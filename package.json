@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
@@ -92,7 +92,7 @@
     "bee-button-group": "latest",
     "bee-calendar": "^0.1.3",
     "bee-cascader": "latest",
-    "bee-checkbox": "^0.1.7",
+    "bee-checkbox": "^0.1.9",
     "bee-clipboard": "^0.1.5",
     "bee-control-label": "latest",
     "bee-datepicker": "^0.1.2",
