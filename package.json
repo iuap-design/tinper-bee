@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
@@ -120,10 +120,12 @@
     "bee-radio": "latest",
     "bee-rate": "latest",
     "bee-select": "latest",
+    "bee-step": "latest",
     "bee-switch": "latest",
     "bee-table": "latest",
     "bee-tabs": "latest",
     "bee-tile": "latest",
+    "bee-timeline": "latest",
     "bee-timepicker": "latest",
     "bee-tooltip": "latest",
     "bee-transition": "latest",
