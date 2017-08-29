@@ -101,6 +101,4 @@ require('console-polyfill');
 
 如果你遇到了其他问题，可以[提交一个 issue][Open an issue]。
 
-## Troubleshooting
 
-[Troubleshooting in issues][Troubleshooting]
