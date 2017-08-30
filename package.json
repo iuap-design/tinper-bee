@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "0.5.9",
+  "version": "0.6.0",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
@@ -131,7 +131,8 @@
     "bee-transition": "latest",
     "bee-tree": "latest",
     "bee-upload": "latest",
-    "clipboard": "latest",
-    "tinper-bee-core": "latest"
+    "tinper-bee-core": "latest",
+    "bee-backtop": "^0.1.7",
+    "bee-transfer": "0.0.4"
   }
 }
