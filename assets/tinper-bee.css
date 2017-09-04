@@ -2551,9 +2551,9 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
 
 @font-face {
   font-family: "uf";
-  src: url("../node_modules/tinper-bee-core/scss/iconfont.eot?t=1483429573920");
+  src: url("../style/utils/iconfont.eot");
   /* IE9*/
-  src: url("../node_modules/tinper-bee-core/scss/iconfont.eot?t=1483429573920#iefix") format("embedded-opentype"), url("../node_modules/tinper-bee-core/scss/iconfont.woff?t=1483429573920") format("woff"), url("../node_modules/tinper-bee-core/scss/iconfont.ttf?t=1483429573920") format("truetype"), url("../node_modules/tinper-bee-core/scss/iconfont.svg?t=1483429573920#uf") format("svg");
+  src: url("../style/utils/iconfont.eot") format("embedded-opentype"), url("../style/utils/iconfont.woff") format("woff"), url("../style/utils/iconfont.ttf") format("truetype"), url("../style/utils/iconfont.svg") format("svg");
   /* iOS 4.1- */ }
 
 .uf {

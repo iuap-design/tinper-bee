@@ -1,11 +1,9 @@
 var file = require('html-wiring');
 var pkg = JSON.parse(file.readFileAsString('package.json'));
 
-var components = Object.keys(pkg.dependencies).filter(function (item) {
+var components = Object.keys(pkg.devDependencies).filter(function (item) {
     if(item == 'bee-layout'){
         return 'bee-con';
-    } else if (item == 'bee-navbars') {
-        return 'bee-navbar';
     }
   return /^bee-/.test(item);
 });

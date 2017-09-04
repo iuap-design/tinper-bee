@@ -44,6 +44,11 @@ var Time = require('./lib/Timepicker');
 var Date = require('./lib/Datepicker');
 var Calendar = require('./lib/Calender');
 
+var Step = require('./lib/Step');
+var Timeline = require('./lib/Timeline');
+var Transfer = require('./lib/Transfer');
+var BackTop = require('./lib/BackTop');
+
 module.exports = {
     Button: Button,
     Badge: Badge,
@@ -91,5 +96,9 @@ module.exports = {
     Rate: Rate,
     Time: Time,
     Date: Date,
-    Calendar: Calendar
+    Calendar: Calendar,
+    Step: Step,
+    Timeline: Timeline,
+    Transfer: Transfer,
+    BackTop: BackTop,
 };

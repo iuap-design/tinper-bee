@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
@@ -81,9 +81,7 @@
     "rollup-plugin-babel": "^2.7.1",
     "sass": "^0.5.0",
     "swig": "^1.4.2",
-    "webpack": "~1.13.1"
-  },
-  "dependencies": {
+    "webpack": "~1.13.1",
     "bee-alert": "latest",
     "bee-animate": "latest",
     "bee-badge": "latest",
@@ -134,5 +132,7 @@
     "tinper-bee-core": "latest",
     "bee-backtop": "^0.1.7",
     "bee-transfer": "0.0.4"
+  },
+  "dependencies": {
   }
 }
