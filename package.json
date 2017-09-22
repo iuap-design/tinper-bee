@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
@@ -134,5 +134,6 @@
     "bee-transfer": "0.0.4"
   },
   "dependencies": {
+    "babel-runtime": "^6.26.0"
   }
 }

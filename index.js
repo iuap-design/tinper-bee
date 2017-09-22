@@ -49,7 +49,7 @@ var Timeline = require('./lib/Timeline');
 var Transfer = require('./lib/Transfer');
 var BackTop = require('./lib/BackTop');
 
-module.exports = {
+var TinperBee = {
     Button: Button,
     Badge: Badge,
     Alert: Alert,
@@ -102,3 +102,5 @@ module.exports = {
     Transfer: Transfer,
     BackTop: BackTop,
 };
+
+module.exports = TinperBee;
