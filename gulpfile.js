@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 var clean = require('gulp-clean');
 var cleancss = require('gulp-cleancss');
 var concat = require('gulp-concat');
-var autoprefix = require('gulp-autoprefixer');
+var autoprefix = require('autoprefixer');
 var minifyCss = require('gulp-minify-css');
 var webpack = require('webpack');
 var Promise = require('promise');
@@ -17,7 +17,7 @@ var colors = require('colors/safe');
 var rimraf = require('rimraf');
 var childProcess = require('child_process');
 var path = require('path');
-
+var postcss = require('gulp-postcss');
 
 var cleancssOption = {
   advanced: false,
@@ -139,10 +139,14 @@ gulp.task('theme', ['theme_clean'], function (done) {
   gulp.src(['./style/index.scss'])
       .pipe(sass())
       .pipe(concat('tinper-bee.css'))
-      .pipe(autoprefix({
-          browsers: ['last 2 versions', 'not ie < 8'],
-          cascade: false
-      }))
+      .pipe(postcss([
+          require('cssnano'),
+          autoprefix({
+              browsers: ['last 2 versions'],
+              cascade: false,
+          }),
+          require('css-mqpacker'),
+      ]))
       .pipe(gulp.dest('./assets'))
       .pipe(minifyCss())
       .pipe(concat('tinper-bee.min.css'))

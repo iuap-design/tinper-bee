@@ -128,7 +128,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var Transfer = __webpack_require__(804);
 	var BackTop = __webpack_require__(820);
 
-	module.exports = {
+	var TinperBee = {
 	    Button: Button,
 	    Badge: Badge,
 	    Alert: Alert,
@@ -181,6 +181,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    Transfer: Transfer,
 	    BackTop: BackTop,
 	};
+
+	module.exports = TinperBee;
 
 
 /***/ },
@@ -20831,10 +20833,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	          },
 	          _react2["default"].createElement(_beeIcon2["default"], { type: 'eye-open' })
 	        ),
-	        _react2["default"].createElement(_beeIcon2["default"], { type: 'uf-close', title: 'Remove file', onClick: function onClick() {
+	        _react2["default"].createElement(_beeIcon2["default"], { type: 'uf-close', title: '\u79FB\u9664\u6587\u4EF6', onClick: function onClick() {
 	            return _this3.handleClose(file);
 	          } })
-	      ) : _react2["default"].createElement(_beeIcon2["default"], { type: 'uf-close', title: 'Remove file', onClick: function onClick() {
+	      ) : _react2["default"].createElement(_beeIcon2["default"], { type: 'uf-close', title: '\u79FB\u9664\u6587\u4EF6', onClick: function onClick() {
 	          return _this3.handleClose(file);
 	        } });
 
