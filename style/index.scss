@@ -2,7 +2,7 @@
 @import "../node_modules/tinper-bee-core/scss/minxin-themeColors";
 @import "../node_modules/tinper-bee-core/scss/minxin-variables";
 @import "../node_modules/tinper-bee-core/scss/minxin-mixins";
-@import "../node_modules/tinper-bee-core/scss/minxin-palette";
+//@import "../node_modules/tinper-bee-core/scss/minxin-palette";
 
 // 全局设置类文件
 @import "../node_modules/tinper-bee-core/scss/set-normalize";
@@ -12,7 +12,7 @@
 
 // 工具类文件
 @import "./utils/util-iconfont";
-@import "../node_modules/tinper-bee-core/scss/util-utilities";
+//@import "../node_modules/tinper-bee-core/scss/util-utilities";
 @import "../node_modules/tinper-bee-core/scss/util-shadow";
 
 @import "./component.scss";

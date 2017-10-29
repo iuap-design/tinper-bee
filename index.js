@@ -9,7 +9,6 @@ var Form = require('./lib/Form');
 var Layout = require('./lib/Layout');
 var InputGroup = require('./lib/InputGroup');
 var InputNumber = require('./lib/InputNumber');
-var LoadingState = require('./lib/Loadingstate');
 var Checkbox = require('./lib/Checkbox');
 var Pagination = require('./lib/Pagination');
 var ProgressBar = require('./lib/ProgressBar');
@@ -40,16 +39,12 @@ var Tree = require('./lib/Tree');
 var Clipboard = require('./lib/Clipboard');
 
 var Rate = require('./lib/Rate');
-var Time = require('./lib/Timepicker');
-var Date = require('./lib/Datepicker');
-var Calendar = require('./lib/Calender');
-
 var Step = require('./lib/Step');
 var Timeline = require('./lib/Timeline');
 var Transfer = require('./lib/Transfer');
 var BackTop = require('./lib/BackTop');
 
-module.exports = {
+let TinperBee = {
     Button: Button,
     Badge: Badge,
     Alert: Alert,
@@ -60,7 +55,6 @@ module.exports = {
     Form: Form,
     InputGroup: InputGroup,
     InputNumber: InputNumber,
-    LoadingState: LoadingState,
     Checkbox: Checkbox,
     Pagination: Pagination,
     ProgressBar: ProgressBar,
@@ -94,11 +88,10 @@ module.exports = {
     Tree: Tree,
     Clipboard: Clipboard,
     Rate: Rate,
-    Time: Time,
-    Date: Date,
-    Calendar: Calendar,
     Step: Step,
     Timeline: Timeline,
     Transfer: Transfer,
-    BackTop: BackTop,
-};
+    BackTop: BackTop
+}
+
+module.exports = TinperBee;
