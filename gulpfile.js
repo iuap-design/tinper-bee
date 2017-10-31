@@ -49,7 +49,7 @@ var postConfig = [
         browsers: ['last 2 versions', 'not ie < 8'],
         cascade: false,
     }),
-    //cssnano,
+    cssnano,
 ]
 
 gulp.task('theme', ['theme_clean'], function (done) {
