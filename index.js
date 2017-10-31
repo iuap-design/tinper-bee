@@ -43,8 +43,12 @@ var Step = require('./lib/Step');
 var Timeline = require('./lib/Timeline');
 var Transfer = require('./lib/Transfer');
 var BackTop = require('./lib/BackTop');
+var Collapse = require('./lib/Collapse');
 
-let TinperBee = {
+
+
+var TinperBee = {
+    version: '1.0.0',
     Button: Button,
     Badge: Badge,
     Alert: Alert,
@@ -81,7 +85,6 @@ let TinperBee = {
     Popconfirm: Popconfirm,
     Modal: Modal,
     Tabs: Tabs,
-    TabPanel: Tabs.TabPane,
     Cascader: Cascader,
     Loading: Loading,
     Table: Table,
@@ -91,7 +94,8 @@ let TinperBee = {
     Step: Step,
     Timeline: Timeline,
     Transfer: Transfer,
-    BackTop: BackTop
+    BackTop: BackTop,
+    Collapse: Collapse,
 }
 
 module.exports = TinperBee;

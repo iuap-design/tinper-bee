@@ -4,10 +4,10 @@ var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var autoprefix = require('autoprefixer');
-var minifyCss = require('gulp-minify-css');
 var rimraf = require('rimraf');
 var webpack = require('webpack');
 var webpackCfg = require('./webpack.conf.js');
+var webpackProdCfg = require('./webpack.pord');
 var postcss = require('gulp-postcss');
 var cssnano = require('cssnano');
 
@@ -30,15 +30,18 @@ gulp.task('js_build', ['js_clean'], function (done) {
 
 
 gulp.task('js_uglify', ['js_build'], function (done) {
-  gulp.src('./build/tinper-bee.js')
-      .pipe(uglify({
-        mangle: false,
-      }))
-      .pipe(rename('tinper-bee.min.js'))
-      .pipe(gulp.dest('./build'))
-      .on('end', function () {
-        done();
-      });
+    webpack(webpackProdCfg, function (err, stats) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log('webpack log:' + stats.toString({
+                hash: false,
+                chunks: false,
+                children: false,
+            }));
+            done();
+        }
+    });
 });
 
 var postConfig = [
@@ -46,7 +49,7 @@ var postConfig = [
         browsers: ['last 2 versions', 'not ie < 8'],
         cascade: false,
     }),
-    cssnano,
+    //cssnano,
 ]
 
 gulp.task('theme', ['theme_clean'], function (done) {
@@ -75,4 +78,4 @@ gulp.task('theme_clean', function (done) {
 });
 
 
-gulp.task('default', ['js_build', 'theme']);
+gulp.task('default', ['js_uglify', 'theme']);
