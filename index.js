@@ -45,10 +45,15 @@ var Transfer = require('./lib/Transfer');
 var BackTop = require('./lib/BackTop');
 var Collapse = require('./lib/Collapse');
 
+var Slider = require('./lib/Slider');
+var Autocomplete = require('./lib/Autocomplete');
+
 
 
 var TinperBee = {
     version: '1.0.0',
+    Slider: Slider,
+    Autocomplete: Autocomplete,
     Button: Button,
     Badge: Badge,
     Alert: Alert,
