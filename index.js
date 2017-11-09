@@ -48,6 +48,10 @@ var Collapse = require('./lib/Collapse');
 var Slider = require('./lib/Slider');
 var Autocomplete = require('./lib/Autocomplete');
 
+var LoadingState = require('./lib/LoadingState');
+var Locale = require('./lib/Locale');
+var Popover = require('./lib/Popover');
+
 
 
 var TinperBee = {
@@ -101,6 +105,9 @@ var TinperBee = {
     Transfer: Transfer,
     BackTop: BackTop,
     Collapse: Collapse,
+    LoadingState: LoadingState,
+    Locale: Locale,
+    Popover: Popover,
 }
 
 module.exports = TinperBee;
