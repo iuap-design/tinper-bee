@@ -1,6 +1,4 @@
 var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var autoprefix = require('autoprefixer');
@@ -11,6 +9,8 @@ var webpackProdCfg = require('./webpack.pord');
 var postcss = require('gulp-postcss');
 var cssnano = require('cssnano');
 
+var pkg = require('./package.json');
+var spawn = require('child_process').spawn;
 
 
 gulp.task('js_build', ['js_clean'], function (done) {
@@ -76,6 +76,28 @@ gulp.task('theme_clean', function (done) {
     done();
   });
 });
+
+
+gulp.task('update', function (done) {
+    var depAry = [];
+    for(var key in pkg.devDependencies){
+        if(/bee-/.test(key)){
+           depAry.push(key + '@' + pkg.devDependencies[key]);
+        }
+    }
+
+    depAry.push('--production');
+
+    depAry.forEach(function (item) {
+        var runner = spawn('npm', ['update', '-d', item], {stdio: 'inherit'});
+        runner.on('close', function (code) {
+            console.log(code);
+            done();
+            console.log('done');
+        })
+    })
+
+})
 
 
 gulp.task('default', ['js_uglify', 'theme']);

@@ -1,11 +1,12 @@
 {
   "name": "tinper-bee",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
     "build": "gulp",
     "test": "mocha tests/index.js",
+    "update": "gulp update",
     "coveralls": "istanbul cover _mocha tests/index.js -- -R spec",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
@@ -33,7 +34,7 @@
   "homepage": "https://github.com/iuap-design/tinper-bee#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
-    "bee-alert": "^1.0.0",
+    "bee-alert": "^1.0.2",
     "bee-animate": "^1.0.0",
     "bee-autocomplete": "^1.0.1",
     "bee-backtop": "^1.0.1",
@@ -67,7 +68,7 @@
     "bee-panel": "^1.0.0",
     "bee-popconfirm": "^1.0.1",
     "bee-popover": "^1.0.1",
-    "bee-progress-bar": "^1.0.0",
+    "bee-progress-bar": "^1.0.3",
     "bee-radio": "^1.0.0",
     "bee-rate": "^1.0.0",
     "bee-select": "^1.0.0",
@@ -101,9 +102,7 @@
     "gulp-cleancss": "~0.2.2",
     "gulp-concat": "~2.6.0",
     "gulp-postcss": "^7.0.0",
-    "gulp-rename": "~1.2.2",
     "gulp-sass": "^2.3.2",
-    "gulp-uglify": "~1.5.3",
     "istanbul": "^0.4.5",
     "less-plugin-autoprefix": "~1.5.1",
     "less-plugin-inline-urls": "~1.1.0",
