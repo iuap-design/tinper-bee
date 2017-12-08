@@ -52,10 +52,12 @@ var LoadingState = require('./lib/LoadingState');
 var Locale = require('./lib/Locale');
 var Popover = require('./lib/Popover');
 
+var Carousel = require('./lib/Carousel');
 
 
 var TinperBee = {
-    version: '1.0.0',
+    version: '1.2.0',
+    Carousel:Carousel,
     Slider: Slider,
     Autocomplete: Autocomplete,
     Button: Button,
