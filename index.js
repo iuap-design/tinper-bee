@@ -56,7 +56,7 @@ var Carousel = require('./lib/Carousel');
 
 
 var TinperBee = {
-    version: '1.2.0',
+    version: '1.2.1',
     Carousel:Carousel,
     Slider: Slider,
     Autocomplete: Autocomplete,
