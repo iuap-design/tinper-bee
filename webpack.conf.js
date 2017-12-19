@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var config = {
     cache: false,
@@ -12,7 +13,17 @@ var config = {
         library: 'TinperBee',
         libraryTarget: 'umd',
     },
-    module: {},
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ExtractTextPlugin.extract({
+                    use: ["css-loader","postcss-loader"],
+                    fallback: "style-loader"
+                })
+            },
+        ]
+    },
     externals: {
         react: {
             root: 'React',
@@ -38,6 +49,9 @@ var config = {
 
     },
     plugins: [
+        new ExtractTextPlugin({
+            filename: "index.css"
+        }),
         // new webpack.optimize.UglifyJsPlugin({
         //     output: {
         //         comments: false,  // remove all comments

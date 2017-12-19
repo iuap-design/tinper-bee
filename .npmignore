@@ -26,7 +26,6 @@ sea-modules
 spm_modules
 .cache
 
-dist
 views
 server
 static

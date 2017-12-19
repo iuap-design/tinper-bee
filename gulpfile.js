@@ -6,11 +6,42 @@ var rimraf = require('rimraf');
 var webpack = require('webpack');
 var webpackCfg = require('./webpack.conf.js');
 var webpackProdCfg = require('./webpack.pord');
+var webpackLibCfg = require('./webpack.modules');
 var postcss = require('gulp-postcss');
 var cssnano = require('cssnano');
 
 var pkg = require('./package.json');
 var spawn = require('child_process').spawn;
+
+
+var postConfig = [
+    autoprefix({
+        browsers: ['last 2 versions', 'not ie < 8'],
+        cascade: false,
+    }),
+    cssnano,
+]
+
+gulp.task('lib_build', ['dist_clean'], function (done) {
+    webpack(webpackLibCfg, function (err, stats) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log('webpack log:' + stats.toString({
+                hash: false,
+                chunks: false,
+                children: false,
+            }));
+            done();
+        }
+    })
+});
+
+gulp.task('dist_clean', function (done) {
+    rimraf('./dist', {}, function () {
+        done();
+    });
+})
 
 
 gulp.task('js_build', ['js_clean'], function (done) {
@@ -44,13 +75,6 @@ gulp.task('js_uglify', ['js_build'], function (done) {
     });
 });
 
-var postConfig = [
-    autoprefix({
-        browsers: ['last 2 versions', 'not ie < 8'],
-        cascade: false,
-    }),
-    cssnano,
-]
 
 gulp.task('theme', ['theme_clean'], function (done) {
   gulp.src(['./style/index.scss'])
@@ -100,4 +124,4 @@ gulp.task('update', function (done) {
 })
 
 
-gulp.task('default', ['js_uglify', 'theme']);
+gulp.task('default', ['js_uglify', 'theme', 'lib_build']);
