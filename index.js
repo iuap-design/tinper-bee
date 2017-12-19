@@ -17,6 +17,7 @@ var Switch = require('./lib/Switch');
 var Tooltip = require('./lib/Tooltip');
 var Dropdown = require('./lib/Dropdown');
 var Panel = require('./lib/Panel');
+var PanelGroup = require('./lib/PanelGroup');
 var Transition = require('./lib/Transition');
 var Navbar = require('./lib/Navbar');
 var Animate = require('./lib/Animate');
@@ -56,7 +57,7 @@ var Carousel = require('./lib/Carousel');
 
 
 var TinperBee = {
-    version: '1.2.1',
+    version: '1.2.3',
     Carousel:Carousel,
     Slider: Slider,
     Autocomplete: Autocomplete,
@@ -80,8 +81,8 @@ var TinperBee = {
     Row: Layout.Row,
     Col: Layout.Col,
     Dropdown: Dropdown,
-    Panel: Panel.Panel,
-    PanelGroup: Panel.PanelGroup,
+    Panel: Panel,
+    PanelGroup: PanelGroup,
     Transition: Transition,
     Select: Select,
     Animate: Animate,
