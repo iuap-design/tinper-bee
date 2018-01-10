@@ -24,7 +24,7 @@ var Animate = require('./lib/Animate');
 var Select = require('./lib/Select');
 var Tile = require('./lib/Tile');
 var Icon = require('./lib/Icon');
-var Menu = require('./lib/Menus');
+var Menu = require('./lib/Menu');
 var Upload = require('./lib/Upload');
 var Breadcrumb = require('./lib/Breadcrumb');
 

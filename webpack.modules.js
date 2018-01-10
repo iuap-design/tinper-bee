@@ -49,6 +49,13 @@ module.exports =  {
                     fallback: "style-loader"
                 })
             },
+            {
+                test: /\.scss$/,
+                use: ExtractTextPlugin.extract({
+                    use: ["sass-loader", "css-loader","postcss-loader"],
+                    fallback: "style-loader"
+                })
+            },
         ]
     },
     plugins: [
