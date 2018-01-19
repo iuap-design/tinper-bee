@@ -1,3 +1,23 @@
+## 1.2.7
+
+- Menus: 修改dark主题下选中样式变蓝bug
+- ProgressBar: 增加顶部进度条(feat)
+- Checkbox: 与Radio组件统一样式
+- FormControl: 修复onChange控制value显示时，显示滞后bug
+- Table: 修复全选功能中使用rowKey参数bug
+
+## 1.2.6
+
+- Rate: 修复样式不正确问题
+
+## 1.2.5
+
+- Carousel: 从tinper-bee打包文件中拿出，因为依赖的第三方组件不兼容ie。
+
+## 1.2.2
+
+- 增加按需加载功能
+
 ## 1.2.1
 
 - 修复分页组件上一页属性bug
