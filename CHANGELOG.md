@@ -1,3 +1,7 @@
+## 1.2.8
+
+- 修复Button, FormControl, ProgressBar按需加载样式问题。
+
 ## 1.2.7
 
 - Radio: 修复disabled时无法设置默认值问题
