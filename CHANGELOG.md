@@ -1,16 +1,20 @@
 ## 1.2.7
 
+- Radio: 修复disabled时无法设置默认值问题
+
+## 1.2.6
+
 - Menus: 修改dark主题下选中样式变蓝bug
 - ProgressBar: 增加顶部进度条(feat)
 - Checkbox: 与Radio组件统一样式
 - FormControl: 修复onChange控制value显示时，显示滞后bug
 - Table: 修复全选功能中使用rowKey参数bug
 
-## 1.2.6
+## 1.2.5
 
 - Rate: 修复样式不正确问题
 
-## 1.2.5
+## 1.2.4
 
 - Carousel: 从tinper-bee打包文件中拿出，因为依赖的第三方组件不兼容ie。
 
