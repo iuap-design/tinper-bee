@@ -123,5 +123,12 @@ gulp.task('update', function (done) {
 
 })
 
+gulp.task('copy', function (done) {
+    gulp.src([
+            './node_modules/bee-table/build/lib/*.js',
+            './node_modules/bee-table/build/render/*.js',
+        ]).pipe(gulp.dest('./lib'));
+})
 
-gulp.task('default', ['js_uglify', 'theme', 'lib_build']);
+
+gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy']);
