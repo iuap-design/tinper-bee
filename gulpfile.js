@@ -19,7 +19,9 @@ var postConfig = [
         browsers: ['last 2 versions', 'not ie < 8'],
         cascade: false,
     }),
-    cssnano,
+    cssnano({
+        reduceIdents: false //不压缩keyframe名称
+    }),
 ]
 
 gulp.task('lib_build', ['dist_clean'], function (done) {
