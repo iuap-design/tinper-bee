@@ -1,3 +1,8 @@
+## 1.2.9
+
+- 修复Menu组件，异步加载时显示loading的图片
+- 修复ProgressBar顶部导航样式问题
+
 ## 1.2.8
 
 - 修复Button, FormControl, ProgressBar按需加载样式问题。
