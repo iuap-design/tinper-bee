@@ -1,3 +1,11 @@
+## 1.3.0
+
+- Popover组件解决受控制时，显示bug
+- Message组件增加style参数，让用户修改样式
+- ForItem组件，className传递位置错误
+- Table组件，新增haveExpandIcon,控制是都显示展开行Icon，这个参数只在使用了expandedRowRender时才有效
+- Datepicker组件修复onChange事件重复触发问题，增加getCalendarContainer支持自定义渲染容器节点
+
 ## 1.2.10
 
 - 修复Tab组件，多页签展示时，箭头不垂直居中问题
