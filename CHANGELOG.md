@@ -1,3 +1,7 @@
+## 1.3.2
+
+- FormControl组件修复搜索功能报错问题
+
 ## 1.3.1
 
 - Tree组件新增treeNode的title（叶子的名称）支持修改Class，style;switcher(树前边的空span)支持修改Class，style。
