@@ -134,7 +134,7 @@ $ git clone git@github.com:iuap-design/tinper-bee.git
 install：
 
 ```
-$ cd tinpert-bee && npm install
+$ cd tinper-bee && npm install
 ```
 
 build：
