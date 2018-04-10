@@ -20,7 +20,8 @@ var postConfig = [
         cascade: false,
     }),
     cssnano({
-        reduceIdents: false //不压缩keyframe名称
+        reduceIdents: false, //不压缩keyframe名称
+        safe: true
     }),
 ]
 

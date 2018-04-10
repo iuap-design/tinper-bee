@@ -13270,10 +13270,12 @@ var Checkbox = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, _React$Component.call(this, props));
 
+        _initialiseProps.call(_this);
+
         _this.state = {
             checked: 'checked' in props ? props.checked : props.defaultChecked
         };
-        _this.changeState = _this.changeState.bind(_this);
+        _this.doubleClickFlag = null;
         return _this;
     }
 
@@ -13285,23 +13287,6 @@ var Checkbox = function (_React$Component) {
         }
     };
 
-    Checkbox.prototype.changeState = function changeState() {
-        var props = this.props;
-
-        if (props.disabled) {
-            return;
-        }
-        if (!('checked' in props)) {
-            this.setState({
-                checked: !this.state.checked
-            });
-        }
-
-        if (props.onChange instanceof Function) {
-            props.onChange(!this.state.checked);
-        }
-    };
-
     Checkbox.prototype.render = function render() {
         var _props = this.props,
             disabled = _props.disabled,
@@ -13309,11 +13294,13 @@ var Checkbox = function (_React$Component) {
             size = _props.size,
             className = _props.className,
             indeterminate = _props.indeterminate,
+            onClick = _props.onClick,
             children = _props.children,
             checked = _props.checked,
             clsPrefix = _props.clsPrefix,
+            onDoubleClick = _props.onDoubleClick,
             onChange = _props.onChange,
-            others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'children', 'checked', 'clsPrefix', 'onChange']);
+            others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'onClick', 'children', 'checked', 'clsPrefix', 'onDoubleClick', 'onChange']);
 
         var input = _react2["default"].createElement('input', _extends({}, others, {
             type: 'checkbox',
@@ -13341,7 +13328,10 @@ var Checkbox = function (_React$Component) {
 
         return _react2["default"].createElement(
             'label',
-            { className: (0, _classnames2["default"])(classNames, className), onClick: this.changeState },
+            {
+                className: (0, _classnames2["default"])(classNames, className),
+                onDoubleClick: this.handledbClick,
+                onClick: this.changeState },
             input,
             _react2["default"].createElement(
                 'label',
@@ -13353,6 +13343,40 @@ var Checkbox = function (_React$Component) {
 
     return Checkbox;
 }(_react2["default"].Component);
+
+var _initialiseProps = function _initialiseProps() {
+    var _this2 = this;
+
+    this.changeState = function (e) {
+        var props = _this2.props;
+
+        clearTimeout(_this2.doubleClickFlag);
+        props.onClick(e);
+        //执行延时
+        _this2.doubleClickFlag = setTimeout(function () {
+            //do function在此处写单击事件要执行的代码
+            if (props.disabled) {
+                return;
+            }
+            if (!('checked' in props)) {
+                _this2.setState({
+                    checked: !_this2.state.checked
+                });
+            }
+
+            if (props.onChange instanceof Function) {
+                props.onChange(!_this2.state.checked);
+            }
+        }, 300);
+    };
+
+    this.handledbClick = function (e) {
+        var onDoubleClick = _this2.props.onDoubleClick;
+
+        clearTimeout(_this2.doubleClickFlag);
+        onDoubleClick && onDoubleClick(_this2.state.checked, e);
+    };
+};
 
 Checkbox.propTypes = propTypes;
 Checkbox.defaultProps = defaultProps;
@@ -40159,6 +40183,16 @@ var Tree = function (_React$Component) {
     props.onSelect(selectedKeys, newSt);
   };
 
+  Tree.prototype.onDoubleClick = function onDoubleClick(treeNode) {
+    var props = this.props;
+    var eventKey = treeNode.props.eventKey;
+    var newSt = {
+      event: 'dblclick',
+      node: treeNode
+    };
+    props.onDoubleClick(eventKey, newSt);
+  };
+
   Tree.prototype.onMouseEnter = function onMouseEnter(e, treeNode) {
     this.props.onMouseEnter({
       event: e,
@@ -40347,6 +40381,7 @@ var Tree = function (_React$Component) {
       onMouseEnter: props.onMouseEnter,
       onMouseLeave: props.onMouseLeave,
       onRightClick: props.onRightClick,
+      onDoubleClick: props.onDoubleClick,
       prefixCls: props.prefixCls,
       showLine: props.showLine,
       showIcon: props.showIcon,
@@ -40588,7 +40623,7 @@ var TreeNode = function (_React$Component) {
 
     var _this2 = _possibleConstructorReturn(this, _React$Component.call(this, props));
 
-    ['onExpand', 'onCheck', 'onContextMenu', 'onMouseEnter', 'onMouseLeave', 'onDragStart', 'onDragEnter', 'onDragOver', 'onDragLeave', 'onDrop', 'onDragEnd'].forEach(function (m) {
+    ['onExpand', 'onCheck', 'onContextMenu', 'onMouseEnter', 'onMouseLeave', 'onDragStart', 'onDragEnter', 'onDragOver', 'onDragLeave', 'onDrop', 'onDragEnd', 'onDoubleClick'].forEach(function (m) {
       _this2[m] = _this2[m].bind(_this2);
     });
     _this2.state = {
@@ -40612,11 +40647,23 @@ var TreeNode = function (_React$Component) {
   // }
 
   TreeNode.prototype.onCheck = function onCheck() {
+
     this.props.root.onCheck(this);
   };
 
   TreeNode.prototype.onSelect = function onSelect() {
-    this.props.root.onSelect(this);
+    clearTimeout(this.doubleClickFlag);
+    var _this = this;
+    //执行延时
+    this.doubleClickFlag = setTimeout(function () {
+      //do function在此处写单击事件要执行的代码
+      _this.props.root.onSelect(_this);
+    }, 300);
+  };
+
+  TreeNode.prototype.onDoubleClick = function onDoubleClick() {
+    clearTimeout(this.doubleClickFlag);
+    this.props.root.onDoubleClick(this);
   };
 
   TreeNode.prototype.onMouseEnter = function onMouseEnter(e) {
@@ -40790,10 +40837,14 @@ var TreeNode = function (_React$Component) {
     }
     var children = props.children;
     var newChildren = children;
+    var allTreeNode = undefined;
+    if (Array.isArray(children)) {
+      allTreeNode = children.every(function (item) {
+        return item.type === TreeNode;
+      });
+    }
     //如果props.children的长度大于0才可以生成子对象
-    if (children && children.length > 0 && (children.type === TreeNode || Array.isArray(children) && children.every(function (item) {
-      return item.type === TreeNode;
-    }))) {
+    if (children && (children.type === TreeNode || allTreeNode)) {
       var _cls;
 
       var cls = (_cls = {}, _defineProperty(_cls, props.prefixCls + '-child-tree', true), _defineProperty(_cls, props.prefixCls + '-child-tree-open', props.expanded), _cls);
@@ -40890,6 +40941,10 @@ var TreeNode = function (_React$Component) {
           //   this.onCheck();
           // }
         };
+
+        if (props.onDoubleClick) {
+          domProps.onDoubleClick = _this4.onDoubleClick;
+        }
 
         if (props.onRightClick) {
           domProps.onContextMenu = _this4.onContextMenu;
@@ -44513,7 +44568,7 @@ var _initialiseProps = function _initialiseProps() {
   };
 
   this.handleFilter = function (direction, e) {
-    _this2.setState(_defineProperty({}, direction + 'Filter', e.target.value));
+    _this2.setState(_defineProperty({}, direction + 'Filter', e));
   };
 
   this.handleLeftFilter = function (e) {
@@ -48074,9 +48129,15 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
+
+var _classnames = __webpack_require__(2);
+
+var _classnames2 = _interopRequireDefault(_classnames);
 
 var _beeFormControl = __webpack_require__(17);
 
@@ -48089,6 +48150,8 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -48104,7 +48167,11 @@ var propTypes = {
 var defaultProps = {
     value: "",
     options: [],
-    clsPrefix: 'u-autocomplete'
+    clsPrefix: 'u-autocomplete',
+    onBlur: function onBlur() {},
+    onKeyDown: function onKeyDown() {},
+    onValueChange: function onValueChange() {},
+    onChange: function onChange() {}
 };
 
 var AutoComplete = function (_React$Component) {
@@ -48158,6 +48225,7 @@ var AutoComplete = function (_React$Component) {
                 show: false
             });
             this.props.onValueChange(value);
+            this.props.onChange(value);
             return;
         }
 
@@ -48174,10 +48242,12 @@ var AutoComplete = function (_React$Component) {
             value: value
         });
         this.props.onValueChange(value);
+        this.props.onChange(value);
     };
+
     /**
      * 自动匹配的列表被选中其中某一个
-     * @param {*} value 
+     * @param {*} value
      */
 
 
@@ -48187,13 +48257,20 @@ var AutoComplete = function (_React$Component) {
             displayValue: ''
         });
         this.props.onValueChange(value);
+        this.props.onChange(value);
     };
 
     AutoComplete.prototype.handleKeyDown = function handleKeyDown(e) {
-        var activeItemIndex = this.state.activeItemIndex;
-        var options = this.props.options;
+        var _state = this.state,
+            displayValue = _state.displayValue,
+            activeItemIndex = _state.activeItemIndex;
+        var _props = this.props,
+            options = _props.options,
+            onValueChange = _props.onValueChange,
+            onKeyDown = _props.onKeyDown,
+            onChange = _props.onChange;
 
-
+        onKeyDown(e);
         switch (e.keyCode) {
             // 13为回车键的键码（keyCode）
             case 13:
@@ -48201,6 +48278,8 @@ var AutoComplete = function (_React$Component) {
                     this.setState({
                         show: false
                     });
+                    onValueChange(displayValue, activeItemIndex);
+                    onChange(displayValue, activeItemIndex);
                     break;
                 }
             // 38为上方向键，40为下方向键
@@ -48216,9 +48295,9 @@ var AutoComplete = function (_React$Component) {
     };
 
     AutoComplete.prototype.moveItem = function moveItem(direction) {
-        var _state = this.state,
-            activeItemIndex = _state.activeItemIndex,
-            options = _state.options;
+        var _state2 = this.state,
+            activeItemIndex = _state2.activeItemIndex,
+            options = _state2.options;
 
         var lastIndex = options.length - 1;
         var newIndex = -1;
@@ -48260,52 +48339,63 @@ var AutoComplete = function (_React$Component) {
     };
 
     AutoComplete.prototype.handLeBlur = function handLeBlur() {
-        this.setState({
-            show: false
-        });
+        var _this2 = this;
+
+        this.props.onBlur();
+        setTimeout(function () {
+            _this2.setState({
+                show: false
+            });
+        }, 300);
     };
 
     AutoComplete.prototype.render = function render() {
-        var _this2 = this;
+        var _this3 = this;
 
-        var _state2 = this.state,
-            show = _state2.show,
-            displayValue = _state2.displayValue,
-            activeItemIndex = _state2.activeItemIndex,
-            options = _state2.options,
-            value = _state2.value,
-            placeholder = _state2.placeholder;
-        var _props = this.props,
-            disabled = _props.disabled,
-            clsPrefix = _props.clsPrefix;
+        var _state3 = this.state,
+            show = _state3.show,
+            displayValue = _state3.displayValue,
+            activeItemIndex = _state3.activeItemIndex;
+
+        var _props2 = this.props,
+            disabled = _props2.disabled,
+            clsPrefix = _props2.clsPrefix,
+            onKeyDown = _props2.onKeyDown,
+            onBlur = _props2.onBlur,
+            onValueChange = _props2.onValueChange,
+            onChange = _props2.onChange,
+            options = _props2.options,
+            value = _props2.value,
+            placeholder = _props2.placeholder,
+            props = _objectWithoutProperties(_props2, ['disabled', 'clsPrefix', 'onKeyDown', 'onBlur', 'onValueChange', 'onChange', 'options', 'value', 'placeholder']);
 
         return _react2["default"].createElement(
             'div',
-            { className: clsPrefix },
-            _react2["default"].createElement(_beeFormControl2["default"], {
-                value: displayValue || value,
+            { className: (0, _classnames2["default"])(clsPrefix, this.props.className) },
+            _react2["default"].createElement(_beeFormControl2["default"], _extends({}, props, {
+                value: displayValue || this.state.value,
                 disabled: disabled,
                 onChange: function onChange(value) {
-                    _this2.handleChange(value);
+                    _this3.handleChange(value);
                 },
                 onKeyDown: this.handleKeyDown,
-                placeholder: placeholder,
+                placeholder: this.state.placeholder,
                 onBlur: this.handLeBlur
-            }),
-            show && options.length > 0 && _react2["default"].createElement(
+            })),
+            show && this.state.options.length > 0 && _react2["default"].createElement(
                 'ul',
                 { className: clsPrefix + '-options', onMouseLeave: this.handleLeave },
-                options.map(function (item, index) {
+                this.state.options.map(function (item, index) {
                     return _react2["default"].createElement(
                         'li',
                         {
                             key: index,
                             className: index === activeItemIndex ? "active" : '',
                             onMouseEnter: function onMouseEnter() {
-                                return _this2.handleEnter(index);
+                                return _this3.handleEnter(index);
                             },
                             onClick: function onClick() {
-                                return _this2.handleChangeList(item);
+                                return _this3.handleChangeList(item);
                             }
                         },
                         item.text || item
