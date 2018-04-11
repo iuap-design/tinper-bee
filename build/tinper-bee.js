@@ -13258,7 +13258,8 @@ var defaultProps = {
     disabled: false,
     colors: 'primary',
     clsPrefix: 'u-checkbox',
-    defaultChecked: false
+    defaultChecked: false,
+    onClick: function onClick() {}
 };
 var clsPrefix = 'u-checkbox';
 
@@ -13351,7 +13352,9 @@ var _initialiseProps = function _initialiseProps() {
         var props = _this2.props;
 
         clearTimeout(_this2.doubleClickFlag);
-        props.onClick(e);
+        if (props.onClick instanceof Function) {
+            props.onClick(e);
+        }
         //执行延时
         _this2.doubleClickFlag = setTimeout(function () {
             //do function在此处写单击事件要执行的代码

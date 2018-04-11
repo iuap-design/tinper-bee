@@ -1,3 +1,8 @@
+## 1.3.6
+
+- Checkbox单击事件增加默认props
+- Table组件全选功能组件透传给table
+
 ## 1.3.5
 
 - Checkbox增加单击事件
