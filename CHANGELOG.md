@@ -1,3 +1,16 @@
+## 1.4.0
+
+- Datepicker组件的日期范围添加className
+- Dnd组件内部没有根据新的state重新渲染bug
+- Table组件可动态设置固定列
+- Table组件表头可动态设置
+- Table组件表头支持拖拽
+- Table组件表头可拖拽修改列宽度
+
+## 1.3.7
+
+- Table固定列和展开行同时使用时，固定列展开高度不一致问题
+
 ## 1.3.6
 
 - Checkbox单击事件增加默认props
