@@ -1,3 +1,7 @@
+## 1.4.1
+
+- 修复Table组件1.1.5显示bug
+
 ## 1.4.0
 
 - Datepicker组件的日期范围添加className

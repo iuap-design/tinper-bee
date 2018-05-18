@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
@@ -77,7 +77,7 @@
     "bee-slider": "1.0.2",
     "bee-step": "1.0.2",
     "bee-switch": "1.0.3",
-    "bee-table": "1.1.5",
+    "bee-table": "1.1.7",
     "bee-tabs": "1.0.6",
     "bee-tile": "1.0.0",
     "bee-timeline": "1.0.1",
