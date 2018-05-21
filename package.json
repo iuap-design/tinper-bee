@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
