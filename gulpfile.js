@@ -126,7 +126,13 @@ gulp.task('update', function (done) {
 
 })
 
-gulp.task('copy', function (done) {
+gulp.task('copy_clean', function (done) {
+    rimraf('./lib/*.js', {}, function () {
+      done();
+    });
+  });
+
+gulp.task('copy', ['copy_clean'], function (done) {
     gulp.src([
             './node_modules/bee-table/build/lib/*.js',
             './node_modules/bee-table/build/render/*.js',

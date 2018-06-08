@@ -1,3 +1,12 @@
+## 1.5.0
+
+- Table组件重构mixin和render增强功能，修改用法。
+- Table修复固定列滚动错行问题
+- FromControl的ie9兼容问题
+- Transfer的Modal渲染不加载问题
+- Checkbox组件优化非双击不延迟
+- Tree组件优化非双击事件不延迟
+
 ## 1.4.2
 
 - 修复Table组件显示错误bug

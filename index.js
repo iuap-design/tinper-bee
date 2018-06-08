@@ -55,7 +55,7 @@ var Popover = require('./lib/Popover');
 
 
 var TinperBee = {
-    version: '1.4.2',
+    version: '1.5.0',
     Slider: Slider,
     Autocomplete: Autocomplete,
     Button: Button,
