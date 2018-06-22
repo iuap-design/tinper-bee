@@ -1,3 +1,9 @@
+## 1.5.1
+
+- InputNumber组件在Table中样式受影响
+- FromControl组件search状态disabled时，clear icon 仍可用
+- FromControl组件增加onBlur事件
+
 ## 1.5.0
 
 - Table组件重构mixin和render增强功能，修改用法。

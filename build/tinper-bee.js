@@ -9154,7 +9154,8 @@ var propTypes = {
     type: _propTypes2["default"].string,
     size: _propTypes2["default"].oneOf(['sm', 'md', 'lg']),
     onSearch: _propTypes2["default"].func,
-    onChange: _propTypes2["default"].func
+    onChange: _propTypes2["default"].func,
+    onBlur: _propTypes2["default"].func
 };
 
 var defaultProps = {
@@ -9218,6 +9219,16 @@ var FormControl = function (_React$Component) {
             }
         };
 
+        _this.handleBlur = function (e) {
+            var value = _this.state.value;
+            var onBlur = _this.props.onBlur;
+
+
+            if (onBlur) {
+                onBlur(value, e);
+            }
+        };
+
         _this.renderInput = function () {
             var _this$props2 = _this.props,
                 Component = _this$props2.componentClass,
@@ -9228,7 +9239,8 @@ var FormControl = function (_React$Component) {
                 value = _this$props2.value,
                 onChange = _this$props2.onChange,
                 onSearch = _this$props2.onSearch,
-                others = _objectWithoutProperties(_this$props2, ['componentClass', 'type', 'className', 'size', 'clsPrefix', 'value', 'onChange', 'onSearch']);
+                onBlur = _this$props2.onBlur,
+                others = _objectWithoutProperties(_this$props2, ['componentClass', 'type', 'className', 'size', 'clsPrefix', 'value', 'onChange', 'onSearch', 'onBlur']);
             // input[type="file"] 不应该有类名 .form-control.
 
 
@@ -9249,6 +9261,7 @@ var FormControl = function (_React$Component) {
                 },
                 value: value,
                 onChange: _this.handleChange,
+                onBlur: _this.handleBlur,
                 className: (0, _classnames2["default"])(className, classNames)
             }));
         };
@@ -9263,7 +9276,8 @@ var FormControl = function (_React$Component) {
                 value = _this$props3.value,
                 onChange = _this$props3.onChange,
                 onSearch = _this$props3.onSearch,
-                others = _objectWithoutProperties(_this$props3, ['componentClass', 'type', 'className', 'size', 'clsPrefix', 'value', 'onChange', 'onSearch']);
+                onBlur = _this$props3.onBlur,
+                others = _objectWithoutProperties(_this$props3, ['componentClass', 'type', 'className', 'size', 'clsPrefix', 'value', 'onChange', 'onSearch', 'onBlur']);
             // input[type="file"] 不应该有类名 .form-control.
 
 
@@ -9285,12 +9299,13 @@ var FormControl = function (_React$Component) {
                         onChange: _this.handleSearchChange,
                         value: value,
                         onKeyDown: _this.handleKeyDown,
+                        onBlur: _this.handleBlur,
                         className: (0, _classnames2["default"])(className, clsPrefix, classes)
                     })),
                     _react2["default"].createElement(
                         'div',
                         { className: clsPrefix + '-suffix' },
-                        _this.state.showSearch ? _react2["default"].createElement(_beeIcon2["default"], { type: 'uf-search' }) : _react2["default"].createElement(_beeIcon2["default"], { onClick: _this.clearValue, type: 'uf-close-c' })
+                        _this.state.showSearch || others.disabled ? _react2["default"].createElement(_beeIcon2["default"], { type: 'uf-search' }) : _react2["default"].createElement(_beeIcon2["default"], { onClick: _this.clearValue, type: 'uf-close-c' })
                     )
                 );
             }
