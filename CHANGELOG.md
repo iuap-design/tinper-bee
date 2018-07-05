@@ -1,3 +1,7 @@
+## 1.5.2
+
+- Modal组件在React16中更新报错。
+
 ## 1.5.1
 
 - InputNumber组件在Table中样式受影响
