@@ -69,3 +69,12 @@ npm publish
 
 打开阿里oss客户端，直接上传。
 
+[assets,build,style]
+
+上传
+
+## github 上发布tag
+
+1. 【tinper-bee】新建tag->输入版本号->tinper-bee->之前写的log复制-->保存
+2. 下载当前release->解压->上传cdn
+3. 更新文档工程【bee.tinper.org】
