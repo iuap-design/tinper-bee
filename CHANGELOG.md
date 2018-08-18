@@ -1,3 +1,6 @@
+## 1.5.8
+- bee-input-number 增加了disabled属性，新增2个demo示例
+
 ## 1.5.7
 
 - bee-affix horizontal的无效果问题、以及demo 修改。
