@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
@@ -35,7 +35,7 @@
   "homepage": "https://github.com/iuap-design/tinper-bee#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
-    "bee-affix": "1.0.4",
+    "bee-affix": "1.0.5",
     "bee-alert": "1.0.2",
     "bee-animate": "1.0.0",
     "bee-autocomplete": "1.0.4",
@@ -53,7 +53,7 @@
     "bee-form-control": "1.1.2",
     "bee-form-group": "1.0.13",
     "bee-icon": "1.0.4",
-    "bee-input-group": "1.0.3",
+    "bee-input-group": "1.0.4",
     "bee-input-number": "1.1.4",
     "bee-label": "1.0.0",
     "bee-layout": "1.2.7",
