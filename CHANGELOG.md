@@ -1,5 +1,28 @@
 ## 1.5.4
 
+- bee-table 
+  1. newMuleteSelct 设置 disable 属性。
+  2. 多列进行排序，某一列点击，会影响到其他列的排的默认箭头的颜色
+  3. 排序默认选中箭头。
+  4. 表格中tree结构，点+-号时也会触发onRowClick事件，希望不触发。
+  5. 增加demo，文档。
+
+- bee-inputnumber 组件，当disabled设成true时，仍可点击左右的+-号改变数据
+
+- bee-tooltip组件，希望能根据内容来自动往上浮动或者往下浮动（上方没有空间时往下浮动，下方没有空间时往上浮动
+
+- bee-affix组件，改浏览器视口宽度以后，Affix的宽度没有重算
+
+- bee-select、bee-menus 当组件width 小于正常width的时候，文字和下拉框需要做省略处理。
+
+- bee-form-control   新增清空功能
+
+- bee-form 新增demo和文档
+
+- bee-tooltip、bee-overlay 内容查出边界时，内容会自动切换弹出方位。
+
+## 1.5.4
+
 - bee-table 列过滤bug修复。
 - 表格列宽的功能下架。
 
