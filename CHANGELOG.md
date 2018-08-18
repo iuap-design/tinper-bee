@@ -1,4 +1,8 @@
-## 1.5.4
+## 1.5.6
+
+- 去掉components/Con/index.js 
+
+## 1.5.5
 
 - bee-table 
   1. newMuleteSelct 设置 disable 属性。
