@@ -1,3 +1,20 @@
+## 1.5.9
+- bee-input-number disabled后仍然可以点击bug
+- bee-locale文件名规范化修改
+- bee-form-control 去掉 showClose showPop 警告
+- bee-select 增加示例。
+- bee-modal 里面加了三个demo
+- bee-table 
+   1. 优化上千条数据渲染性能
+   2. 数表结构中使用固定列时，固定列的高度取值问题
+   3. table有纵向滚动条，列过多时，滚动下不对齐
+   4. bee-table重新验证示例，修改4个示例的Bug
+- bee-transfer 
+- bee-menus 增加选中获取自定义data对象的示例
+- bee-panel增加代码复制功能，增加代码示例展示板Demo
+- bee-tooltip加判断，无overlay不渲染tooltip-arrow,tooltip-inner
+- bee-locale文件名规范化
+
 ## 1.5.8
 - bee-input-number 增加了disabled属性，新增2个demo示例
 

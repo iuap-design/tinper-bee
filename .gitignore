@@ -25,3 +25,4 @@ spm_modules
 .cache
 dist
 coverage
+package-lock
