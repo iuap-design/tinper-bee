@@ -1,3 +1,10 @@
+## 1.6.0
+- bee-table
+  1.动态设置固定列，固定列关联的列自动固定，增加回调函数
+  2. bee-table排序功能，去掉列筛选功能后，排序上下箭头类名改变，样式丢失
+  3. bee-table 过滤组件通过tinper-bee引入路径问题
+- bee-select dropdownMatchSelectWidth属性，为false时，下拉框的内容不取决于输入框
+
 ## 1.5.9
 - bee-input-number disabled后仍然可以点击bug
 - bee-locale文件名规范化修改

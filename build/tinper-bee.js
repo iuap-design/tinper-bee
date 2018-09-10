@@ -4413,14 +4413,26 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function getValuePropValue(child) {
-  var props = child.props;
-  if ('value' in props) {
-    return props.value;
+  //传入option标签 + 动态生成option数组
+  if (child instanceof Array) {
+    child.forEach(function (_child) {
+      if ('value' in _child.props) {
+        return _child.props.value;
+      }
+      if (_child.key) {
+        return _child.key;
+      }
+    });
+  } else {
+    var props = child.props;
+    if ('value' in props) {
+      return props.value;
+    }
+    if (child.key) {
+      return child.key;
+    }
+    throw new Error('no key or value for ' + child);
   }
-  if (child.key) {
-    return child.key;
-  }
-  throw new Error('no key or value for ' + child);
 }
 
 function getPropValue(child, prop) {
@@ -32450,6 +32462,9 @@ var RcSelect = function (_Component) {
 
     var item = _ref.item;
 
+    if (!item) {
+      return;
+    }
     var value = this.state.value;
     var props = this.props;
     var selectedValue = (0, _util.getValuePropValue)(item);
@@ -32856,10 +32871,13 @@ var RcSelect = function (_Component) {
     var keys = values.map(function (v) {
       return v.key;
     });
+    console.log(props);
     _react2["default"].Children.forEach(props.children, function (child) {
+      // console.log(child);
       if (child.type === _OptGroup2["default"]) {
         nextValues = _this10.addTitleToValue(child.props, nextValues);
       } else {
+        // console.log(child.props);
         var value = (0, _util.getValuePropValue)(child);
         var valueIndex = keys.indexOf(value);
         if (valueIndex > -1) {
@@ -33182,7 +33200,7 @@ var RcSelect = function (_Component) {
           }, extraSelectionProps),
           ctrlNode,
           allowClear && !multiple ? clear : null,
-          multiple || !props.showArrow ? null : _react2["default"].createElement(
+          !props.showArrow ? null : _react2["default"].createElement(
             'span',
             _extends({
               key: 'arrow',
@@ -37844,6 +37862,9 @@ var SelectTrigger = function (_Component) {
     var _this = _possibleConstructorReturn(this, _Component.call(this, props));
 
     _this.setDropdownWidth = function () {
+      if (!_this.props.dropdownMatchSelectWidth) {
+        return;
+      }
       var width = _reactDom2["default"].findDOMNode(_this).offsetWidth;
       if (width !== _this.state.dropdownWidth) {
         _this.setState({ dropdownWidth: width });
