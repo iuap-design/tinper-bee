@@ -1,3 +1,11 @@
+## 1.6.1
+- bee-message 修复在生命周期函数中调用报错的问题
+- bee-notification react16的兼容
+- bee-dnd：升级依赖组件；新增横向排序、多列排序示例；增加多个api 
+- bee-affix修改container传值为null的容错处理
+- bee-select：解决输入框失焦后仍保持聚焦状态的问题；增加 open 参数控制下拉框的展开收起
+- bee-table：锁定加个边界线；按条件和值进行过滤；拖拽改变列宽；修改表头th添加className问题；safair下checkbox无法选中问题；动态设置固定列交互修改；内容超出当前dom宽度时，自动出现滚动条
+
 ## 1.6.0
 - bee-table
   1.动态设置固定列，固定列关联的列自动固定，增加回调函数
