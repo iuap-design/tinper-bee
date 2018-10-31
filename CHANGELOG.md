@@ -1,3 +1,16 @@
+## 1.6.2
+- bee-select  多选的下拉框闪、配合form在onBlur校验时报错
+- bee-overlay 加判断去掉 clearTimeout
+- bee-affix affix容器动态宽高时，减少affix位置的计算次数
+- bee-input-number 在form下传string改number警告
+- bee-viewer  新增组件图片查看器
+- bee-locale   新增繁体语言
+- bee-table 
+  1. 过滤行为空条件删除.
+  2. 过滤行失去焦点事件还原。
+  3. 支持表头出现滚动条。
+  4. grid封装了推拽、交换列、过滤列、合计、多选、排序、等复杂table功能，提供过去列属性和table属性API
+
 ## 1.6.1
 - bee-message 修复在生命周期函数中调用报错的问题
 - bee-notification react16的兼容
