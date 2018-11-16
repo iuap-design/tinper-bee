@@ -1,3 +1,22 @@
+## 1.6.3
+- bee-select 计算宽度性能问题，键盘快捷键
+- bee-step 升级，1px抖动 
+- bee-menu srcollIntoView 报错
+- bee-form-control 示例无法输入
+- bee-city-select更新语言包
+- bee-modal 关闭图标改为uf-close
+- bee-input-number样式更改，无法输入小数
+- bee-notification 添加键盘esc关闭功能
+- bee-message 添加键盘esc关闭功能
+- bee-popconfirm 修复浏览器边界箭头指向的bug
+- bee-tooltip 添加visible API 
+- bee-overlay 添加visible API
+- ac-input-locale加了form表单校验
+- bee-table
+  1. 把newmultiSelect和multiSelect代码合并。
+  2. 修复表头全选进入选中问题。
+  3. 拖拽列和交换列在通一个示例中使用。
+
 ## 1.6.2
 - bee-select  多选的下拉框闪、配合form在onBlur校验时报错
 - bee-overlay 加判断去掉 clearTimeout
