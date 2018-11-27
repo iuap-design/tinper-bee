@@ -1,3 +1,15 @@
+## 1.6.4
+- [Feature] bee-checkbox 新增group功能、支持全键盘操作
+- [Fix] bee-modal 修改width适配 、number警告、 修复无法在style中设置width的问题
+- [Feature] bee-radio 支持全键盘操作
+- [Feature] bee-datepicker 全键盘操作
+- [Fix] bee-popover 修复箭头指向的bug 
+- bee-table 
+   [Fix]1. 拖拽动态显示滚动条 * table warning 宽度NAN警告处理。
+   [Feature]2. 交换列、拖拽列宽共存问题。
+   [Fix]3. 交换列有阴影错误问题。
+   [Feature]4. bee-table 增加过滤行数值型输入、数值型条件选择
+
 ## 1.6.3
 - bee-select 计算宽度性能问题，键盘快捷键
 - bee-step 升级，1px抖动 
