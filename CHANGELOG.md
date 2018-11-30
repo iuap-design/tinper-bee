@@ -1,3 +1,20 @@
+## 1.6.5
+
+- [Fix] bee-input-number 去掉输入非数字错误提示， onChange改为数值类型
+- [Feature] bee-radio 全键盘问题修改
+- [Feature] bee-form-control type='search' 改造
+- [Feature] bee-datepicker 全键盘操作
+- [Fix] bee-panel uf 样式去掉
+- [Feature] bee-table 
+  1. 表格过滤支持数值过滤下拉
+  2. 过滤行添加InputNumber组件来支持数值操作，增加对应多语资源，Icon颜色修改
+  3. 增加onFilterChange、onFilterClear
+  4. 整合回调参数集合
+- [Feature] bee-complex-grid 
+  1. 拖拽激活区宽度超长导致滚动条显示bug
+  2. 增加是否可过滤API-columnFilterAble
+  3. 固定列在过滤栏位上显示但不可以点击
+
 ## 1.6.4
 - [Feature] bee-checkbox 新增group功能、支持全键盘操作
 - [Fix] bee-modal 修改width适配 、number警告、 修复无法在style中设置width的问题

@@ -10,7 +10,7 @@
 
 这几个组件如下更新：
 ```
-npm install -S bee-carousel@latest
+npm install -S bee-carousel@latest&&npm install -S bee-datepicker@latest&&npm install -S bee-timepicker@latest&&npm install -S bee-dnd@latest
 ```
 
 其他组件，package.json中保持固定版本，既不带`^`, 如下更新：
