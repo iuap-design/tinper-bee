@@ -1,3 +1,32 @@
+## 1.6.6 
+
+- [Fix] bee-pagination 添加dataNumSelect数组中有不是数字的容错处理，选中此项将items设置为1即只显示1页(上一个版本是1.0.2)
+- [Fix] bee-overlay 添加window.resize触发更新窗口位置的功能 
+- [Fix] bee-tooltip  添加window.resize触发更新窗口位置的功能 
+- [Fix] bee-popover  添加window.resize触发更新窗口位置的功能  
+- [Fix] bee-popconfirm  添加window.resize触发更新窗口位置的功能  
+- [Fix] bee-table(上个版本1.5.18)
+  1. 解决交换列咋ie上报错的问题
+  2. 合计逻辑重构、合计浮点数，合计时，精确到2位小数
+  3. 过滤行没有数据的时候不执行回调、清除值只清空存在的值，不多次回调
+  4. 增加 Hover状态是否同步到左侧Checkbox属性syncHover
+  5. 优化tableheader代码、注释、文档补全
+  6. 实现过滤行新功能，增加可设置单独条件属性filterDropdownIncludeKeys
+  7. 去掉过滤的一些限制
+  8. 固定列滚动条不可拖拽
+  9. 解决行过滤能拖拽问题、解决行过滤事件丢失问题
+  10. 标题全选问题解决
+  11. 拖拽横向滚动条兼容固定列
+  12. Table组件增加了指定的下拉条件设置API:filterDropdownIncludeKeys
+  13. 交换列和拖拽改变列宽共存问题。
+  14. 拖拽激活区宽度超长导致滚动条显示bug
+  - [Fix,Feature] bee-complex-grid(上个版本是0.2.44)
+   1. 增加导出excel功能。
+   2. 增加模板示例功能
+   3. 最后一个非固定列不可以fix
+   4. 动态设置是否显示列过滤bug。
+   5. 增加导出示例、导出单独设置数据源、是否要在导出中隐藏某列、修改demo 示例以及文档
+
 ## 1.6.5
 
 - [Fix] bee-input-number 去掉输入非数字错误提示， onChange改为数值类型
