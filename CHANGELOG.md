@@ -1,4 +1,4 @@
-## 1.6.6 
+## 1.6.7 
 
 - [Fix] bee-pagination 添加dataNumSelect数组中有不是数字的容错处理，选中此项将items设置为1即只显示1页(上一个版本是1.0.2)
 - [Fix] bee-overlay 添加window.resize触发更新窗口位置的功能 
