@@ -1,3 +1,19 @@
+## 1.6.8
+
+- bee-table@1.6.21
+     1. [Feature] 支持快捷键 ↑ ，↓ ，tab 快捷键操作，以及新增快捷键的api。
+     2. [Feature]  增加懒加载功能 ，支持大数据量加载。
+- [Feature] bee-tabs@1.0.9 增加tabIndex api。
+- [Feature] bee-menu@0.1.9 支持快捷键操作。
+- [Feature] bee-tree 支持快捷键操作， ↑ ，↓  选中功能。
+- [Feature] bee-dropdown@1.0.3 新增快捷键。
+- [Feature] bee-tooltip@1.0.14 增加鼠标滑过API。
+- [Feature] bee-message@1.0.13 将icon改为默认不显示
+
+-  应用组件部分 
+   [Fix] ac-attachment 添加disabled按钮禁用选项
+
+
 ## 1.6.7 
 
 - [Fix] bee-pagination 添加dataNumSelect数组中有不是数字的容错处理，选中此项将items设置为1即只显示1页(上一个版本是1.0.2)
