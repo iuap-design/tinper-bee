@@ -1,3 +1,11 @@
+## 1.6.9
+
+- [Fix] bee-table@1.6.21 快捷键修复
+- [Fix] bee-tabs@1.0.9 快捷键修复。
+- [Fix] bee-menu@0.1.9 快捷键修复。
+- [Fix] bee-tree 快捷键修复。
+- [Fix] bee-dropdown@1.0.3 快捷键修复。
+
 ## 1.6.8
 
 - bee-table@1.6.21
@@ -12,7 +20,6 @@
 
 -  应用组件部分 
    [Fix] ac-attachment 添加disabled按钮禁用选项
-
 
 ## 1.6.7 
 

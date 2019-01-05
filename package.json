@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "1.6.8",
+  "version": "1.6.9",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
@@ -51,7 +51,7 @@
     "bee-collapse": "1.0.1",
     "bee-complex-grid": "0.2.44",
     "bee-datepicker": "1.3.8",
-    "bee-dropdown": "1.0.3",
+    "bee-dropdown": "1.0.4",
     "bee-form": "1.1.10",
     "bee-form-control": "1.1.8",
     "bee-form-group": "1.0.13",
@@ -81,14 +81,14 @@
     "bee-slider": "1.0.2",
     "bee-step": "1.1.0",
     "bee-switch": "1.0.3",
-    "bee-table": "1.6.21",
-    "bee-tabs": "1.0.9",
+    "bee-table": "1.6.26",
+    "bee-tabs": "1.0.10",
     "bee-tile": "1.0.0",
     "bee-timeline": "1.0.1",
     "bee-tooltip": "1.0.14",
     "bee-transfer": "1.0.7",
     "bee-transition": "1.0.0",
-    "bee-tree": "1.1.11",
+    "bee-tree": "1.1.12",
     "bee-upload": "1.0.0",
     "console-polyfill": "^0.2.2",
     "cross-env": "^5.1.1",
@@ -143,7 +143,6 @@
     "bee-carousel": "^1.0.0",
     "bee-datepicker": "^1.0.22",
     "bee-dnd": "^1.0.2",
-    "bee-select": "^1.0.14",
     "bee-timepicker": "^1.0.1"
   },
   "config": {
