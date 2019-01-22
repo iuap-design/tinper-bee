@@ -42,7 +42,7 @@
     "bee-backtop": "1.0.1",
     "bee-badge": "1.0.3",
     "bee-breadcrumb": "1.0.0",
-    "bee-button": "1.0.6",
+    "bee-button": "2.0.0",
     "bee-button-group": "1.1.0",
     "bee-cascader": "1.0.0",
     "bee-checkbox": "1.2.6",
@@ -129,7 +129,7 @@
     "sass": "^0.5.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
-    "tinper-bee-core": "0.4.1",
+    "tinper-bee-core": "^2.0.1",
     "webpack": "^3.8.1",
     "webpack-merge": "^4.1.0"
   },
