@@ -1,3 +1,17 @@
+## 1.6.10
+
+- [Fix] bee-popconfirm@1.0.15 添加第二优先级渲染方向功能、添加onRootClose的API、添加自定义确定取消按钮
+- [Fix] bee-tooltip@1.0.14 添加可配置container的API
+- [Fix] bee-popover@1.0.6 添加可配置container的API
+- [Fix] bee-grid@1.0.11 增加是否有分页的api(上个版本0.2.44)
+- bee-table@1.6.35(上个版本1.6.35)
+     1. [Feature] 支持多表头列的排序功能、增加是否开启快捷键功能、自定义列对齐方式、修改表格交换列逻辑修复city-select 组件内部select警告。
+     2. [Feature]  增加获取拖拽列宽的colgroup的id、以及table 的id。
+- [Fix] bee-select@1.1.8 下拉item高度改为30px
+- [Fix] bee-slider@1.0.3 竖直方向的slider重叠问题 V1.0.3
+- [Fix] bee-datepicker@1.3.12 新增外层输入框可输入功能
+- [Fix] bee-input-number@1.2.2 新增显示千分符的功能
+
 ## 1.6.9
 
 - [Fix] bee-table@1.6.21 快捷键修复
