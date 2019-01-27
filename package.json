@@ -4,6 +4,7 @@
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
+    "buildOnline": "gulp online",
     "build": "gulp",
     "build-lib": "webpack --color --progress --config webpack.modules.js",
     "test": "mocha tests/index.js",

@@ -139,5 +139,15 @@ gulp.task('copy', ['copy_clean'], function (done) {
         ]).pipe(gulp.dest('./lib'));
 })
 
+gulp.task('online', [ 'theme']);
 
-gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy']);
+gulp.task('production', ['js_uglify', 'theme', 'lib_build', 'copy']);
+
+// gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy']);
+if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='online'){
+    console.log("-------NODE_ENV-------online`--");
+    gulp.task('online', ['theme']);
+}else{
+    console.log("----not--online`-NODE_ENV---------");
+    gulp.task('production', ['js_uglify', 'theme', 'lib_build', 'copy']);
+}
