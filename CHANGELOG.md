@@ -1,3 +1,11 @@
+
+## 1.6.10-alpha.1
+
+- [Fix] 去掉组件中^的版本号，改成具体版本号
+- [Fix] 修改component中大小写问题
+- [Feature] 2.0主题内容
+
+
 ## 1.6.10
 
 - [Fix] bee-popconfirm@1.0.15 添加第二优先级渲染方向功能、添加onRootClose的API、添加自定义确定取消按钮
