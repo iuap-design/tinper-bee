@@ -1,4 +1,9 @@
 
+## 1.6.10-alpha.3
+
+- [Fix] timepicker、datepicker 版本更新
+- [Fix] bee-cascader 2.0.0
+
 ## 1.6.10-alpha.1
 
 - [Fix] 去掉组件中^的版本号，改成具体版本号
