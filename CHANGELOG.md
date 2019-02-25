@@ -1,3 +1,94 @@
+## 2.0.0 tinper-bee2.0增加了主题定制功能、部分不合理的api进行优化。
+
+   ### tinper-bee 2.0升级内容
+   - [Feature] 在tinper-bee.css 中增加 Datepicker、Calendar 组件的样式。
+   - [Fix] timepicker、datepicker 版本更新
+   - [Fix] bee-cascader 2.0.0
+   - [Fix] 去掉组件中^的版本号，改成具体版本号
+   - [Fix] 修改component中大小写问题。
+   - [Feature] bee-button
+      - 、V2.0.0~V2.0.1 版本的边框按钮 primary 为默认主题色
+      - 、默认按钮高度由34px变为32px
+      - 、巨大按钮高度由47px变为48px
+      - 、所有按钮的圆角由4px变为3px
+   - [Feature] bee-select
+      - 1、下拉选项的hover背景色由蓝色变为灰色
+      - 2、hover文字色由深灰色变为蓝色
+   - [Feature] bee-rate
+      - 下拉选项的hover背景色由蓝色变为灰色 
+   - [Feature] bee-timeline
+      - 下拉选项的hover背景色由蓝色变为灰色 
+   - [Feature] bee-breadcrumb
+      - 面包屑默认的a标签文字颜色由浅蓝（#31c4dc）变为主题蓝色 
+- [Feature] bee-tree
+   - 1、选中的树节点的文字颜色由黑色变为主题蓝色 
+   - 2、树节点的hover背景色由蓝色变为灰色
+- [Feature] bee-calendar
+   - 1、日期hover背景色由浅蓝"#ebfaff"变为灰色，hover文字色由黑色变为主题蓝色 
+   - 2、选中的日期背景色由浅蓝（#3fc7fa）变为主题蓝色 
+   - 3、选中日期的文字色由黑色变为白色
+- [Feature] bee-slider
+   - 锚点色和滑动条色由"info"浅蓝变为"primary"主题蓝色
+- [Feature] bee-timepicker
+   - 选中的文字色由浅蓝（#2db7f5）变为主题蓝色
+- [Feature] bee-button-group
+   - 边框按钮（设置shape="border"）的文字颜色由黑色变为主题蓝色
+- [Feature] bee-tabs
+   - 1、基础Tab，hover状态标签文字颜色由浅蓝（#23c0fa）变为primary主题蓝色 
+   - 2、竖向的Tab，标签文字色和右侧线条色由浅蓝（#23c0fa）变为primary主题蓝色
+- [Feature] bee-table
+   - 1、表格行内链接文字色由默认的超链接色变为主题蓝色 
+- [Feature] bee-datepicker
+   - 1、日期hover背景色由浅蓝变为灰色，hover文字色由黑变为蓝色 
+   - 2、日期select背景色由浅蓝变为深蓝，选中的文字色由黑色变为白色
+   - 3、底部按钮文字色由红色变为蓝色
+- [Feature] bee-pagination
+   - 1、默认页码按钮由带边框变为无边框 
+   - 2、选中的页码背景色由蓝色变为深灰色 
+   - 3、默认分页去掉确认按钮，支持自定义 
+- [Feature] bee-icon@1.0.9，增加图标
+
+### tinper-bee 2.0 组件升级风险组件[primary 为默认主题色]
+
+   - [Feature] bee-button 不提倡使用button的默认颜色，默认颜色即为primary色。
+   - [Feature]  bee-cascader 2.0.0 在单独使用时，需要手动引入css样式。
+   - [Feature]bee-pagination@1.1.18
+      1. 新增'confirmBtn'API，支持外部传参，自定义跳转按钮。(去掉默认按钮)
+      2. 普通分页，默认去掉边框
+
+### tinper-bee 2.0 组件版本变化
+   - bee-breadcrumb 由 V1.0.0 升级到 V2.0.0
+   - bee-button 由 V2.0.0 升级到 V2.0.2
+   - bee-button-group 由 V1.1.0 升级到 V1.2.0
+   - bee-checkbox 由 V1.2.6 升级到 V2.0.1
+   - bee-dropdown 由 V1.0.4 升级到 V1.1.0
+   - bee-input-number 由 V1.2.2 升级到 V1.2.3
+   - bee-menus 由 V1.0.7 升级到 V2.0.1
+   - bee-modal 由 V1.0.9 升级到 V1.1.0
+   - bee-radio 由 V1.0.7 升级到 V2.0.0
+   - bee-rate 由 V1.0.2 升级到 V2.0.1
+   - bee-slider 由 V1.0.3 升级到 V2.0.0
+   - bee-switch 由 V1.0.3 升级到 V2.0.1
+   - bee-table 由 V1.6.35 升级到 V1.6.41
+   - bee-tabs 由 V1.0.10 升级到 V2.0.0
+   - bee-timeline 由 V1.0.1 升级到 V2.0.0
+   - bee-transfer 由 V1.0.7 升级到 V2.0.0
+   - bee-tree 由 V1.1.12 升级到 V2.0.0
+   - bee-upload 由 V1.0.0 升级到 V1.1.0
+   - bee-datepicker 由 V1.3.8 升级到 V2.0.2
+   - bee-form 由 V1.1.10 升级到 V2.0.7
+   - bee-icon 由 V1.0.4 升级到 V1.0.9
+   - bee-loading 由 V1.0.3 升级到 V1.0.4
+   - bee-locale 由 V0.0.6 升级到 V0.0.12
+   - bee-pagination 由 V1.1.14 升级到 V1.1.18
+   - bee-select 由 V1.1.8 升级到 V2.0.0
+   - bee-autocomplete 由 V1.0.4 升级到 V1.1.0
+   - bee-badge 由 V1.0.3 升级到 V1.1.3
+   - bee-form-control 由 V1.1.9 升级到 V1.1.10
+   - bee-calendar 由 V1.0.0 升级到 V2.0.0
+   - bee-loading 由 V1.0.4 升级到 V1.0.6
+   - bee-loading-state 由 V1.0.1 升级到 V1.0.2
+
 ## 1.6.10-alpha.5
 - [Feature] 在tinper-bee.css 中增加 Datepicker、Calendar 组件的样式。
 
