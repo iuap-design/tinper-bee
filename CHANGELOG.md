@@ -1,3 +1,6 @@
+## 1.6.10-alpha.5
+- [Feature] 在tinper-bee.css 中增加 Datepicker、Calendar 组件的样式。
+
 ## 1.6.10-alpha.4
 
 - [Feature] bee-autocomplete  1.0.4 --> 1.1.0
