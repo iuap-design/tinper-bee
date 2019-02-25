@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "1.6.10-alpha.3",
+  "version": "1.6.10-alpha.4",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "build/tinper-bee.js",
   "scripts": {
@@ -39,7 +39,7 @@
     "bee-affix": "1.0.9",
     "bee-alert": "1.0.2",
     "bee-animate": "1.0.0",
-    "bee-autocomplete": "1.0.4",
+    "bee-autocomplete": "1.1.0",
     "bee-backtop": "1.0.1",
     "bee-badge": "1.0.3",
     "bee-breadcrumb": "2.0.0",
@@ -53,7 +53,7 @@
     "bee-complex-grid": "^1.0.11",
     "bee-dropdown": "1.1.0",
     "bee-form": "2.0.7",
-    "bee-form-control": "1.1.8",
+    "bee-form-control": "1.1.10",
     "bee-form-group": "1.0.13",
     "bee-icon": "1.0.9",
     "bee-input-group": "1.0.4",
@@ -139,9 +139,9 @@
     "prop-types": ">= 15.6.0"
   },
   "dependencies": {
-    "bee-calendar": "^2.0.0",
+    "bee-calendar": "^2.0.1",
     "bee-carousel": "^1.0.0",
-    "bee-datepicker": "^2.0.1",
+    "bee-datepicker": "^2.0.2",
     "bee-dnd": "^1.0.7",
     "bee-timepicker": "^2.0.0"
   },

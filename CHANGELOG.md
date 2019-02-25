@@ -1,3 +1,11 @@
+## 1.6.10-alpha.4
+
+- [Feature] bee-autocomplete  1.0.4 --> 1.1.0
+- [Feature] ee-badge 1.0.3 --> 1.1.3
+- [Feature] form-control 1.1.8 --> 1.1.10 
+- [Feature] bee-datepicker V2.0.1  --> 2.0.2
+- [Feature] bee-calendar V2.0.0 --> 2.0.1
+
 
 ## 1.6.10-alpha.3
 
