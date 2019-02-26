@@ -47,7 +47,7 @@ var BackTop = require('./lib/BackTop');
 var Collapse = require('./lib/Collapse');
 
 var Slider = require('./lib/Slider');
-var Autocomplete = require('./lib/Autocomplete');
+var AutoComplete = require('./lib/Autocomplete');
 
 var LoadingState = require('./lib/LoadingState');
 var Locale = require('./lib/Locale');
