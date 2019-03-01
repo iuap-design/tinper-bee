@@ -1,62 +1,42 @@
-## 2.0.0 tinper-bee2.0增加了主题定制功能、部分不合理的api进行优化。
+## tinper-bee 2.1升级内容【主题定制、组件优化】
 
-   ### tinper-bee 2.0升级内容
+- [Feature] 所有的组件圆角都修改为3px。
+- [Feature] 输入框、下拉框 size 统一为40(大)、32(中)、26(小)。
+- [Feature] 边框色由之前的(#d9d9d9)调整为(#a5adba)，影响范围-[button、select、bee-form-control、cascader、timepicker、datepicker、upload、badge、autocomplete、pagination、tooltip、bee-input-number、bee-city-select]
+- [Feature] 主题色由之前的蓝色变为红色(#E60012)，影响范围-所有组件。
+- [Feature] input 示例中，所有输入框行高都要是32px，，影响范围-组件中带有输入框的组件。
+- [Fixbug] be-menus 组件bug修复，缺少部分依赖组件。
+- [Fixbug] bee-input-number 组件本身多边框重叠bug修复。
+- [升级风险]bee-timepicker、bee-datepicker 在单独引入组件后，需要再次手动引入css样式。
+
+
+## tinper-bee 2.0升级内容【主题定制、组件优化】
+
+- [Feature] 所有的基础组件由之前的蓝色(#2db7f5)改为红色(#F53C32)，影响范围-所有组件。
+- [Feature] 所有的输入框组件，高度由34px规范为32px。
+- [Feature] 下拉式组件，影响范围-[select、autocomplete、datepicker、calendar、dropdown、table、tree、menu]
+    - hover背景色由浅蓝变为灰色，hover文字色由黑变为蓝色。
+    - 下拉背景色由浅蓝变为深蓝，选中的文字色由黑色变为白色。
+    - 底部按钮文字色由红色变为蓝色
 - [Feature] 在tinper-bee.css 中增加 Datepicker、Calendar 组件的样式。
-- [Feature] timepicker@2.0.0
+- [Feature] timepicker
     - 选中的文字色由浅蓝（#2db7f5）变为主题蓝色
     - bee-timepicker 外层输入框加清空功能
-- [Update、Feature]bee-datepicker@2.0.2
-    - 日期hover背景色由浅蓝变为灰色，hover文字色由黑变为蓝色 
-    - 日期select背景色由浅蓝变为深蓝，选中的文字色由黑色变为白色
-    - 底部按钮文字色由红色变为蓝色
-    - 升级rc依赖，所有类型默认增加输入框，新交互修改，外层输入框加清空；
+- [Update、Feature]bee-datepicker
+    - 底部按钮文字色由红色变为蓝色、所有类型默认增加输入框。
     - 新增快捷键功能：f2打开面板，enter关闭面板
-- [Feature] bee-cascader@2.0.0
-    - 选项hover背景色由蓝色变为灰色
 - [Fixbug] 去掉组件中^的版本号，改成具体版本号
 - [Fixbug] 修改component中大小写问题。
-- [Feature] bee-button@2.0.2
-  - V2.0.0~V2.0.1版本的边框按钮的文字颜色由黑色变为主题蓝色 
-  - V2.0.2版本 带边框按钮的文字颜色改为黑色
-  - 默认按钮高度由34px规范为32px，巨大按钮高度由47px规范为48px
+- [Feature] bee-button
+  - 文字颜色由黑色变为主题蓝色 、带边框按钮的文字颜色改为黑色。
   - "size"API 增加取值默认大小“md”
-- [Feature] bee-select@2.0.0
-  - 下拉选项的hover背景色由蓝色变为灰色
-  - hover文字色由深灰色变为蓝色
-- [Feature] bee-rate@2.0.1
-  - 下拉选项的hover背景色由蓝色变为灰色 
-- [Feature] bee-timeline@2.0.0
-  - 下拉选项的hover背景色由蓝色变为灰色 
-- [Feature] bee-breadcrumb@2.0.0
-  - 面包屑默认的a标签文字颜色由浅蓝（#31c4dc）变为主题蓝色 
-- [Feature] bee-tree@2.0.0
-   - 选中的树节点的文字颜色由黑色变为主题蓝色 
-   - 树节点的hover背景色由蓝色变为灰色
-- [Feature] bee-calendar@2.0.0
-   - 日期hover背景色由浅蓝"#ebfaff"变为灰色，hover文字色由黑色变为主题蓝色 
-   - 选中的日期背景色由浅蓝（#3fc7fa）变为主题蓝色 
+- [Feature] bee-calendar
    - 选中日期的文字色由黑色变为白色
-- bee-slider@2.0.0
-   - [Feature]锚点色和滑动条色由"info"浅蓝变为"primary"主题蓝色
-   - [Fixbug]解决官网示例显示为红色问题
-- [Feature] bee-timepicker@2.0.0
-   - 选中的文字色由浅蓝（#2db7f5）变为主题蓝色
-- [Feature] bee-button-group@1.2.0
-   - 边框按钮（设置shape="border"）的文字颜色由黑色变为主题蓝色
-- [Feature] bee-tabs@2.0.0
-   - 基础Tab，hover状态标签文字颜色由浅蓝（#23c0fa）变为primary主题蓝色 
-   - 竖向的Tab，标签文字色和右侧线条色由浅蓝（#23c0fa）变为primary主题蓝色
-- [Feature] bee-pagination@1.1.18
-   - 默认页码按钮由带边框变为无边框 
-   - 选中的页码背景色由蓝色变为深灰色 
-   - 默认分页去掉确认按钮，支持自定义 
-- [Feature]bee-pagination@1.1.18
-	- 新增'confirmBtn'API，支持外部传参，自定义跳转按钮
-	- 普通分页，默认去掉边框
-	- 增加'noBorder' API的demo示例
-- [Feature]bee-icon@1.0.9，增加多语图标
-- [Feature]bee-menus@2.0.1
-    - 删除生产环境依赖antd
+- bee-slider
+   - [Feature]锚点色和滑动条色由"info"浅蓝变为"primary"主题蓝色。
+- [Feature] bee-pagination
+   - 默认页码按钮 由带边框变为无边框、背景色由蓝色变为深灰色、分页去掉确认按钮(可自定义)
+- [Feature]bee-menus
     - bee-menus 最外层暴露 tabIndex属性
 - bee-table@1.6.41
     - [Feature]Table组件hover某行，动态渲染菜单
@@ -68,47 +48,20 @@
     - [Feature]嵌套表格两个都是bigData场景，动态控制某行是否可以展开
     - [Feature] 前端排序增加回调，返回排序后的数据
     - [Fixbug] 表格行内编辑时，单元格获取焦点时，表格会增加2px问题
-- [Fixbug] bee-message@1.0.13
+- [Fixbug] bee-message
     - 解决使用时报错的问题
-- [Fixbug] bee-input-number@1.2.3
+- [Fixbug] bee-input-number
     - 解决小数点后无法输入 0 的Bug
-- [Fixbug] bee-dropdown@1.1.0
+- [Fixbug] bee-dropdown
     - 第一个宽度小于按钮，第二个太宽不撑开bug
     - 解决下拉背景色透明问题
-- [Update] bee-loading@1.0.6
+- [Feature] bee-loading
     - 修改loading图标
-- [Update] bee-loading-state@1.0.2
-    - 显示loading时，默认不给button显示遮罩层
-    - 显示loading时，用loadingText替换button的文字
-    - 自定义`Loadingstate`示例样式优化
-- [Update]bee-autocomplete@1.1.0
-    - 升级依赖bee-form-control
-    - 样式按select规范优化
+- [Feature] bee-loading-state
+    - 显示loading时，默认不给button显示遮罩层、用loadingText替换button的文字
+- [Feature]bee-autocomplete
     - hover背景色和文字色关联主题，支持定制
 
-### tinper-bee 2.0 组件升级风险组件[primary 为默认主题色]
-
-- [Feature] bee-button 不提倡使用button的默认颜色，默认颜色即为primary色。
-- [Feature] bee-cascader 在单独使用时，需要手动引入css样式。
-- [Feature] bee-pagination
-      1. 默认页码按钮由带边框变为无边框
-      2. 选中的页码背景色由蓝色变为深灰色
-      3. 默认分页去掉确认按钮，支持自定义
-- [Feature] bee-select、bee-autocomplete、bee-datepicker、bee-calendar，选项的hover背景色由蓝色变为灰色
-- [Feature] bee-rate，文字和图标的填充色默认由黄色变为主题蓝色
-- [Feature] bee-timeline，圆环填充色由"info"浅蓝变为"primary"深蓝
-- [Feature] bee-breadcrumb，面包屑默认的a标签文字颜色由浅蓝（#31c4dc）变为主题蓝色
-- [Feature] bee-tree，选中的树节点的文字颜色由黑色变为主题蓝色
-- [Feature] bee-slider，锚点色和滑动条色由"info"浅蓝变为"primary"主题蓝色
-- [Feature] bee-timepicker，选中的文字色由浅蓝（#2db7f5）变为主题蓝色
-- [Feature] bee-tabs
-      1. 基础Tab，hover状态标签文字颜色由浅蓝（#23c0fa）变为primary主题蓝色
-      2. 竖向的Tab，标签文字色和右侧线条色由浅蓝（#23c0fa）变为primary主题蓝色  
-- [Feature] bee-datepicker
-      1. 日期hover背景色由浅蓝变为灰色，hover文字色由黑变为蓝色
-      2. 日期select背景色由浅蓝变为深蓝，选中的文字色由黑色变为白色
-      3. 底部按钮文字色由红色变为蓝色
-- [Feature] bee-table，表格行内链接文字色由默认的超链接色变为主题蓝色
 
 ## 1.6.10-alpha.5
 - [Feature] 在tinper-bee.css 中增加 Datepicker、Calendar 组件的样式。
