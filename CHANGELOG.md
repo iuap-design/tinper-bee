@@ -2,7 +2,7 @@
 
 - [Feature] 所有的组件圆角为3px。
 - [Feature] 输入框、下拉框 size 统一为40(大)、32(中)、26(小)。
-- [Feature] 边框色由之前的(#d9d9d9)调整为(#a5adba)，影响范围-[button、select、bee-form-control、cascader、timepicker、datepicker、upload、badge、autocomplete、pagination、tooltip、bee-input-number、bee-city-select]
+- [Feature] 边框色由之前的(#d9d9d9)调整为(#a5adba)，影响范围-[be-button、be-select、be-form-control、be-cascader、be-timepicker、be-datepicker、be-upload、be-badge、be-autocomplete、be-pagination、be-tooltip、be-input-number、be-city-select]
 - [Feature] 主题色由之前的蓝色变为红色(#E60012)，影响范围-(80%组件)。
 - [Feature] input 示例中，所有输入框行高32px，，影响范围-组件中带有输入框的组件。
 - [Fixbug] be-menus 组件bug修复，缺少部分依赖组件。
