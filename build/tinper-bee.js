@@ -16900,7 +16900,8 @@ module.exports = function(module) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.SelectPropTypes = exports.OptGroup = exports.Option = undefined;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _Select = __webpack_require__(542);
 
@@ -16918,12 +16919,10 @@ var _OptGroup2 = _interopRequireDefault(_OptGroup);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-_Select2["default"].Option = _Option2["default"];
-_Select2["default"].OptGroup = _OptGroup2["default"];
-exports.Option = _Option2["default"];
-exports.OptGroup = _OptGroup2["default"];
-exports.SelectPropTypes = _PropTypes.SelectPropTypes;
+_Select2["default"].Option = _extends({}, _Option2["default"]);
+_Select2["default"].OptGroup = _extends({}, _OptGroup2["default"]);
 exports["default"] = _Select2["default"];
+module.exports = exports['default'];
 
 /***/ }),
 /* 157 */
@@ -17539,7 +17538,7 @@ function getVisibleRectForElement(element) {
 
   // scrollXXX on html is sync with body which means overflow: hidden on body gets wrong scrollXXX.
   // We should cut this ourself.
-  var bodyStyle = getComputedStyle(body);
+  var bodyStyle = window.getComputedStyle(body);
   if (bodyStyle.overflowX === 'hidden') {
     documentWidth = win.innerWidth;
   }
@@ -39343,7 +39342,7 @@ var BackTop = __webpack_require__(944);
 var Collapse = __webpack_require__(948);
 
 var Slider = __webpack_require__(953);
-var AutoComplete = __webpack_require__(965);
+var Autocomplete = __webpack_require__(965);
 
 var LoadingState = __webpack_require__(969);
 var Locale = __webpack_require__(973);
@@ -83822,7 +83821,6 @@ module.exports = exports['default'];
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.SelectPropTypes = exports.OptGroup = exports.Option = undefined;
 
 var _Select = __webpack_require__(824);
 
@@ -83842,10 +83840,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 _Select2["default"].Option = _Option2["default"];
 _Select2["default"].OptGroup = _OptGroup2["default"];
-exports.Option = _Option2["default"];
-exports.OptGroup = _OptGroup2["default"];
-exports.SelectPropTypes = _PropTypes.SelectPropTypes;
 exports["default"] = _Select2["default"];
+module.exports = exports['default'];
 
 /***/ }),
 /* 824 */
