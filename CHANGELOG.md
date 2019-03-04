@@ -1,35 +1,5 @@
 ## tinper-bee 2.0.1升级内容【主题定制、组件优化】
 
-- [Feature] 所有的组件圆角为3px。
-- [Feature] 输入框、下拉框 size 统一为40(大)、32(中)、26(小)。
-- [Feature] 边框色由之前的(#d9d9d9)调整为(#a5adba)，影响范围-[be-button、be-select、be-form-control、be-cascader、be-timepicker、be-datepicker、be-upload、be-badge、be-autocomplete、be-pagination、be-tooltip、be-input-number、be-city-select]
-- [Feature] 主题色由之前的蓝色变为红色(#E60012)，影响范围-(80%组件)。
-- [Feature] input 示例中，所有输入框行高32px，，影响范围-组件中带有输入框的组件。
-- [Fixbug] be-menus 组件bug修复，缺少部分依赖组件。
-- [Fixbug] bee-input-number 组件本身多边框重叠bug修复。
-
-### tinper-bee (2.0.0,2.0.1) 组件升级风险组件
-
-- [Risk] bee-button 不提倡使用button的默认颜色，默认颜色即为primary色。
-- [Risk] bee-cascader、bee-timepicker、bee-datepicker 在单独使用时，需要手动引入css样式。
-- [Risk] bee-pagination
-      1. 默认页码按钮变为无边框
-      2. 选中的页码背景色变为深灰色
-      3. 默认分页去掉确认按钮，支持自定义传入
-- [Risk] bee-select、bee-autocomplete、bee-datepicker、bee-calendar选项的hover背景色变为灰色
-- [Risk] "primary"主题色变更，影响的组价如下:
-    1. bee-rate 文字和图标的填充色，变为"primary"主题色。
-    2. bee-timeline 、bee-slider 的"info"色，变为"primary"主题色。
-    3. bee-breadcrumb、bee-tree 文字颜色，变为"primary"主题色。
-    4. bee-timepicker 选中的文字色，变为"primary"主题色。
-    5. bee-tabs hover状态标签文字颜、选中竖线，变为"primary"主题色。
-    6. bee-datepicker hover背景色由浅蓝变为灰色、select背景色、按钮文字色 变为"primary"主题色。选中的文字色由黑色变为白色。
-    7.  bee-table  行内链接文字色，变为"primary"主题色。
-- [Risk] Autocomplete 在tinper-bee的应用改为AutoComplete。
-
-
-## tinper-bee 2.0.0升级内容【主题定制、组件优化】
-
 - [Feature] 所有的基础组件由之前的蓝色(#2db7f5)改为红色(#F53C32)，影响范围-(80%组件)。
 - [Feature] 下拉式组件，影响范围-[select、autocomplete、datepicker、calendar、dropdown、table、tree、menu]
     - hover背景色变为灰色，hover文字色变为蓝色。
@@ -78,7 +48,32 @@
     - 显示loading时，默认不给button显示遮罩层、用loadingText替换button的文字
 - [Feature]bee-autocomplete
     - hover背景色和文字色关联主题，支持定制
+- [Feature] 所有的组件圆角为3px。
+- [Feature] 输入框、下拉框 size 统一为40(大)、32(中)、26(小)。
+- [Feature] 边框色由之前的(#d9d9d9)调整为(#a5adba)，影响范围-[be-button、be-select、be-form-control、be-cascader、be-timepicker、be-datepicker、be-upload、be-badge、be-autocomplete、be-pagination、be-tooltip、be-input-number、be-city-select]
+- [Feature] 主题色由之前的蓝色变为红色(#E60012)，影响范围-(80%组件)。
+- [Feature] input 示例中，所有输入框行高32px，，影响范围-组件中带有输入框的组件。
+- [Fixbug] be-menus 组件bug修复，缺少部分依赖组件。
+- [Fixbug] bee-input-number 组件本身多边框重叠bug修复。
 
+### tinper-bee (2.0.0,2.0.1) 组件升级风险组件
+
+- [Risk] bee-button 不提倡使用button的默认颜色，默认颜色即为primary色。
+- [Risk] bee-cascader、bee-timepicker、bee-datepicker 在单独使用时，需要手动引入css样式。
+- [Risk] bee-pagination
+      1. 默认页码按钮变为无边框
+      2. 选中的页码背景色变为深灰色
+      3. 默认分页去掉确认按钮，支持自定义传入
+- [Risk] bee-select、bee-autocomplete、bee-datepicker、bee-calendar选项的hover背景色变为灰色
+- [Risk] "primary"主题色变更，影响的组价如下:
+    1. bee-rate 文字和图标的填充色，变为"primary"主题色。
+    2. bee-timeline 、bee-slider 的"info"色，变为"primary"主题色。
+    3. bee-breadcrumb、bee-tree 文字颜色，变为"primary"主题色。
+    4. bee-timepicker 选中的文字色，变为"primary"主题色。
+    5. bee-tabs hover状态标签文字颜、选中竖线，变为"primary"主题色。
+    6. bee-datepicker hover背景色由浅蓝变为灰色、select背景色、按钮文字色 变为"primary"主题色。选中的文字色由黑色变为白色。
+    7.  bee-table  行内链接文字色，变为"primary"主题色。
+- [Risk] Autocomplete 在tinper-bee的应用改为AutoComplete。
 
 ## 1.6.10-alpha.5
 - [Feature] 在tinper-bee.css 中增加 Datepicker、Calendar 组件的样式。
