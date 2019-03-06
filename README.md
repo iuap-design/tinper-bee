@@ -57,7 +57,7 @@ ReactDOM.render(<Button />, mountNode);
 
 ### Version
 
-0.1.7。
+V 2.0.2
 
 
 ### Directory Description

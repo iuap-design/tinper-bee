@@ -1,3 +1,21 @@
+## tinper-bee 2.0.2(推荐版本)
+
+- [Fixbug] 修复bee-select 警告问题。
+- [Fixbug] 统一单独引用组件和从tinper-bee中引用组件中的大小写bee-autocomplete 统一为大小驼峰。
+- [Fixbug] bee-button-group 带背景色的按钮之间加1px的白色分割线
+- [Feature]bee-button@2.0.5
+    - 按钮点击后的focus状态和默认样式保持一致
+    - 所有按钮的disable状态，去掉hover和active样式
+- [Feature]bee-tree@2.0.2
+    - 去掉树节点hover时的描边
+    - disable态的树节点去掉hover样式
+- bee-dropdown@2.0.2
+    - [Feature]下拉菜单去掉边框
+    - [Fixbug]多级下拉示例的下拉面板错位了
+- [Fixbug]下组件为组件相互依赖的版本不对问题的修改，所有均更新为2.0.x版本。影响组件包括如下【bee-select、bee-modal、bee-transfer、bee-cascader、bee-button-group、bee-table、bee-autocomplete、bee-panel】
+    bee-form, bee-menus 1.1.0 升级
+
+
 ## tinper-bee 2.0.1升级内容【主题定制、组件优化】
 
 - [Feature] 所有的基础组件由之前的蓝色(#2db7f5)改为红色(#F53C32)，影响范围-(80%组件)。
@@ -56,7 +74,7 @@
 - [Fixbug] be-menus 组件bug修复，缺少部分依赖组件。
 - [Fixbug] bee-input-number 组件本身多边框重叠bug修复。
 
-### tinper-bee (2.0.0,2.0.1) 组件升级风险组件
+### tinper-bee (2.0.1) 组件升级风险组件
 
 - [Risk] bee-button 不提倡使用button的默认颜色，默认颜色即为primary色。
 - [Risk] bee-cascader、bee-timepicker、bee-datepicker 在单独使用时，需要手动引入css样式。
