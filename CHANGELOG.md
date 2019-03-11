@@ -1,3 +1,43 @@
+## tinper-bee 2.0.3(推荐版本)
+
+- [Feature]bee-input-group@2.0.1
+    - 输入框行高统一为32px
+    - 依赖组件升级
+- [Feature]bee-datepicker@2.0.8
+    - Datapicker 输入框右侧图标没有居中。
+    - 日历卡片没有使用最新的form-control、选中日历
+- [Feature]bee-input-number@2.0.2
+    - 按UE规范优化组件样式
+    - 组件样式重构,按照最新的UE规范进行调整组件。
+- [Feature]bee-complex-grid@2.0.1
+    - 增加表格行hover背景色变量
+- [Feature]bee-input-group@2.0.1
+    - 输入框行高统一为32px
+    - 依赖组件升级
+- bee-datepicker@2.0.8
+    - [Fix]Datapicker 输入框右侧图标没有居中。 
+    [Fix] bee-datepicker  修复rangepicker的disabled功能
+- [Feature]bee-input-number@2.0.2
+    - 按UE规范优化组件样式
+    - 组件样式重构
+- [Feature]bee-table@2.0.4
+    - 增加表格行hover背景色变量
+- [Feature]bee-complex-grid@2.0.1
+    - 增加表格行hover背景色变量
+- [Feature] bee-cascader 新增动态options功能
+- Table
+    [Fixbug]数据过少不撑满整个容器时，解决滚动条占位问题
+    [Feature]滚动条样式封装，使不同浏览器显示一致
+    [Feature]增加heightConsistent属性，解决固定列内容过长导致行高度不统一问题
+    [Fixbug] hover出现操作列时，当这行的焦点消失时，对应的操作列隐藏，与该行的动作同步。
+     [Fixbug] 增加表格行hover背景色变量的抽取。
+- Tree
+    [Feature]优化onFocus事件，提供异步、同步两种回调方式
+    [Fixbug]解决子节点点击时也会触发onFocus问题
+    [Fixbug] 解决点击事件onSelect 延迟触发问题
+
+
+
 ## tinper-bee 2.0.2(推荐版本)
 
 - [Fixbug] 修复bee-select 警告问题。
