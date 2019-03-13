@@ -139,11 +139,8 @@ gulp.task('copy', ['copy_clean'], function (done) {
         ]).pipe(gulp.dest('./lib'));
 })
 
-gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy']);
 if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='online'){
     gulp.task('online', ['theme']);
 }else{
     gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy']);
 }
-
-// gulp.task('default', ['js_uglify', 'theme', 'copy']);
