@@ -1,3 +1,35 @@
+## tinper-bee 2.0.4(推荐版本)
+- [Fixbug]bee-button@2.0.8，解决按钮active态错误问题
+- [Bugfix]bee-dropdown@2.0.3，解决部分下拉菜单缺失hover状态的问题
+- [Feature]bee-checkbox@2.0.3
+    - 按新UI规范优化组件
+    - CheckboxGroup增加`disabled`参数
+    - Checkbox增加`inverse`参数，提供两种样式的复选框
+- [Feature]bee-radio@2.0.3
+    - 按UI规范更新组件
+    - 增加`inverse`参数，提供两种样式的单选框
+- [Feature]bee-rate@2.0.3，去掉focus样式
+- bee-cascader@2.1.0，组件整体重构，按UI规范更新组件
+    - [Fixbug]解决选择后，下拉面板中没有保留已选信息的问题
+    - [Fixbug]解决选择一级选项并清空，再次选择同一选项时，值选不上的问题
+    - [Feature]增加清空已选功能
+    - [Feature]增加指定默认值
+    - [Feature]增加expandTrigger参数，鼠标hover时展开菜单功能
+    - [Feature]增加disabled禁用状态
+    - [Feature]增加changeOnSelect属性，点选每级菜单选项值都会发生变化
+    - [Feature]增加size属性，设置不同尺寸的级联菜单
+- bee-table@2.0.6
+    - [Fixbug]升级checkbox
+    - [Fixbug]链接文字样式修改
+    - [Fixbug]去掉lib中多选中的checkbox的引用
+    - [Fixbug]修改checkbox样式
+    - [Fixbug]行过滤点击已选的无效
+- [Feature]bee-datepicker@2.0.8
+    - [Fixbug]Datapicker 输入框右侧图标没有居中。
+    - [Fixbug]日历卡片没有使用最新的form-control、选中日历
+- [Feature]bee-autocomplete@2.0.1 相关2.0主题依赖组件升级,bee-form-control 需要升级
+
+
 ## tinper-bee 2.0.3(推荐版本)
 
 - [Feature]bee-input-group@2.0.1
