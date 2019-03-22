@@ -1,4 +1,41 @@
-## tinper-bee 2.0.4(推荐版本)
+## tinper-bee 2.0.5
+- [Feature]bee-tabs@2.0.2，优化 bee-tabs 组件交互体验及对应示例
+- [Feature]bee-menus@2.0.4，统一选中色、文字色、图标色、禁用文字色规范
+- [Feature]bee-cascader@2.1.1，统一选中色、边框规范，修改示例数据
+- [Feature]bee-dropdown@2.0.4，统一选中色、文字色规范
+- [Feature]bee-select@2.0.8
+    - 统一选中色、文字色、禁用文字色规范。
+    - 多选设置默认值为字符串时报错加适配
+- [Feature]bee-calendar@2.0.4，统一选中色、hover背景色、禁用文字色规范
+- [Feature]bee-timepicker@2.0.2，统一选中色、文字色、禁用文字色规范
+- [Feature]bee-tree@2.0.6，统一选中色、文字色、禁用文字色规范
+- [Feature]bee-datepicker@2.0.10，
+    - 统一选中色、文字色、禁用文字色规范
+    - 解决双击触发两次change的bug
+    - 解决ie11下背景透明bug
+- [Feature]bee-city-select@2.0.1，统一选中色、边框颜色规范
+- [Fixbug]bee-pagination@2.0.4，解决dataNum值为0时，数据没有更新的Bug
+- bee-dnd@1.1.1
+    - [Feature]按UI规范优化组件交互效果
+    - [Fixbug]解决拖动到不同容器时，样式未保持在拖动样式的问题
+- [Fixbug]bee-table@2.0.7
+    - package.json中的文件，在组件代码中的使用情况。
+    - 所有示例中的依赖，全部换成tinper-bee的依赖。
+    - 排查key错误，修改table的源码进行处理，2个地方。
+    - 去掉lib中多选中的checkbox的引用
+    - 修改checkbox样式
+    - 行过滤点击已选的无效
+    - table拖拽后，表格宽度没有同步bug
+-[Fixbug]bee-input-group-addon@2.0.0、bee-input-group@2.0.2
+    去掉边框处理，影响到input-number组件问题，且要依赖升级。
+-bee-input-number@2.0.7 
+    [Fixbug]依赖组件升级、以及样式修改。
+    [Fixbug]解决外边框与输入框有空隙问题
+- [Feature]tinper-bee-core@2.0.26
+    - 规范bee-modal不同尺寸的宽度
+    - 修改表头背景色和表格分割线颜色的默认值
+
+## tinper-bee 2.0.4
 - [Fixbug]bee-button@2.0.8，解决按钮active态错误问题
 - [Bugfix]bee-dropdown@2.0.3，解决部分下拉菜单缺失hover状态的问题
 - [Feature]bee-checkbox@2.0.3
@@ -30,7 +67,7 @@
 - [Feature]bee-autocomplete@2.0.1 相关2.0主题依赖组件升级,bee-form-control 需要升级
 
 
-## tinper-bee 2.0.3(推荐版本)
+## tinper-bee 2.0.3
 
 - [Feature]bee-input-group@2.0.1
     - 输入框行高统一为32px
@@ -70,7 +107,7 @@
 
 
 
-## tinper-bee 2.0.2(推荐版本)
+## tinper-bee 2.0.2
 
 - [Fixbug] 修复bee-select 警告问题。
 - [Fixbug] 统一单独引用组件和从tinper-bee中引用组件中的大小写bee-autocomplete 统一为大小驼峰。

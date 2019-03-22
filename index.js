@@ -18,6 +18,7 @@ var Tooltip = require('./lib/Tooltip');
 var Dropdown = require('./lib/Dropdown');
 var Panel = require('./lib/Panel');
 var PanelGroup = require('./lib/PanelGroup');
+var SearchPanel = require('./lib/SearchPanel');
 var Transition = require('./lib/Transition');
 var Navbar = require('./lib/Navbar');
 var Animate = require('./lib/Animate');

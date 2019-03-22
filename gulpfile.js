@@ -79,7 +79,7 @@ gulp.task('js_uglify', ['js_build'], function (done) {
 });
 
 
-gulp.task('theme', ['theme_clean'], function (done) {
+gulp.task('theme', ['theme_clean','copy_theme'], function (done) {
   gulp.src(['./style/index.scss'])
       .pipe(sass())
       .pipe(concat('tinper-bee.css'))
@@ -90,7 +90,9 @@ gulp.task('theme', ['theme_clean'], function (done) {
       });
 });
 
-
+gulp.task('copy_theme',function(){
+  gulp.src('theme/tinper-bee-default.css').pipe(gulp.dest('assets/'));
+});
 
 gulp.task('js_clean', function (done) {
   rimraf('./build', {}, function () {
