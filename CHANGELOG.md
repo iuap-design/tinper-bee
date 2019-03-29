@@ -1,3 +1,49 @@
+## tinper-bee 2.0.6
+- [feature] 新增bee-anchor 锚点组件
+- [Fix]bee-table (2.0.6 ~ 2.0.10)
+    - 去掉lib中多选中的checkbox的引用
+    - 修改checkbox样式
+    - 行过滤点击已选的无效
+    - table拖拽后，表格宽度没有同步bug
+- [Fix]bee-datepicker (2.0.10 ~ 2.0.19)
+    - 选择日期后焦点回到输入框
+    - 日期容器增加className
+- [Fix]bee-search-panel (2.0.8 ~ 2.0.10)
+    - 升级组件，按照 HeadContainer(常驻区)、AdvancedContainer(收起区) 两部分。
+- [Feature]bee-dnd@1.1.2，文字颜色规范为#212121
+- [Feature]bee-tree@2.0.7
+    - 统一边框色
+    - 复选框样式问题
+- [Feature]bee-colorpicker@0.0.2
+    - 新增拾色器组件
+    - [Fixbug]解决清空输入框后，再次选择色值无效的问题
+- [Feature]bee-pagination@2.0.5，组件改为默认带边框，支持通过noBorder属性去掉边框
+- [Feature]bee-tooltip@2.0.4，去掉tooltip的透明度
+- [Feature]bee-table@2.0.9
+    - 修改表头背景色、分割线颜色、文字颜色
+    - 操作列示例统一使用bee-popconfirm组件 
+- [Feature]bee-button@2.0.10
+    - 次按钮背景色改为 #ECEFF1，hover和active态背景色改为 #DFE1E6
+- [Feature]bee-loading(1.0.6 ~ 1.0.9)
+    - v1.0.7之后的版本将废弃`color`API
+    - 遮罩层透明度由0.7改为0.4
+    - 更换了loading加载的图标
+    - 修改loading转速
+    - 规范不同尺寸的loading图标大小
+    - 解决loading遮罩层没有固定在全屏显示的问题
+    - 规范loading描述的文字样式
+- bee-cascader(2.1.3 ~ 2.1.3)
+    - [Fixbug]解决清空已选后，下拉面板中的状态未更新问题
+    - [Feature]placeholder字体大小统一为12px，禁用图标色为#c1c7d0
+    - [Fixbug]解决Safari浏览器中下拉面板错位的问题
+- [Feature]bee-menus(2.0.4 ~ 2.0.6)
+    - 优化“dark”主题的menus样式
+- [Feature]bee-checkbox@2.0.4
+    - 修改复选框间的margin
+- [Feature]bee-form@2.0.9
+    - 封装Form/FormItem组件，将体验规范预置在组件内部
+
+
 ## tinper-bee 2.0.5
 - [Feature]bee-tabs@2.0.2，优化 bee-tabs 组件交互体验及对应示例
 - [Feature]bee-menus@2.0.4，统一选中色、文字色、图标色、禁用文字色规范

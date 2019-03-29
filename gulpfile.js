@@ -91,7 +91,7 @@ gulp.task('theme', ['theme_clean','copy_theme'], function (done) {
 });
 
 gulp.task('copy_theme',function(){
-  gulp.src('theme/tinper-bee-default.css').pipe(gulp.dest('assets/'));
+  gulp.src('theme/tinper-bee-blue.css').pipe(gulp.dest('assets/theme'));
 });
 
 gulp.task('js_clean', function (done) {
