@@ -55,6 +55,8 @@ var Locale = require('./lib/Locale');
 var Popover = require('./lib/Popover');
 var  Anchor = require('./lib/Anchor');
 var  ColorPicker = require('./lib/ColorPicker');
+var Tag = require('./lib/Tag');
+var SearchPanel = require('./lib/SearchPanel');
 
 
 var TinperBee = {
@@ -111,7 +113,10 @@ var TinperBee = {
     LoadingState: LoadingState,
     Locale: Locale,
     Popover: Popover,
-    Anchor:Anchor
+    Anchor:Anchor,
+    Tag: Tag,
+    ColorPicker: ColorPicker,
+    SearchPanel: SearchPanel
 }
 
 module.exports = TinperBee;

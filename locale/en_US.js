@@ -39,6 +39,13 @@ exports["default"] = {
         'noFixTitle': 'unfix',
         'hideTitle': 'hide',
         'rowFilter': 'rowFilter'
+    },
+    SearchPanel: {
+        'title': 'screening conditions',
+        'resetName': 'reset',
+        'searchName': 'submit',
+        'down': 'open',
+        'up': 'close'
     }
 };
 module.exports = exports['default'];
