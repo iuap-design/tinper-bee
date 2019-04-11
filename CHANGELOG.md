@@ -1,3 +1,70 @@
+## tinper-bee 2.0.7
+- bee-form@2.0.11
+    - [Feature]去掉输入框最小宽度限制
+    - [Feature]优化表单示例的错误提示，新增警告icon
+- bee-radio@2.0.7
+    - [Feature]按UI规范优化RadioButton的样式
+    - [Feature]文字大小由14px修改为12px
+    - [Feature]解决label无内容时，选中样式错位的问题
+    - [Fixbug]解决disabled态的按钮被覆盖在panel面板下的问题
+    - [Feature]优化RadioButton的样式
+- bee-checkbox@2.0.5
+    - [Feature]文字大小由14px修改为12px
+- bee-tabs@2.0.3
+    - [Feature]规范顶部border样式
+- bee-modal@2.0.5
+    - [Feature]增加`draggable`参数支持可拖拽能力
+    - [Feature]提供Modal.method()，支持使用API的方式调用组件
+    - [Feature]关闭图标颜色改为#505F79
+    - [Feature]模态框box-shadow改为：0 4px 6px Rgba(23, 43, 77, .3)
+    - [Feature]模态框border样式改为：1px solid  Rgba(9, 30, 68, 0.08)
+    - [Feature]模态框modal-body中的文字大小改为12px
+    - [Feature]字体颜色统一为#212121
+    - [Feature]图标字体的font-weight改为500
+    - [Feature]标题和正文部分间距增加到8px
+- bee-colorpicker@0.0.7
+    - [Feature]增加透明度设置
+    - [Feature]提供默认的hex和rgb值
+    - [Feature]增加placeholder属性设置
+    - [Feature]自动计算hover和active，返回色值对象
+    - [Feature]修改onChange事件，返回包含`class`、`rgb`、`hex`属性的对象
+    - [Feature]选中色块中的图标颜色根据背景色动态计算
+    - [Feature]样式修复
+    - [Fixbug]解决下拉框选择颜色后，关闭弹窗，再次打开时，选择项未保存的问题
+    - [Fixbug]解决选择颜色后点击取消按钮，选择项被保存的问题
+    - [Fixbug]alpha最大值改为100
+    - [Feature]alpha的输入框改用InputGroup组件
+    - [Feature]增加alpha修改后颜色预览区域的背景图
+- bee-switch@2.0.3
+    - [Feature]按新规范更新组件
+- bee-pagination@2.0.6
+    - [Fixbug]解决依赖组件的CSS打包问题
+- bee-transfer@2.0.8
+    - [Feature]升级依赖
+- bee-clipboard@2.0.1
+    - [Feature]升级依赖
+- bee-select@2.0.9
+    - [Feature]下拉框禁用状态与输入框统一
+    - [Feature]多选下拉的选中状态标识改为主题红色#f53c32
+- bee-tree@2.0.9
+    - [Feature]升级依赖
+    - [Feature]组件样式按规范调整
+- bee-autocomplete@2.0.2
+    - [Feature]增加参数`show`，控制自动匹配列表的展开和隐藏
+    - [Feature]提供下拉框选中时触发的回调函数`onSelectOption`
+- bee-table@2.0.12
+    - [Feature]优化嵌套子表格的样式
+- bee-search-panel@2.0.12
+    - [Feature]加多语
+    - [Fixbug]查询清空按钮显示隐藏bug
+- bee-locale@0.0.13
+    - [Feature]新增search-panel多语字典
+- bee-datepicker@2.0.21
+    - [Fixbug]年月快捷键bug修复
+    - [Fixbug]年组件报错bug
+- bee-tag@0.0.2
+    - [Feature]新增bee-tag标签组件
+    
 ## tinper-bee 2.0.6
 - [feature] 新增bee-anchor 锚点组件
 - [Fix]bee-table (2.0.6 ~ 2.0.10)
