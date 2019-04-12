@@ -9,6 +9,9 @@ var webpackProdCfg = require('./webpack.pord');
 var webpackLibCfg = require('./webpack.modules');
 var postcss = require('gulp-postcss');
 var cssnano = require('cssnano');
+var minimist = require('minimist');
+var cssWrap = require('gulp-css-wrap');
+var cleanCSS = require('gulp-clean-css')
 
 var pkg = require('./package.json');
 var spawn = require('child_process').spawn;
@@ -140,6 +143,31 @@ gulp.task('copy', ['copy_clean'], function (done) {
             './node_modules/bee-table/build/render/*.js',
         ]).pipe(gulp.dest('./lib'));
 })
+
+
+// gulp.task('themePrefixcss', function (done) {
+//   console.log("------themePrefixcss------");
+//   return gulp.src('./style/component.scss')
+//     .pipe(sass())
+//   // .pipe(concat('tinper-bee.css'))
+//     .pipe(cssWrap({
+//         selector: '.custom-jonyshi' /* 添加的命名空间 */
+//     }))
+//     .pipe(cleanCSS())
+//     .pipe(gulp.dest('src/themePrefixcss/')) /* 存放的目录 */
+// });
+
+gulp.task('build', (done)=> {
+  if(pkg.prefix && pkg.prefix !== ""){
+    gulp.task('online', ['themePrefixcss']);
+  }else{
+    if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='online'){
+        gulp.task('online', ['theme']);
+    }else{
+        gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy']);
+    }
+  }
+});
 
 if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='online'){
     gulp.task('online', ['theme']);
