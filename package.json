@@ -5,7 +5,7 @@
   "main": "environment.js",
   "scripts": {
     "buildOnline": "gulp online",
-    "onlinePrefix": "gulp onlinePrefix",
+    "buildOnlinePrefix": "gulp onlinePrefix",
     "build": "gulp",
     "build-lib": "webpack --color --progress --config webpack.modules.js",
     "test": "mocha tests/index.js",
