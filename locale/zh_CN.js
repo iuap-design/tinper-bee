@@ -39,6 +39,13 @@ exports["default"] = {
         'noFixTitle': '解锁',
         'hideTitle': '隐藏',
         'rowFilter':'行过滤'
+    },
+    SearchPanel: {
+        'title': '默认筛选',
+        'resetName': '清空',
+        'searchName': '查询',
+        'down': '展开',
+        'up': '收起'
     }
 };
 module.exports = exports['default'];
