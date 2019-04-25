@@ -57,10 +57,12 @@ var  Anchor = require('./lib/Anchor');
 var  ColorPicker = require('./lib/ColorPicker');
 var Tag = require('./lib/Tag');
 var SearchPanel = require('./lib/SearchPanel');
+var Affix = require('./lib/Affix');
+var Drawer = require('./lib/Drawer');
 
 
 var TinperBee = {
-    version: '1.5.0',
+    version: '2.0.8',
     Slider: Slider,
     AutoComplete: AutoComplete,
     Button: Button,
@@ -116,7 +118,9 @@ var TinperBee = {
     Anchor:Anchor,
     Tag: Tag,
     ColorPicker: ColorPicker,
-    SearchPanel: SearchPanel
+    SearchPanel: SearchPanel,
+    Affix:Affix,
+    Drawer:Drawer,
 }
 
 module.exports = TinperBee;

@@ -185,5 +185,6 @@ if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='online'){
 }else if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='onlinePrefix'){
     gulp.task('onlinePrefix', ['themePrefix']);
 }else{
-    gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy','copy_theme']);
+  // copy_theme
+    gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy']);
 }

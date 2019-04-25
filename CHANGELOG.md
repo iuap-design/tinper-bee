@@ -1,3 +1,57 @@
+## tinper-bee 2.0.8
+- bee-drawer@0.0.2
+    - [Feature]新增组件，Drawer 抽屉组件
+- bee-affix@1.0.15
+    - [Feature]新增组件，将页面元素钉在可视范围。 当内容区域比较长，需要滚动页面时，这部分内容对应的操作或者导航需要在滚动范围内始终展现。常用于侧边菜单和按钮组合。页面可视范围过小时，慎用此功能以免遮挡页面内容。
+- bee-city-select@2.0.1
+    - [Feature]城市新增组件
+- bee-table@2.0.15
+    - [Feature]tinper-bee中上一个版本为2.0.12。
+    - [Feature]增加了拖拽行数据交换列功能，通过设置rowDraggAble的属性即可实现。
+    - [Fixbug] 解决了过滤列在滚动的时候，样式问题。
+    - [Fixbug] 表头交换顺序、表头拖拽列宽 功能以及API优化，在IE 11上卡顿问题、内存泄漏问题、以及交互体验修改升级。
+    - [Fixbug] multiSelect 和 newmultiSelect 功能不同步问题。
+    - [Fixbug] 表头自己不同意问题，目前均为12px。
+    - [Fixbug] filterColumn内容超出8个字显示省略号，filterColumn 中item字体为12px，点击文字。
+    - [Fixbug] filterColumn 点击文字可选中行。
+    - [Fixbug] 每行第一列padding-left为12px，其他默认8px。
+    - [Fixbug] 增加表格内容是否显示在一行headerDisplayInRow、bodyDisplayInRow。
+    - [Feature]增加`size`API，支持三种数据显示密度：宽松、标准、紧凑 (v@2.0.13)
+    - [Feature]表格默认行高规范为40px  (v@2.0.13)
+- bee-switch@2.0.4 
+    - [Feature]新增onKeyDown回调，enterKeyDown开关控制enter事件
+- bee-select@2.0.11
+    - [Feature]新增onKeyDown回调，enterKeyDown开关控制enter事件
+    - [Feature]新增下拉框自定义属性功能
+- bee-timepicker@2.0.3
+    - [Feature]新增onKeyDown回调
+- bee-datepicker@2.0.28
+    - [Feature]新增onKeyDown回调
+- bee-anchor@0.0.4
+    - [Fixbug]升级 gumshoejs
+- bee-overlay@1.0.23 
+    - [Feature]新增自定义属性 popData
+- bee-modal@2.0.8
+    - [ Feature ] bee-modal组件，新增了宽高拖拽resize功能 (v2.0.6)
+    - [Feature]语义模态框，内容区去掉margin (v2.0.6)
+    - [Fixbug]解决单独使用Modal组件，使用API方法调用时报错：React is not define 的问题  (v2.0.7)
+    - [Fixbug]解决控制台打印warning的问题  (v2.0.8)
+- bee-tabs@2.0.4
+    - [Fixbug]去掉内容区的内联样式：height:100%
+- bee-radio@2.0.8
+    - [Fixbug]解决无文本的单选按钮，Label高度过高的样式问题
+    - [Fixbug]解决无文本的单选按钮，Label高度过高的样式问题
+- bee-colorpicker@0.0.8
+    - [Fixbug]解决ColorPicker设置value属性，色块没有随之改变的问题
+- bee-transfer@2.0.9
+    - [Feature]增加`draggable`参数，设置是否可以通过拖拽进行穿梭和排序
+    - [Feature]增加`showCheckbox`参数，设置是否显示复选框Checkbox
+- bee-pagination@2.0.7
+    - [FixBug]解决单独引用组件时，缺少Select样式的问题
+- bee-message@2.0.2
+    - [Fixbug]解决Message组件被Modal组件遮盖的问题
+    - [Fixbug]解决Message.config()方法无效的问题
+
 ## tinper-bee 2.0.7
 - bee-form@2.0.11
     - [Feature]去掉输入框最小宽度限制

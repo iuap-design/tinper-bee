@@ -48,7 +48,13 @@
 @import "../node_modules/bee-popover/src/Popover.scss";
 @import "../node_modules/bee-anchor/src/Anchor.scss";
 @import "../node_modules/bee-colorpicker/src/ColorPicker.scss";
+@import "../node_modules/bee-affix/src/Affix.scss";
+@import "../node_modules/bee-drawer/src/Drawer.scss";
+// @import "../node_modules/bee-city-select/src/CitySelect.scss";
 
+// 内容较大的css
 @import "../node_modules/bee-datepicker/src/DatePicker.scss";
+@import "../node_modules/bee-timepicker/src/Timepicker.scss";
 @import "../node_modules/bee-calendar/src/Calendar.scss";
-//@import "../node_modules/bee-carousel/src/Carousel.scss";
+@import "../node_modules/bee-carousel/src/Carousel.scss";
+//dnd
