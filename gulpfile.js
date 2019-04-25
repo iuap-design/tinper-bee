@@ -78,8 +78,18 @@ gulp.task('js_uglify', ['js_build'], function (done) {
     });
 });
 
+gulp.task('themeOnline', ['theme_clean'], function (done) {
+  gulp.src(['./style/index.scss'])
+      .pipe(sass())
+      .pipe(concat('tinper-bee.css'))
+      .pipe(postcss(postConfig))
+      .pipe(gulp.dest('./assets'))
+      .on('end', function () {
+        done();
+      });
+});
 
-gulp.task('theme', ['theme_clean'], function (done) {
+gulp.task('theme', ['theme_clean','copy_theme'], function (done) {
   gulp.src(['./style/index.scss'])
       .pipe(sass())
       .pipe(concat('tinper-bee.css'))
@@ -181,10 +191,9 @@ gulp.task('copy', ['copy_clean'], function (done) {
 // });
 
 if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='online'){
-    gulp.task('online', ['theme']);
+    gulp.task('online', ['themeOnline']);
 }else if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='onlinePrefix'){
     gulp.task('onlinePrefix', ['themePrefix']);
 }else{
-  // copy_theme
     gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy']);
 }

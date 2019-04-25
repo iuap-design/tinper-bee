@@ -1,17 +1,15 @@
 ## tinper-bee 2.0.8
 - bee-drawer@0.0.2
-    - [Feature]新增组件，Drawer 抽屉组件
+    - [Feature]Drawer 抽屉组件。【新增组件】
 - bee-affix@1.0.15
-    - [Feature]新增组件，将页面元素钉在可视范围。 当内容区域比较长，需要滚动页面时，这部分内容对应的操作或者导航需要在滚动范围内始终展现。常用于侧边菜单和按钮组合。页面可视范围过小时，慎用此功能以免遮挡页面内容。
-- bee-city-select@2.0.1
-    - [Feature]城市新增组件
+    - [Feature]将页面元素钉在可视范围。【新增组件】
 - bee-table@2.0.15
     - [Feature]tinper-bee中上一个版本为2.0.12。
     - [Feature]增加了拖拽行数据交换列功能，通过设置rowDraggAble的属性即可实现。
     - [Fixbug] 解决了过滤列在滚动的时候，样式问题。
     - [Fixbug] 表头交换顺序、表头拖拽列宽 功能以及API优化，在IE 11上卡顿问题、内存泄漏问题、以及交互体验修改升级。
     - [Fixbug] multiSelect 和 newmultiSelect 功能不同步问题。
-    - [Fixbug] 表头自己不同意问题，目前均为12px。
+    - [Fixbug] 表头字体大小，目前均为12px。
     - [Fixbug] filterColumn内容超出8个字显示省略号，filterColumn 中item字体为12px，点击文字。
     - [Fixbug] filterColumn 点击文字可选中行。
     - [Fixbug] 每行第一列padding-left为12px，其他默认8px。
@@ -51,6 +49,8 @@
 - bee-message@2.0.2
     - [Fixbug]解决Message组件被Modal组件遮盖的问题
     - [Fixbug]解决Message.config()方法无效的问题
+- bee-tree@2.0.10
+    - [Fixbug]解决树节点过宽的问题
 
 ## tinper-bee 2.0.7
 - bee-form@2.0.11
