@@ -55,6 +55,7 @@
     "gulp-clean": "~0.3.2",
     "gulp-clean-css": "~2.0.9",
     "gulp-cleancss": "~0.2.2",
+    "gulp-css-wrap": "^0.1.2",
     "gulp-concat": "~2.6.0",
     "gulp-postcss": "^7.0.0",
     "gulp-sass": "^2.3.2",
@@ -136,7 +137,7 @@
     "bee-slider": "2.0.1",
     "bee-step": "2.0.0",
     "bee-switch": "2.0.3",
-    "bee-table": "2.0.12",
+    "bee-table": "2.0.13",
     "bee-tabs": "2.0.3",
     "bee-tag": "0.0.2",
     "bee-tile": "1.0.0",
@@ -146,8 +147,7 @@
     "bee-transfer": "2.0.8",
     "bee-transition": "1.0.0",
     "bee-tree": "2.0.9",
-    "bee-upload": "2.0.0",
-    "gulp-css-wrap": "^0.1.2"
+    "bee-upload": "2.0.0"
   },
   "config": {
     "commitizen": {
