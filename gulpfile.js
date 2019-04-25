@@ -9,9 +9,6 @@ var webpackProdCfg = require('./webpack.pord');
 var webpackLibCfg = require('./webpack.modules');
 var postcss = require('gulp-postcss');
 var cssnano = require('cssnano');
-var minimist = require('minimist');
-var cssWrap = require('gulp-css-wrap');
-var cleanCSS = require('gulp-clean-css')
 
 var pkg = require('./package.json');
 var spawn = require('child_process').spawn;
@@ -82,7 +79,7 @@ gulp.task('js_uglify', ['js_build'], function (done) {
 });
 
 
-gulp.task('theme', ['theme_clean','copy_theme'], function (done) {
+gulp.task('theme', ['theme_clean'], function (done) {
   gulp.src(['./style/index.scss'])
       .pipe(sass())
       .pipe(concat('tinper-bee.css'))
@@ -93,8 +90,23 @@ gulp.task('theme', ['theme_clean','copy_theme'], function (done) {
       });
 });
 
-gulp.task('copy_theme',function(){
-  gulp.src('theme/tinper-bee-blue.css').pipe(gulp.dest('assets/theme'));
+gulp.task('themePrefix', ['theme_clean'], function (done) {
+  gulp.src(['./style/tinper-bee.scss'])
+      .pipe(sass())
+      .pipe(concat('tinper-bee.css'))
+      .pipe(postcss(postConfig))
+      .pipe(gulp.dest('./assets'))
+      .on('end', function () {
+        done();
+      });
+});
+
+gulp.task('copy_theme',function(done){
+  gulp.src('theme/tinper-bee-blue.css')
+  .pipe(gulp.dest('assets/theme'))
+  .on('end', function () {
+    done();
+  });
 });
 
 gulp.task('js_clean', function (done) {
@@ -144,7 +156,6 @@ gulp.task('copy', ['copy_clean'], function (done) {
         ]).pipe(gulp.dest('./lib'));
 })
 
-
 // gulp.task('themePrefixcss', function (done) {
 //   console.log("------themePrefixcss------");
 //   return gulp.src('./style/component.scss')
@@ -157,20 +168,22 @@ gulp.task('copy', ['copy_clean'], function (done) {
 //     .pipe(gulp.dest('src/themePrefixcss/')) /* 存放的目录 */
 // });
 
-gulp.task('build', (done)=> {
-  if(pkg.prefix && pkg.prefix !== ""){
-    gulp.task('online', ['themePrefixcss']);
-  }else{
-    if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='online'){
-        gulp.task('online', ['theme']);
-    }else{
-        gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy']);
-    }
-  }
-});
+// gulp.task('build', (done)=> {
+//   if(pkg.prefix && pkg.prefix !== ""){
+//     gulp.task('online', ['themePrefixcss']);
+//   }else{
+//     if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='online'){
+//         gulp.task('online', ['theme']);
+//     }else{
+//         gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy']);
+//     }
+//   }
+// });
 
 if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='online'){
     gulp.task('online', ['theme']);
+}else if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='onlinePrefix'){
+    gulp.task('onlinePrefix', ['themePrefix']);
 }else{
-    gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy']);
+    gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy','copy_theme']);
 }

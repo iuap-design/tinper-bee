@@ -5,6 +5,7 @@
   "main": "environment.js",
   "scripts": {
     "buildOnline": "gulp online",
+    "buildOnlinePrefix": "gulp onlinePrefix",
     "build": "gulp",
     "build-lib": "webpack --color --progress --config webpack.modules.js",
     "test": "mocha tests/index.js",
@@ -153,5 +154,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "prefix": ""
 }
