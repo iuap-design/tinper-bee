@@ -3,6 +3,8 @@
     - [Feature]Drawer 抽屉组件。【新增组件】
 - bee-affix@1.0.15
     - [Feature]将页面元素钉在可视范围。【新增组件】
+- bee-carousel@3.0.0
+    - [Feature]新增组件
 - bee-table@2.0.15
     - [Feature]tinper-bee中上一个版本为2.0.12。
     - [Feature]增加了拖拽行数据交换列功能，通过设置rowDraggAble的属性即可实现。
@@ -51,6 +53,14 @@
     - [Fixbug]解决Message.config()方法无效的问题
 - bee-tree@2.0.10
     - [Fixbug]解决树节点过宽的问题
+    - [Fixbug]树节点宽度改为calc(100%-40px)
+- bee-popover@2.0.1
+    - [Fixbug]解决`placement`属性设置为`topRight`时，控制台打印warning的问题
+- bee-overlay@1.0.24
+    - [Fixbug]补充`placement`属性的取值范围，解决`placement`属性设置为`topRight`时，控制台打印warning的问题
+- bee-search-panel@3.0.0
+    - [Fixbug]修改了showOperation 无效的bug，且发布3.x.x(结构性变化)。
+
 
 ## tinper-bee 2.0.7
 - bee-form@2.0.11
