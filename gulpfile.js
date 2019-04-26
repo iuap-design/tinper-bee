@@ -114,9 +114,9 @@ gulp.task('themePrefix', ['theme_clean'], function (done) {
 gulp.task('copy_theme',function(done){
   gulp.src('theme/tinper-bee-blue.css')
   .pipe(gulp.dest('assets/theme'))
-  .on('end', function () {
-    done();
-  });
+  // .on('end', function () {
+  //   done();
+  // });
 });
 
 gulp.task('js_clean', function (done) {
