@@ -53,6 +53,8 @@
     - [Feature]error模态框的图标换成“uf-exc-c”
 - bee-step@2.0.1
     - [Feature]按新规范优化组件
+- bee-loading@1.1.1
+    - [Feature]Loading图片本地化
 
 ## tinper-bee 2.0.9
 - bee-drawer@0.0.2

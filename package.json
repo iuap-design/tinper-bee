@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "2.0.10-alpha.0",
+  "version": "2.0.10-alpha.5",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "environment.js",
   "scripts": {
@@ -37,12 +37,6 @@
   "homepage": "https://github.com/iuap-design/tinper-bee#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
-    "bee-calendar": "2.0.4",
-    "bee-carousel": "1.0.0",
-    "bee-complex-grid": "2.0.13",
-    "bee-datepicker": "2.0.33",
-    "bee-dnd": "1.1.2",
-    "bee-timepicker": "2.0.3",
     "console-polyfill": "^0.2.2",
     "cross-env": "^5.1.1",
     "css-loader": "^0.28.7",
@@ -148,7 +142,13 @@
     "bee-transfer": "2.0.12",
     "bee-transition": "1.0.0",
     "bee-tree": "2.0.11",
-    "bee-upload": "2.0.0"
+    "bee-upload": "2.0.0",
+    "bee-calendar": "2.0.4",
+    "bee-carousel": "1.0.0",
+    "bee-complex-grid": "2.0.13",
+    "bee-datepicker": "2.0.33",
+    "bee-dnd": "1.1.2",
+    "bee-timepicker": "2.0.3"
   },
   "config": {
     "commitizen": {
