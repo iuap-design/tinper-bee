@@ -1,3 +1,122 @@
+## tinper-bee 2.0.10
+- bee-dropdown@2.0.5
+    - [Feature] 新增disabled是否禁用属性
+- bee-datepicker@2.0.33
+    - [Feature] 新增 dropdownClassName 面板类名
+    - [Feature] 日期校验不正确，不关闭日期面板
+    - [Feature] rangepicker tab按键切换
+    - [Featrue] 新增closeIcon 自定义鼠标划过清空内容的icon
+- bee-input-number@2.0.9
+    - [Feature] 值可以为空
+    - [Fixbug] 最大值最小值无效bug
+- bee-modal@2.0.9
+    - [Feature]error语义模态框图标换为uf-exc-c
+- bee-form-control@2.0.2
+    - [Feature]新增onkeydown回调
+- bee-overlay@1.0.26
+    - [Fixbug]解决Position传入positionTop和positionLeft无效的问题
+    - [Fixbug]解决警告："Refs Must Have Owner Warning"
+- bee-table@2.0.17
+    - [Feature]树形表格的图标换成箭头
+    - [Fixbug]解决无滚动条时，拖拽行报错问题
+    - [Feature]优化过滤列样式
+    - [Fixbug]解决表体滚动时表头未同步滚动的问题
+    - [Feature]多选表格，调整复选框为水平居中对齐
+    - [Fixbug]固定列多出一行导致滚动错位问题
+    - [Feature]支持用户自定义展开和关闭图标
+- bee-transfer@2.0.12
+    - [Fixbug]解决复选框和节点间的间距过宽的问题
+    - [Fixbug]解决动态改变targetKeys时，列表数据未更新的问题
+    - [Fixbug]解决控制台警告问题
+    - [Feature]选中节点去掉hover样式
+    - [Feature]支持自定义右侧已选列表的排列顺序
+    - [Feature]增加`appendToBottom`参数，支持将已选项添加到右侧列表末尾
+    - [Fixbug]解决dataSource为空时报错的问题
+- bee-colorpicker@0.0.9
+    - [Feature]增加disabled参数，设置是否禁用
+- bee-popover@2.0.2
+    - [Fixbug]解决设置`positionLeft`和`positionTop`属性无效的问题
+- bee-icon@1.0.11
+    - [Feature]更新Table无数据的字体图标
+- tinper-bee-core@2.0.31
+    - [Feature]更新Table无数据的字体图标
+    - [Feature]规范提示类组件语义色
+    - [Feature]增加字体大小变量
+- bee-notification@2.0.1
+    - [Fixbug]关闭按钮替换为Icon图标，解决 `x` 符号乱码问题
+- bee-message@2.0.3
+    - [Feature]组件交互按新规范优化
+    - [Feature]关闭按钮距右的间距改为16px
+- bee-cascader@2.1.4
+    - [Feature]增加 `inputValue` API，支持自定义输入框展示内容
+- bee-modal@2.0.9
+    - [Feature]error模态框的图标换成“uf-exc-c”
+- bee-step@2.0.1
+    - [Feature]按新规范优化组件
+
+## tinper-bee 2.0.9
+- bee-drawer@0.0.2
+    - [Feature]Drawer 抽屉组件。【新增组件】
+- bee-affix@1.0.15
+    - [Feature]将页面元素钉在可视范围。【新增组件】
+- bee-carousel@3.0.0
+    - [Feature]新增组件
+- bee-table@2.0.15
+    - [Feature]tinper-bee中上一个版本为2.0.12。
+    - [Feature]增加了拖拽行数据交换列功能，通过设置rowDraggAble的属性即可实现。
+    - [Fixbug] 解决了过滤列在滚动的时候，样式问题。
+    - [Fixbug] 表头交换顺序、表头拖拽列宽 功能以及API优化，在IE 11上卡顿问题、内存泄漏问题、以及交互体验修改升级。
+    - [Fixbug] multiSelect 和 newmultiSelect 功能不同步问题。
+    - [Fixbug] 表头字体大小，目前均为12px。
+    - [Fixbug] filterColumn内容超出8个字显示省略号，filterColumn 中item字体为12px，点击文字。
+    - [Fixbug] filterColumn 点击文字可选中行。
+    - [Fixbug] 每行第一列padding-left为12px，其他默认8px。
+    - [Fixbug] 增加表格内容是否显示在一行headerDisplayInRow、bodyDisplayInRow。
+    - [Feature]增加`size`API，支持三种数据显示密度：宽松、标准、紧凑 (v@2.0.13)
+    - [Feature]表格默认行高规范为40px  (v@2.0.13)
+- bee-switch@2.0.4 
+    - [Feature]新增onKeyDown回调，enterKeyDown开关控制enter事件
+- bee-select@2.0.11
+    - [Feature]新增onKeyDown回调，enterKeyDown开关控制enter事件
+    - [Feature]新增下拉框自定义属性功能
+- bee-timepicker@2.0.3
+    - [Feature]新增onKeyDown回调
+- bee-datepicker@2.0.28
+    - [Feature]新增onKeyDown回调
+- bee-anchor@0.0.4
+    - [Fixbug]升级 gumshoejs
+- bee-overlay@1.0.23 
+    - [Feature]新增自定义属性 popData
+- bee-modal@2.0.8
+    - [ Feature ] bee-modal组件，新增了宽高拖拽resize功能 (v2.0.6)
+    - [Feature]语义模态框，内容区去掉margin (v2.0.6)
+    - [Fixbug]解决单独使用Modal组件，使用API方法调用时报错：React is not define 的问题  (v2.0.7)
+    - [Fixbug]解决控制台打印warning的问题  (v2.0.8)
+- bee-tabs@2.0.4
+    - [Fixbug]去掉内容区的内联样式：height:100%
+- bee-radio@2.0.8
+    - [Fixbug]解决无文本的单选按钮，Label高度过高的样式问题
+    - [Fixbug]解决无文本的单选按钮，Label高度过高的样式问题
+- bee-colorpicker@0.0.8
+    - [Fixbug]解决ColorPicker设置value属性，色块没有随之改变的问题
+- bee-transfer@2.0.9
+    - [Feature]增加`draggable`参数，设置是否可以通过拖拽进行穿梭和排序
+    - [Feature]增加`showCheckbox`参数，设置是否显示复选框Checkbox
+- bee-pagination@2.0.7
+    - [FixBug]解决单独引用组件时，缺少Select样式的问题
+- bee-message@2.0.2
+    - [Fixbug]解决Message组件被Modal组件遮盖的问题
+    - [Fixbug]解决Message.config()方法无效的问题
+- bee-tree@2.0.10
+    - [Fixbug]解决树节点过宽的问题
+    - [Fixbug]树节点宽度改为calc(100%-40px)
+- bee-popover@2.0.1
+    - [Fixbug]解决`placement`属性设置为`topRight`时，控制台打印warning的问题
+- bee-overlay@1.0.24
+    - [Fixbug]补充`placement`属性的取值范围，解决`placement`属性设置为`topRight`时，控制台打印warning的问题
+- bee-search-panel@3.0.0
+    - [Fixbug]修改了showOperation 无效的bug，且发布3.x.x(结构性变化)。
+
 ## tinper-bee 2.0.8
 - bee-drawer@0.0.2
     - [Feature]Drawer 抽屉组件。【新增组件】
