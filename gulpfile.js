@@ -101,7 +101,7 @@ gulp.task('themePrefix', ['theme_clean'], function (done) {
 });
 
 gulp.task('copy_theme',function(done){
-  gulp.src('theme/tinper-bee-blue.css')
+  gulp.src('theme/*.css')
   .pipe(gulp.dest('assets/theme'));
 });
 
@@ -115,6 +115,15 @@ gulp.task('theme_clean', function (done) {
   rimraf('./assets', {}, function () {
     done();
   });
+});
+
+gulp.task('copy_fonts',function(done){
+    gulp.src([
+        './style/utils/iconfont.eot',
+        './style/utils/iconfont.svg',
+        './style/utils/iconfont.ttf',
+        './style/utils/iconfont.woff'
+    ]).pipe(gulp.dest('assets/fonts'));
 });
 
 
@@ -181,5 +190,5 @@ if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='online'){
 }else if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='onlinePrefix'){
     gulp.task('onlinePrefix', ['themePrefix']);
 }else{
-    gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy','copy_theme']);
+    gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy','copy_theme','copy_fonts']);
 }

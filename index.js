@@ -59,13 +59,13 @@ var Tag = require('./lib/Tag');
 var SearchPanel = require('./lib/SearchPanel');
 var Affix = require('./lib/Affix');
 var Drawer = require('./lib/Drawer');
-var Carousel = require('./lib/Carousel');
+// var Carousel = require('./lib/Carousel');
 
 var TinperBee = {
     version: '2.0.8',
     Slider: Slider,
     AutoComplete: AutoComplete,
-    Carousel:Carousel,
+    // Carousel:Carousel,
     Button: Button,
     Badge: Badge,
     Alert: Alert,

@@ -1,3 +1,42 @@
+## tinper-bee 2.0.11
+- [Feature] 图标字体文件本地化，提供本地加载和CDN资源两种访问方式
+- [Feature] 组件库assets目录提供四套默认主题样式（含tinper默认）
+- bee-table@2.0.19
+    - [Fixbug]嵌套表格收起展开的字体图标改为css实现
+    - [Feature] 支持用户自定义展开和关闭图标
+    - [Fixbug] 解决IE11下removeEventListiner报错bug
+- bee-switch@2.0.5
+    - [Fixbug]解决控制台警告问题
+- bee-tabs@2.0.5
+    - [Fixbug]解决嵌套表格的子模块为Tabs页签时，表格显示异常问题
+- bee-notification@2.0.2
+    - [Fixbug]解决控制台警告问题
+- bee-message@2.0.4
+    - [Fixbug]解决组件第二次调用create方法报错问题
+- bee-menus@2.0.7
+    - [Fixbug]解决鼠标缓慢移动时，横向菜单消失的问题
+- bee-progress-bar@2.0.1
+    - [Fixbug]进度条的 label 文字与进度条重叠
+    - [Feature]网页顶部进度条由蓝色改为渐变红，且高度由2px改为3px
+- bee-collapse@1.0.2
+    - [Fixbug]解决折叠展开效果卡顿问题
+- bee-button@2.0.11
+    - [Feature]主按钮的文字颜色取消主题关联
+- bee-autocomplete@2.0.3
+    - [Fixbug]解决组件搜索逻辑不正确的问题
+    - [Fixbug]暴露`show`参数，外部可控
+- bee-modal@2.0.11
+    - [Feature] bee-modal组件，新增了设置拖拽容器class样式的功能
+    - [Feature] 性能优化:改变窗口大小加判断
+    - [Feature] 依赖modal版本bee-overlay
+- bee-select@2.0.12
+    - [Feature]带输入的下拉框可支持自定义的输入
+- bee-dropdown@2.0.6
+    - [Fixbug] 去掉clsPrefix警告
+- bee-tree@2.0.12
+    - [Fixbug] checkStrictly为false时动态改变数据源造成的onCheck回调参数错误问题
+    - [Feature] 优化是否是叶子节点判断方法
+
 ## tinper-bee 2.0.10
 - bee-dropdown@2.0.5
     - [Feature] 新增disabled是否禁用属性
