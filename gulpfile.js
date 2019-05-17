@@ -126,6 +126,12 @@ gulp.task('copy_fonts',function(done){
     ]).pipe(gulp.dest('assets/fonts'));
 });
 
+gulp.task('copy_reset',function(done){
+    gulp.src([
+        './style/reset.css',
+    ]).pipe(gulp.dest('./assets'));
+});
+
 
 gulp.task('update', function (done) {
     var depAry = [];
@@ -190,5 +196,5 @@ if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='online'){
 }else if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='onlinePrefix'){
     gulp.task('onlinePrefix', ['themePrefix']);
 }else{
-    gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy','copy_theme','copy_fonts']);
+    gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy','copy_theme','copy_fonts','copy_reset']);
 }
