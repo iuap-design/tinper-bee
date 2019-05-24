@@ -17,6 +17,13 @@ exports["default"] = {
         'unequal':'不等于',
         'begin':'以开始',
         'end':'以结尾',
+        'greater_than':'大于',
+        'great_than_equal_to':'大于等于',
+        'less_than':'小于',
+        'less_than_equal_to':'小于等于',
+        'be_equal_to':'等于',
+        'not_equal_to':'不等于',
+        "no_data":'暂无数据',
     },
     Clipboard: {
         'copy': '复制',

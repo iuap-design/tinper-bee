@@ -1,3 +1,39 @@
+## tinper-bee 2.0.12
+- bee-radio@2.0.9
+    - [bugFix] 解决RadioGroup只有一个radio时报错问题
+- bee-input-number@2.0.15
+    - [bugFix] 解决配合form重置无法清空内容bug
+    - [bugFix] 解决输入数字infinity的问题
+    - [bugFix] 大于最大值或者小于最小值时不可输入
+- bee-datepicker@2.0.36
+    - [Feature] RangePicker新增 showTime 选择时间api
+    - [Feature] datepicker rangepicker 面板内输入框错误提示自定义
+    - [Feature] RangePicker format支持传入数组
+    - [Feature] RangePicker 快捷键顺序修改
+- bee-table@2.0.25
+    - [Feature] 增加 `singleSelect` 单选功能的高阶函数
+    - [Fixbug] 解决嵌套表格节点数据展开后没有下拉 icon 的问题
+    - [Feature] “暂无数据”支持多语
+    - [Fixbug] 解决传入 `emptyText` 方法报错问题
+    - [Fixbug] 使用 `rowKey` 的表格，行拖拽无法使用的问题
+    - [Feature] 提供行拖拽的回调函数 `onDropRow`
+    - [Fixbug] 解决行拖拽无法拖拽至第一行的问题
+    - [Fixbug] 在没有数据，表头列过多时，表头滚动条隐藏了，无法拖拽
+	- [Fixbug] 所有数据都为disabled状态，表头checkbox默认是选中bug
+	- [Fixbug] 模态框中使用Table，滚动条宽度计算不准确
+- bee-form-control@2.0.3
+    - [Feature]带容器的输入框去掉多余的ClassName
+- bee-tabs@2.0.6 
+    - [Fixbug]解决左侧 Tabs 内嵌套上侧 Tabs 时，数据未显示的问题
+- bee-locale@0.0.14
+    - [Feature]补充 Table 多语
+- bee-pagination@2.0.8
+    - [Fixbug]解决动态传入items为0时，分页页码未更新问题
+- bee-checkbox@2.0.6
+    - [Fixbug]在CheckboxGroup内单独设置checkbox的disabled属性未生效问题
+- bee-tree@2.0.12
+	- [Feature]增加ext属性，支持用户自定义扩展属性
+
 ## tinper-bee 2.0.11
 - [Feature] 图标字体文件本地化，提供本地加载和CDN资源两种访问方式
 - [Feature] 组件库assets目录提供四套默认主题样式（含tinper默认）
