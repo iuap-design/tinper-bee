@@ -1,4 +1,5 @@
 ## tinper-bee 2.0.12
+🌟 新增树选择器组件，Table 新增单选功能，改进并优化了部分功能。
 - bee-radio@2.0.9
     - [bugFix] 解决RadioGroup只有一个radio时报错问题
 - bee-input-number@2.0.15
@@ -11,13 +12,13 @@
     - [Feature] RangePicker format支持传入数组
     - [Feature] RangePicker 快捷键顺序修改
 - bee-table@2.0.25
-    - [Feature] 增加 `singleSelect` 单选功能的高阶函数
-    - [Fixbug] 解决嵌套表格节点数据展开后没有下拉 icon 的问题
-    - [Feature] “暂无数据”支持多语
-    - [Fixbug] 解决传入 `emptyText` 方法报错问题
-    - [Fixbug] 使用 `rowKey` 的表格，行拖拽无法使用的问题
-    - [Feature] 提供行拖拽的回调函数 `onDropRow`
-    - [Fixbug] 解决行拖拽无法拖拽至第一行的问题
+    - [Feature]增加 `singleSelect` 单选功能的高阶函数
+    - [Fixbug]解决嵌套表格节点数据展开后没有下拉 icon 的问题
+    - [Feature]“暂无数据”支持多语
+    - [Fixbug]解决传入 `emptyText` 方法报错问题
+    - [Fixbug]使用 `rowKey` 的表格，行拖拽无法使用的问题
+    - [Feature]提供行拖拽的回调函数 `onDropRow`
+    - [Fixbug]解决行拖拽无法拖拽至第一行的问题
     - [Fixbug] 在没有数据，表头列过多时，表头滚动条隐藏了，无法拖拽
 	- [Fixbug] 所有数据都为disabled状态，表头checkbox默认是选中bug
 	- [Fixbug] 模态框中使用Table，滚动条宽度计算不准确
@@ -33,6 +34,8 @@
     - [Fixbug]在CheckboxGroup内单独设置checkbox的disabled属性未生效问题
 - bee-tree@2.0.12
 	- [Feature]增加ext属性，支持用户自定义扩展属性
+- bee-tree-select@0.0.3
+    - [Feature]新增树选择器组件
 
 ## tinper-bee 2.0.11
 - [Feature] 图标字体文件本地化，提供本地加载和CDN资源两种访问方式

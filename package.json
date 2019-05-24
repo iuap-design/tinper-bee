@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "2.0.12-alpha.0",
+  "version": "2.0.12-alpha.2",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "environment.js",
   "scripts": {
@@ -97,11 +97,16 @@
     "bee-breadcrumb": "2.0.1",
     "bee-button": "2.0.11",
     "bee-button-group": "2.0.1",
+    "bee-calendar": "2.0.4",
+    "bee-carousel": "1.0.0",
     "bee-cascader": "2.1.4",
     "bee-checkbox": "2.0.6",
     "bee-clipboard": "2.0.2",
     "bee-collapse": "1.0.2",
     "bee-colorpicker": "0.0.9",
+    "bee-complex-grid": "2.0.13",
+    "bee-datepicker": "2.0.36",
+    "bee-dnd": "1.1.2",
     "bee-drawer": "0.0.2",
     "bee-dropdown": "2.0.6",
     "bee-form": "2.0.11",
@@ -138,17 +143,13 @@
     "bee-tag": "0.0.3",
     "bee-tile": "1.0.0",
     "bee-timeline": "2.0.1",
+    "bee-timepicker": "2.0.3",
     "bee-tooltip": "2.0.4",
     "bee-transfer": "2.0.12",
     "bee-transition": "1.0.0",
     "bee-tree": "2.0.13",
-    "bee-upload": "2.0.0",
-    "bee-calendar": "2.0.4",
-    "bee-carousel": "1.0.0",
-    "bee-complex-grid": "2.0.13",
-    "bee-datepicker": "2.0.36",
-    "bee-dnd": "1.1.2",
-    "bee-timepicker": "2.0.3"
+    "bee-tree-select": "0.0.3",
+    "bee-upload": "2.0.0"
   },
   "config": {
     "commitizen": {
