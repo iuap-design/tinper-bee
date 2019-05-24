@@ -1,6 +1,6 @@
 {
   "name": "tinper-bee",
-  "version": "2.0.12-alpha.2",
+  "version": "2.0.12-alpha.3",
   "description": "React Components living for enterprise-class pc backend application",
   "main": "environment.js",
   "scripts": {
@@ -104,8 +104,8 @@
     "bee-clipboard": "2.0.2",
     "bee-collapse": "1.0.2",
     "bee-colorpicker": "0.0.9",
-    "bee-complex-grid": "2.0.13",
-    "bee-datepicker": "2.0.36",
+    "bee-complex-grid": "2.0.15",
+    "bee-datepicker": "2.0.37",
     "bee-dnd": "1.1.2",
     "bee-drawer": "0.0.2",
     "bee-dropdown": "2.0.6",
