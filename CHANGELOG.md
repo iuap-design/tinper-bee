@@ -13,23 +13,23 @@
     - 🌟 [Feature] 新增showClose属性控制外层输入框关闭按钮。[#200](https://github.com/iuap-design/tinper-bee/issues/200)
     - 🌟 [Feature] Rangepicker新增onHoverChange回调。[#203](https://github.com/iuap-design/tinper-bee/issues/203)
     - [Feature] 新增onPanelChange日期面板改变时的回调
-- bee-table@2.1.0-alpha.0
+- bee-table@2.1.0
     - 🌟 [Feature]去掉Table重复的id。[#185](https://github.com/iuap-design/tinper-bee/issues/185)
 - bee-colorpicker@0.0.10
-    - [Feature]新增 `disabledAlpha` API，设置是否禁用透明度
+    - 🌟 [Feature]新增 `disabledAlpha` API，设置是否禁用透明度
 - bee-loading@1.1.2 
-    - [Feature]支持传入自定义加载图标
+    - 🌟 [Feature]支持传入自定义加载图标
 - bee-select@2.0.13
-    - [Fixbug]firefox 45，Select兼容问题
+    - 🐞 [Fixbug]firefox 45，Select兼容问题
 - bee-complex-grid@2.0.16
-    - [Fixbug]含有排序图标的列，宽度较小引起的表格错位问题
+    - 🐞 [Fixbug]含有排序图标的列，宽度较小引起的表格错位问题
 - bee-modal@2.0.15
-    - [Fixbug]解决模态框拖拽到顶部时，Header 被导航栏覆盖，导致无法继续操作的问题
-    - [Fixbug]解决设置 `backdropClassName` 无效的问题
+    - 🐞 [Fixbug]解决模态框拖拽到顶部时，Header 被导航栏覆盖，导致无法继续操作的问题
+    - 🐞 [Fixbug]解决设置 `backdropClassName` 无效的问题
 - bee-input-group-addon@2.0.1
-    - [Fixbug]修复无背景无边框的样式问题
+    - 🐞 [Fixbug]修复无背景无边框的样式问题
 - bee-input-group@2.0.3
-    - [Fixbug]修复按钮的样式问题
+    - 🐞 [Fixbug]修复按钮的样式问题
 
 ## tinper-bee 2.0.12
 🌟 新增树选择器组件。
