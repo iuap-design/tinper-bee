@@ -1,5 +1,38 @@
+## tinper-bee 2.0.13
+- 🌟 [Feature]补充 bee-input-group-addon 组件样式。
+- bee-tree-select@0.0.5
+    - 🐞 [Fixbug]解决Select组件样式被覆盖问题。[#205](https://github.com/iuap-design/tinper-bee/issues/205)
+- bee-radio@2.0.10
+    - 🐞 [Fixbug]解决 RadioGroup 只有一个 Radio 时报错的问题。[#191](https://github.com/iuap-design/tinper-bee/issues/191)
+- bee-timepicker@2.0.4
+    - 🐞 [Fixbug]设置 12 小时制的时间选择面板样式错乱问题。[#201](https://github.com/iuap-design/tinper-bee/issues/201)
+    - 🐞 [Fixbug]format 格式化时间问题。[#202](https://github.com/iuap-design/tinper-bee/issues/202)
+- bee-datepicker@2.0.41
+    - 🌟 [Feature]RangePicker增加 `open` 属性和 `onOpenChange` 回调函数。[#205](https://github.com/iuap-design/tinper-bee/issues/205)
+    - 🐞 [Fixbug] 日期范围控件enter无法把时间带回输入框。[#183](https://github.com/iuap-design/tinper-bee/issues/183)
+    - 🌟 [Feature] 新增showClose属性控制外层输入框关闭按钮。[#200](https://github.com/iuap-design/tinper-bee/issues/200)
+    - 🌟 [Feature] Rangepicker新增onHoverChange回调。[#203](https://github.com/iuap-design/tinper-bee/issues/203)
+    - [Feature] 新增onPanelChange日期面板改变时的回调
+- bee-table@2.1.0-alpha.0
+    - 🌟 [Feature]去掉Table重复的id。[#185](https://github.com/iuap-design/tinper-bee/issues/185)
+- bee-colorpicker@0.0.10
+    - [Feature]新增 `disabledAlpha` API，设置是否禁用透明度
+- bee-loading@1.1.2 
+    - [Feature]支持传入自定义加载图标
+- bee-select@2.0.13
+    - [Fixbug]firefox 45，Select兼容问题
+- bee-complex-grid@2.0.16
+    - [Fixbug]含有排序图标的列，宽度较小引起的表格错位问题
+- bee-modal@2.0.15
+    - [Fixbug]解决模态框拖拽到顶部时，Header 被导航栏覆盖，导致无法继续操作的问题
+    - [Fixbug]解决设置 `backdropClassName` 无效的问题
+- bee-input-group-addon@2.0.1
+    - [Fixbug]修复无背景无边框的样式问题
+- bee-input-group@2.0.3
+    - [Fixbug]修复按钮的样式问题
+
 ## tinper-bee 2.0.12
-🌟 新增树选择器组件，Table 新增单选功能，改进并优化了部分功能。
+🌟 新增树选择器组件。
 - bee-radio@2.0.9
     - [bugFix] 解决RadioGroup只有一个radio时报错问题
 - bee-input-number@2.0.15
