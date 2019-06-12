@@ -1,3 +1,34 @@
+## tinper-bee 2.1.0
+- bee-drawer@0.0.4
+    - 🌟 [Feature] 增加 `closeIcon` 属性，自定义关闭图标。[#210](https://github.com/iuap-design/tinper-bee/issues/210)
+- bee-overlay@1.0.30
+    - 🌟 [Feature] 增加rootClose的回调函数`onHide`
+    - 🐞 [Fixbug] 修改Protypes校验，解决 Popover 组件的 warning
+- bee-tooltip@2.1.2
+    - 🌟 [Feature] placement 参数增加 `topLeft` `topRight` `rightTop` `rightBottom` `bottomRight` `bottomLeft` `leftBottom` `leftTop` 八个位置取值
+    - 🌟 [Feature] 增加 `id` 属性
+    - 🌟 [Feature] 增加 `onHide` 弹出层隐藏时触发的回调
+- bee-popover@3.0.1
+    - 💄 [Update] 组件基于 bee-tooltip 重构，解决弹出层关闭时间较长的问题。[#198](https://github.com/iuap-design/tinper-bee/issues/198)
+- bee-datepicker@2.0.43
+    - 🌟 [Feature] DatePicker、RangePicker 日期面板内的输入框增加失去焦点的回调。[#217](https://github.com/iuap-design/tinper-bee/issues/217)
+- bee-complex-grid@2.0.19
+    - 🐞 [Fixbug] multiSelect 参数兼容老版本，解决设置 true 无效的问题
+    - 🐞 [Fixbug] 滚动加载场景中，多选回调参数bug
+    - 🐞 [Fixbug] Excel 导出功能，width 设置为百分比时，添加默认导出宽度为 150px
+    - 🐞 [Fixbug] 导出 exportHidden 优先级高于 ifshow
+- bee-message@2.1.0
+    - 🌟 [Feature] 支持通过 style 参数设置通栏样式
+- bee-input-number@2.0.16
+    - 🌟 [Feature] 优化左右按钮的样式。
+- bee-table@2.1.3
+    - 🌟 [Feature] 单选表格，行选中后再次点击可取消选中
+    - 🐞 [Fixbug] 表格前端多列排序规则调整为以用户传入的sorter规则优先
+    - 🐞 [Fixbug] 解决拖拽时候，表头是文字的时候不能拖拽的问题
+- bee-radio@2.0.12
+    - 🌟 [Feature] 支持 `defaultValue` 设置默认值，组件内部增加 onChange 方法。
+    - 🐞 [Fixbug] Radio 节点支持数组和对象两种数据格式。
+
 ## tinper-bee 2.0.13
 - 🌟 [Feature]补充 bee-input-group-addon 组件样式。
 - bee-tree-select@0.0.5

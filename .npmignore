@@ -31,3 +31,4 @@ server
 static
 docs
 .github
+replace.js
