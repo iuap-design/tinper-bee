@@ -1,3 +1,48 @@
+## tinper-bee 2.1.1
+- bee-loading-state@2.0.2
+    - 🐞 [Fixbug]解决 loading 组件升级带来的样式问题。
+- bee-popover@3.0.2
+    - 🌟 [Feature]新增显示状态改变时触发的回调 `onVisibleChange`。[#223](https://github.com/iuap-design/tinper-bee/issues/223)
+- bee-input-number@2.0.17
+    - 🐞 [Fixbug] 解决输入框值为 null 时，报错的问题。
+- bee-tree@2.0.16
+    - 🐞 [Fixbug]调用 `filterTreeNode` 方法时增加判断，容错处理。
+    - 🌟 [Feature]快捷键操作节点状态扩展，增加移动状态。[#232](https://github.com/iuap-design/tinper-bee/issues/232)
+    - 🐞 [Fixbug] onUlFocus事件中ul获取焦点兼容处理,防止已选中的节点再次选中
+    - 🌟 [Feature] 增加mustExpandable属性，支持用户自定义禁用的节点是否可以展开收起，默认不可以展开。
+- bee-datepicker@2.1.2
+    - 🐞 [Fixbug] 解决open属性无效问题。
+    - 🌟 [Feature] 新增自定义弹出位置api。
+    - 🐞 [Fixbug] 解决rangepicker清空报错问题。
+    - 🌟 [Feature] 值更改回调中的 Moment 对象增加类型参数 type，用于区分 date、month、range、week、year 五种日期类型。
+    - 🐞 [Fixbug] RangePicker 只选择开始日期，并关闭面板时，清空了输入框中的值，导致 UI 和数据不一致的问题。[#244](https://github.com/iuap-design/tinper-bee/issues/244)
+    - 🐞 [Fixbug]在行过滤中出现呼出后不可点击的问题。
+    - 🐞 [Fixbug]RangePicker 支持在失焦事件中，以数组的形式，返回开始输入框和结束输入框的值。
+    - 🐞 [Fixbug]Rangpicker 快速点击3次及以上同一天会清空值。[#221](https://github.com/iuap-design/tinper-bee/issues/221)
+- bee-complex-grid@2.0.21
+    - 🐞 [Fixbug]排序表格，最后一列的排序图标及数字被遮盖问题。[#250](https://github.com/iuap-design/tinper-bee/issues/250)
+- bee-table@2.1.5
+    - 🌟 [Feature]行拖拽对触摸屏的支持。[#199](https://github.com/iuap-design/tinper-bee/issues/199)
+    - 🌟 [Feature]拖拽改变列顺序的交互改进。
+    - 🐞 [Fixbug]单选功能，当行内容出现换行时，固定列出现错位的问题。
+    - 🐞 [Fixbug]解决表格图标样式覆盖了自定义图标的问题。[#240](https://github.com/iuap-design/tinper-bee/issues/240)
+    - 🐞 [Fixbug]table拖拽改变列宽度 onDropBorder 回调中返回的width值不正确。[#242](https://github.com/iuap-design/tinper-bee/issues/242)
+    - 🐞 [Fixbug]在渲染 TableHeader 时，增加容错处理。[#248](https://github.com/iuap-design/tinper-bee/issues/248)
+    - 🐞 [Fixbug]表格多选和折叠功能同时启用时，多选和折叠图标全部显示在第一列。[#246](https://github.com/iuap-design/tinper-bee/issues/246)
+    - 🐞 [Fixbug]滚动加载，支持单元格合并。
+    - 🐞 [Fixbug]表格 column 为空时拖拽报错，容错处理。
+    - 🐞 [Fixbug]解决checkbox 不选中问题。
+    - 🐞 [Fixbug]解决拖拽时，文字不能拖拽的问题。
+- bee-table@2.0.8-nc.4 
+    - 🐞 [Fixbug]修改了补丁，解决了拖拽表格宽度不够，断裂的问题。
+- bee-drawer@0.0.5 
+    - 🌟 [Feature] ncc drawer下有dnd，列表元素错位问题。
+- bee-dropdown@2.0.7
+    - 🌟 [Feature] 新增延迟显示隐藏需求。
+- bee-modal@2.0.17
+    - 🌟 [Feature] 新增限制拖拽范围功能
+
+
 ## tinper-bee 2.1.0
 - bee-drawer@0.0.4
     - 🌟 [Feature] 增加 `closeIcon` 属性，自定义关闭图标。[#210](https://github.com/iuap-design/tinper-bee/issues/210)
