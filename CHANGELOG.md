@@ -1,3 +1,31 @@
+## tinper-bee 2.1.2
+- bee-datepicker@2.2.0
+    - 🐞 [Fixbug]禁用态日期输入框去掉 hover 样式。
+    - 🌟 [Feature]日期面板上的输入框在失焦或按 `Enter` 键时进行校验。[#227](https://github.com/iuap-design/tinper-bee/issues/227)
+    - 🌟 [Feature]增加 `defaultPanelShown` 属性，设置日期组件显示/隐藏的默认状态。[#226](https://github.com/iuap-design/tinper-bee/issues/226)
+    - 🌟 [Feature]输入框值为空时，回填默认值并关闭面板。
+- bee-page-layout@1.0.1
+    - 🐞 [Fixbug]入口文件中引用的 “Pagelayout” 的 l 改为大写。[#258](https://github.com/iuap-design/tinper-bee/issues/258)
+- bee-select@2.0.14
+    - 🐞 [Fixbug]清空功能的关闭图标错误。[#252](https://github.com/iuap-design/tinper-bee/issues/252)
+- bee-dropdown@2.0.8
+    - 🐞 [Fixbug]延迟属性改用Overlay提供的。解决鼠标快速移入移出后，下拉框不消失的问题。
+- bee-dropdown@2.0.9
+    - 🌟 [Feature]delay 单位改为毫秒。
+- bee-modal@2.0.20
+    - 🐞 [Fixbug]解决点击模态框 Header 区域，产生错位的问题。
+    - 🌟 [Feature]提供 `centered` 属性，支持垂直居中展示 Modal。[#259](https://github.com/iuap-design/tinper-bee/issues/259)
+- bee-complex-grid@2.0.22
+    - 🐞 [Fixbug]设置 expandIconAsCell 属性后样式错乱的问题。
+- bee-table@2.0.8-nc.6
+    - 🐞 [Fixbug]querySelector容错处理。
+- bee-table@2.1.6
+    - 🌟 [Feature]table无数据时，支持通过 `hideHeaderScroll` 隐藏表头滚动条。[#207](https://github.com/iuap-design/tinper-bee/issues/207)
+- bee-radio@2.0.14
+    - 🐞 [Fixbug]解决传入 selectedValue={0} 时，组件未接收的问题。
+- bee-tree@2.0.17 
+    - [Fixbug]含有复选框的场景中，操作按钮溢出问题。
+
 ## tinper-bee 2.1.1
 - bee-loading-state@2.0.2
     - 🐞 [Fixbug]解决 loading 组件升级带来的样式问题。
