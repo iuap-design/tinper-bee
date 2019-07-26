@@ -1,3 +1,33 @@
+## tinper-bee 2.1.3
+- bee-datepicker@2.2.2
+    - 🐞 [Fixbug]解决 ie11 中，日期框的清除按钮 X 有2个不同样式重叠的问题。
+- bee-datepicker@2.2.3
+    - 🐞 [Fixbug]value.localeData 做容错处理。
+    - 🐞 [Fixbug]传入的 value 通过 moment 格式化。
+    - 🐞 [Fixbug]阻止日期面板的 onMouseOver 事件冒泡，解决外层 Tooltip 显示异常的问题。
+    - 🐞 [Fixbug]RangePicker 组件，输入开始时间后，聚焦到结束时间会清空开始输入框的问题。[#267](https://github.com/iuap-design/tinper-bee/issues/267)
+- bee-dnd@1.1.3
+    - 🌟 [Feature]新增网格排序，解决模态框里不能使用拖拽排序的问题。
+    - 🐞 [Fixbug]解决列表拖拽被遮挡的问题。
+- bee-table@2.1.8
+    - 🌟 [Feature]增加行拖拽开始时的回调函数 onDragRowStart。[#264](https://github.com/iuap-design/tinper-bee/issues/264)
+    - 🐞 [Fixbug]解决 onRowClick 回调函数中，事件对象属性均为 null 的问题。
+    - 🐞 [Fixbug]解决了内存泄漏问题。
+    - 🐞 [Fixbug]解决 utils.js 文件路径找不到的问题。
+    - 🐞 [Fixbug]当传入的 columns 为空时，不绑定拖拽事件。
+- bee-menus@2.0.8
+    - 🐞 [Fixbug]解决 keyboard 为 false 时，绑定了键盘事件的问题。
+- bee-menus@2.0.9
+    - 🐞 [Fixbug] 解决切换焦点时触发了 onKeyDown 事件的问题。
+- bee-search-panel@3.0.1
+    - 🌟 [Feature]新增属性 isExpandedBtn，用于控制收起/展开按钮是否显示。
+- bee-colorpicker@0.0.11
+    - 🌟 [Feature]新增 title 属性，自定义标题文字
+    - 🌟 [Feature]新增 cacelBtn 属性，自定义取消按钮文字
+    - 🌟 [Feature]新增 confirmBtn 属性，自定义确认按钮文字。
+- bee-complex-grid@2.0.23
+    - 🐞 [Fixbug]解决表头传入 Icon 图标，未正常显示的问题。[#269](https://github.com/iuap-design/tinper-bee/issues/269)
+
 ## tinper-bee 2.1.2
 - bee-datepicker@2.2.0
     - 🐞 [Fixbug]禁用态日期输入框去掉 hover 样式。
