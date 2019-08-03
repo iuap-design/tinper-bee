@@ -1,3 +1,21 @@
+## tinper-bee 2.1.4
+- bee-table@2.1.10
+    - 🐞 [Fixbug]表头交换列的时候，如果title出入的dom ，目前无法拖拽问题。
+    - 🐞 [Fixbug]解决嵌套表格带有固定列的场景，表行右侧列断开的问题。
+    - 🌟 [Feature]增加拖拽列宽时的回调函数 onDraggingBorder 。
+    - 🐞 [Fixbug]大数据场景，重新渲染时表体显示空白的问题。
+- bee-datepicker@2.2.5
+    - 🐞 [Fixbug]解决了更改时区之后，日期输入框中时间改变，但是没有触发 onChange 回调的问题。
+    - 🌟 [Feature]新增外层输入框点击关闭的回调。
+- bee-form-control@2.0.5
+    - 🌟 [Feature]新增了onChange事件函数防抖功能和防抖时间间隔的属性debounceDelay。[#279](https://github.com/iuap-design/tinper-bee/issues/279)
+- bee-overlay@1.0.31 
+    - 🌟 [Feature]getDocument可传数组
+- bee-dropdown@2.0.10 
+    - 🌟 [Feature]getDocument可传数组 
+- bee-modal@2.0.21
+    - 🐞 [Fixbug]居中显示的 Modal，拖拽改变大小时，上下同时变大的问题。
+
 ## tinper-bee 2.1.3
 - bee-datepicker@2.2.2
     - 🐞 [Fixbug]解决 ie11 中，日期框的清除按钮 X 有2个不同样式重叠的问题。
