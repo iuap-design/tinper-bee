@@ -1,3 +1,7 @@
+## tinper-bee 2.1.5
+- bee-form-control@2.0.6
+    - 🐞 [Fixbug]解决 FormControl 无法输入的问题。[#280](https://github.com/iuap-design/tinper-bee/issues/280)
+
 ## tinper-bee 2.1.4
 - bee-table@2.1.10
     - 🐞 [Fixbug]表头交换列的时候，如果title出入的dom ，目前无法拖拽问题。
