@@ -1,3 +1,39 @@
+## tinper-bee 2.1.6
+- bee-input-number@2.1.4
+    - 🌟 [Feature]新增数值范围组件。
+    - 🌟 [Feature] precision 设置 0 无效问题。
+- bee-drawer@0.0.6 
+    - 🐞 [Fixbug]适配 React.createContext。
+- bee-switch@2.0.6
+    - 🌟 [Feature]新增了switch组件转译之后最外层span的css类名。
+- bee-tabs@2.1.1
+    - 🌟 [Feature]新增SearchTabs查询形式页签。
+    - 🐞 [Fixbug]解决onTabClick事件无效问题。[#305](https://github.com/iuap-design/tinper-bee/issues/305)
+- bee-form-control@2.0.7
+    - 🐞 [Fixbug]解决了清空value后删除按钮仍然可见的问题。
+    - 💄 [Update]有value时光标移出后，删除按钮自动隐藏。
+- bee-tree@2.0.18
+    - 🐞 [Fixbug]不带复选框的树，不能通过空格键选中树节点的问题。
+- bee-tree@2.1.0
+    - 🌟 [Feature]支持多级节点滚动加载。
+    - 🌟 [Feature]增加 `treeData` API，如果设置则不需要手动构造 TreeNode 节点
+    - 🌟 [Feature]增加 `lazyLoad` API，设置是否使用懒加载（适用于大数据场景）
+    - 🌟 [Feature]增加 `renderTitle` API，使用 treeData 渲染树时使用，可通过此函数自定义树节点 title 内容
+    - 🌟 [Feature]增加 `renderTreeNodes` API，使用 treeData 渲染树时使用，可使用该函数自定义 TreeNode 渲染
+    - 🌟 [Feature]增加参数 `autoSelectWhenFocus`，控制“↑、↓”快捷键切换焦点时，是否自动选中树节点。
+- bee-message@2.1.4
+    - 🌟 [Feature]解决 showIcon 属性隐藏图标无效的问题。
+    - 🌟 [Feature]增加 `icon` API，支持自定义图标。[#283](https://github.com/iuap-design/tinper-bee/issues/283)
+    - 🌟 [Feature]支持自定义图标字体库。
+- bee-complex-grid@2.0.24
+    - 🐞 [Fixbug]列过滤面板被模态框遮盖的问题。[#286](https://github.com/iuap-design/tinper-bee/issues/286)
+    - 🐞 [Fixbug]设置属性`showHeader={false}`, 在多选框后面出现空白padding。[#287](https://github.com/iuap-design/tinper-bee/issues/287)
+- bee-table@2.1.14
+    - 🐞 [Fixbug]解决拖拽列宽无效的问题。 
+    - 🐞 [Fixbug]解决了移动端switch所在行在拖拽问题，需升级switch到最新版本。[#316](https://github.com/iuap-design/tinper-bee/issues/316)
+    - 💄 [Update]优化了拖拽行的功能，把交换行，改成插入行。
+    - 🐞 [Fixbug]解决嵌套表格展示错行、拖拽过程中错行问题。
+
 ## tinper-bee 2.1.5
 - bee-form-control@2.0.6
     - 🐞 [Fixbug]解决 FormControl 无法输入的问题。[#280](https://github.com/iuap-design/tinper-bee/issues/280)
