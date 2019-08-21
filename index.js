@@ -63,7 +63,7 @@ var TreeSelect = require('./lib/TreeSelect');
 // var Carousel = require('./lib/Carousel');
 
 var TinperBee = {
-    version: '2.1.5',
+    version: '2.1.6',
     Slider: Slider,
     AutoComplete: AutoComplete,
     // Carousel:Carousel,
