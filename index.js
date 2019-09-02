@@ -60,10 +60,11 @@ var SearchPanel = require('./lib/SearchPanel');
 var Affix = require('./lib/Affix');
 var Drawer = require('./lib/Drawer');
 var TreeSelect = require('./lib/TreeSelect');
+var PageLayout = require('./lib/PageLayout');
 // var Carousel = require('./lib/Carousel');
 
 var TinperBee = {
-    version: '2.1.6',
+    version: '2.2.0',
     Slider: Slider,
     AutoComplete: AutoComplete,
     // Carousel:Carousel,
@@ -123,7 +124,8 @@ var TinperBee = {
     SearchPanel: SearchPanel,
     Affix:Affix,
     Drawer:Drawer,
-    TreeSelect:TreeSelect
+    TreeSelect:TreeSelect,
+    PageLayout:PageLayout
 }
 
 module.exports = TinperBee;

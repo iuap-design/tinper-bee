@@ -1,3 +1,63 @@
+## tinper-bee 2.2.0
+- bee-table@2.2.0
+    - 🐞 [Fixbug]数据动态改变，表体显示空白的问题。
+    - 🐞 [Fixbug]设置属性`showHeader={false}`, 在多选框后面出现空白padding。[#287](https://github.com/iuap-design/tinper-bee/issues/287)
+- bee-table@2.2.1
+    - 🐞 [Fixbug] 解决了右侧固定列无法使用扩展功能的问题。[#298](https://github.com/iuap-design/tinper-bee/issues/298)
+    - 🐞 [Fixbug]解决滚动加载场景，数据显示不全的问题。
+    - 🐞 [Fixbug]大数据量滚动加载场景，合并表格行时，出现样式错乱问题。
+    - 💄 [Update]`bodyDisplayInRow` 和 `headerDisplayInRow` 默认值设为 `true` ，即默认内容不换行，以省略号形式展现。
+    - 🌟 [Feature]新增Table属性 `showRowNum` 展示序号列，默认为 `false`，设置为 `true` 时使用默认配置。自定义配置时需传入 `showRowNum` 对象。
+    - 💄 [Update]点击行时同时触发点击勾选框的勾选或取消勾选。
+    - 🌟 [Feature]新增Column属性 `sortEnable`，开启默认排序
+默认值为 `false`（不排序）
+设置为 `true` 时，若设置 fieldType='number' ，则按数字排序，否则按字符串排序。
+优先级低于sorter属性
+    - 🌟 [Feature] Column新增 fieldType='link' 类型数据，可渲染url链接
+需在column中配置 `linkConfig` 属性
+该属性的渲染优先级低于render，即有 render 时设置不渲染为link类型。
+- bee-table@2.2.6
+    - 💄 [Update]树形表支持多选。
+    - 🌟 [Feature]新增table属性 `autoSelect` ,在树型表中开启联动勾选
+    - 🌟 [Feature]fieldType属性新增 `stringChinese` 类型，供中文排序使用，渲染同string
+    - 💄 [Update]showRowNum 属性将不会改变数据源
+    - 🌟 [Feature]fieldType属性新增 `select` 类型，控制下拉类型的渲染
+    - 🌟 [Feature]column新增 `isShow` 属性，控制该列是否展示
+    - 🌟 [Feature]column新增 `cellMenu` 属性，展示单元格内菜单
+    - 🐞 [Fixbug]解决树表和行拖拽组合场景，图标重叠问题。[#325]
+    - 🌟 [Feature]增加 `onBodyScroll` 回调函数，在表体滚动时返回可视区最后一条数据的 index。
+- bee-table@2.2.7
+    - 🌟 [Feature]树形表支持多级懒加载。
+- bee-tree@2.1.2
+    - 🌟 [Feature]增加 getScrollContainer 属性，自定义滚动事件监听的容器。
+    - 🐞 [Fixbug]滑动过程中出现层级结构错乱。
+    - 🐞 [Fixbug]树元数据序列化react dom节点信息丢失。
+    - 🌟 [Feature]增加 `expandWhenDoubleClick` API，设置双击树节点的时候，是否触发收起/展开动作。
+- bee-dnd@2.0.0
+    - 💄 [Update]升级 react-beautiful-dnd 版本，draggableId 改为字符串。
+- bee-complex-grid@2.0.24
+    - 💄 [Update]修改 export导出形式，兼容 GridToolBar = Grid.GridToolBar
+- bee-dropdown@2.0.11
+    - 💄 [Update]解决左右padding不一致问题。
+- bee-datepicker@2.2.7
+    - 🐞 [Fixbug]解决了click 和 mouseover 冒泡问题。
+    - 🐞 [Fixbug]更改系统时区后，日期框需要触发 onChange 事件。
+- bee-modal@2.1.0
+    - 🐞 [Fixbug]解决了 info、success 等方法点击遮罩层无法关闭的问题。[#313](https://github.com/iuap-design/tinper-bee/issues/313)
+    - 💄 [Update]当弹框留在可视区的宽度小于 50px 时，拖拽不生效，避免无法拖回的情况。
+- bee-pagination@2.0.9
+    - 🌟 [Feature]新增 `sizeWithCookie` 属性，可将分页数据存储在 cookie 中，存储周期为 7 天。
+- bee-colorpicker@0.0.13
+    - 🌟 [Feature]新增了自定义传给 modal 子组件属性的功能。
+    - 🌟 [Feature]新增了自定义是否隐藏右侧参数区域的功能。[#320](https://github.com/iuap-design/tinper-bee/issues/320)
+    - 🐞 [Fixbug]解决了colorPicker 白色回显的时候变成 none 的问题。[#319](https://github.com/iuap-design/tinper-bee/issues/319)
+- bee-menus@2.0.10
+    - 🐞 [Fixbug]横向 Menu 子菜单第二次渲染时，宽度变窄的问题。[#321](https://github.com/iuap-design/tinper-bee/issues/321)
+- bee-radio@2.0.16
+    - 🐞 [Fixbug]解决了当bee-form包裹时，选中项不能显示的问题。[#317](https://github.com/iuap-design/tinper-bee/issues/317)
+    - 💄 [Update]将 Radio 的三种状态（focus、selected、取消选中）统一为一种表现形式。[#260](https://github.com/iuap-design/tinper-bee/issues/260)
+
+
 ## tinper-bee 2.1.6
 - bee-input-number@2.1.4
     - 🌟 [Feature]新增数值范围组件。
