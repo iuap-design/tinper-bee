@@ -1,3 +1,54 @@
+## tinper-bee 2.2.1
+- bee-loading@2.0.2
+    - 💄 [ Update ]组件内添加默认容器样式 "position : relative"。[#327](https://github.com/iuap-design/tinper-bee/issues/327)
+    - 🌟 [ Feature ]增加 `tip` 属性，自定义描述文字。
+    - 🌟 [ Feature ]支持服务端渲染。
+    - 🌟 [ Feature ]支持自定义属性。
+- bee-checkbox@2.0.7
+    - 🌟 [ Feature ]CheckboxGroup 新增 `defaultValue` API，用于设置默认选中的选项。
+    - 🌟 [ Feature ]CheckboxGroup 新增 `options` API，支持通过传入数组，生成可选项 Checkbox。[#329](https://github.com/iuap-design/tinper-bee/issues/329)
+- bee-tabs@2.1.2
+    - 🐞 [ Fixbug ]竖向tabs，设置额外元素时，样式错乱的问题。
+    - 🌟 [ Feature ]新增 `onEdit` API，新增和删除页签的回调，在 `tabBarStyle="editable-card"` 时有效。
+    - 🐞 [ Fixbug ]解决 `onPrevClick`、`onNextClick` 属性无效问题。
+- bee-timepicker@2.0.5
+    - 🐞 [ Fixbug ]disabled 状态不显示清空按钮。
+    - 🌟 [ Feature ]增加 `showClear` 参数，控制清空按钮是否显示。
+- bee-tree@2.1.6
+    - 🐞 [ Fixbug ]解决动态获取数据源时，defaultExpandAll 和 defaultExpandedKeys 不生效的问题。[#331](https://github.com/iuap-design/tinper-bee/issues/331)
+    - 🐞 [ Fixbug ]解决动态改变 treeData 时，没有重新截取数据的问题。
+    - 💄 [  Update ]递归遍历数据方法中，优化对 expandedKeys 的处理。
+    - 🐞 [ Fixbug ]滚动加载时，获取树节点真实行高。
+- bee-tree-select@0.0.6
+    - 🌟 [ Feature ]树选择 TreeSelect 多选的时候支持搜索。[#315](https://github.com/iuap-design/tinper-bee/issues/315)
+- bee-cascader@2.1.6
+    - 🐞 [ Fixbug ]解决了点击清除按钮时，被包裹在form中的级联组件Cascader的值不会被清除。[#300](https://github.com/iuap-design/tinper-bee/issues/300)
+    - 🌟 [ Feature ]新增 `separator` API，用于自定义分隔符。[#338](https://github.com/iuap-design/tinper-bee/issues/338)
+- bee-upload@2.0.1
+    - 🌟 [ Feature ]新增 `disabled` API，用于禁止上传、删除已上传列表行为。[#336](https://github.com/iuap-design/tinper-bee/issues/336)
+    - 🌟 [ Feature ]`listType` API 新增 `picture-card` 类型，支持图片预览及删除功能。
+    - 🐞 [ Fixbug ]解决预览图片显示不出来的问题。[#326](https://github.com/iuap-design/tinper-bee/issues/326)
+- bee-table@2.2.12
+    - 💄 [ Update ]嵌套表格，扩展行支持高度自适应。[#333](https://github.com/iuap-design/tinper-bee/issues/333)
+    - 🐞 [ Fixbug ]解决多选表格，某一行禁用多选，通过行点击仍然可以操作多选框的问题。[#334](https://github.com/iuap-design/tinper-bee/issues/334)
+    - 🌟 [  Feature  ]增加自定义整行整列样式（包括背景色和字体内容颜色）。
+    - 🌟 [ Feature ]多选表格，新增 `multiSelectConfig` API，用于自定义 Checkbox 属性，如设置复选框为红色填充。
+    - 🐞 [ Fixbug ]解决层级树大数据场景，动态改变data时，数据未同步的问题。
+    - 🐞 [ Fixbug ]修正 props 拼写错误。
+- bee-affix@1.0.16
+    - 🌟 [ Feature ]支持服务端渲染。[#340](https://github.com/iuap-design/tinper-bee/issues/340)
+- bee-datepicker@2.2.8
+    - 🌟 [ Feature ]支持服务端渲染。[#343](https://github.com/iuap-design/tinper-bee/issues/343)
+    - 🐞 [ Fixbug ]RangePicker 缺少 `onOk` 事件。
+    - 🐞 [ Fixbug ]MonthPicker 缺少 `onOpenChange` 事件。
+    - 💄 [  Update ]format 参数增加默认值。
+    - 💄 [  Update ]优化组件额外页脚的样式。[#343](https://github.com/iuap-design/tinper-bee/issues/343)
+- bee-modal@2.1.2
+    - 🌟 [ Feature ]modal静态方法支持设置 `backdropClose`、`centered` 参数。[#342](https://github.com/iuap-design/tinper-bee/issues/342)
+    - 🐞 [ Fixbug ]解决 warning：React does not recognize the “X” prop on a DOM element。[#350](https://github.com/iuap-design/tinper-bee/issues/350)
+- bee-pagination@2.0.10
+    - 🌟 [ Feature ]分页条中的特殊按钮添加类名标识。[#344](https://github.com/iuap-design/tinper-bee/issues/344)
+
 ## tinper-bee 2.2.0
 - bee-tree@2.1.2
     - 🌟 [Feature]增加 getScrollContainer 属性，自定义滚动事件监听的容器。
