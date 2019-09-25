@@ -26,4 +26,3 @@ spm_modules
 dist
 coverage
 package-lock
-replace.js
