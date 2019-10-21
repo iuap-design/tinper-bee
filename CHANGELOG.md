@@ -6,7 +6,7 @@
     - 🌟 [ Feature ]支持自定义属性。
     - 🐞 [ Fixbug ]解决 max-width 导致的样式问题。
     - 🌟 [ Feature ]底层支持 `DNDclick` 事件。
-- bee-tree@2.1.9
+- bee-tree@2.1.10
     - 🌟 [ Feature ]支持自定义属性。
     - 🐞 [ Fixbug ]树节点展开鼠标移开后会自动收起来。[#354](https://github.com/iuap-design/tinper-bee/issues/354)
     - 🐞 [ Fixbug ]解决设置 defaultExpandedAll 时，树参照节点自动收起的问题。[#379](https://github.com/iuap-design/tinper-bee/issues/379) 
@@ -14,7 +14,7 @@
     - 🌟 [ Feature ]支持自定义属性。
     - 🐞 [ Fixbug ]删除按钮样式不对。
     - 🐞 [ Fixbug ]`onRemove` 返回值为 false 时，依然可以删除。[#373](https://github.com/iuap-design/tinper-bee/issues/373)
-- bee-datepicker@2.2.11
+- bee-datepicker@2.2.12
     - 🐞 [ Fixbug ]切换年的时候不触发 onChange 事件。[#347](https://github.com/iuap-design/tinper-bee/issues/347)
     - 🌟 [ Feature ]RangePicker 的 onChange 回调增加第三个参数（dateStrings: [string, string]），类型为字符串数组。
     - 🐞 [ Fixbug ]多语言包增加 `monthFormat` 字段。[#370](https://github.com/iuap-design/tinper-bee/issues/370)
