@@ -1,3 +1,65 @@
+## tinper-bee 2.2.2
+- bee-form-control@2.0.9
+    - 💄 [ Update ]解决 Warning: React does not recognize the `debounceDelay` prop on a DOM element.
+    - 💄 [ Update ]解决 `value` 设置为 `undefined` 或 `null` 时，报警告的问题。
+- bee-tabs@2.1.5
+    - 🌟 [ Feature ]支持自定义属性。
+    - 🐞 [ Fixbug ]解决 max-width 导致的样式问题。
+    - 🌟 [ Feature ]底层支持 `DNDclick` 事件。
+- bee-tree@2.1.9
+    - 🌟 [ Feature ]支持自定义属性。
+    - 🐞 [ Fixbug ]树节点展开鼠标移开后会自动收起来。[#354](https://github.com/iuap-design/tinper-bee/issues/354)
+    - 🐞 [ Fixbug ]解决设置 defaultExpandedAll 时，树参照节点自动收起的问题。[#379](https://github.com/iuap-design/tinper-bee/issues/379) 
+- bee-upload@2.0.5
+    - 🌟 [ Feature ]支持自定义属性。
+    - 🐞 [ Fixbug ]删除按钮样式不对。
+    - 🐞 [ Fixbug ]`onRemove` 返回值为 false 时，依然可以删除。[#373](https://github.com/iuap-design/tinper-bee/issues/373)
+- bee-datepicker@2.2.11
+    - 🐞 [ Fixbug ]切换年的时候不触发 onChange 事件。[#347](https://github.com/iuap-design/tinper-bee/issues/347)
+    - 🌟 [ Feature ]RangePicker 的 onChange 回调增加第三个参数（dateStrings: [string, string]），类型为字符串数组。
+    - 🐞 [ Fixbug ]多语言包增加 `monthFormat` 字段。[#370](https://github.com/iuap-design/tinper-bee/issues/370)
+    - 🐞 [ Fixbug ]日期时间范围控件开始时间赋值不了。[#367](https://github.com/iuap-design/tinper-bee/issues/367)
+- bee-message@2.1.6
+    - 🐞 [ Fixbug ]解决新老版本样式冲突问题，主要是关闭按钮样式问题。[#363](https://github.com/iuap-design/tinper-bee/issues/363)
+- bee-menus@2.0.11
+    - 🌟 [ Feature ]底层支持 `DNDclick` 事件
+- bee-radio@2.0.18
+    - 🐞 [ Fixbug ]解决 radio 在第二次初始值为0 不会被选中的问题。[#361](https://github.com/iuap-design/tinper-bee/issues/361)
+    - 🌟 [ Feature ]支持单独使用 Radio，解决不包裹 RadioGroup 会报错的问题。
+- bee-checkbox@2.0.9
+    - 🐞 [ Fixbug ]checkbox inverse 模式下没有 disabled 样式。[#364](https://github.com/iuap-design/tinper-bee/issues/364)
+    - 🐞 [ Fixbug ]解决点击复选框报错的问题。
+- bee-pagination@2.0.12
+    - 🐞 [ Fixbug ]解决`dataNum`属性更新失败的问题。[#366](https://github.com/iuap-design/tinper-bee/issues/366)
+    - 🐞 [ Fixbug ]dataNum第一次传0不生效的问题。
+- bee-table@2.2.14
+    - 🐞 [ Fixbug ]Grid 多级表头在点隐藏按钮时，多级表头变成了一级表头。[#360](https://github.com/iuap-design/tinper-bee/issues/360)
+    - 🐞 [ Fixbug ]单元格内容超出列宽时，表头和表体出现错位。
+    - 💄 [ Update ]优化多选表格data更新处理逻辑。[#314](https://github.com/iuap-design/tinper-bee/issues/314)
+- bee-loading@2.0.3  
+    - 🐞 [ Fixbug ]loadingType='line' 时不显示tip的bug，tip和children都传的时候，tip优先。
+- bee-input-number@2.1.5
+    - 🌟 [ Feature ]`onFocus` `onBlur` 回调函数，增加第二个参数：`event` 对象。
+- bee-popover@3.0.5
+    - 🌟 [ Feature ]支持自定义属性。
+    - 🌟 [ Feature ]兼容 react 15。
+- bee-tooltip@2.1.4
+    - 🌟 [ Feature ]支持自定义属性。
+- bee-select@2.0.16
+    - 🌟 [ Feature ]支持自定义属性。
+- bee-affix@1.0.17
+    - 🌟 [ Feature ]支持自定义属性。
+- bee-anchor@0.0.5
+    - 🌟 [ Feature ]支持自定义属性。
+- bee-notification@2.0.3
+    - 🌟 [ Feature ]支持自定义属性。
+- bee-message@2.1.6
+    - 🌟 [ Feature ]支持自定义属性。
+- bee-carousel@1.0.1
+    - 🌟 [ Feature ]支持自定义属性。
+- bee-form@2.0.12
+    - 🌟 [ Feature ]支持自定义属性。
+
 ## tinper-bee 2.2.1
 - bee-loading@2.0.2
     - 💄 [ Update ]组件内添加默认容器样式 "position : relative"。[#327](https://github.com/iuap-design/tinper-bee/issues/327)
