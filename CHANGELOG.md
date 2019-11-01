@@ -1,3 +1,18 @@
+## tinper-bee 2.2.3
+- bee-input-number@2.1.7
+    - 🐞 [ Fixbug ] 解决点击加减按钮，触发输入框 `onBlur` 事件的问题。
+    - 🐞 [ Fixbug ] 输入框为空时，无法输入负号的问题。[#385](https://github.com/iuap-design/tinper-bee/issues/385)
+- bee-tabs@2.1.6
+    - 🐞 [ Fixbug ]解决TabPane面板中的事件自动触发tabs组件`onChange`回调的问题。[#387](https://github.com/iuap-design/tinper-bee/issues/387)
+- bee-tree@2.1.11
+    - 🐞 [ Fixbug ]双击事件触发了两次 `onDoubleClick` 回调。
+- bee-table@2.2.15
+    - 🐞 [ Fixbug ]树形表，`onRowHover` 方法返回参数异常。[#376](https://github.com/iuap-design/tinper-bee/issues/376)
+- bee-complex-grid@2.0.26
+    - 🐞 [ Fixbug ]解决动态改变 column 的属性值，组件报错的问题。[#389](https://github.com/iuap-design/tinper-bee/issues/389)
+- bee-svgicon@0.0.1
+    - 🌟 [ Feature ]新增 SVG图标组件。
+
 ## tinper-bee 2.2.2
 - bee-form-control@2.0.9
     - 💄 [ Update ]解决 Warning: React does not recognize the `debounceDelay` prop on a DOM element.
