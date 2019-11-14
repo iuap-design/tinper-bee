@@ -14,26 +14,26 @@ exports["default"] = {
         'include': '包含',
         'exclusive': '不包含',
         'equal': '等于',
-        'unequal':'不等于',
-        'begin':'以开始',
-        'end':'以结尾',
-        'greater_than':'大于',
-        'great_than_equal_to':'大于等于',
-        'less_than':'小于',
-        'less_than_equal_to':'小于等于',
-        'be_equal_to':'等于',
-        'not_equal_to':'不等于',
-        "no_data":'暂无数据',
+        'unequal': '不等于',
+        'begin': '以开始',
+        'end': '以结尾',
+        'greater_than': '大于',
+        'great_than_equal_to': '大于等于',
+        'less_than': '小于',
+        'less_than_equal_to': '小于等于',
+        'be_equal_to': '等于',
+        'not_equal_to': '不等于',
+        "no_data": '暂无数据'
     },
     Clipboard: {
         'copy': '复制',
         'cut': '剪切',
         'copyReady': '已复制',
         'cutReady': '已剪切',
-        'copyToClipboard':'复制到剪切板',
-        'close':'关闭',
+        'copyToClipboard': '复制到剪切板',
+        'close': '关闭'
     },
-    Pagination:{
+    Pagination: {
         'total': '共',
         'items': '条',
         'show': '显示',
@@ -41,11 +41,14 @@ exports["default"] = {
         'page': '页',
         'ok': '确认'
     },
-    Grid:{
+    Grid: {
+        'lang': 'zh-cn',
         'fixTitle': '锁定',
         'noFixTitle': '解锁',
         'hideTitle': '隐藏',
-        'rowFilter':'行过滤'
+        'rowFilter': '行过滤',
+        'openRowFilter': '打开行过滤',
+        'closeRowFilter': '关闭行过滤'
     },
     SearchPanel: {
         'title': '默认筛选',
@@ -53,6 +56,10 @@ exports["default"] = {
         'searchName': '查询',
         'down': '展开',
         'up': '收起'
+    },
+    InputNumber: {
+        'msgMax': '值不能大于最大值',
+        'msgMin': '值不能小于最小值'
     }
 };
 module.exports = exports['default'];

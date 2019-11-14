@@ -63,7 +63,7 @@ var PageLayout = require('./lib/PageLayout');
 // var Carousel = require('./lib/Carousel');
 
 var TinperBee = {
-  version: '2.2.4',
+  version: '2.3.0',
   Slider: Slider,
   AutoComplete: AutoComplete,
     // Carousel:Carousel,
