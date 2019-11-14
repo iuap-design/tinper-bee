@@ -1,4 +1,4 @@
-## tinper-bee 2.3.0
+## tinper-bee 2.2.4
 - bee-tree@2.1.12
     - 🐞 [ Fixbug] 解决树参照展开收起问题，树组件异步渲染树节点，设置 defaultExpandAll 属性失效。[#383](https://github.com/iuap-design/tinper-bee/issues/383)
 - bee-complex-grid@2.0.27
@@ -22,11 +22,8 @@
     - 🌟 [ Feature ]MonthPicker支持renderError
     - 🌟 [ Feature ]MonthPicker tab键之后可上下左右选择日期。
     - 🌟 [ Feature ]MonthPicker Enter键日期格式错误不关闭日期面板
-- bee-input-number@2.2.0
+- bee-input-number@2.1.8
     - 🐞 [ Fixbug ]千分符 符号显示问题。[#405](https://github.com/iuap-design/tinper-bee/issues/405)
-    - 🌟 [ Feature ]增加 `displayCheckPrompt` API，可显示超出限制范围之后的检验提示。
-    - 🌟 [ Feature ]超过最大最小值提示加多语。
-    - 🐞 [ Fixbug ]设置最小值5无法输入3的bug修复。[#418](https://github.com/iuap-design/tinper-bee/issues/418)
 - bee-autocomplete@2.0.4  
     - 🐞 [ Fixbug ]使用form校验bug修改。
 
