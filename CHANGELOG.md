@@ -1,6 +1,6 @@
-## tinper-bee 2.2.4
+## tinper-bee 2.3.0
 - bee-tree@2.1.12
-    - 🐞 [ Fixbug ] 解决树参照展开收起问题，树组件异步渲染树节点，设置 defaultExpandAll 属性失效。[#383](https://github.com/iuap-design/tinper-bee/issues/383)
+    - 🐞 [ Fixbug] 解决树参照展开收起问题，树组件异步渲染树节点，设置 defaultExpandAll 属性失效。[#383](https://github.com/iuap-design/tinper-bee/issues/383)
 - bee-complex-grid@2.0.27
     - 🐞 [ Fixbug ]解决电脑设置屏幕显示百分比为 125% 后，Grid td错位的问题。[#356](https://github.com/iuap-design/tinper-bee/issues/356)
 - bee-timepicker@2.0.7
@@ -10,16 +10,25 @@
     - 🐞 [ Fixbug ]解决老版本样式问题，下拉框闪烁的问题。
 - bee-svgicon@0.0.2
     - 💄 [ Update ]规范图标默认大小、宽高比例。
-- bee-locale@1.0.0
-    - 🌟 [ Feature ]升级版本。
+- bee-locale@1.0.1 
+    - 🌟 [ Feature ]新增 InputNumber 多语资源。
 - bee-popover@3.0.6
     - 💄 [ Update ]解决外部控制 visible 状态时，必须传 onHide 方法的问题。[#403](https://github.com/iuap-design/tinper-bee/issues/403)
 - bee-table@2.2.16
     - 🐞 [ Fixbug ]懒加载的树状表，在传了expandedRowKeys属性后，会导致点击+号无法展开。
-- bee-datepicker@2.2.13  
+- bee-datepicker@2.2.17
     - 🐞 [ Fixbug ]monthpicker 使用 form报错问题，并新增normal示例。[#370](https://github.com/iuap-design/tinper-bee/issues/370)
-- bee-input-number@2.1.8
+    - 🌟 [ Feature ]MonthPicker format支持传入数组。
+    - 🌟 [ Feature ]MonthPicker支持renderError
+    - 🌟 [ Feature ]MonthPicker tab键之后可上下左右选择日期。
+    - 🌟 [ Feature ]MonthPicker Enter键日期格式错误不关闭日期面板
+- bee-input-number@2.2.0
     - 🐞 [ Fixbug ]千分符 符号显示问题。[#405](https://github.com/iuap-design/tinper-bee/issues/405)
+    - 🌟 [ Feature ]增加 `displayCheckPrompt` API，可显示超出限制范围之后的检验提示。
+    - 🌟 [ Feature ]超过最大最小值提示加多语。
+    - 🐞 [ Fixbug ]设置最小值5无法输入3的bug修复。[#418](https://github.com/iuap-design/tinper-bee/issues/418)
+- bee-autocomplete@2.0.4  
+    - 🐞 [ Fixbug ]使用form校验bug修改。
 
 ## tinper-bee 2.2.3
 - bee-input-number@2.1.7

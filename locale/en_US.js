@@ -14,26 +14,26 @@ exports["default"] = {
         'include': 'include',
         'exclusive': 'exclusive',
         'equal': 'equal',
-        'unequal':'unequal',
-        'begin':'begin',
-        'end':'end',
-        'greater_than':'greater than',
-        'great_than_equal_to':'great than equal to',
-        'less_than':'less than',
-        'less_than_equal_to':'less than equal to',
-        'be_equal_to':'be equal to',
-        'not_equal_to':'not equal to',
-        "no_data":'no data',
+        'unequal': 'unequal',
+        'begin': 'begin',
+        'end': 'end',
+        'greater_than': 'greater than',
+        'great_than_equal_to': 'great than equal to',
+        'less_than': 'less than',
+        'less_than_equal_to': 'less than equal to',
+        'be_equal_to': 'be equal to',
+        'not_equal_to': 'not equal to',
+        "no_data": 'no data'
     },
     Clipboard: {
         'copy': 'copy',
         'cut': 'cut',
         'copyReady': 'copied',
         'cutReady': 'cut',
-        'copyToClipboard':'copy to clipboard',
-        'close':'close'
+        'copyToClipboard': 'copy to clipboard',
+        'close': 'close'
     },
-    Pagination:{
+    Pagination: {
         'total': 'total',
         'items': 'items',
         'show': 'page',
@@ -41,11 +41,13 @@ exports["default"] = {
         'page': 'page',
         'ok': 'ok'
     },
-    Grid:{
+    Grid: {
         'fixTitle': 'fix',
         'noFixTitle': 'unfix',
         'hideTitle': 'hide',
-        'rowFilter': 'rowFilter'
+        'rowFilter': 'rowFilter',
+        'openRowFilter': 'openRowFilter',
+        'closeRowFilter': 'closeRowFilter'
     },
     SearchPanel: {
         'title': 'screening conditions',
@@ -53,6 +55,10 @@ exports["default"] = {
         'searchName': 'submit',
         'down': 'open',
         'up': 'close'
+    },
+    InputNumber: {
+        'msgMax': 'value cannot be greater than the maximum',
+        'msgMin': 'value cannot be less than minimum'
     }
 };
 module.exports = exports['default'];
