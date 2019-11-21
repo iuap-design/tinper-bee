@@ -1,3 +1,30 @@
+## tinper-bee 2.3.0
+- bee-table@2.2.17
+    - 🌟 [ Feature ] 多表头表格支持拖拽。
+- bee-input-number@2.2.3
+    - 🌟 [ Feature ] 增加 `displayCheckPrompt` API，可显示超出限制范围之后的检验提示。
+    - 🌟 [ Feature ] 超过最大最小值提示加多语。
+    - 🐞 [ Fixbug ] 设置最小值 `5` 无法输入 `3` 的bug修复。[#418](https://github.com/iuap-design/tinper-bee/issues/418)
+    - 🌟 [ Feature ] 新增了`size` API，可以选择输入框大小。[#414](https://github.com/iuap-design/tinper-bee/issues/414)
+- bee-pagination@2.0.14
+    - 🐞 [ Fixbug ] 解决 warning。[#430](https://github.com/iuap-design/tinper-bee/issues/430)
+    - 🌟 [ Feature ] 分页下拉选择加类名标识。
+- bee-timepicker@2.0.8
+	- 🌟 [ Feature ] 适配传字符串的value。
+- bee-datepicker@2.2.18
+    - 🐞 [ Fixbug ] 解决 DatePicker 在 form blur showTime 校验时无法选择bug。
+    - 🐞 [ Fixbug ] RangePicker form表单的时间范围控件，手动输入一个值，页面变成空白页，报错。[#428](https://github.com/iuap-design/tinper-bee/issues/428)
+- bee-datepicker@2.3.0
+    - 🌟 [ Feature ] 所有类型日期都可传字符串，新增form使用示例。
+- bee-form-control@2.0.10
+	- 🌟 [ Feature ] 新增 `prefix` `suffix` 前缀后缀 API。
+- bee-calendar@2.1.1
+    - 🌟 [ Feature ] 新增了 `onChange` API，切换年/月份可以触发回调函数。
+- bee-complex-grid@2.0.28
+    - 🌟 [ Feature ] 增加编辑表格 `EditGrid`。
+- bee-select@2.0.18
+    - 🐞 [ Fixbug ] 兼容 ie11，解决展开时下拉按钮方向不对的问题。
+
 ## tinper-bee 2.2.4
 - bee-tree@2.1.12
     - 🐞 [ Fixbug] 解决树参照展开收起问题，树组件异步渲染树节点，设置 defaultExpandAll 属性失效。[#383](https://github.com/iuap-design/tinper-bee/issues/383)
