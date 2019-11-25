@@ -14,16 +14,19 @@
 - bee-datepicker@2.2.18
     - 🐞 [ Fixbug ] 解决 DatePicker 在 form blur showTime 校验时无法选择bug。
     - 🐞 [ Fixbug ] RangePicker form表单的时间范围控件，手动输入一个值，页面变成空白页，报错。[#428](https://github.com/iuap-design/tinper-bee/issues/428)
-- bee-datepicker@2.3.0
+- bee-datepicker@2.3.2
     - 🌟 [ Feature ] 所有类型日期都可传字符串，新增form使用示例。
+    - 🌟 [ Feature ] datepicker showTime时，面板初始时间为打开面板时的时间。
 - bee-form-control@2.0.10
 	- 🌟 [ Feature ] 新增 `prefix` `suffix` 前缀后缀 API。
-- bee-calendar@2.1.1
+- bee-calendar@2.1.2
     - 🌟 [ Feature ] 新增了 `onChange` API，切换年/月份可以触发回调函数。
 - bee-complex-grid@2.0.28
     - 🌟 [ Feature ] 增加编辑表格 `EditGrid`。
 - bee-select@2.0.18
     - 🐞 [ Fixbug ] 兼容 ie11，解决展开时下拉按钮方向不对的问题。
+- bee-modal@2.1.3
+    - 🐞 [ Fixbug ]解决 warning。[#432](https://github.com/iuap-design/tinper-bee/issues/432)
 
 ## tinper-bee 2.2.4
 - bee-tree@2.1.12
