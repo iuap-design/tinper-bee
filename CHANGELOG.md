@@ -1,3 +1,25 @@
+## tinper-bee 2.3.1
+- bee-upload@2.0.6	
+	- 🌟 [ Feature ] 图片上传的时候，使用 beforeUpload 方法 无法返回 fileList 已上传列表。[#436](https://github.com/iuap-design/tinper-bee/issues/436)
+- bee-colorpicker@0.0.14
+    - 🌟 [ Feature ]新增禁用弹框API：disabledModal。[#439](https://github.com/iuap-design/tinper-bee/issues/439)
+- bee-table@2.2.21
+    - 🌟 [ Feature ]必输列禁止设置隐藏。[#435](https://github.com/iuap-design/tinper-bee/issues/435)
+    - 🐞 [ Fixbug ]解决固定列设置 required 无效的问题。
+    - 🐞 [ Fixbug ]树状表，兼容不传 onExpandedRowsChange 属性的情况，解决不能展开节点的问题。
+    - 🐞 [ Fixbug ]嵌套表格，expandIconAsCell={true}时，拖拽列宽度，被调整的总是前一列。[#446](https://github.com/iuap-design/tinper-bee/issues/446)
+    - 🌟 [ Feature ]大数据滚动加载，递归逻辑优化，willReceiveProps逻辑优化
+    - 🐞 [ Fixbug ]记录 `record` 中的 `children = []` 时，显示了多余的展开图标
+- bee-timepicker@2.0.11
+	- 🐞 [ Fixbug ] 传入字符串适配
+    - 🐞 [ Fixbug ] ie11不显示bug修改  [#437](https://github.com/iuap-design/tinper-bee/issues/437)
+    - 🐞 [ Fixbug ] willMount时不触发onChange
+- bee-datepicker@2.3.5
+	- 🌟 [ Feature ] datepicker inputValue 格式修改
+	- 🌟 [ Feature ] rangepickaer 左右箭头选择年，面板年份错误bug [#438](https://github.com/iuap-design/tinper-bee/issues/438)
+- bee-input-number@2.2.4
+    - 🐞 [ Fixbug ]对数字进行修改，输入位置会自动弹到最后一位 [#422](https://github.com/iuap-design/tinper-bee/issues/422)
+
 ## tinper-bee 2.3.0
 - bee-table@2.2.17
     - 🌟 [ Feature ] 多表头表格支持拖拽。
