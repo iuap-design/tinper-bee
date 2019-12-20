@@ -1,3 +1,22 @@
+## tinper-bee 2.3.2
+- bee-table@2.2.26
+    - 🐞 [ Fixbug ]Grid表格显示错位。[#449](https://github.com/iuap-design/tinper-bee/issues/449)。
+    - 🌟 [ Feature ]行点击事件关联单选功能。[#458](https://github.com/iuap-design/tinper-bee/issues/458)
+    - 🐞 [ Fixbug ]行点击事件有延迟。
+- bee-datepicker@2.3.7
+    - 🐞 [ Fixbug ] 修复RangePicker设置 `showTime` 后，面板样式问题；增加 `disabledTime` 属性使用示例。
+    - 🐞 [ Fixbug ] 解决 onChange 触发两次的问题。
+    - 🐞 [ Fixbug ] 去掉 warning
+- bee-input-number@2.2.7
+    - 🐞 [ Fixbug ] 解决输入负号后失焦，显示 NaN 的问题。
+    - 🐞 [ Fixbug ] 设置 size 属性后的样式修复。
+    - 🐞 [ Fixbug ] onBlur 回调在 onChange 之后调用。
+- bee-modal@2.1.5
+    - 🌟 [ Feature ]增加 `closeButtonProps` 关闭按钮的自定义 props。
+    - 🌟 [ Feature ]增加 `renderCloseButton` 自定义关闭按钮的钩子函数。
+- bee-upload@2.0.7
+    - 🐞 [ Fixbug ] Fix abort error when using custom request。[#462](https://github.com/iuap-design/tinper-bee/issues/462)
+
 ## tinper-bee 2.3.1
 - bee-upload@2.0.6	
 	- 🌟 [ Feature ] 图片上传的时候，使用 beforeUpload 方法 无法返回 fileList 已上传列表。[#436](https://github.com/iuap-design/tinper-bee/issues/436)

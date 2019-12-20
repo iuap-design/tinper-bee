@@ -9,7 +9,7 @@ var webpackProdCfg = require('./webpack.pord');
 var webpackLibCfg = require('./webpack.modules');
 var postcss = require('gulp-postcss');
 var cssnano = require('cssnano');
-
+const replace = require('gulp-replace');
 var pkg = require('./package.json');
 var spawn = require('child_process').spawn;
 
@@ -25,7 +25,7 @@ var postConfig = [
     }),
 ]
 
-gulp.task('lib_build', ['dist_clean'], function (done) {
+gulp.task('lib_build', function (done) {
     webpack(webpackLibCfg, function (err, stats) {
         if (err) {
             console.log(err);
@@ -47,7 +47,7 @@ gulp.task('dist_clean', function (done) {
 })
 
 
-gulp.task('js_build', ['js_clean'], function (done) {
+gulp.task('js_build', function (done) {
   webpack(webpackCfg, function (err, stats) {
     if (err) {
       console.log(err);
@@ -63,7 +63,7 @@ gulp.task('js_build', ['js_clean'], function (done) {
 });
 
 
-gulp.task('js_uglify', ['js_build'], function (done) {
+gulp.task('js_uglify', function (done) {
     webpack(webpackProdCfg, function (err, stats) {
         if (err) {
             console.log(err);
@@ -78,7 +78,7 @@ gulp.task('js_uglify', ['js_build'], function (done) {
     });
 });
 
-gulp.task('theme', ['theme_clean'], function (done) {
+gulp.task('theme', function (done) {
   gulp.src(['./style/index.scss'])
       .pipe(sass())
       .pipe(concat('tinper-bee.css'))
@@ -89,7 +89,7 @@ gulp.task('theme', ['theme_clean'], function (done) {
       });
 });
 
-gulp.task('themePrefix', ['theme_clean'], function (done) {
+gulp.task('themePrefix', function (done) {
   gulp.src(['./style/tinper-bee.scss'])
       .pipe(sass())
       .pipe(concat('tinper-bee.css'))
@@ -102,7 +102,10 @@ gulp.task('themePrefix', ['theme_clean'], function (done) {
 
 gulp.task('copy_theme',function(done){
   gulp.src('theme/*.css')
-  .pipe(gulp.dest('assets/theme'));
+      .pipe(gulp.dest('assets/theme'))
+      .on('end', function () {
+        done();
+      });
 });
 
 gulp.task('js_clean', function (done) {
@@ -123,13 +126,19 @@ gulp.task('copy_fonts',function(done){
         './style/utils/iconfont.svg',
         './style/utils/iconfont.ttf',
         './style/utils/iconfont.woff'
-    ]).pipe(gulp.dest('assets/fonts'));
+    ]).pipe(gulp.dest('assets/fonts'))
+      .on('end', function () {
+        done();
+      });
 });
 
 gulp.task('copy_reset',function(done){
     gulp.src([
         './style/reset.css',
-    ]).pipe(gulp.dest('./assets'));
+    ]).pipe(gulp.dest('./assets'))
+      .on('end', function () {
+        done();
+      });
 });
 
 
@@ -160,41 +169,43 @@ gulp.task('copy_clean', function (done) {
     });
   });
 
-gulp.task('copy', ['copy_clean'], function (done) {
+gulp.task('copy', function (done) {
     gulp.src([
             './node_modules/bee-table/build/lib/*.js',
             './node_modules/bee-table/build/render/*.js',
-        ]).pipe(gulp.dest('./lib'));
+        ]).pipe(gulp.dest('./lib'))
+          .on('end', function () {
+            done();
+          });
 })
 
-// gulp.task('themePrefixcss', function (done) {
-//   console.log("------themePrefixcss------");
-//   return gulp.src('./style/component.scss')
-//     .pipe(sass())
-//   // .pipe(concat('tinper-bee.css'))
-//     .pipe(cssWrap({
-//         selector: '.custom-jonyshi' /* 添加的命名空间 */
-//     }))
-//     .pipe(cleanCSS())
-//     .pipe(gulp.dest('src/themePrefixcss/')) /* 存放的目录 */
-// });
+gulp.task('replacePath', function(done){
+  gulp.src(['./assets/tinper-bee.css'])
+      .pipe(replace(/\/\/design.yonyoucloud.com\/static\/iconfont/g, './fonts'))
+      .pipe(gulp.dest('./assets'))
+      .on('end', function () {
+        done();
+      });
+  gulp.src(['./assets/theme/*.css'])
+      .pipe(replace(/\/\/design.yonyoucloud.com\/static\/iconfont/g, '../fonts'))
+      .pipe(gulp.dest('./assets/theme'))
+      .on('end', function () {
+        done();
+      });
+})
 
-// gulp.task('build', (done)=> {
-//   if(pkg.prefix && pkg.prefix !== ""){
-//     gulp.task('online', ['themePrefixcss']);
-//   }else{
-//     if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='online'){
-//         gulp.task('online', ['theme']);
-//     }else{
-//         gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy']);
-//     }
-//   }
-// });
+gulp.task('online', gulp.series('theme',function(done){ done() }));
 
-if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='online'){
-    gulp.task('online', ['theme']);
-}else if(gulp.env._&&gulp.env._.length>0&&gulp.env._[0]=='onlinePrefix'){
-    gulp.task('onlinePrefix', ['themePrefix']);
-}else{
-    gulp.task('default', ['js_uglify', 'theme', 'lib_build', 'copy','copy_theme','copy_fonts','copy_reset']);
-}
+gulp.task('onlinePrefix', gulp.series('themePrefix',function(done){ done() }));
+
+gulp.task('default', gulp.series(
+  gulp.parallel('js_clean','theme_clean','dist_clean','copy_clean'),
+  gulp.parallel('copy','copy_theme','copy_fonts','copy_reset'),
+  'js_build',
+  'js_uglify',
+  gulp.parallel('theme','lib_build'),
+  'replacePath',
+  function(done){
+    done()
+  }
+));
