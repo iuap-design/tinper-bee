@@ -1,3 +1,28 @@
+## tinper-bee 2.3.3
+- bee-upload@2.0.8
+    - 🐞 [ Fixbug ] 修复 beforeupload 回调 fileList 参数不对的问题。
+- bee-complex-grid@2.1.3
+    - 🐞 [ Fixbug ] Grid 表格交换列后，点击其他地方又恢复原状的问题。[#472](https://github.com/iuap-design/tinper-bee/issues/472)
+    - 🐞 [ Fixbug ] Grid 表格单选功能，选择行后点击表头，已选数据会丢失。[#468](https://github.com/iuap-design/tinper-bee/issues/468)
+    - 🌟 [ Feature ] 新增表格校验方法。
+    - 🌟 [ Feature ] 编辑表格校验错误失去焦点保留输入框。[#476](https://github.com/iuap-design/tinper-bee/issues/476)
+    - 🌟 [ Feature ] fieldProps 新增 `disabled` 属性。
+    - 🌟 [ Feature ] fieldProps 新增 `placeholder` 属性。
+- bee-menus@2.0.12
+    - 🌟 [ Feature ] SubMenu支持设置菜单弹出位置。 [#477](https://github.com/iuap-design/tinper-bee/issues/477)
+- bee-datepicker@2.3.9
+    - 🐞 [ Fixbug ] 解决切换月份不触发 onChange 的问题。
+    - 🐞 [ Fixbug ]  placement不生效问题修复。
+- bee-input-number@2.2.8
+    - 🌟 [ Feature ] 支持负号是否在右边，针对特殊场景使用。
+- bee-table@2.2.30
+    - 🌟 [ Feature ] 单选关联行样式改变。
+    - 🐞 [ Fixbug ] 表格交换列后，再拖拽列宽，作用元素不对。[#479](https://github.com/iuap-design/tinper-bee/issues/479)
+    - 🐞 [ Fixbug ] 多表头拖拽，报错 lastObj 为 undefined。
+    - 🐞 [ Fixbug ] 树表异步加载子节点，data数据未更新的问题。
+- bee-icon@1.0.13
+    - 🌟 [ Feature ] 增加清空图标。[#499](https://github.com/iuap-design/tinper-bee/issues/499)
+
 ## tinper-bee 2.3.2
 - bee-table@2.2.26
     - 🐞 [ Fixbug ]Grid表格显示错位。[#449](https://github.com/iuap-design/tinper-bee/issues/449)。
