@@ -192,6 +192,12 @@ gulp.task('replacePath', function(done){
       .on('end', function () {
         done();
       });
+  gulp.src(['./build/index.css'])
+      .pipe(replace(/\/\/design.yonyoucloud.com\/static\/iconfont/g, '../assets/fonts'))
+      .pipe(gulp.dest('./build'))
+      .on('end', function () {
+        done();
+      });
 })
 
 gulp.task('online', gulp.series('theme',function(done){ done() }));

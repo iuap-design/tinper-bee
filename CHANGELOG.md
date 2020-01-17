@@ -1,3 +1,20 @@
+## tinper-bee@2.3.4
+- bee-table@2.2.33
+    - 🐞 [ Fixbug ] 行拖拽，表头更新后，拖拽把手丢失。[#496](https://github.com/iuap-design/tinper-bee/issues/496) 
+    - 🐞 [ Fixbug ] 固定表头th，增加最大宽度限制。[#501](https://github.com/iuap-design/tinper-bee/issues/501)
+    - 🐞 [ Fixbug ] 点击表头，会触发onDropBorder拖拽列宽事件问题。[#509](https://github.com/iuap-design/tinper-bee/issues/509)
+- bee-datepicker@2.3.12
+    - 🐞 [ Fixbug ] 解决日期浮层容器指定为表格时的样式问题。[#486](https://github.com/iuap-design/tinper-bee/issues/486)
+    - 🌟 [ Feature ] 支持 showHour,showMinute,showSecond。
+- bee-timepicker@2.0.12
+    - 🌟 [ Feature ] 支持 showHour,showMinute,showSecond。
+- bee-form-control@2.0.11
+    - 🐞 [ Fixbug ] componentWillReceiveProps value判断。
+- bee-popover@3.0.7
+    - 🐞 [ Fixbug ] 解决单独装包的样式问题。[#513](https://github.com/iuap-design/tinper-bee/issues/513)
+- bee-upload@2.1.1
+    - 🌟 [ Feature ] 增加enterDragger、leaveDragger钩子函数。
+
 ## tinper-bee 2.3.3
 - bee-upload@2.0.8
     - 🐞 [ Fixbug ] 修复 beforeupload 回调 fileList 参数不对的问题。
