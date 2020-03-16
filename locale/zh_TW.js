@@ -59,6 +59,11 @@ exports["default"] = {
     InputNumber: {
         'msgMax': '值不能大於最大值',
         'msgMin': '值不能小於最小值'
+    },
+    Modal: {
+        'gotit': '知道了',
+        'cancel': '取消',
+        'ok': '確認'
     }
 };
 module.exports = exports['default'];
