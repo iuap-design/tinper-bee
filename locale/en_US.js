@@ -10,55 +10,60 @@ exports["default"] = {
         'cancel': 'Cancel'
     },
     Table: {
-        'resetSettings': 'reset settings',
-        'include': 'include',
-        'exclusive': 'exclusive',
-        'equal': 'equal',
-        'unequal': 'unequal',
-        'begin': 'begin',
-        'end': 'end',
-        'greater_than': 'greater than',
-        'great_than_equal_to': 'great than equal to',
-        'less_than': 'less than',
-        'less_than_equal_to': 'less than equal to',
-        'be_equal_to': 'be equal to',
-        'not_equal_to': 'not equal to',
-        "no_data": 'no data'
+        'resetSettings': 'Reset',
+        'include': 'Include',
+        'exclusive': 'Not include',
+        'equal': 'Equal to',
+        'unequal': 'Not equal to',
+        'begin': 'Begin with',
+        'end': 'End with',
+        'greater_than': 'Greater than',
+        'great_than_equal_to': 'Greater than or equal to',
+        'less_than': 'Less than',
+        'less_than_equal_to': 'Less than or equal to',
+        'be_equal_to': 'Equal to',
+        'not_equal_to': 'Not equal to',
+        "no_data": 'No data'
     },
     Clipboard: {
-        'copy': 'copy',
-        'cut': 'cut',
-        'copyReady': 'copied',
-        'cutReady': 'cut',
-        'copyToClipboard': 'copy to clipboard',
-        'close': 'close'
+        'copy': 'Copy',
+        'cut': 'Cut',
+        'copyReady': 'Copied',
+        'cutReady': 'Cut',
+        'copyToClipboard': 'Copy to Clipboard',
+        'close': 'Close'
     },
     Pagination: {
-        'total': 'total',
-        'items': 'items',
-        'show': 'page',
-        'goto': 'goto',
-        'page': 'page',
-        'ok': 'ok'
+        'total': 'Total ',
+        'items': ' items',
+        'show': 'Show ',
+        'goto': 'Go to page ',
+        'page': ' ',
+        'ok': 'OK'
     },
     Grid: {
-        'fixTitle': 'fix',
-        'noFixTitle': 'unfix',
-        'hideTitle': 'hide',
-        'rowFilter': 'rowFilter',
-        'openRowFilter': 'openRowFilter',
-        'closeRowFilter': 'closeRowFilter'
+        'fixTitle': 'Lock',
+        'noFixTitle': 'Unlock',
+        'hideTitle': 'Hide',
+        'rowFilter': 'Row Filter',
+        'openRowFilter': 'Enable Row Filter',
+        'closeRowFilter': 'Disable Row Filter'
     },
     SearchPanel: {
-        'title': 'screening conditions',
-        'resetName': 'reset',
-        'searchName': 'submit',
-        'down': 'open',
-        'up': 'close'
+        'title': 'Default Filter',
+        'resetName': 'Clear',
+        'searchName': 'Query',
+        'down': 'Expand',
+        'up': 'Collapse'
     },
     InputNumber: {
-        'msgMax': 'value cannot be greater than the maximum',
-        'msgMin': 'value cannot be less than minimum'
+        'msgMax': 'Cannot be greater than the Max value',
+        'msgMin': 'Cannot be less than the Min value'
+    },
+    Modal: {
+        'ok': 'OK',
+        'gotit': 'OK',
+        'cancel': 'Cancel'
     }
 };
 module.exports = exports['default'];
