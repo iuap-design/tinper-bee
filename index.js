@@ -64,7 +64,7 @@ var SvgIcon = require('./lib/SvgIcon');
 // var Carousel = require('./lib/Carousel');
 
 var TinperBee = {
-  version: '2.3.4',
+  version: '2.3.5',
   Slider: Slider,
   AutoComplete: AutoComplete,
     // Carousel:Carousel,

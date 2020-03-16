@@ -1,3 +1,56 @@
+## tinper-bee@2.3.5
+- bee-pagination@2.0.15
+    - [ Fixbug ] 只有一页的情况下，仍然可以上下翻页。
+    - [ Feature ] 默认英文修改。
+- bee-input-number@2.2.24 
+    - [ Feature ] 新增 `handleBtnClick` 点击右侧按钮的回调API。
+    - [ Feature ] 默认英文修改。
+- bee-tooltip@2.1.6
+    - [ Fixbug ] 解决宽度设置无效问题。
+- bee-popover@3.1.0
+    - [ Feature ] 支持弹框根据内容宽度自动撑开。
+- bee-modal@2.1.11
+    - [ Fixbug ] 修复 container 设置无效问题。
+    - [ Feature ] api调用方式新增locale属性,设置按钮文字。
+    - [ Feature ] content 高度实现自由伸缩。
+    - [ Feature ] 新增confirm第二种形态。
+    - [ Feature ] 第二种形态样式修改
+- bee-table@2.2.40
+    - [ Fixbug ] 解决treetable右侧出现空白的问题。
+    - [ Fixbug ] 解决模态框中表格滚动条计算问题。
+    - [ Fixbug ] 过滤行多语设置bug。
+    - [ Fixbug ] 表格单元格渲染空列问题修改。
+    - [ Feature ] 默认英文修改。
+    - [ Feature ] isLeaf 改为 _isLeaf
+    - [ Fixbug ] 设置expandRowByClick，无法显示箭头，去掉 expandRowByClick 判断。
+    - [ Feature ] 增加参数 `minColumnWidth`，设置拖拽列宽度的最小限制。
+    - [ Fixbug ] column 不设置 key 时的容错及提示。[IFNC-1019](https://ncc.jira.yonyou.com/browse/IFNC-1019)
+- bee-tree@2.1.14
+    - TAB键选中树后，默认聚焦在第一个（已选中）节点，并显示 focus 状态。
+    - autoExpandParent 未生效问题。
+- bee-radio@2.1.2
+    - [ Fixbug ] 解决 radioGroup 不受控的问题。
+    - [ Feature ] radioGroup 增加 `disabled` 属性。
+    - [ Feature ] 增加focus标识。
+- bee-cascader@2.1.7 
+    - [ Fixbug ] props 报错。
+- bee-datepicker@2.3.15
+    - [ Feature ] 增加参数enterKeyDown，回车不打开面板。
+    - [ Feature ] 输入框校验宽松,支持moment所有合法类型。
+    - [ Feature ] 合法性判断改为 moment(str,format)||moment(str)。
+- bee-checkbox@2.0.10
+    - [ Feature ] 增加focus标识。
+- bee-locale@1.0.4 
+    - [ Feature ] 默认英文修改。
+- bee-tools@1.0.8
+    - [ Fixbug ] build路径错误。
+- bee-clipboard@2.0.3
+    - [ Feature ] 默认英文修改。
+- bee-complex-grid@2.1.3
+    - [ Feature ] 默认英文修改。
+- bee-search-panel@3.0.2
+    - [ Feature ] 默认英文修改。
+
 ## tinper-bee@2.3.4
 - bee-table@2.2.33
     - 🐞 [ Fixbug ] 行拖拽，表头更新后，拖拽把手丢失。[#496](https://github.com/iuap-design/tinper-bee/issues/496) 
