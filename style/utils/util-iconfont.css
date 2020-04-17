@@ -1,8 +1,11 @@
-@font-face {
-    font-family: "uf";
-    src: url('../style/utils/iconfont.eot'); /* IE9*/
-    src: url('../style/utils/iconfont.eot') format('embedded-opentype'), /* IE6-IE8 */ url('../style/utils/iconfont.woff') format('woff'), /* chrome, firefox */ url('../style/utils/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../style/utils/iconfont.svg') format('svg'); /* iOS 4.1- */
+@font-face {font-family: "uf";
+  src: url('../node_modules/tinper-bee-core/scss/iconfont.eot?t=1483429573920'); /* IE9*/
+  src: url('../node_modules/tinper-bee-core/scss/iconfont.eot?t=1483429573920#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../node_modules/tinper-bee-core/scss/iconfont.woff?t=1483429573920') format('woff'), /* chrome, firefox */
+  url('../node_modules/tinper-bee-core/scss/iconfont.ttf?t=1483429573920') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../node_modules/tinper-bee-core/scss/iconfont.svg?t=1483429573920#uf') format('svg'); /* iOS 4.1- */
 }
+
 
 .uf {
     font-family: "uf" !important;
@@ -1232,3 +1235,98 @@
     content: "\e994";
 }
 
+.uf-listwithdots:before {
+    content: "\e9cd";
+}
+
+.uf-gridlogo:before {
+    content: "\e900";
+}
+
+.uf-magnifyingglass:before {
+    content: "\e9ce";
+}
+
+.uf-anglearrowdown:before {
+    content: "\e9cf";
+}
+
+.uf-yongyouyunchnen:before {
+    content: "\e98d";
+}
+
+.uf-yycloud:before {
+    content: "\e68f";
+}
+
+.uf-funnel-o:before {
+    content: "\e63c";
+}
+
+.uf-filter:before {
+    content: "\e9d0";
+}
+
+.uf-filterno:before {
+    content: "\e9d1";
+}
+
+.uf-clean:before {
+    content: "\e9d2";
+}
+
+.uf-save:before {
+    content: "\e9d3";
+}
+
+.uf-export:before {
+    content: "\e9d4";
+}
+
+.uf-import:before {
+    content: "\e9d5";
+}
+
+.uf-stop-c:before {
+    content: "\e9d6";
+}
+
+.uf-rubber:before {
+    content: "\e9d7";
+}
+
+.uf-bediting:before {
+    content: "\e9d8";
+}
+
+.uf-maxmize:before {
+    content: "\e9d9";
+}
+
+.uf-minimize:before {
+    content: "\e9da";
+}
+
+.uf-globe:before {
+    content: "\e9db";
+}
+
+.uf-yybs:before {
+    content: "\e9dc";
+}
+
+.uf-iuap5:before {
+    content: "\e9dd";
+}
+
+.uf-iuap5c:before {
+    content: "\e9ff";
+}
+
+.uf-qingkong:before {
+    content: "\e666";
+}
+
+.uf-location:before {
+    content: "\e78b";
+}
