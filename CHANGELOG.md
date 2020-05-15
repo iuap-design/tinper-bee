@@ -1,3 +1,16 @@
+## tinper-bee@2.3.7
+- bee-tree@2.1.19 
+    - 🐞 [ Fixbug ] selectable 为 false 时，回车不选中节点。
+    - 🌟 [ Feature ] ncc制造，树参照包含下级需求，checkStrictly 动态改变后，拿到组件内部属性 this.checkedKeys
+    - 🐞 [ Fixbug ] onCheck第一个参数的key不对
+- bee-datepicker@2.3.24
+    - 🌟 [ Feature ] 回车如果没有值，回填默认时间，并关闭面板。
+    - 🐞 [ Fixbug ] 禁用日期回车不做选择。[ZZY-5168](https://gf.jira.yonyou.com/browse/ZZY-5168)
+- bee-tooltip@2.1.8
+    - 🐞 [ Fixbug ] Tooltip onVisibleChange单独使用不生效。[#579](https://github.com/iuap-design/tinper-bee/issues/579)
+- bee-complex-grid@2.1.5
+    - 🐞 [ Fixbug ] 单选修改 selectedRowIndex 动态设置不生效问题。[#568](https://github.com/iuap-design/tinper-bee/issues/568)
+
 ## tinper-bee@2.3.6
 - bee-datepicker@@2.3.20
     - 🐞 [ Fixbug ] 去掉 onMouseOver 事件的冒泡阻止
