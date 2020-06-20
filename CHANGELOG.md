@@ -1,3 +1,21 @@
+## tinper-bee@2.3.8
+- bee-complex-grid@2.1.22
+    - 🌟 [ Feature ] 编辑表格新增自定义filed
+- bee-form-control@2.0.21
+    - 🌟 [ Feature ] 新增maxLength属性
+    - 🐞 [ Fixbug ] 失焦 value 为空问题修改
+- bee-input-number@2.2.34
+    - 🌟 [ Feature ] 适配min和max传空字符串的情况
+- bee-loading-state@2.0.5
+    - 🐞 [ Fixbug ] 文件大小写问题修复
+- bee-radio@2.1.6
+    - 🐞 [ Fixbug ] warning问题修复
+- bee-table@2.2.49
+    - 🌟 [ Feature ] 列合计新增自定义精度
+- bee-tree@2.1.20
+    - 🐞 [ Fixbug ] 懒加载滚动后，复选框不能勾选
+    - 🐞 [ Fixbug ] 修复scrollY错误问题
+
 ## tinper-bee@2.3.7
 - bee-tree@2.1.19 
     - 🐞 [ Fixbug ] selectable 为 false 时，回车不选中节点。
