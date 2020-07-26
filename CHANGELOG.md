@@ -1,3 +1,24 @@
+## tinper-bee@2.3.9
+- bee-form-control@2.0.23
+    - 🌟 TextArea 支持自适应文本高度。
+    - 🌟 新增 autoSize 参数。
+- bee-complex-grid@2.2.0
+    - 🌟 分页默认居中显示。
+- bee-tree@2.1.22
+    - 🌟 treeData 支持设置自定义属性。
+- bee-table@2.2.59
+    - 🐞 合计和固定列错位。[#540](https://github.com/iuap-design/tinper-bee/issues/540)
+    - 🌟 增加 useDragHandle 参数，使用行把手拖拽行排序 [#607](https://github.com/iuap-design/tinper-bee/issues/607)
+    - 🌟 增加 hideDragHandle 参数，隐藏行拖拽把手 [#609](https://github.com/iuap-design/tinper-bee/issues/609)
+    - 🌟 行拖拽样式修改
+    - 🌟 条件过滤，输入框输入即查询[#605](https://github.com/iuap-design/tinper-bee/issues/605)
+- bee-datepicker@2.3.25
+    - 🐞 DatePicker组件，开启属性keyboardInput={true}，需要兼容值为空的情况。
+- bee-clipboard@2.0.5
+    - 🐞 复制提示文本位置显示错误 [#533](https://github.com/iuap-design/tinper-bee/issues/533)
+- bee-select@2.0.26
+    - 🐞 defaultValue={null} 且 value='' 时显示 placeholder [#536](https://github.com/iuap-design/tinper-bee/issues/536)
+
 ## tinper-bee@2.3.8
 - bee-complex-grid@2.1.22
     - 🌟 [ Feature ] 编辑表格新增自定义filed
