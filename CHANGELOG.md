@@ -1,3 +1,7 @@
+## tinper-bee@2.4.0
+- bee-loading@3.0.1
+    - 💄 [ Update ]优化Loading默认交互。
+
 ## tinper-bee@2.3.9
 - bee-form-control@2.0.23
     - 🌟 TextArea 支持自适应文本高度。
