@@ -2,8 +2,6 @@ var fs = require('fs')
 var path = require('path');
 var filePath = path.resolve(__dirname+'/theme/'); 
 var patt = /\/\/design.yonyoucloud.com\/static\/iconfont/g;
-// var es6Str = /var supported = candidates.find([\\s\\S]*?);/g;
-// var es5Str = "var supported = '';\n  for(var k = 0; k++; k < candidates.length) {\n    if(candidates[k] === 'on' + eventName in document){ \n      supported = candidates[k];\n } \n }"
 
 /**
  * 替换 tinper-bee.css 中的 CDN 路径
@@ -45,18 +43,3 @@ function getThemeCss(data){
         })
     });
 };
-
-/**
- * 替换 tinper-bee.js 中的 ES6 语法
- */
-// fs.readFile('./build/tinper-bee.js',function(err,data){
-//     // var result2 = es6Str.test(data.toString()）
-//     var result2 = data.toString().replace(es6Str, es5Str);
-//     if(err) {
-//         return console.error('❌读取 tinper-bee.js 时发生错误！');
-//     }
-//     fs.writeFile('./build/tinper-bee-test.js', result2, 'utf8', function (err) {
-//         if (err) return console.error('❌写入 tinper-bee.js 时发生错误');
-//         console.log('😀写入 tinper-bee.js 文件成功');
-//     });
-// });
