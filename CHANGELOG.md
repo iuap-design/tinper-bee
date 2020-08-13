@@ -1,6 +1,30 @@
 ## tinper-bee@2.4.0
 - bee-loading@3.0.1
-    - 💄 [ Update ]优化Loading默认交互。
+    - 🌟 [ Feature ] 优化 loading 交互
+- bee-modal@2.2.0
+    - 💄 [ Update ] 优化 Confirm 确认框交互
+- bee-datepicker@2.3.28
+    - 🌟 [ Feature ] 增加autoTriggerChange参数，支持设置点击切换年月按钮时，不触发onChange。
+- bee-input-number@2.2.40
+    - 🐞 [ Fixbug ] 最小值控制（min属性）设置为0时，仍然可以输入负数
+    - 🌟 [ Feature ] 增加hideActionButton参数，支持隐藏加减按钮。
+- bee-button@2.0.20
+    - 🌟 [ Feature ] 支持定制 font-size
+- bee-pagination@3.0.2
+    - 🌟 [ Feature ] 优化分页交互
+    - 🌟 [ Feature ] 支持定制 font-size
+- bee-menus@2.0.14
+    - 🌟 [ Feature ] 支持定制 font-size
+- bee-step@2.0.3
+    - 🌟 [ Feature ] 支持定制 font-size
+- bee-popconfirm@2.0.2
+    - 🌟 [ Feature ] 支持定制 font-size
+- bee-form-control@2.0.24
+    - 🌟 [ Feature ] 支持定制 font-size
+- bee-tabs@3.0.3
+    - 🌟 [ Feature ] 支持定制 font-size
+- bee-input-group@2.0.4
+    - 🌟 [ Feature ] 支持定制 font-size
 
 ## tinper-bee@2.3.9
 - bee-form-control@2.0.23
