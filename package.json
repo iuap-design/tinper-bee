@@ -69,7 +69,7 @@
     "less-plugin-inline-urls": "~1.1.0",
     "lodash": "^4.13.1",
     "mocha": "^2.5.3",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "object-assign": "^4.1.0",
     "path": "^0.12.7",
     "postcss": "^6.0.13",
