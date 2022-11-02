@@ -68,7 +68,7 @@
     "less-plugin-autoprefix": "~1.5.1",
     "less-plugin-inline-urls": "~1.1.0",
     "lodash": "^4.13.1",
-    "mocha": "^2.5.3",
+    "mocha": "^10.1.0",
     "node-sass": "^4.7.2",
     "object-assign": "^4.1.0",
     "path": "^0.12.7",
