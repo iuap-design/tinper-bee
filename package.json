@@ -82,7 +82,7 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
     "tinper-bee-core": "2.0.36",
-    "webpack": "^3.8.1",
+    "webpack": "^5.75.0",
     "webpack-merge": "^4.1.0"
   },
   "peerDependencies": {
